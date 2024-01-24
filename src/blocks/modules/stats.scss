@@ -1,0 +1,28 @@
+.stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px 39px;
+
+  &__item {
+    min-height: 200px;
+  }
+
+  &__title {
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+    font-family: $font-accent;
+    font-size: 100px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    span {
+      font-size: 18px;
+    }
+  }
+
+  &__text {
+    color: $color-dark-gray;
+    line-height: 150%;
+  }
+}

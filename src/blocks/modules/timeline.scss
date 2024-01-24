@@ -1,0 +1,37 @@
+.timeline {
+  display: flex;
+  gap: 24px;
+
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+
+    span {
+      font-family: $font-accent;
+      font-size: 30px;
+      font-weight: 400;
+      color: rgba($color-light, 0.40);
+      cursor: pointer;
+      transition: .2s linear;
+
+      &:hover {
+        color: $color-light;
+      }
+    }
+
+    &.active span {
+      color: $color-light
+    }
+
+    &:not(:first-child) {
+      &::before {
+        content: '';
+        display: flex;
+        width: 32px;
+        height: 1px;
+        background: rgba(255, 255, 255, 0.40);
+      }
+    }
+  }
+}

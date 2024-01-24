@@ -1,0 +1,20 @@
+.title {
+  font-size: calc(32px + 32 * ((100vw - 320px) / (1920 - 320)));
+  font-family: $font-accent;
+  color: $color-dark;
+  font-weight: 500;
+  line-height: normal;
+  @include rmin(1920) {
+    font-size: rem(64);
+  }
+
+  &--light {
+    color: #FFFFFF;
+  }
+  &--min {
+    font-size: calc(30px + 10 * ((100vw - 320px) / (1920 - 320)));
+    @include rmin(1920) {
+      font-size: rem(30);
+    }
+  }
+}

@@ -1,0 +1,55 @@
+.tabs-product {
+  &__header {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    border-bottom: 1px solid rgba(133, 143, 164, 0.20);
+  }
+
+  &__head {
+    position: relative;
+    display: flex;
+    padding-bottom: 17px;
+    color: $color-dark-gray;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 130%;
+    transition: .2s linear;
+
+    &::after {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      content: '';
+      display: flex;
+      height: 4px;
+      width: 100%;
+      background-color: $color-accent;
+      opacity: 0;
+      z-index: 1;
+      transition: .2s linear;
+    }
+
+    &.active {
+      color: $color-dark;
+
+      &::after {
+        opacity: 1;
+      }
+    }
+  }
+
+  &__title {
+
+  }
+
+  &__body {
+    padding-top: 26px;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+}

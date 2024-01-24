@@ -1,0 +1,33 @@
+.page-intro {
+  position: relative;
+  width: 100%;
+  height: rem(495);
+
+  &__pic {
+    height: 100%;
+    width: 100%;
+    border-radius: rem(20);
+    overflow: hidden;
+
+    img {
+      object-fit: cover;
+    }
+  }
+
+  &__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  &__title {
+    margin-bottom: rem(24);
+  }
+
+  &__text {
+    font-size: rem(18);
+    color: #ffffff;
+  }
+}

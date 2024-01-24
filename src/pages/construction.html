@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <%= htmlWebpackPlugin.options.head %>
+  <title><%= htmlWebpackPlugin.options.title %></title>
+</head>
+<body class="body">
+<%= htmlWebpackPlugin.options.sectionHeader %>
+<main class="main main--gray">
+  <%= htmlWebpackPlugin.options.breadcrumbs %>
+  <section class="section mb-70">
+    <div class="container">
+      <div class="page-intro">
+        <picture class="page-intro__pic">
+          <img src="./assets/images/page-intro-bg.jpg" alt="">
+        </picture>
+        <div class="page-intro__content">
+          <h1 class="page-intro__title title title--light">Строительство<br>
+            электросетевых объектов</h1>
+          <p class="page-intro__text">Минимизация процесса получения специальной документации, а так же процесса
+            согласования является одним из приоритетов группы компаний “Россети”. Мы помогаем своим клиентам
+            минимизировать бюрократические процессы. </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section pb-120">
+    <div class="container">
+      <h1 class="title mb-40">Заголовок</h1>
+      <div class="request">
+        <div class="editor editor--accent">
+          <p>
+            <b>Паспорт услуги (процесса) «Выполнение строительно-монтажных работ»</b>
+          </p>
+          <p>
+            <strong>Круг заявителей:</strong> лица, владеющие на праве собственности или на ином законном основании
+            объектами
+            электроэнергетики или имеющие намерение осуществить проектирование и строительство объектов
+            электроэнергетики.
+          </p>
+          <p>
+            <strong>Размер платы за предоставление услуги (процесса) и основание ее взимания:</strong> на основании
+            сметного расчета, утвержденных ПАО «Россети Центр» калькуляций.
+          </p>
+          <p>
+            <strong> Основание предоставления услуги:</strong> необходимость в проектировании и строительстве объектов
+            энергетики, изменению топологии/компоновки, реконструкции, техническому перевооружению электросетевых
+            объектов.
+          </p>
+          <strong>Условия оказания услуги (процесса):</strong>
+          <ol>
+            <li> Заявление на оказание услуги «Проектирование и строительство объектов энергетики».</li>
+            <li>Заключенный договор на оказание услуги</li>
+          </ol>
+          <strong>Общий срок оказания услуги (процесса):</strong>
+          <ol>
+            <li>Подготовка оферты договора - в течение 30 дней с даты подачи заявления.</li>
+            <li>Оказания услуг в соответствии с условиями договора с даты подписания договора обеими сторонами.</li>
+          </ol>
+        </div>
+        <form class="request-form" action="#">
+          <h3 class="request-form__title">Введите свои данные</h3>
+          <fieldset class="request-form__wrapper">
+            <p class="request-form__head">Личные данные</p>
+            <label class="request-form__label">
+              <input class="input" type="text" name="USER_FIO" placeholder="ФИО *" required="" data-valid="true">
+            </label>
+            <label class="request-form__label">
+              <input class="input" type="tel" name="USER_PHONE" placeholder="Телефон *" required="" data-valid="true">
+            </label>
+            <label class="request-form__label">
+              <input class="input" type="text" name="USER_NUMBER" placeholder="Кадастровый номер участка" required="" data-valid="true">
+            </label>
+          </fieldset>
+          <fieldset class="request-form__wrapper">
+            <p class="request-form__head">Тип работы <sup>*</sup></p>
+            <label class="request-form__label">
+              <input type="checkbox" class="checkbox">
+              <span>Проектирование внешнего электроснабжения</span>
+            </label>
+            <label class="request-form__label">
+              <input type="checkbox" class="checkbox">
+              <span>Проектирование ТП и ПС</span>
+            </label>
+            <label class="request-form__label">
+              <input type="checkbox" class="checkbox">
+              <span>Проектирование линий</span>
+            </label>
+            <label class="request-form__label">
+              <input type="checkbox" class="checkbox">
+              <span>Строительство/монтаж систем внешнего электроснабжения</span>
+            </label>
+            <label class="request-form__label">
+              <input type="checkbox" class="checkbox">
+              <span>Строительство/монтаж ЛЭП</span>
+            </label>
+            <label class="request-form__label">
+              <input type="checkbox" class="checkbox">
+              <span>Строительство/монтаж ТП и ПС</span>
+            </label>
+            <label class="request-form__label">
+              <input type="checkbox" class="checkbox">
+              <span>Замена наружного ввода</span>
+            </label>
+            <label class="request-form__label">
+              <input type="checkbox" class="checkbox">
+              <span>Установка автоматических выключателей</span>
+            </label>
+          </fieldset>
+          <button class="button" type="submit">Отправить заявку</button>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+<%= htmlWebpackPlugin.options.sectionFooter %>
+<%= htmlWebpackPlugin.options.temp %>
+</body>
+</html>

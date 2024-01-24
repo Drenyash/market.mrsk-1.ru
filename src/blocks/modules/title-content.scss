@@ -1,0 +1,13 @@
+.title-content {
+  color: $color-dark;
+  font-size: rem(18);
+  font-weight: 600;
+  line-height: 1.5;
+  margin-bottom: rem(20);
+  &--big {
+    font-size: calc(24px + 8 * ((100vw - 320px) / (1920 - 320)));
+    @include rmin(1920) {
+      font-size: rem(32);
+    }
+  }
+}

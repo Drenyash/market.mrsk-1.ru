@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <%= htmlWebpackPlugin.options.head %>
+  <title><%= htmlWebpackPlugin.options.title %></title>
+</head>
+<body class="body">
+<%= htmlWebpackPlugin.options.sectionHeader %>
+<main class="main main--gray">
+  <%= htmlWebpackPlugin.options.breadcrumbs %>
+  <section class="section contacts">
+    <div class="container">
+      <h1 class="title title--min tab-hidden mb-25">Контактная информация ПАО «Россети Центр»</h1>
+      <h2 class="title title--min tab-visible mb-25">Контакты</h2>
+      <a class="contacts__link mb-50" href="https://yandex.ru/maps/-/CDq3N4K4">
+        <svg>
+          <use xlink:href="../assets/sprite.svg#icon-location"></use>
+        </svg>
+        <span>119017, Россия, г. Москва, ул. Малая Ордынка, д. 15</span>
+      </a>
+      <div class="columns mb-100">
+        <div class="columns__col--5">
+          <div class="contacts__wrapper">
+            <div class="contacts__item">
+              <p class="contacts__item-text">Телефон:</p>
+              <a href="tel:+70000000000" class="contacts__item-link">
+                <svg>
+                  <use xlink:href="../assets/sprite.svg#icon-tel"></use>
+                </svg>
+                <span>+7 (000) 000-00-00</span>
+              </a>
+            </div>
+            <div class="contacts__item">
+              <p class="contacts__item-text">Почта:</p>
+              <a href="mailto:posta@mrsk-1.ru" class="contacts__item-link">
+                <svg>
+                  <use xlink:href="../assets/sprite.svg#icon-mail"></use>
+                </svg>
+                <span>posta@mrsk-1.ru</span>
+              </a>
+            </div>
+            <div class="contacts__item">
+              <p class="contacts__item-text">Факс:</p>
+              <p class="contacts__item-link">
+                <svg>
+                  <use xlink:href="../assets/sprite.svg#icon-fax"></use>
+                </svg>
+                <span>+7 (495) 747-92-95</span>
+              </p>
+            </div>
+            <div class="contacts__item">
+              <p class="contacts__item-text">Реквизиты компании:</p>
+              <a href="tel:+70000000000" class="contacts__item-link">
+                <svg>
+                  <use xlink:href="../assets/sprite.svg#icon-doc"></use>
+                </svg>
+                <span>PDF - 0.2 МБ</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="columns__col--4">
+          <div class="contacts__card contacts__card--light">
+            <div class="contacts__card-inner">
+              <p class="contacts__card-title">Центры обслуживания потребителей</p>
+              <p class="contacts__card-text">Адреса и режим работы центров обслуживания потребителейв регионах
+                присутствия</p>
+              <a href="#" class="contacts__card-button button">Перейти</a>
+            </div>
+          </div>
+        </div>
+        <div class="columns__col--3">
+          <div class="contacts__card contacts__card--accent">
+            <div class="contacts__card-inner">
+              <div class="contacts__card-item">
+                <a href="tel:+78002200220" class="contacts__card-title">8 (800) 220-02-20</a>
+                <p class="contacts__card-item-text">Бесплатный номер телефона по вопросоам перерывов в передаче и
+                  качества электрической энергии</p>
+              </div>
+              <div class="contacts__card-item">
+                <a href="tel:13-50" class="contacts__card-title">13-50</a>
+                <p class="contacts__card-item-text">Контактный телефон для жителей регионов присутствия по вопросам
+                  технологического присоединения, передаче электрической энергии обслуживания потребителей.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section mb-150">
+    <div class="container">
+      <h3 class="title mb-40">Филиалы</h3>
+      <div class="tabs tabs-address" data-tabs-container="address">
+        <div class="tabs__controls tabs-address__controls">
+          <button class="tabs__trigger tabs-address__trigger active" data-tabs-trigger="address" data-tabs="address-1">
+            <span class="tabs-address__trigger-text">Тверьэнерго</span>
+          </button>
+          <button class="tabs__trigger tabs-address__trigger" data-tabs-trigger="address" data-tabs="address-2">
+            <span class="tabs-address__trigger-text">Брянскэнерго</span>
+          </button>
+          <button class="tabs__trigger tabs-address__trigger" data-tabs-trigger="address" data-tabs="address-3">
+            <span class="tabs-address__trigger-text">Белгородэнерго</span>
+          </button>
+          <button class="tabs__trigger tabs-address__trigger" data-tabs-trigger="address" data-tabs="address-4">
+            <span class="tabs-address__trigger-text">Воронежэнерго</span>
+          </button>
+          <button class="tabs__trigger tabs-address__trigger" data-tabs-trigger="address" data-tabs="address-5">
+            <span class="tabs-address__trigger-text">Костромаэнерго</span>
+          </button>
+          <button class="tabs__trigger tabs-address__trigger" data-tabs-trigger="address" data-tabs="address-6">
+            <span class="tabs-address__trigger-text">Курскэнерго</span>
+          </button>
+          <button class="tabs__trigger tabs-address__trigger" data-tabs-trigger="address" data-tabs="address-7">
+            <span class="tabs-address__trigger-text">Липецкэнерго</span>
+          </button>
+          <button class="tabs__trigger tabs-address__trigger" data-tabs-trigger="address" data-tabs="address-8">
+            <span class="tabs-address__trigger-text">Орелэнерго</span>
+          </button>
+          <button class="tabs__trigger tabs-address__trigger" data-tabs-trigger="address" data-tabs="address-9">
+            <span class="tabs-address__trigger-text">Смоленсэнерго</span>
+          </button>
+          <button class="tabs__trigger tabs-address__trigger" data-tabs-trigger="address" data-tabs="address-10">
+            <span class="tabs-address__trigger-text">Тамбовэнерго</span>
+          </button>
+          <button class="tabs__trigger tabs-address__trigger" data-tabs-trigger="address" data-tabs="address-11">
+            <span class="tabs-address__trigger-text">Ярэнерго</span>
+          </button>
+        </div>
+        <div class="tabs__list tabs-address__list">
+          <div class="tabs__item tabs-address__item active" data-tabs-list="address" id="address-1">
+            <div class="tabs-address__card">
+              <div class="tabs-address__card-title">Тверьэнерго</div>
+              <div class="tabs-address__card-item">
+                <p class="tabs-address__card-item-text">Почта:</p>
+                <div class="tabs-address__card-item-link">
+                  <svg>
+                    <use xlink:href="../assets/sprite.svg#icon-mail"></use>
+                  </svg>
+                  <a href="mailto:bryanskenergo@mrsk-1.ru">bryanskenergo@mrsk-1.ru</a>
+                </div>
+              </div>
+              <div class="tabs-address__card-item">
+                <p class="tabs-address__card-item-text">Телефон:</p>
+                <div class="tabs-address__card-item-link">
+                  <svg>
+                    <use xlink:href="../assets/sprite.svg#icon-tel"></use>
+                  </svg>
+                  <a href="tel:+78002200220">+7 (800) 220-02-20</a>
+                </div>
+              </div>
+              <div class="tabs-address__card-item">
+                <p class="tabs-address__card-item-text">Адрес:</p>
+                <div class="tabs-address__card-item-link">
+                  <svg>
+                    <use xlink:href="../assets/sprite.svg#icon-location"></use>
+                  </svg>
+                  <a href="https://yandex.ru/maps/-/CDqtnG0P" target="_blank">241050, г. Брянск, ул. Советская,
+                    д.35</a>
+                </div>
+              </div>
+              <div class="tabs-address__card-item">
+                <p class="tabs-address__card-item-text">Реквизиты компании:</p>
+                <div class="tabs-address__card-item-link">
+                  <svg>
+                    <use xlink:href="../assets/sprite.svg#icon-doc"></use>
+                  </svg>
+                  <a href="#" target="_blank">PDF - 0.2 МБ</a>
+                </div>
+              </div>
+            </div>
+            <div class="tabs-address__map">
+              <div style="position:relative;overflow:hidden;"><a
+                href="https://yandex.ru/maps/191/bryansk/?utm_medium=mapframe&utm_source=maps"
+                style="color:#eee;font-size:12px;position:absolute;top:0px;">Брянск</a><a
+                href="https://yandex.ru/maps/191/bryansk/house/sovetskaya_ulitsa_35/Z00YdQJhTEwDQFtpfX51eHtjYA==/?ll=34.351595%2C53.249704&utm_medium=mapframe&utm_source=maps&z=17.23"
+                style="color:#eee;font-size:12px;position:absolute;top:14px;">Советская улица, 35 — Яндекс Карты</a>
+                <iframe
+                  src="https://yandex.ru/map-widget/v1/?ll=34.351595%2C53.249704&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NjAwMzc2NxI90KDQvtGB0YHQuNGPLCDQkdGA0Y_QvdGB0LosINCh0L7QstC10YLRgdC60LDRjyDRg9C70LjRhtCwLCAzNSIKDQloCUIVs_9UQg%2C%2C&z=17.23"
+                  frameborder="0" allowfullscreen="true" style="position:relative;"></iframe>
+              </div>
+            </div>
+          </div>
+          <div class="tabs__item tabs-address__item" data-tabs-list="address" id="address-2">
+            <div class="tabs-address__card">
+              <div class="tabs-address__card-title">Брянскэнерго</div>
+              <div class="tabs-address__card-item">
+                <p class="tabs-address__card-item-text">Почта:</p>
+                <div class="tabs-address__card-item-link">
+                  <svg>
+                    <use xlink:href="../assets/sprite.svg#icon-mail"></use>
+                  </svg>
+                  <a href="mailto:bryanskenergo@mrsk-1.ru">bryanskenergo@mrsk-1.ru</a>
+                </div>
+              </div>
+              <div class="tabs-address__card-item">
+                <p class="tabs-address__card-item-text">Телефон:</p>
+                <div class="tabs-address__card-item-link">
+                  <svg>
+                    <use xlink:href="../assets/sprite.svg#icon-tel"></use>
+                  </svg>
+                  <a href="tel:+78002200220">+7 (800) 220-02-20</a>
+                </div>
+              </div>
+              <div class="tabs-address__card-item">
+                <p class="tabs-address__card-item-text">Адрес:</p>
+                <div class="tabs-address__card-item-link">
+                  <svg>
+                    <use xlink:href="../assets/sprite.svg#icon-location"></use>
+                  </svg>
+                  <a href="https://yandex.ru/maps/-/CDqtnG0P" target="_blank">241050, г. Брянск, ул. Советская,
+                    д.35</a>
+                </div>
+              </div>
+              <div class="tabs-address__card-item">
+                <p class="tabs-address__card-item-text">Реквизиты компании:</p>
+                <div class="tabs-address__card-item-link">
+                  <svg>
+                    <use xlink:href="../assets/sprite.svg#icon-doc"></use>
+                  </svg>
+                  <a href="#" target="_blank">PDF - 0.2 МБ</a>
+                </div>
+              </div>
+            </div>
+            <div class="tabs-address__map">
+              <div style="position:relative;overflow:hidden;"><a
+                href="https://yandex.ru/maps/191/bryansk/?utm_medium=mapframe&utm_source=maps"
+                style="color:#eee;font-size:12px;position:absolute;top:0px;">Брянск</a><a
+                href="https://yandex.ru/maps/191/bryansk/house/sovetskaya_ulitsa_35/Z00YdQJhTEwDQFtpfX51eHtjYA==/?ll=34.351595%2C53.249704&utm_medium=mapframe&utm_source=maps&z=17.23"
+                style="color:#eee;font-size:12px;position:absolute;top:14px;">Советская улица, 35 — Яндекс Карты</a>
+                <iframe
+                  src="https://yandex.ru/map-widget/v1/?ll=34.351595%2C53.249704&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NjAwMzc2NxI90KDQvtGB0YHQuNGPLCDQkdGA0Y_QvdGB0LosINCh0L7QstC10YLRgdC60LDRjyDRg9C70LjRhtCwLCAzNSIKDQloCUIVs_9UQg%2C%2C&z=17.23"
+                  frameborder="0" allowfullscreen="true" style="position:relative;"></iframe>
+              </div>
+            </div>
+          </div>
+          <div class="tabs__item tabs-address__item" data-tabs-list="address" id="address-3">
+            <div class="tabs-address__card">
+              <div class="tabs-address__card-title">Белгородэнерго</div>
+              <div class="tabs-address__card-item">
+                <p class="tabs-address__card-item-text">Почта:</p>
+                <div class="tabs-address__card-item-link">
+                  <svg>
+                    <use xlink:href="../assets/sprite.svg#icon-mail"></use>
+                  </svg>
+                  <a href="mailto:bryanskenergo@mrsk-1.ru">bryanskenergo@mrsk-1.ru</a>
+                </div>
+              </div>
+              <div class="tabs-address__card-item">
+                <p class="tabs-address__card-item-text">Телефон:</p>
+                <div class="tabs-address__card-item-link">
+                  <svg>
+                    <use xlink:href="../assets/sprite.svg#icon-tel"></use>
+                  </svg>
+                  <a href="tel:+78002200220">+7 (800) 220-02-20</a>
+                </div>
+              </div>
+              <div class="tabs-address__card-item">
+                <p class="tabs-address__card-item-text">Адрес:</p>
+                <div class="tabs-address__card-item-link">
+                  <svg>
+                    <use xlink:href="../assets/sprite.svg#icon-location"></use>
+                  </svg>
+                  <a href="https://yandex.ru/maps/-/CDqtnG0P" target="_blank">241050, г. Брянск, ул. Советская,
+                    д.35</a>
+                </div>
+              </div>
+              <div class="tabs-address__card-item">
+                <p class="tabs-address__card-item-text">Реквизиты компании:</p>
+                <div class="tabs-address__card-item-link">
+                  <svg>
+                    <use xlink:href="../assets/sprite.svg#icon-doc"></use>
+                  </svg>
+                  <a href="#" target="_blank">PDF - 0.2 МБ</a>
+                </div>
+              </div>
+            </div>
+            <div class="tabs-address__map">
+              <div style="position:relative;overflow:hidden;"><a
+                href="https://yandex.ru/maps/191/bryansk/?utm_medium=mapframe&utm_source=maps"
+                style="color:#eee;font-size:12px;position:absolute;top:0px;">Брянск</a><a
+                href="https://yandex.ru/maps/191/bryansk/house/sovetskaya_ulitsa_35/Z00YdQJhTEwDQFtpfX51eHtjYA==/?ll=34.351595%2C53.249704&utm_medium=mapframe&utm_source=maps&z=17.23"
+                style="color:#eee;font-size:12px;position:absolute;top:14px;">Советская улица, 35 — Яндекс Карты</a>
+                <iframe
+                  src="https://yandex.ru/map-widget/v1/?ll=34.351595%2C53.249704&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NjAwMzc2NxI90KDQvtGB0YHQuNGPLCDQkdGA0Y_QvdGB0LosINCh0L7QstC10YLRgdC60LDRjyDRg9C70LjRhtCwLCAzNSIKDQloCUIVs_9UQg%2C%2C&z=17.23"
+                  frameborder="0" allowfullscreen="true" style="position:relative;"></iframe>
+              </div>
+            </div>
+          </div>
+          <div class="tabs__item tabs-address__item" data-tabs-list="address" id="address-4">
+            <div class="tabs-address__card">
+              <div class="tabs-address__card-title">Воронежэнерго</div>
+              <div class="tabs-address__card-item">
+                <p class="tabs-address__card-item-text">Почта:</p>
+                <div class="tabs-address__card-item-link">
+                  <svg>
+                    <use xlink:href="../assets/sprite.svg#icon-mail"></use>
+                  </svg>
+                  <a href="mailto:bryanskenergo@mrsk-1.ru">bryanskenergo@mrsk-1.ru</a>
+                </div>
+              </div>
+              <div class="tabs-address__card-item">
+                <p class="tabs-address__card-item-text">Телефон:</p>
+                <div class="tabs-address__card-item-link">
+                  <svg>
+                    <use xlink:href="../assets/sprite.svg#icon-tel"></use>
+                  </svg>
+                  <a href="tel:+78002200220">+7 (800) 220-02-20</a>
+                </div>
+              </div>
+              <div class="tabs-address__card-item">
+                <p class="tabs-address__card-item-text">Адрес:</p>
+                <div class="tabs-address__card-item-link">
+                  <svg>
+                    <use xlink:href="../assets/sprite.svg#icon-location"></use>
+                  </svg>
+                  <a href="https://yandex.ru/maps/-/CDqtnG0P" target="_blank">241050, г. Брянск, ул. Советская,
+                    д.35</a>
+                </div>
+              </div>
+              <div class="tabs-address__card-item">
+                <p class="tabs-address__card-item-text">Реквизиты компании:</p>
+                <div class="tabs-address__card-item-link">
+                  <svg>
+                    <use xlink:href="../assets/sprite.svg#icon-doc"></use>
+                  </svg>
+                  <a href="#" target="_blank">PDF - 0.2 МБ</a>
+                </div>
+              </div>
+            </div>
+            <div class="tabs-address__map">
+              <div style="position:relative;overflow:hidden;"><a
+                href="https://yandex.ru/maps/191/bryansk/?utm_medium=mapframe&utm_source=maps"
+                style="color:#eee;font-size:12px;position:absolute;top:0px;">Брянск</a><a
+                href="https://yandex.ru/maps/191/bryansk/house/sovetskaya_ulitsa_35/Z00YdQJhTEwDQFtpfX51eHtjYA==/?ll=34.351595%2C53.249704&utm_medium=mapframe&utm_source=maps&z=17.23"
+                style="color:#eee;font-size:12px;position:absolute;top:14px;">Советская улица, 35 — Яндекс Карты</a>
+                <iframe
+                  src="https://yandex.ru/map-widget/v1/?ll=34.351595%2C53.249704&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NjAwMzc2NxI90KDQvtGB0YHQuNGPLCDQkdGA0Y_QvdGB0LosINCh0L7QstC10YLRgdC60LDRjyDRg9C70LjRhtCwLCAzNSIKDQloCUIVs_9UQg%2C%2C&z=17.23"
+                  frameborder="0" allowfullscreen="true" style="position:relative;"></iframe>
+              </div>
+            </div>
+          </div>
+          <div class="tabs__item tabs-address__item" data-tabs-list="address" id="address-5">
+            <div class="tabs-address__card">
+              <div class="tabs-address__card-title">Костромаэнерго</div>
+              <div class="tabs-address__card-item">
+                <p class="tabs-address__card-item-text">Почта:</p>
+                <div class="tabs-address__card-item-link">
+                  <svg>
+                    <use xlink:href="../assets/sprite.svg#icon-mail"></use>
+                  </svg>
+                  <a href="mailto:bryanskenergo@mrsk-1.ru">bryanskenergo@mrsk-1.ru</a>
+                </div>
+              </div>
+              <div class="tabs-address__card-item">
+                <p class="tabs-address__card-item-text">Телефон:</p>
+                <div class="tabs-address__card-item-link">
+                  <svg>
+                    <use xlink:href="../assets/sprite.svg#icon-tel"></use>
+                  </svg>
+                  <a href="tel:+78002200220">+7 (800) 220-02-20</a>
+                </div>
+              </div>
+              <div class="tabs-address__card-item">
+                <p class="tabs-address__card-item-text">Адрес:</p>
+                <div class="tabs-address__card-item-link">
+                  <svg>
+                    <use xlink:href="../assets/sprite.svg#icon-location"></use>
+                  </svg>
+                  <a href="https://yandex.ru/maps/-/CDqtnG0P" target="_blank">241050, г. Брянск, ул. Советская,
+                    д.35</a>
+                </div>
+              </div>
+              <div class="tabs-address__card-item">
+                <p class="tabs-address__card-item-text">Реквизиты компании:</p>
+                <div class="tabs-address__card-item-link">
+                  <svg>
+                    <use xlink:href="../assets/sprite.svg#icon-doc"></use>
+                  </svg>
+                  <a href="#" target="_blank">PDF - 0.2 МБ</a>
+                </div>
+              </div>
+            </div>
+            <div class="tabs-address__map">
+              <div style="position:relative;overflow:hidden;"><a
+                href="https://yandex.ru/maps/191/bryansk/?utm_medium=mapframe&utm_source=maps"
+                style="color:#eee;font-size:12px;position:absolute;top:0px;">Брянск</a><a
+                href="https://yandex.ru/maps/191/bryansk/house/sovetskaya_ulitsa_35/Z00YdQJhTEwDQFtpfX51eHtjYA==/?ll=34.351595%2C53.249704&utm_medium=mapframe&utm_source=maps&z=17.23"
+                style="color:#eee;font-size:12px;position:absolute;top:14px;">Советская улица, 35 — Яндекс Карты</a>
+                <iframe
+                  src="https://yandex.ru/map-widget/v1/?ll=34.351595%2C53.249704&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NjAwMzc2NxI90KDQvtGB0YHQuNGPLCDQkdGA0Y_QvdGB0LosINCh0L7QstC10YLRgdC60LDRjyDRg9C70LjRhtCwLCAzNSIKDQloCUIVs_9UQg%2C%2C&z=17.23"
+                  frameborder="0" allowfullscreen="true" style="position:relative;"></iframe>
+              </div>
+            </div>
+          </div>
+          <div class="tabs__item tabs-address__item" data-tabs-list="address" id="address-6">
+            <div class="tabs-address__card">
+              <div class="tabs-address__card-title">Курскэнерго</div>
+              <div class="tabs-address__card-item">
+                <p class="tabs-address__card-item-text">Почта:</p>
+                <div class="tabs-address__card-item-link">
+                  <svg>
+                    <use xlink:href="../assets/sprite.svg#icon-mail"></use>
+                  </svg>
+                  <a href="mailto:bryanskenergo@mrsk-1.ru">bryanskenergo@mrsk-1.ru</a>
+                </div>
+              </div>
+              <div class="tabs-address__card-item">
+                <p class="tabs-address__card-item-text">Телефон:</p>
+                <div class="tabs-address__card-item-link">
+                  <svg>
+                    <use xlink:href="../assets/sprite.svg#icon-tel"></use>
+                  </svg>
+                  <a href="tel:+78002200220">+7 (800) 220-02-20</a>
+                </div>
+              </div>
+              <div class="tabs-address__card-item">
+                <p class="tabs-address__card-item-text">Адрес:</p>
+                <div class="tabs-address__card-item-link">
+                  <svg>
+                    <use xlink:href="../assets/sprite.svg#icon-location"></use>
+                  </svg>
+                  <a href="https://yandex.ru/maps/-/CDqtnG0P" target="_blank">241050, г. Брянск, ул. Советская,
+                    д.35</a>
+                </div>
+              </div>
+              <div class="tabs-address__card-item">
+                <p class="tabs-address__card-item-text">Реквизиты компании:</p>
+                <div class="tabs-address__card-item-link">
+                  <svg>
+                    <use xlink:href="../assets/sprite.svg#icon-doc"></use>
+                  </svg>
+                  <a href="#" target="_blank">PDF - 0.2 МБ</a>
+                </div>
+              </div>
+            </div>
+            <div class="tabs-address__map">
+              <div style="position:relative;overflow:hidden;"><a
+                href="https://yandex.ru/maps/191/bryansk/?utm_medium=mapframe&utm_source=maps"
+                style="color:#eee;font-size:12px;position:absolute;top:0px;">Брянск</a><a
+                href="https://yandex.ru/maps/191/bryansk/house/sovetskaya_ulitsa_35/Z00YdQJhTEwDQFtpfX51eHtjYA==/?ll=34.351595%2C53.249704&utm_medium=mapframe&utm_source=maps&z=17.23"
+                style="color:#eee;font-size:12px;position:absolute;top:14px;">Советская улица, 35 — Яндекс Карты</a>
+                <iframe
+                  src="https://yandex.ru/map-widget/v1/?ll=34.351595%2C53.249704&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NjAwMzc2NxI90KDQvtGB0YHQuNGPLCDQkdGA0Y_QvdGB0LosINCh0L7QstC10YLRgdC60LDRjyDRg9C70LjRhtCwLCAzNSIKDQloCUIVs_9UQg%2C%2C&z=17.23"
+                  frameborder="0" allowfullscreen="true" style="position:relative;"></iframe>
+              </div>
+            </div>
+          </div>
+          <div class="tabs__item tabs-address__item" data-tabs-list="address" id="address-7">
+            <div class="tabs-address__card">
+              <div class="tabs-address__card-title">Липецкэнерго</div>
+              <div class="tabs-address__card-item">
+                <p class="tabs-address__card-item-text">Почта:</p>
+                <div class="tabs-address__card-item-link">
+                  <svg>
+                    <use xlink:href="../assets/sprite.svg#icon-mail"></use>
+                  </svg>
+                  <a href="mailto:bryanskenergo@mrsk-1.ru">bryanskenergo@mrsk-1.ru</a>
+                </div>
+              </div>
+              <div class="tabs-address__card-item">
+                <p class="tabs-address__card-item-text">Телефон:</p>
+                <div class="tabs-address__card-item-link">
+                  <svg>
+                    <use xlink:href="../assets/sprite.svg#icon-tel"></use>
+                  </svg>
+                  <a href="tel:+78002200220">+7 (800) 220-02-20</a>
+                </div>
+              </div>
+              <div class="tabs-address__card-item">
+                <p class="tabs-address__card-item-text">Адрес:</p>
+                <div class="tabs-address__card-item-link">
+                  <svg>
+                    <use xlink:href="../assets/sprite.svg#icon-location"></use>
+                  </svg>
+                  <a href="https://yandex.ru/maps/-/CDqtnG0P" target="_blank">241050, г. Брянск, ул. Советская,
+                    д.35</a>
+                </div>
+              </div>
+              <div class="tabs-address__card-item">
+                <p class="tabs-address__card-item-text">Реквизиты компании:</p>
+                <div class="tabs-address__card-item-link">
+                  <svg>
+                    <use xlink:href="../assets/sprite.svg#icon-doc"></use>
+                  </svg>
+                  <a href="#" target="_blank">PDF - 0.2 МБ</a>
+                </div>
+              </div>
+            </div>
+            <div class="tabs-address__map">
+              <div style="position:relative;overflow:hidden;">
+                <a
+                  href="https://yandex.ru/maps/191/bryansk/?utm_medium=mapframe&utm_source=maps"
+                  style="color:#eee;font-size:12px;position:absolute;top:0px;">Брянск</a>
+                <a
+                  href="https://yandex.ru/maps/191/bryansk/house/sovetskaya_ulitsa_35/Z00YdQJhTEwDQFtpfX51eHtjYA==/?ll=34.351595%2C53.249704&utm_medium=mapframe&utm_source=maps&z=17.23"
+                  style="color:#eee;font-size:12px;position:absolute;top:14px;">Советская улица, 35 — Яндекс Карты</a>
+                <iframe
+                  src="https://yandex.ru/map-widget/v1/?ll=34.351595%2C53.249704&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NjAwMzc2NxI90KDQvtGB0YHQuNGPLCDQkdGA0Y_QvdGB0LosINCh0L7QstC10YLRgdC60LDRjyDRg9C70LjRhtCwLCAzNSIKDQloCUIVs_9UQg%2C%2C&z=17.23"
+                  frameborder="0" allowfullscreen="true" style="position:relative;"></iframe>
+              </div>
+            </div>
+          </div>
+          <div class="tabs__item tabs-address__item" data-tabs-list="address" id="address-8">
+            <div class="tabs-address__card">
+              <div class="tabs-address__card-title">Орелэнерго</div>
+              <div class="tabs-address__card-item">
+                <p class="tabs-address__card-item-text">Почта:</p>
+                <div class="tabs-address__card-item-link">
+                  <svg>
+                    <use xlink:href="../assets/sprite.svg#icon-mail"></use>
+                  </svg>
+                  <a href="mailto:bryanskenergo@mrsk-1.ru">bryanskenergo@mrsk-1.ru</a>
+                </div>
+              </div>
+              <div class="tabs-address__card-item">
+                <p class="tabs-address__card-item-text">Телефон:</p>
+                <div class="tabs-address__card-item-link">
+                  <svg>
+                    <use xlink:href="../assets/sprite.svg#icon-tel"></use>
+                  </svg>
+                  <a href="tel:+78002200220">+7 (800) 220-02-20</a>
+                </div>
+              </div>
+              <div class="tabs-address__card-item">
+                <p class="tabs-address__card-item-text">Адрес:</p>
+                <div class="tabs-address__card-item-link">
+                  <svg>
+                    <use xlink:href="../assets/sprite.svg#icon-location"></use>
+                  </svg>
+                  <a href="https://yandex.ru/maps/-/CDqtnG0P" target="_blank">241050, г. Брянск, ул. Советская,
+                    д.35</a>
+                </div>
+              </div>
+              <div class="tabs-address__card-item">
+                <p class="tabs-address__card-item-text">Реквизиты компании:</p>
+                <div class="tabs-address__card-item-link">
+                  <svg>
+                    <use xlink:href="../assets/sprite.svg#icon-doc"></use>
+                  </svg>
+                  <a href="#" target="_blank">PDF - 0.2 МБ</a>
+                </div>
+              </div>
+            </div>
+            <div class="tabs-address__map">
+              <div style="position:relative;overflow:hidden;"><a
+                href="https://yandex.ru/maps/191/bryansk/?utm_medium=mapframe&utm_source=maps"
+                style="color:#eee;font-size:12px;position:absolute;top:0px;">Брянск</a><a
+                href="https://yandex.ru/maps/191/bryansk/house/sovetskaya_ulitsa_35/Z00YdQJhTEwDQFtpfX51eHtjYA==/?ll=34.351595%2C53.249704&utm_medium=mapframe&utm_source=maps&z=17.23"
+                style="color:#eee;font-size:12px;position:absolute;top:14px;">Советская улица, 35 — Яндекс Карты</a>
+                <iframe
+                  src="https://yandex.ru/map-widget/v1/?ll=34.351595%2C53.249704&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NjAwMzc2NxI90KDQvtGB0YHQuNGPLCDQkdGA0Y_QvdGB0LosINCh0L7QstC10YLRgdC60LDRjyDRg9C70LjRhtCwLCAzNSIKDQloCUIVs_9UQg%2C%2C&z=17.23"
+                  frameborder="0" allowfullscreen="true" style="position:relative;"></iframe>
+              </div>
+            </div>
+          </div>
+          <div class="tabs__item tabs-address__item" data-tabs-list="address" id="address-9">
+            <div class="tabs-address__card">
+              <div class="tabs-address__card-title">Смоленсэнерго</div>
+              <div class="tabs-address__card-item">
+                <p class="tabs-address__card-item-text">Почта:</p>
+                <div class="tabs-address__card-item-link">
+                  <svg>
+                    <use xlink:href="../assets/sprite.svg#icon-mail"></use>
+                  </svg>
+                  <a href="mailto:bryanskenergo@mrsk-1.ru">bryanskenergo@mrsk-1.ru</a>
+                </div>
+              </div>
+              <div class="tabs-address__card-item">
+                <p class="tabs-address__card-item-text">Телефон:</p>
+                <div class="tabs-address__card-item-link">
+                  <svg>
+                    <use xlink:href="../assets/sprite.svg#icon-tel"></use>
+                  </svg>
+                  <a href="tel:+78002200220">+7 (800) 220-02-20</a>
+                </div>
+              </div>
+              <div class="tabs-address__card-item">
+                <p class="tabs-address__card-item-text">Адрес:</p>
+                <div class="tabs-address__card-item-link">
+                  <svg>
+                    <use xlink:href="../assets/sprite.svg#icon-location"></use>
+                  </svg>
+                  <a href="https://yandex.ru/maps/-/CDqtnG0P" target="_blank">241050, г. Брянск, ул. Советская,
+                    д.35</a>
+                </div>
+              </div>
+              <div class="tabs-address__card-item">
+                <p class="tabs-address__card-item-text">Реквизиты компании:</p>
+                <div class="tabs-address__card-item-link">
+                  <svg>
+                    <use xlink:href="../assets/sprite.svg#icon-doc"></use>
+                  </svg>
+                  <a href="#" target="_blank">PDF - 0.2 МБ</a>
+                </div>
+              </div>
+            </div>
+            <div class="tabs-address__map">
+              <div style="position:relative;overflow:hidden;"><a
+                href="https://yandex.ru/maps/191/bryansk/?utm_medium=mapframe&utm_source=maps"
+                style="color:#eee;font-size:12px;position:absolute;top:0px;">Брянск</a><a
+                href="https://yandex.ru/maps/191/bryansk/house/sovetskaya_ulitsa_35/Z00YdQJhTEwDQFtpfX51eHtjYA==/?ll=34.351595%2C53.249704&utm_medium=mapframe&utm_source=maps&z=17.23"
+                style="color:#eee;font-size:12px;position:absolute;top:14px;">Советская улица, 35 — Яндекс Карты</a>
+                <iframe
+                  src="https://yandex.ru/map-widget/v1/?ll=34.351595%2C53.249704&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NjAwMzc2NxI90KDQvtGB0YHQuNGPLCDQkdGA0Y_QvdGB0LosINCh0L7QstC10YLRgdC60LDRjyDRg9C70LjRhtCwLCAzNSIKDQloCUIVs_9UQg%2C%2C&z=17.23"
+                  frameborder="0" allowfullscreen="true" style="position:relative;"></iframe>
+              </div>
+            </div>
+          </div>
+          <div class="tabs__item tabs-address__item" data-tabs-list="address" id="address-10">
+            <div class="tabs-address__card">
+              <div class="tabs-address__card-title">Тамбовэнерго</div>
+              <div class="tabs-address__card-item">
+                <p class="tabs-address__card-item-text">Почта:</p>
+                <div class="tabs-address__card-item-link">
+                  <svg>
+                    <use xlink:href="../assets/sprite.svg#icon-mail"></use>
+                  </svg>
+                  <a href="mailto:bryanskenergo@mrsk-1.ru">bryanskenergo@mrsk-1.ru</a>
+                </div>
+              </div>
+              <div class="tabs-address__card-item">
+                <p class="tabs-address__card-item-text">Телефон:</p>
+                <div class="tabs-address__card-item-link">
+                  <svg>
+                    <use xlink:href="../assets/sprite.svg#icon-tel"></use>
+                  </svg>
+                  <a href="tel:+78002200220">+7 (800) 220-02-20</a>
+                </div>
+              </div>
+              <div class="tabs-address__card-item">
+                <p class="tabs-address__card-item-text">Адрес:</p>
+                <div class="tabs-address__card-item-link">
+                  <svg>
+                    <use xlink:href="../assets/sprite.svg#icon-location"></use>
+                  </svg>
+                  <a href="https://yandex.ru/maps/-/CDqtnG0P" target="_blank">241050, г. Брянск, ул. Советская,
+                    д.35</a>
+                </div>
+              </div>
+              <div class="tabs-address__card-item">
+                <p class="tabs-address__card-item-text">Реквизиты компании:</p>
+                <div class="tabs-address__card-item-link">
+                  <svg>
+                    <use xlink:href="../assets/sprite.svg#icon-doc"></use>
+                  </svg>
+                  <a href="#" target="_blank">PDF - 0.2 МБ</a>
+                </div>
+              </div>
+            </div>
+            <div class="tabs-address__map">
+              <div style="position:relative;overflow:hidden;"><a
+                href="https://yandex.ru/maps/191/bryansk/?utm_medium=mapframe&utm_source=maps"
+                style="color:#eee;font-size:12px;position:absolute;top:0px;">Брянск</a><a
+                href="https://yandex.ru/maps/191/bryansk/house/sovetskaya_ulitsa_35/Z00YdQJhTEwDQFtpfX51eHtjYA==/?ll=34.351595%2C53.249704&utm_medium=mapframe&utm_source=maps&z=17.23"
+                style="color:#eee;font-size:12px;position:absolute;top:14px;">Советская улица, 35 — Яндекс Карты</a>
+                <iframe
+                  src="https://yandex.ru/map-widget/v1/?ll=34.351595%2C53.249704&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NjAwMzc2NxI90KDQvtGB0YHQuNGPLCDQkdGA0Y_QvdGB0LosINCh0L7QstC10YLRgdC60LDRjyDRg9C70LjRhtCwLCAzNSIKDQloCUIVs_9UQg%2C%2C&z=17.23"
+                  frameborder="0" allowfullscreen="true" style="position:relative;"></iframe>
+              </div>
+            </div>
+          </div>
+          <div class="tabs__item tabs-address__item" data-tabs-list="address" id="address-11">
+            <div class="tabs-address__card">
+              <div class="tabs-address__card-title">Ярэнерго</div>
+              <div class="tabs-address__card-item">
+                <p class="tabs-address__card-item-text">Почта:</p>
+                <div class="tabs-address__card-item-link">
+                  <svg>
+                    <use xlink:href="../assets/sprite.svg#icon-mail"></use>
+                  </svg>
+                  <a href="mailto:bryanskenergo@mrsk-1.ru">bryanskenergo@mrsk-1.ru</a>
+                </div>
+              </div>
+              <div class="tabs-address__card-item">
+                <p class="tabs-address__card-item-text">Телефон:</p>
+                <div class="tabs-address__card-item-link">
+                  <svg>
+                    <use xlink:href="../assets/sprite.svg#icon-tel"></use>
+                  </svg>
+                  <a href="tel:+78002200220">+7 (800) 220-02-20</a>
+                </div>
+              </div>
+              <div class="tabs-address__card-item">
+                <p class="tabs-address__card-item-text">Адрес:</p>
+                <div class="tabs-address__card-item-link">
+                  <svg>
+                    <use xlink:href="../assets/sprite.svg#icon-location"></use>
+                  </svg>
+                  <a href="https://yandex.ru/maps/-/CDqtnG0P" target="_blank">241050, г. Брянск, ул. Советская,
+                    д.35</a>
+                </div>
+              </div>
+              <div class="tabs-address__card-item">
+                <p class="tabs-address__card-item-text">Реквизиты компании:</p>
+                <div class="tabs-address__card-item-link">
+                  <svg>
+                    <use xlink:href="../assets/sprite.svg#icon-doc"></use>
+                  </svg>
+                  <a href="#" target="_blank">PDF - 0.2 МБ</a>
+                </div>
+              </div>
+            </div>
+            <div class="tabs-address__map">
+              <div style="position:relative;overflow:hidden;">
+                <a
+                  href="https://yandex.ru/maps/191/bryansk/?utm_medium=mapframe&utm_source=maps"
+                  style="color:#eee;font-size:12px;position:absolute;top:0px;">Брянск</a><a
+                href="https://yandex.ru/maps/191/bryansk/house/sovetskaya_ulitsa_35/Z00YdQJhTEwDQFtpfX51eHtjYA==/?ll=34.351595%2C53.249704&utm_medium=mapframe&utm_source=maps&z=17.23"
+                style="color:#eee;font-size:12px;position:absolute;top:14px;">Советская улица, 35 — Яндекс Карты</a>
+                <iframe
+                  src="https://yandex.ru/map-widget/v1/?ll=34.351595%2C53.249704&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NjAwMzc2NxI90KDQvtGB0YHQuNGPLCDQkdGA0Y_QvdGB0LosINCh0L7QstC10YLRgdC60LDRjyDRg9C70LjRhtCwLCAzNSIKDQloCUIVs_9UQg%2C%2C&z=17.23"
+                  frameborder="0" allowfullscreen="true" style="position:relative;"></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<%= htmlWebpackPlugin.options.sectionFooter %>
+<%= htmlWebpackPlugin.options.temp %>
+</body>
+</html>

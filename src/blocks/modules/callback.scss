@@ -1,0 +1,20 @@
+.callback {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: rem(8) rem(14);
+  gap: rem(17);
+  color: $color-accent;
+  font-size: rem(18);
+
+  &__icon {
+    svg {
+      width: rem(20);
+      height: rem(20);
+      fill: $color-accent;
+    }
+  }
+
+  &__text {
+  }
+}

@@ -1,0 +1,16 @@
+.burger {
+  display: none;
+  width: 24px;
+  height: 24px;
+
+  @include r(1200) {
+    display: flex;
+  }
+
+  &__item {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background-color: $color-light;
+  }
+}

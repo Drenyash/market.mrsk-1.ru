@@ -1,0 +1,99 @@
+.contacts {
+  &__link {
+    display: flex;
+    align-items: center;
+    gap: rem(8);
+    color: $color-text-gray;
+    font-weight: 500;
+
+    svg {
+      max-width: rem(15);
+      max-height: rem(19);
+      fill: $color-text-gray;
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: rem(30);
+  }
+
+  &__item {
+    width: 50%;
+  }
+
+  &__item-text {
+    color: $color-text-gray;
+    font-weight: 500;
+    margin-bottom: rem(7);
+  }
+
+  &__item-link {
+    display: flex;
+    align-items: center;
+    gap: rem(8);
+
+    svg {
+      max-width: rem(16);
+      max-height: rem(19);
+    }
+  }
+
+  &__card {
+    border-radius: rem(8);
+    min-height: rem(368);
+  }
+
+  &__card-inner {
+    width: 100%;
+    max-width: rem(275);
+  }
+
+  &__card--light {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #FFFFFF;
+    padding: rem(40);
+  }
+
+  &__card-title {
+    display: block;
+    font-family: $font-accent;
+    font-size: rem(30);
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: rem(8);
+  }
+
+  &__card-text {
+    color: $color-dark-gray;
+    margin-bottom: rem(24);
+  }
+
+  &__card-button {
+    max-width: rem(150);
+  }
+
+  &__card--accent {
+    background-color: $color-accent;
+    padding: rem(35) rem(40);
+    color: #FFFFFF;
+
+    .contacts__card-title {
+      margin-bottom: rem(14);
+    }
+  }
+
+  &__card-item {
+    & + & {
+      margin-top: rem(30);
+    }
+  }
+
+  &__card-item-text {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: rem(14);
+  }
+}

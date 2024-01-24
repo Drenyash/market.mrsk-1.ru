@@ -1,0 +1,17 @@
+.section {
+    &--gradient {
+      padding: rem(65) 0;
+      background: linear-gradient(96deg, #024373 0%, #10172B 37.31%, #17142B 55.72%, #060614 100%);
+      @include r($tablet) {
+        padding: rem(60) 0 0;
+      }
+    }
+  &--gray {
+    background-color: #F7F9F9;
+  }
+
+  &--accent {
+    position: relative;
+    background-color: #2034E9;
+  }
+}

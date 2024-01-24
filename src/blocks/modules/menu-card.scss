@@ -1,0 +1,40 @@
+.menu-card {
+  display: flex;
+  align-items: center;
+  gap: rem(18);
+  padding: rem(14) rem(8);
+  border-radius: rem(8);
+  transition: background-color .3s ease-in-out;
+  &:hover {
+    background-color: #F6F6F6;
+  }
+
+  &__picture {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: rem(100);
+    height: rem(100);
+    border-radius: rem(6);
+    background-color: #FFFFFF;
+    overflow: hidden;
+
+    img {
+      height: auto;
+      object-fit: contain;
+      object-position: center;
+    }
+  }
+
+  &__content {
+  }
+
+  &__title {
+    font-weight: 500;
+    margin-bottom: rem(8);
+  }
+
+  &__text {
+    font-size: rem(14);
+  }
+}

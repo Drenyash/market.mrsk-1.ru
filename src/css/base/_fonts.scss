@@ -1,0 +1,62 @@
+@font-face {
+  font-family: 'Roboto';
+  src: local('Roboto'), local('Roboto-Regular'),
+  url('../assets/fonts/Roboto.woff2') format('woff2'),
+  url('../assets/fonts/Roboto.woff') format('woff'),
+  url('../assets/fonts/Roboto.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: local('Roboto Medium'), local('Roboto-Medium'),
+  url('../assets/fonts/RobotoMedium.woff2') format('woff2'),
+  url('../assets/fonts/RobotoMedium.woff') format('woff'),
+  url('../assets/fonts/RobotoMedium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'Roboto';
+  src: local('Roboto Bold'), local('Roboto-Bold'),
+  url('../assets/fonts/RobotoBold.woff2') format('woff2'),
+  url('../assets/fonts/RobotoBold.woff') format('woff'),
+  url('../assets/fonts/RobotoBold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: local('Roboto Black'), local('Roboto-Black'),
+  url('../assets/fonts/RobotoBlack.woff2') format('woff2'),
+  url('../assets/fonts/RobotoBlack.woff') format('woff'),
+  url('../assets/fonts/RobotoBlack.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PF Din Text Cond Pro';
+  src: local('PF Din Text Cond Pro'), local('PFDinTextCondPro'),
+  url('../assets/fonts/PFDinTextCondPro-Medium.woff2') format('woff2'),
+  url('../assets/fonts/PFDinTextCondPro-Medium.woff') format('woff'),
+  url('../assets/fonts/PFDinTextCondPro-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'PF Din Text Cond Pro';
+  src: local('PF Din Text Cond Pro'), local('PFDinTextCondPro'),
+  url('../assets/fonts/PFDinTextCondPro-Regular.woff2') format('woff2'),
+  url('../assets/fonts/PFDinTextCondPro-Regular.woff') format('woff'),
+  url('../assets/fonts/PFDinTextCondPro-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+

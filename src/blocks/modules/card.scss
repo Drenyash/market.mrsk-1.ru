@@ -1,0 +1,40 @@
+.card {
+  border-radius: rem(8);
+  padding: rem(30);
+  min-height: rem(277);
+  height: 100%;
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  &__title {
+    font-family: $font-accent;
+    font-size: rem(24);
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: rem(14);
+  }
+
+  &__text {
+    font-size: rem(14);
+    line-height: 1.5;
+    color: $color-gray;
+    margin-bottom: rem(18);
+  }
+
+  &__text-accent {
+    font-family: $font-accent;
+    color: $color-accent;
+    font-size: rem(18);
+    font-weight: 500;
+    margin-top: auto;
+  }
+
+  &--light {
+    background: linear-gradient(296deg, rgba(255, 255, 255, 0.50) 0%, rgba(216, 218, 224, 0.00) 99.41%), #EDEDED;
+    box-shadow: 0 4px 100px 0 rgba(220, 220, 220, 0.57);
+  }
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <%= htmlWebpackPlugin.options.head %>
+  <title><%= htmlWebpackPlugin.options.title %></title>
+</head>
+<body class="body">
+<%= htmlWebpackPlugin.options.sectionHeader %>
+<main class="main main--gray">
+  <%= htmlWebpackPlugin.options.breadcrumbs %>
+  <section class="section mb-70">
+    <div class="container">
+      <div class="error-page">
+        <picture class="error-page__picture">
+          <img src="./assets/images/shreder.svg" alt="">
+        </picture>
+        <h1 class="error-page__title">404</h1>
+        <div class="error-page__info">
+          <h2 class="error-page__head">Страница не найдена</h2>
+          <p class="error-page__text">Упс! Что-то пошло не так, этой страницы не существует</p>
+          <button class="error-page__button">На главную</button>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<%= htmlWebpackPlugin.options.sectionFooter %>
+<%= htmlWebpackPlugin.options.temp %>
+</body>
+</html>

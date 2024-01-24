@@ -1,0 +1,12 @@
+.cards-num-container {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  gap: rem(20);
+  padding: rem(165) 0 rem(140);
+  z-index: 10;
+  @include r($tablet) {
+    flex-wrap: wrap;
+    gap: rem(24) rem(16);
+  }
+}

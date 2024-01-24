@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <%= htmlWebpackPlugin.options.head %>
+  <title><%= htmlWebpackPlugin.options.title %></title>
+</head>
+
+<body class="body">
+<%= htmlWebpackPlugin.options.sectionHeader %>
+<main class="main">
+  <section class="section intro mb-120">
+    <div class="intro__container">
+      <div class="container">
+        <div class="columns">
+          <div class="columns__col--6 columns__col-mob--12">
+            <h1 class="intro__title title">Технологическое присоединение <br class="mob-hidden"> под ключ, просто и
+              надёжно
+            </h1>
+            <p class="intro__subtitle">Услуга по выполнению мероприятий, включенных в технические условия договора
+              технологического присоединения со стороны потребителя</p>
+            <button class="intro__button button" data-fancybox data-src="#modalTechConnectionStart">Оформить заявку
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section mb-130">
+    <div class="container">
+      <h2 class="title mb-30">Услуги компании “Россети”</h2>
+      <div class="tabs tabs-about" data-tabs-container="services">
+        <div class="tabs__controls tabs-about__controls">
+          <button class="tabs__trigger tabs-about__trigger active" data-tabs-trigger="services" data-tabs="about-1">
+            <span class="tabs-about__trigger-icon">
+              <svg>
+                <use xlink:href="./assets/sprite.svg#icon-connection"></use>
+              </svg>
+            </span>
+            <span class="tabs-about__trigger-text">Технологическое присоединение под ключ</span>
+          </button>
+          <button class="tabs__trigger tabs-about__trigger" data-tabs-trigger="services" data-tabs="about-2">
+            <span class="tabs-about__trigger-icon">
+               <svg>
+                <use xlink:href="./assets/sprite.svg#icon-lorry"></use>
+              </svg>
+            </span>
+            <span class="tabs-about__trigger-text">Аренда техники</span>
+          </button>
+          <button class="tabs__trigger tabs-about__trigger" data-tabs-trigger="services" data-tabs="about-3">
+            <span class="tabs-about__trigger-icon">
+               <svg>
+                <use xlink:href="./assets/sprite.svg#icon-lightning"></use>
+              </svg>
+            </span>
+            <span class="tabs-about__trigger-text">Обслуживание электрооборудования</span>
+          </button>
+          <button class="tabs__trigger tabs-about__trigger" data-tabs-trigger="services" data-tabs="about-4">
+            <span class="tabs-about__trigger-icon">
+               <svg>
+                <use xlink:href="./assets/sprite.svg#icon-bulb"></use>
+              </svg>
+            </span>
+            <span class="tabs-about__trigger-text">Наружное освещение</span>
+          </button>
+          <button class="tabs__trigger tabs-about__trigger" data-tabs-trigger="services" data-tabs="about-5">
+            <span class="tabs-about__trigger-icon">
+               <svg>
+                <use xlink:href="./assets/sprite.svg#icon-list"></use>
+              </svg>
+            </span>
+            <span class="tabs-about__trigger-text">Выдача документации</span>
+          </button>
+          <button class="tabs__trigger tabs-about__trigger" data-tabs-trigger="services" data-tabs="about-6">
+            <span class="tabs-about__trigger-icon">
+               <svg>
+                <use xlink:href="./assets/sprite.svg#icon-pillar"></use>
+              </svg>
+            </span>
+            <span class="tabs-about__trigger-text">Строительство линий</span>
+          </button>
+        </div>
+        <div class="tabs__list">
+          <div class="tabs__item active" data-tabs-list="services" id="about-1">
+            <div class="tabs-about__item">
+              <div class="tabs-about__card">
+                <div class="tabs-about__card-inner">
+                  <div class="tabs-about__card-title">Заголовок. Технологическое присоединение под ключ</div>
+                  <div class="tabs-about__card-text">
+                    <p>Услуга по выполнению мероприятий, включенных в технические условия договора технологического
+                      присоединения со стороны потребителя.</p>
+                    <p>Условия договора технологического присоединения со стороны потребителя</p>
+                  </div>
+                  <a href="#" class="button tabs-about__card-link">Подробнее</a>
+
+                </div>
+              </div>
+              <div class="slider" data-slider data-slider-fade data-slider-slides="1" data-slider-slides-tab="1"
+                   data-swiper-autoplay="2000">
+                <div class="swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="tabs-about__item-slide">
+                        <img src="./assets/images/about-pic.png" alt="">
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="tabs-about__item-slide">
+                        <img src="./assets/images/bg-trees.png" alt="">
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="tabs-about__item-slide">
+                        <img src="./assets/images/about-pic.png" alt="">
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="tabs-about__item-slide">
+                        <img src="./assets/images/bg-houses.png" alt="">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="slider__pagination" data-slider-pagination></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tabs__item" data-tabs-list="services" id="about-2">
+            <div class="tabs-about__item">
+              <div class="tabs-about__card">
+                <div class="tabs-about__card-inner">
+                  <div class="tabs-about__card-title">Заголовок. Аренда техники</div>
+                  <div class="tabs-about__card-text">
+                    <p>Услуга по выполнению мероприятий, включенных в технические условия договора технологического
+                      присоединения со стороны потребителя.</p>
+                    <p>Условия договора технологического присоединения со стороны потребителя</p>
+                  </div>
+                  <a href="#" class="button tabs-about__card-link">Подробнее</a>
+
+                </div>
+              </div>
+              <div class="slider" data-slider data-slider-fade data-slider-slides="1" data-slider-slides-tab="1"
+                   data-swiper-autoplay="2000">
+                <div class="swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="tabs-about__item-slide">
+                        <img src="./assets/images/about-pic.png" alt="">
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="tabs-about__item-slide">
+                        <img src="./assets/images/bg-trees.png" alt="">
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="tabs-about__item-slide">
+                        <img src="./assets/images/about-pic.png" alt="">
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="tabs-about__item-slide">
+                        <img src="./assets/images/bg-houses.png" alt="">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="slider__pagination" data-slider-pagination></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tabs__item" data-tabs-list="services" id="about-3">
+            <div class="tabs-about__item">
+              <div class="tabs-about__card">
+                <div class="tabs-about__card-inner">
+                  <div class="tabs-about__card-title">Заголовок. Обслуживание электрооборудования</div>
+                  <div class="tabs-about__card-text">
+                    <p>Услуга по выполнению мероприятий, включенных в технические условия договора технологического
+                      присоединения со стороны потребителя.</p>
+                    <p>Условия договора технологического присоединения со стороны потребителя</p>
+                  </div>
+                  <a href="#" class="button tabs-about__card-link">Подробнее</a>
+
+                </div>
+              </div>
+              <div class="slider" data-slider data-slider-fade data-slider-slides="1" data-slider-slides-tab="1"
+                   data-swiper-autoplay="2000">
+                <div class="swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="tabs-about__item-slide">
+                        <img src="./assets/images/about-pic.png" alt="">
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="tabs-about__item-slide">
+                        <img src="./assets/images/bg-trees.png" alt="">
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="tabs-about__item-slide">
+                        <img src="./assets/images/about-pic.png" alt="">
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="tabs-about__item-slide">
+                        <img src="./assets/images/bg-houses.png" alt="">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="slider__pagination" data-slider-pagination></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tabs__item" data-tabs-list="services" id="about-4">
+            <div class="tabs-about__item">
+              <div class="tabs-about__card">
+                <div class="tabs-about__card-inner">
+                  <div class="tabs-about__card-title">Заголовок. Наружное освещение</div>
+                  <div class="tabs-about__card-text">
+                    <p>Услуга по выполнению мероприятий, включенных в технические условия договора технологического
+                      присоединения со стороны потребителя.</p>
+                    <p>Условия договора технологического присоединения со стороны потребителя</p>
+                  </div>
+                  <a href="#" class="button tabs-about__card-link">Подробнее</a>
+
+                </div>
+              </div>
+              <div class="slider" data-slider data-slider-fade data-slider-slides="1" data-slider-slides-tab="1"
+                   data-swiper-autoplay="2000">
+                <div class="swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="tabs-about__item-slide">
+                        <img src="./assets/images/about-pic.png" alt="">
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="tabs-about__item-slide">
+                        <img src="./assets/images/bg-trees.png" alt="">
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="tabs-about__item-slide">
+                        <img src="./assets/images/about-pic.png" alt="">
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="tabs-about__item-slide">
+                        <img src="./assets/images/bg-houses.png" alt="">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="slider__pagination" data-slider-pagination></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tabs__item" data-tabs-list="services" id="about-5">
+            <div class="tabs-about__item">
+              <div class="tabs-about__card">
+                <div class="tabs-about__card-inner">
+                  <div class="tabs-about__card-title">Заголовок. Выдача документации</div>
+                  <div class="tabs-about__card-text">
+                    <p>Услуга по выполнению мероприятий, включенных в технические условия договора технологического
+                      присоединения со стороны потребителя.</p>
+                    <p>Условия договора технологического присоединения со стороны потребителя</p>
+                  </div>
+                  <a href="#" class="button tabs-about__card-link">Подробнее</a>
+
+                </div>
+              </div>
+              <div class="slider" data-slider data-slider-fade data-slider-slides="1" data-slider-slides-tab="1"
+                   data-swiper-autoplay="2000">
+                <div class="swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="tabs-about__item-slide">
+                        <img src="./assets/images/about-pic.png" alt="">
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="tabs-about__item-slide">
+                        <img src="./assets/images/bg-trees.png" alt="">
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="tabs-about__item-slide">
+                        <img src="./assets/images/about-pic.png" alt="">
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="tabs-about__item-slide">
+                        <img src="./assets/images/bg-houses.png" alt="">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="slider__pagination" data-slider-pagination></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tabs__item" data-tabs-list="services" id="about-6">
+            <div class="tabs-about__item">
+              <div class="tabs-about__card">
+                <div class="tabs-about__card-inner">
+                  <div class="tabs-about__card-title">Заголовок. Строительство линий</div>
+                  <div class="tabs-about__card-text">
+                    <p>Услуга по выполнению мероприятий, включенных в технические условия договора технологического
+                      присоединения со стороны потребителя.</p>
+                    <p>Условия договора технологического присоединения со стороны потребителя</p>
+                  </div>
+                  <a href="#" class="button tabs-about__card-link">Подробнее</a>
+
+                </div>
+              </div>
+              <div class="slider" data-slider data-slider-fade data-slider-slides="1" data-slider-slides-tab="1"
+                   data-swiper-autoplay="2000">
+                <div class="swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="tabs-about__item-slide">
+                        <img src="./assets/images/about-pic.png" alt="">
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="tabs-about__item-slide">
+                        <img src="./assets/images/bg-trees.png" alt="">
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="tabs-about__item-slide">
+                        <img src="./assets/images/about-pic.png" alt="">
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="tabs-about__item-slide">
+                        <img src="./assets/images/bg-houses.png" alt="">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="slider__pagination" data-slider-pagination></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section mb-100">
+    <div class="container">
+      <div class="about-intro">
+        <div class="about-intro__top">
+          <div class="about-intro__callback">
+            <picture class="about-intro__callback-pic">
+              <img src="./assets/images/tel.png" alt="">
+            </picture>
+            <div class="about-intro__tag">
+              <p class="about-intro__tag-text">Чем могу вам помочь?</p>
+              <a href="#faq" class="button about-intro__tag-button">Посмотреть ответы</a>
+            </div>
+          </div>
+          <div class="about-intro__description">
+            <p>Услуга по выполнению работ, относящихся к компетенции Заказчика при осуществлении процедуры
+              технологического присоединения.</p>
+            <p>Выполним все мероприятия, включенные в технологические условия Заказчика при осуществлении процедуры
+              технологического присоединения.</p>
+            <p>Заказчика при осуществлении процедуры технологического присоединения.</p>
+          </div>
+          <ul class="about-intro__list">
+            <li>работаем 24/7</li>
+            <li>100% точность и корректность ответов</li>
+            <li>при необходимости, подключает специалиста</li>
+            <li>процедуры технологического присоединения</li>
+          </ul>
+        </div>
+        <div class="about-intro__bottom">
+          <div class="slider" data-slider data-slider-mobile data-slider-slides-tab="1">
+            <div class="swiper slider--overflow">
+              <div class="swiper-wrapper about-cards">
+                <div class="swiper-slide">
+                  <article class="card card--light">
+                    <div class="card__inner">
+                      <div class="card__title">Общая трансформаторная мощность</div>
+                      <div class="card__text">Системная работа по увеличению генерируещей мощности позволяет группе
+                        компаний
+                        “Россети” ежедневно вопышать качество жизни всех граждан нашей страны.
+                      </div>
+                      <div class="card__text-accent">+ 834 ГВА</div>
+                    </div>
+                  </article>
+                </div>
+                <div class="swiper-slide">
+                  <article class="card card--light">
+                    <div class="card__inner">
+                      <div class="card__title">Общая протяженность линий электропередач</div>
+                      <div class="card__text">Одним из приоритетов группы компаний “Россети” является прокладка новых
+                        кабельных линий, в самые отдаленные нашей страны.
+                      </div>
+                      <div class="card__text-accent">+ 548 тыс</div>
+                    </div>
+                  </article>
+                </div>
+                <div class="swiper-slide">
+                  <article class="card card--light">
+                    <div class="card__inner">
+                      <div class="card__title">Общая количество трансформаторных подстанций</div>
+                      <div class="card__text">Увеличение количества трансформаторных подстанций группы компаний
+                        “Россети”
+                        является позволяет обеспечивать все категории граждан качественным электричеством.
+                      </div>
+                      <div class="card__text-accent">+ 2,47 млн км</div>
+                    </div>
+                  </article>
+                </div>
+                <div class="swiper-slide">
+                  <article class="card card--light">
+                    <div class="card__inner">
+                      <div class="card__title">Общее количество сотрудников</div>
+                      <div class="card__text">Группа компаний “Россети” ежегодно увеличивает количество своих
+                        сотрудников по
+                        всей стране. Явяясь стабильной и развивающейся компанией, нам доверят миллионы работников
+                        ежденевно.
+                      </div>
+                      <div class="card__text-accent">+ 230 тыс</div>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section section--gradient">
+    <div class="container">
+      <div class="columns">
+        <div class="columns__col--4 columns__col-tab--12 order-tab--1">
+          <h3 class="title title--light">Заголовок для компании “Россети”</h3>
+        </div>
+        <div class="columns__col--8 columns__col-tab--12 order-tab--3">
+          <div class="map-decor">
+            <picture class="map-decor__pic">
+              <img src="./assets/images/map.png" alt="">
+            </picture>
+          </div>
+        </div>
+        <div class="columns__col--10 columns__col-tab--12 order-tab--2">
+          <div class="cards-num-container">
+            <article class="card-num">
+              <div class="card-num__num" data-text-writing="2357"></div>
+              <div class="card-num__description">Километров построенных линий наружного освещения</div>
+            </article>
+            <article class="card-num">
+              <div class="card-num__num" data-text-writing="2635"></div>
+              <div class="card-num__description">Километров построенных линий наружного освещения</div>
+            </article>
+            <article class="card-num">
+              <div class="card-num__num" data-text-writing="1235"></div>
+              <div class="card-num__description">Километров построенных линий наружного освещения</div>
+            </article>
+            <article class="card-num">
+              <div class="card-num__num" data-text-writing="2350"></div>
+              <div class="card-num__description">Километров построенных линий наружного освещения</div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<%= htmlWebpackPlugin.options.sectionFooter %>
+<%= htmlWebpackPlugin.options.temp %>
+</body>
+</html>

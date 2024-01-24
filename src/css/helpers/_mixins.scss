@@ -1,0 +1,92 @@
+@use "sass:math";
+
+// width
+@mixin r($width) {
+  @media only screen and (max-width: $width+ "px") {
+    @content
+  }
+}
+
+@mixin rmin($width) {
+  @media only screen and (min-width: $width+ "px") {
+    @content
+  }
+}
+
+// height
+@mixin rh($height) {
+  @media only screen and (max-height: $height + "px") {
+    @content
+  }
+}
+
+@mixin rhmin($height) {
+  @media only screen and (min-height: $height + "px") {
+    @content
+  }
+}
+
+@mixin placeholder {
+  &::-webkit-input-placeholder { @content; }
+  &:-moz-placeholder           { @content; }
+  &::-moz-placeholder          { @content; }
+  &:-ms-input-placeholder      { @content; }  
+}
+
+@function rem($size) {
+  @return $size / $root-font-size * 1rem;
+}
+
+@mixin pt($size) {
+    padding-top: math.div($size, 16) * 1rem;
+}
+
+@for $i from 1 through 20 {
+    .pt-#{$i} {
+        @include pt($i);
+    }
+}
+
+@for $i from 5 through 50 {
+    $new_value: $i * 5;
+    .pt-#{$new_value} {
+        @include pt($new_value);
+    }
+}
+
+// Padding-bottom class generator
+@mixin pb($size) {
+    padding-bottom: math.div($size, 16) * 1rem;
+}
+
+@for $i from 1 through 20 {
+    .pb-#{$i} {
+        @include pb($i);
+    }
+}
+
+@for $i from 5 through 50 {
+    $new_value: $i * 5;
+    .pb-#{$new_value} {
+        @include pb($new_value);
+    }
+}
+
+// Margin-bottom class generator
+@mixin mb($size) {
+    //margin-bottom: $size + px;
+    margin-bottom: math.div($size, 16) * 1rem;
+}
+
+@for $i from 1 through 20 {
+    .mb-#{$i} {
+        @include mb($i);
+    }
+}
+
+@for $i from 5 through 50 {
+    $new_value: $i * 5;
+    .mb-#{$new_value} {
+        @include mb($new_value);
+    }
+}

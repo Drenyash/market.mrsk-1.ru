@@ -1,0 +1,30 @@
+.intro {
+  position: relative;
+  height: rem(800);
+  background: url("../assets/images/intro-bg.jpg") $color-dark no-repeat center 25%;
+  background-size: cover;
+
+  &__container {
+    display: flex;
+    align-items: flex-end;
+    height: 100%;
+    padding: rem(90) 0;
+    color: #FFFFFF;
+  }
+
+  &__title {
+    margin-bottom: rem(18);
+    color: #FFFFFF;
+  }
+
+  &__subtitle {
+    font-size: rem(18);
+    color: #DBDBDB;
+    margin-bottom: rem(40);
+  }
+
+  &__button {
+    width: rem(258);
+    height: rem(60);
+  }
+}

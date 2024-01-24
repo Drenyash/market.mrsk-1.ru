@@ -1,0 +1,113 @@
+.about-intro {
+  &__top {
+    width: 100%;
+    max-width: rem(1065);
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: minmax(24%, 255px) minmax(39%, 400px) minmax(31%, 326px);
+    grid-auto-flow: row;
+    gap: rem(40);
+    @include r($laptop-min) {
+      margin-bottom: rem(35);
+    }
+    @include r($tablet) {
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+    @include r($mobile) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__callback {
+    position: relative;
+    width: 100%;
+    max-width: rem(255);
+    @include r($tablet) {
+      order: 2;
+    }
+  }
+
+  &__callback-pic {
+    max-width: rem(215);
+
+    img {
+      object-fit: contain;
+    }
+  }
+
+  &__tag {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: rem(20) rem(20) rem(15);
+    border-radius: rem(12);
+    background: linear-gradient(326deg, #EBEEFF 11.53%, #FFF 74.32%);
+    box-shadow: 0 14px 40px 0 rgba(14, 103, 176, 0.40);
+  }
+
+  &__tag-text {
+    text-align: center;
+    font-size: rem(12);
+    font-weight: 500;
+    color: #242830;
+    margin-bottom: rem(10);
+  }
+
+  &__tag-button {
+    height: rem(46);
+    width: 100%;
+    font-size: rem(14);
+  }
+
+  &__description {
+    color: $color-dark;
+    width: rem(400);
+    @include r($tablet) {
+      width: 100%;
+      order: 1;
+      grid-column: span 2;
+    }
+    @include r($mobile) {
+      grid-column: span 1;
+    }
+
+    p + p {
+      margin-top: rem(25);
+    }
+  }
+
+  &__list {
+    list-style: none;
+    li {
+      display: flex;
+      align-items: baseline;
+      gap: rem(13);
+      color: $color-gray;
+      li + li {
+        margin-top: rem(18);
+      }
+      &:before {
+        content: '';
+        display: block;
+        width: rem(9);
+        height: rem(10);
+        background: url("../assets/images/icon-arrow-list.svg") center no-repeat;
+        background-size: contain;
+      }
+    }
+    @include r($tablet) {
+      order: 2;
+    }
+    @include r($mobile) {
+      order: 3;
+    }
+  }
+
+  &__bottom {
+    transform: translateY(-80px);
+    height: fit-content;
+    @include r($laptop-min) {
+      transform: none;
+    }
+  }
+}

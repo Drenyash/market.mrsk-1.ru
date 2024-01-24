@@ -1,0 +1,62 @@
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: rem(10);
+  color: #FFFFFF;
+  background-color: $color-accent;
+  padding: rem(12) rem(20);
+  border-radius: 8px;
+  cursor: pointer;
+
+  &--min {
+    width: rem(45);
+    height: rem(45);
+    svg {
+      fill: #FFFFFF;
+      max-width: rem(10);
+      max-height: rem(11);
+    }
+  }
+
+  &--vert {
+    padding: rem(10);
+    width: rem(45);
+    height: 100%;
+
+    svg {
+      max-width: rem(10);
+      max-height: rem(10);
+      fill: #FFFFFF;
+    }
+  }
+
+  &--invert {
+    background-color: $color-light;
+    color: $color-accent;
+
+    svg {
+      fill: $color-accent;
+    }
+  }
+
+  &--disabled {
+    pointer-events: none;
+    background-color: rgba($color-accent-gray, 40%);
+  }
+
+  &--accent {
+    gap: 8px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 140%;
+  }
+
+  &--icon {
+    svg {
+      display: flex;
+      width: 22px;
+      height: 22px;
+    }
+  }
+}

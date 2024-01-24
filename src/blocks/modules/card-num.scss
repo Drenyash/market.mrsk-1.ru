@@ -1,0 +1,25 @@
+.card-num {
+  flex: 0 1 rem(255);
+  color: #FFFFFF;
+  @include r($tablet) {
+    flex: 0 1 45%;
+  }
+
+  &__num {
+    font-size: calc(30px + 34 * ((100vw - 320px) / (1920 - 320)));
+    font-family: $font-accent;
+    font-weight: 500;
+    line-height: normal;
+  }
+
+  &__description {
+    font-size: rem(18);
+    color: $color-gray;
+    @include r($tablet) {
+      font-size: rem(16);
+    }
+    @include r($mobile) {
+      font-size: rem(14);
+    }
+  }
+}

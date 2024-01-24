@@ -1,0 +1,13 @@
+.about-cards {
+  @include rmin($mobile) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: rem(20);
+  }
+  @include rmin($laptop-min) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  @include rmin($laptop) {
+    gap: rem(40);
+  }
+}

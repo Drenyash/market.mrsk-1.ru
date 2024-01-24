@@ -1,0 +1,19 @@
+.file {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+
+  &__icon {
+    display: flex;
+    width: 30px;
+    height: 30px;
+  }
+
+  &__text {
+    color: $color-accent;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 150%;
+  }
+}

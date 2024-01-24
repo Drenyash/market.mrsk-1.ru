@@ -1,0 +1,92 @@
+.custom-select {
+  --open-menu-height: rem(170);
+  position: relative;
+  z-index: 10;
+
+  &__button {
+    display: flex;
+    align-items: center;
+    gap: rem(10);
+    cursor: pointer;
+    padding: rem(8) rem(14);
+    min-width: rem(190);
+    border-radius: rem(8);
+    color: $color-gray;
+
+    &.active {
+      color: $color-accent;
+      background-color: #242432;
+
+      svg {
+        fill: $color-accent;
+        transform: rotate(180deg);
+      }
+    }
+  }
+
+  &__icon {
+    fill: $color-gray;
+    width: 8px;
+    height: 8px;
+  }
+
+  &__list {
+    position: absolute;
+    top: auto;
+    left: 0;
+    width: 100%;
+    max-width: fit-content;
+    height: 0;
+    margin-top: rem(6);
+    border-radius: 8px;
+    background-color: #242432;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    transition: height .3s ease-in-out;
+
+    &.open {
+      height: rem(170);
+    }
+  }
+
+  &__list-wrapper {
+    padding: rem(10) rem(10) rem(15);
+    height: 100%;
+  }
+
+  &__list-inner {
+    width: fit-content;
+    height: 100%;
+    overflow-y: scroll;
+    padding-right: rem(15);
+
+    &::-webkit-scrollbar {
+      width: 4px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      width: 4px;
+      background-color: $color-accent;
+      border-radius: 10px;
+    }
+
+    &::-webkit-scrollbar-track {
+      width: 4px;
+      background-color: #454A5C;
+    }
+  }
+
+  &__list-item {
+    color: $color-gray;
+    height: rem(20);
+
+    & + & {
+      margin-top: rem(6);
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+  }
+}

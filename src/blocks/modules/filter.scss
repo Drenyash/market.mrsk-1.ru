@@ -1,0 +1,68 @@
+.filter {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 24px;
+  border-radius: 8px;
+  background: #F2F2F2;
+
+  &__title {
+    font-family: $font-accent;
+    color: $color-dark;
+    font-size: 24px;
+    font-weight: 500;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    &.active {
+      .filter__content {
+        height: auto;
+        padding: 10px 0;
+      }
+    }
+
+    &:not(:last-of-type) {
+      .filter__top {
+        border-bottom: 1px solid rgba($color-dark-gray, 20%);
+      }
+    }
+  }
+
+  &__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 0;
+    gap: 10px;
+    cursor: pointer;
+  }
+
+  &__head {
+
+  }
+
+  &__icon {
+    display: flex;
+    width: 24px;
+    height: 24px;
+    transform: rotate(-90deg);
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 0;
+    height: 0;
+    overflow: hidden;
+    transition: .2s linear;
+  }
+}

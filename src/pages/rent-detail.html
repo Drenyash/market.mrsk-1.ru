@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <%= htmlWebpackPlugin.options.head %>
+  <title><%= htmlWebpackPlugin.options.title %></title>
+</head>
+<body class="body">
+<%= htmlWebpackPlugin.options.sectionHeader %>
+<main class="main main--gray">
+  <%= htmlWebpackPlugin.options.breadcrumbs %>
+  <section class="section pb-120">
+    <div class="container">
+      <div class="product-card product-card--detail">
+        <div class="product-card__slider">
+          <div class="slider slider--thumbs" data-slider-thumbs>
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <picture class="slider--basic__slide-pic">
+                      <img src="./assets/images/slider-1.jpg" alt="">
+                    </picture>
+                </div>
+                <div class="swiper-slide">
+                    <picture class="slider--basic__slide-pic">
+                      <img src="./assets/images/slider-2.jpg" alt="">
+                    </picture>
+                </div>
+                <div class="swiper-slide">
+                    <picture class="slider--basic__slide-pic">
+                      <img src="./assets/images/slider-3.jpg" alt="">
+                    </picture>
+                </div>
+                <div class="swiper-slide">
+                    <picture class="slider--basic__slide-pic">
+                      <img src="./assets/images/slider-2.jpg" alt="">
+                    </picture>
+                </div>
+                <div class="swiper-slide">
+                    <picture class="slider--basic__slide-pic">
+                      <img src="./assets/images/slider-1.jpg" alt="">
+                    </picture>
+                </div>
+                <div class="swiper-slide">
+                    <picture class="slider--basic__slide-pic">
+                      <img src="./assets/images/slider-3.jpg" alt="">
+                    </picture>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slider slider--thumbs slider--control">
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <picture class="slider--basic__slide-pic">
+                      <img src="./assets/images/cran-1.png" alt="">
+                    </picture>
+                </div>
+                <div class="swiper-slide">
+                    <picture class="slider--basic__slide-pic">
+                      <img src="./assets/images/cran-1.png" alt="">
+                    </picture>
+                </div>
+                <div class="swiper-slide">
+                    <picture class="slider--basic__slide-pic">
+                      <img src="./assets/images/cran-1.png" alt="">
+                    </picture>
+                </div>
+                <div class="swiper-slide">
+                    <picture class="slider--basic__slide-pic">
+                      <img src="./assets/images/slider-2.jpg" alt="">
+                    </picture>
+                </div>
+                <div class="swiper-slide">
+                    <picture class="slider--basic__slide-pic">
+                      <img src="./assets/images/slider-1.jpg" alt="">
+                    </picture>
+                </div>
+                <div class="swiper-slide">
+                    <picture class="slider--basic__slide-pic">
+                      <img src="./assets/images/slider-3.jpg" alt="">
+                    </picture>
+                </div>
+              </div>
+              <div class="slider__controls">
+                <button class="slider__button slider__button--prev" data-slider-prev>
+                  <svg>
+                    <use xlink:href="./assets/sprite.svg#icon-arrow"></use>
+                  </svg>
+                </button>
+                <button class="slider__button slider__button--next" data-slider-next>
+                  <svg>
+                    <use xlink:href="./assets/sprite.svg#icon-arrow"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="product-card__content">
+          <h3 class="product-card__title">Кран автомобильный</h3>
+          <ul class="product-card__list">
+            <li class="product-card__item">
+              <span>Марка</span>
+              <span>Камаз</span>
+            </li>
+            <li class="product-card__item">
+              <span>Грузоподъемность</span>
+              <span>30 тн</span>
+            </li>
+            <li class="product-card__item">
+              <span>Вылет стрелы</span>
+              <span>25 м</span>
+            </li>
+            <li class="product-card__item">
+              <span>Марка</span>
+              <span>Камаз</span>
+            </li>
+            <li class="product-card__item">
+              <span>Грузоподъемность</span>
+              <span>30 тн</span>
+            </li>
+            <li class="product-card__item">
+              <span>Вылет стрелы</span>
+              <span>25 м</span>
+            </li>
+            <li class="product-card__item">
+              <span>Марка</span>
+              <span>Камаз</span>
+            </li>
+            <li class="product-card__item">
+              <span>Грузоподъемность</span>
+              <span>30 тн</span>
+            </li>
+            <li class="product-card__item">
+              <span>Вылет стрелы</span>
+              <span>25 м</span>
+            </li>
+            <li class="product-card__item">
+              <span>Марка</span>
+              <span>Камаз</span>
+            </li>
+            <li class="product-card__item">
+              <span>Грузоподъемность</span>
+              <span>30 тн</span>
+            </li>
+            <li class="product-card__item">
+              <span>Вылет стрелы</span>
+              <span>25 м</span>
+            </li>
+          </ul>
+        </div>
+        <div class="info">
+          <div class="info__detail">
+            <div class="info__evaluation" data-evaluation="3">
+              <span>Цена за час</span>
+              <div class="info__points">
+                <div class="info__point"></div>
+                <div class="info__point"></div>
+                <div class="info__point"></div>
+              </div>
+            </div>
+            <div class="price">
+              <p class="price__text">2 000 ₽</p>
+              <p class="price__text price__text--old">1 354 900 ₽</p>
+            </div>
+            <div class="info__price">
+              <span class="info__price-individual">1 354 900 ₽</span>
+              <span class="info__individual">Цена для физ. лиц</span>
+            </div>
+          </div>
+          <div class="info__footer">
+            <div class="counter">
+              <button class="counter__btn">-</button>
+              <input type="number" class="counter__input" value="1">
+              <button class="counter__btn">+</button>
+            </div>
+            <button class="button info__button">Арендовать</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section pb-115">
+    <div class="container">
+      <div class="tabs-product">
+        <div class="tabs-product__header">
+          <div class="tabs-product__head active">
+            <p class="tabs-product__title">Описание</p>
+          </div>
+          <div class="tabs-product__head">
+            <p class="tabs-product__title">Характеристики</p>
+          </div>
+          <div class="tabs-product__head">
+            <p class="tabs-product__title">Доставка и оплата</p>
+          </div>
+        </div>
+        <div class="tabs-product__body">
+          <div class="tabs-product__content">
+            <div class="file">
+              <svg class="file__icon">
+                <use xlink:href="./assets/sprite.svg#icon-pdf"></use>
+              </svg>
+              <p class="file__text">Скачать инструкцию</p>
+            </div>
+            <div class="editor">
+              <h4>Заголовок</h4>
+              <ul>
+                <li>Автокран Галичанин KC-55713-1В-1 на шасси КамАЗ 65115</li>
+                <li>Грузоподъемность, т - 25</li>
+                <li>Длина стрелы, м - 28,2</li>
+                <li>Грузовой момент, тм - 86</li>
+                <li>Модель дв. - КАМАЗ 667.511-300</li>
+                <li>Модель КП - 1310TO</li>
+                <li>Модель шасси - Камаз-65115</li>
+              </ul>
+              <h4>Заголовок</h4>
+              <ul>
+                <li>Автокран Галичанин KC-55713-1В-1 на шасси КамАЗ 65115</li>
+                <li>Грузоподъемность, т - 25</li>
+                <li>Длина стрелы, м - 28,2</li>
+                <li>Грузовой момент, тм - 86</li>
+                <li>Модель дв. - КАМАЗ 667.511-300</li>
+                <li>Модель КП - 1310TO</li>
+                <li>Модель шасси - Камаз-65115</li>
+              </ul>
+            </div>
+          </div>
+          <div class="tabs-product__content"></div>
+          <div class="tabs-product__content"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section mb-100">
+    <div class="slider slider--basic" data-slider data-slider-slides="1" data-slider-slides-tab="1">
+      <div class="swiper slider--overflow">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="slider--basic__slide">
+              <picture class="slider--basic__slide-pic">
+                <img src="./assets/images/slider-1.jpg" alt="">
+              </picture>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="slider--basic__slide">
+              <picture class="slider--basic__slide-pic">
+                <img src="./assets/images/slider-2.jpg" alt="">
+              </picture>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="slider--basic__slide">
+              <picture class="slider--basic__slide-pic">
+                <img src="./assets/images/slider-3.jpg" alt="">
+              </picture>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="slider--basic__slide">
+              <picture class="slider--basic__slide-pic">
+                <img src="./assets/images/slider-2.jpg" alt="">
+              </picture>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="slider--basic__slide">
+              <picture class="slider--basic__slide-pic">
+                <img src="./assets/images/slider-1.jpg" alt="">
+              </picture>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="slider--basic__slide">
+              <picture class="slider--basic__slide-pic">
+                <img src="./assets/images/slider-3.jpg" alt="">
+              </picture>
+            </div>
+          </div>
+        </div>
+        <div class="slider__controls">
+          <button class="slider__button slider__button--prev" data-slider-prev>
+            <svg>
+              <use xlink:href="./assets/sprite.svg#icon-arrow"></use>
+            </svg>
+          </button>
+          <button class="slider__button slider__button--next" data-slider-next>
+            <svg>
+              <use xlink:href="./assets/sprite.svg#icon-arrow"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<%= htmlWebpackPlugin.options.sectionFooter %>
+<%= htmlWebpackPlugin.options.temp %>
+</body>
+</html>

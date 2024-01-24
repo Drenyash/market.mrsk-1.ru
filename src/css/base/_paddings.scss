@@ -1,0 +1,499 @@
+.pt {
+    &-1 {
+        padding-top: rem(1);
+    }
+    &-2 {
+        padding-top: rem(2);
+    }
+    &-3 {
+        padding-top: rem(3);
+    }
+    &-4 {
+        padding-top: rem(4);
+    }
+    &-5 {
+        padding-top: rem(5);
+    }
+    &-6 {
+        padding-top: rem(6);
+    }
+    &-7 {
+        padding-top: rem(7);
+    }
+    &-8 {
+        padding-top: rem(8);
+    }
+    &-9 {
+        padding-top: rem(9);
+    }
+    &-10 {
+        padding-top: rem(10);
+    }
+    &-15 {
+        padding-top: rem(15);
+    }
+    &-20 {
+        padding-top: rem(20);
+    }
+    &-25 {
+        padding-top: rem(25);
+    }
+    &-30 {
+        padding-top: rem(30);
+    }
+    &-35 {
+        padding-top: rem(35);
+    }
+    &-40 {
+        padding-top: rem(40);
+    }
+    &-45 {
+        padding-top: rem(45);
+    }
+    &-50 {
+        padding-top: rem(50);
+    }
+    &-55 {
+        padding-top: rem(55);
+    }
+    &-60 {
+        padding-top: rem(60);
+    }
+    &-65 {
+        padding-top: rem(65);
+    }
+    &-70 {
+        padding-top: rem(70);
+    }
+    &-75 {
+        padding-top: rem(75);
+    }
+    &-80 {
+        padding-top: rem(80);
+    }
+    &-85 {
+        padding-top: rem(85);
+    }
+    &-90 {
+        padding-top: rem(90);
+    }
+    &-95 {
+        padding-top: rem(95);
+    }
+    &-100 {
+        padding-top: rem(100);
+    }
+    &-110 {
+        padding-top: rem(110);
+    }
+    &-120 {
+        padding-top: rem(120);
+    }
+    &-150 {
+        padding-top: rem(150);
+    }
+    &-180 {
+        padding-top: rem(180);
+    }
+    &-250 {
+        padding-top: rem(250);
+    }
+}
+
+.pb {
+    &-1 {
+        padding-bottom: rem(1);
+    }
+    &-2 {
+        padding-bottom: rem(2);
+    }
+    &-3 {
+        padding-bottom: rem(3);
+    }
+    &-4 {
+        padding-bottom: rem(4);
+    }
+    &-5 {
+        padding-bottom: rem(5);
+    }
+    &-6 {
+        padding-bottom: rem(6);
+    }
+    &-7 {
+        padding-bottom: rem(7);
+    }
+    &-8 {
+        padding-bottom: rem(8);
+    }
+    &-9 {
+        padding-bottom: rem(9);
+    }
+    &-10 {
+        padding-bottom: rem(10);
+    }
+    &-15 {
+        padding-bottom: rem(15);
+    }
+    &-20 {
+        padding-bottom: rem(20);
+    }
+    &-25 {
+        padding-bottom: rem(25);
+    }
+    &-30 {
+        padding-bottom: rem(30);
+    }
+    &-35 {
+        padding-bottom: rem(35);
+    }
+    &-40 {
+        padding-bottom: rem(40);
+    }
+    &-45 {
+        padding-bottom: rem(45);
+    }
+    &-50 {
+        padding-bottom: rem(50);
+    }
+    &-55 {
+        padding-bottom: rem(55);
+    }
+    &-60 {
+        padding-bottom: rem(60);
+    }
+    &-65 {
+        padding-bottom: rem(65);
+    }
+    &-70 {
+        padding-bottom: rem(70);
+    }
+    &-75 {
+        padding-bottom: rem(75);
+    }
+    &-80 {
+        padding-bottom: rem(80);
+    }
+    &-85 {
+        padding-bottom: rem(85);
+    }
+    &-90 {
+        padding-bottom: rem(90);
+    }
+    &-95 {
+        padding-bottom: rem(95);
+    }
+    &-100 {
+        padding-bottom: rem(100);
+    }
+    &-120 {
+        padding-bottom: rem(120);
+    }
+    &-130 {
+        padding-bottom: rem(130);
+    }
+    &-140 {
+        padding-bottom: rem(140);
+    }
+    &-180 {
+        padding-bottom: rem(180);
+    }
+    &-300 {
+        padding-bottom: rem(300);
+    }
+}
+
+.ptm {
+    &-0 {
+        @include r(1200) {
+            padding-top: rem(0);
+        }
+    }
+    &-1 {
+        @include r(1200) {
+            padding-top: rem(1);
+        }
+    }
+    &-2 {
+        @include r(1200) {
+            padding-top: rem(2);
+        }
+    }
+    &-3 {
+        @include r(1200) {
+            padding-top: rem(3);
+        }
+    }
+    &-4 {
+        @include r(1200) {
+            padding-top: rem(4);
+        }
+    }
+    &-5 {
+        @include r(1200) {
+            padding-top: rem(5);
+        }
+    }
+    &-6 {
+        @include r(1200) {
+            padding-top: rem(6);
+        }
+    }
+    &-7 {
+        @include r(1200) {
+            padding-top: rem(7);
+        }
+    }
+    &-8 {
+        @include r(1200) {
+            padding-top: rem(8);
+        }
+    }
+    &-9 {
+        @include r(1200) {
+            padding-top: rem(9);
+        }
+    }
+    &-10 {
+        @include r(1200) {
+            padding-top: rem(10);
+        }
+    }
+    &-15 {
+        @include r(1200) {
+            padding-top: rem(15);
+        }
+    }
+    &-20 {
+        @include r(1200) {
+            padding-top: rem(20);
+        }
+    }
+    &-25 {
+        @include r(1200) {
+            padding-top: rem(25);
+        }
+    }
+    &-30 {
+        @include r(1200) {
+            padding-top: rem(30);
+        }
+    }
+    &-35 {
+        @include r(1200) {
+            padding-top: rem(35);
+        }
+    }
+    &-40 {
+        @include r(1200) {
+            padding-top: rem(40);
+        }
+    }
+    &-45 {
+        @include r(1200) {
+            padding-top: rem(45);
+        }
+    }
+    &-50 {
+        @include r(1200) {
+            padding-top: rem(50);
+        }
+    }
+    &-55 {
+        @include r(1200) {
+            padding-top: rem(55);
+        }
+    }
+    &-60 {
+        @include r(1200) {
+            padding-top: rem(60);
+        }
+    }
+    &-65 {
+        @include r(1200) {
+            padding-top: rem(65);
+        }
+    }
+    &-70 {
+        @include r(1200) {
+            padding-top: rem(70);
+        }
+    }
+    &-75 {
+        @include r(1200) {
+            padding-top: rem(75);
+        }
+    }
+    &-80 {
+        @include r(1200) {
+            padding-top: rem(80);
+        }
+    }
+    &-85 {
+        @include r(1200) {
+            padding-top: rem(85);
+        }
+    }
+    &-90 {
+        @include r(1200) {
+            padding-top: rem(90);
+        }
+    }
+    &-95 {
+        @include r(1200) {
+            padding-top: rem(95);
+        }
+    }
+    &-100 {
+        @include r(1200) {
+            padding-top: rem(100);
+        }
+    }
+}
+
+.pbm {
+    &-0 {
+        @include r(1200) {
+            padding-bottom: rem(0);
+        }
+    }
+    &-1 {
+        @include r(1200) {
+            padding-bottom: rem(1);
+        }
+    }
+    &-2 {
+        @include r(1200) {
+            padding-bottom: rem(2);
+        }
+    }
+    &-3 {
+        @include r(1200) {
+            padding-bottom: rem(3);
+        }
+    }
+    &-4 {
+        @include r(1200) {
+            padding-bottom: rem(4);
+        }
+    }
+    &-5 {
+        @include r(1200) {
+            padding-bottom: rem(5);
+        }
+    }
+    &-6 {
+        @include r(1200) {
+            padding-bottom: rem(6);
+        }
+    }
+    &-7 {
+        @include r(1200) {
+            padding-bottom: rem(7);
+        }
+    }
+    &-8 {
+        @include r(1200) {
+            padding-bottom: rem(8);
+        }
+    }
+    &-9 {
+        @include r(1200) {
+            padding-bottom: rem(9);
+        }
+    }
+    &-10 {
+        @include r(1200) {
+            padding-bottom: rem(10);
+        }
+    }
+    &-15 {
+        @include r(1200) {
+            padding-bottom: rem(15);
+        }
+    }
+    &-20 {
+        @include r(1200) {
+            padding-bottom: rem(20);
+        }
+    }
+    &-25 {
+        @include r(1200) {
+            padding-bottom: rem(25);
+        }
+    }
+    &-30 {
+        @include r(1200) {
+            padding-bottom: rem(30);
+        }
+    }
+    &-35 {
+        @include r(1200) {
+            padding-bottom: rem(35);
+        }
+    }
+    &-40 {
+        @include r(1200) {
+            padding-bottom: rem(40);
+        }
+    }
+    &-45 {
+        @include r(1200) {
+            padding-bottom: rem(45);
+        }
+    }
+    &-50 {
+        @include r(1200) {
+            padding-bottom: rem(50);
+        }
+    }
+    &-55 {
+        @include r(1200) {
+            padding-bottom: rem(55);
+        }
+    }
+    &-60 {
+        @include r(1200) {
+            padding-bottom: rem(60);
+        }
+    }
+    &-65 {
+        @include r(1200) {
+            padding-bottom: rem(65);
+        }
+    }
+    &-70 {
+        @include r(1200) {
+            padding-bottom: rem(70);
+        }
+    }
+    &-75 {
+        @include r(1200) {
+            padding-bottom: rem(75);
+        }
+    }
+    &-80 {
+        @include r(1200) {
+            padding-bottom: rem(80);
+        }
+    }
+    &-85 {
+        @include r(1200) {
+            padding-bottom: rem(85);
+        }
+    }
+    &-90 {
+        @include r(1200) {
+            padding-bottom: rem(90);
+        }
+    }
+    &-95 {
+        @include r(1200) {
+            padding-bottom: rem(95);
+        }
+    }
+    &-100 {
+        @include r(1200) {
+            padding-bottom: rem(100);
+        }
+    }
+}

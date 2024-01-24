@@ -1,0 +1,24 @@
+.checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border: 2px solid #DEDEDE;
+  border-radius: 7px;
+
+  &::before {
+    content: '';
+    width: 14px;
+    height: 14px;
+    background-color: #DEDEDE;
+    border-radius: 4px;
+    transition: .2s linear;
+  }
+
+  &:checked {
+    &::before {
+      background-color: $color-dark-blue;
+    }
+  }
+}

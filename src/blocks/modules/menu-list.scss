@@ -1,0 +1,50 @@
+.menu-list {
+  display: flex;
+  flex-direction: column;
+  padding: rem(20);
+  width: 100%;
+  max-width: rem(336);
+  min-height: rem(230);
+  background-color: #ffffff;
+  border-radius: 4px;
+  box-shadow: 0 4px 80px 0 rgba(193, 193, 193, 0.45);
+  z-index: 2;
+  &__list {
+    list-style: disc inside;
+    color: $color-dark-gray;
+    padding-left: rem(10);
+    li {
+      width: 100%;
+      max-width: rem(319);
+      @include r($laptop) {
+        max-width: none;
+      }
+    }
+    li::marker {
+      color: inherit;
+      font-size: rem(13);
+    }
+  }
+  &__pic-decor {
+    position: relative;
+    width: rem(257);
+    max-height: rem(230);
+    transform: translateX(-132px);
+    flex-shrink: 0;
+    z-index: 10;
+  }
+  &__list--two-columns {
+    column-count: 2;
+    @include r($laptop) {
+      column-count: 1;
+    }
+  }
+  &--back {
+    transform: translate(-25px, 25px);
+    z-index: 1;
+  }
+  &--wide {
+    padding: rem(30) rem(144) rem(30) rem(30);
+    max-width: rem(780);
+  }
+}

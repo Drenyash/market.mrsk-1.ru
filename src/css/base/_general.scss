@@ -1,0 +1,250 @@
+html {
+  scroll-behavior: smooth;
+}
+
+a,
+svg,
+button {
+  transition: 0.3s all;
+}
+
+input,
+textarea,
+button {
+  font-family: inherit;
+}
+
+svg, img {
+  flex-shrink: 0;
+}
+
+picture {
+  display: block;
+
+  img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.z-index {
+  &-1 {
+    z-index: 1;
+  }
+
+  &-2 {
+    z-index: 2;
+  }
+
+  &-3 {
+    z-index: 3;
+  }
+}
+
+.only-mobile {
+  position: absolute;
+  pointer-events: none;
+  visibility: hidden;
+  display: none;
+  @include r($mobile) {
+    position: relative;
+    pointer-events: auto;
+    visibility: visible;
+    display: flex;
+  }
+}
+
+.mob-hidden {
+  @include r($mobile) {
+    position: absolute;
+    visibility: hidden;
+    display: none;
+  }
+}
+
+.tab-hidden {
+  @include r($tablet) {
+    position: absolute;
+    pointer-events: none;
+    visibility: hidden;
+    display: none;
+  }
+}
+
+.tab-visible {
+  display: none;
+  visibility: hidden;
+  @include r($tablet) {
+    display: flex;
+    visibility: visible;
+  }
+}
+
+.laptop-hidden {
+  @include r($laptop) {
+    position: absolute;
+    pointer-events: none;
+    display: none;
+    visibility: hidden;
+  }
+}
+
+.laptop-min-hidden {
+  @include r($laptop-min) {
+    position: absolute;
+    pointer-events: none;
+    display: none;
+    visibility: hidden;
+  }
+}
+
+.laptop-visible {
+  position: absolute;
+  pointer-events: none;
+  display: none;
+  visibility: hidden;
+  @include r($laptop) {
+    position: relative;
+    pointer-events: auto;
+    display: flex;
+    visibility: visible;
+  }
+}
+
+.desktop-hidden {
+  @include rmin(1441) {
+    position: absolute;
+    pointer-events: none;
+    display: none;
+    visibility: hidden;
+  }
+}
+
+
+.order-laptop {
+  &--1 {
+    @include r($laptop) {
+      order: 1;
+    }
+  }
+
+  &--2 {
+    @include r($laptop) {
+      order: 2;
+    }
+  }
+
+  &--3 {
+    @include r($laptop) {
+      order: 3;
+    }
+  }
+}
+
+.order-laptop-min {
+  &--1 {
+    @include r($laptop-min) {
+      order: 1;
+    }
+  }
+
+  &--2 {
+    @include r($laptop-min) {
+      order: 2;
+    }
+  }
+
+  &--3 {
+    @include r($laptop-min) {
+      order: 3;
+    }
+  }
+}
+
+.order-tab {
+  &--1 {
+    @include r($tablet) {
+      order: 1;
+    }
+  }
+
+  &--2 {
+    @include r($tablet) {
+      order: 2;
+    }
+  }
+
+  &--3 {
+    @include r($tablet) {
+      order: 3;
+    }
+  }
+
+  &--4 {
+    @include r($tablet) {
+      order: 4;
+    }
+  }
+}
+
+.order-mob {
+  &-minus-1 {
+    @include r($mobile) {
+      order: -1;
+    }
+  }
+
+  &--1 {
+    @include r($mobile) {
+      order: 1;
+    }
+  }
+
+  &--2 {
+    @include r($mobile) {
+      order: 2;
+    }
+  }
+
+  &--3 {
+    @include r($mobile) {
+      order: 3;
+    }
+  }
+
+  &--4 {
+    @include r($mobile) {
+      order: 4;
+    }
+  }
+
+  &--5 {
+    @include r($mobile) {
+      order: 5;
+    }
+  }
+}
+
+
+.center {
+  text-align: center;
+}
+
+.centered {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+*[disabled] {
+  opacity: .7;
+  pointer-events: none;
+}

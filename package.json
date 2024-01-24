@@ -1,0 +1,59 @@
+{
+  "name": "dranik",
+  "version": "0.2.0",
+  "description": "Web development starter template",
+  "main": "index.js",
+  "scripts": {
+    "serve": "webpack serve",
+    "build": "webpack",
+    "server": "json-server -p3001 --watch data.json",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "npx eslint src/**/*.js"
+  },
+  "keywords": [
+    "webpack",
+    "scss"
+  ],
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "10.4.13",
+    "clean-webpack-plugin": "4.0.0",
+    "copy-webpack-plugin": "11.0.0",
+    "css-loader": "6.7.1",
+    "eslint": "8.26.0",
+    "eslint-config-airbnb-base": "15.0.0",
+    "eslint-config-prettier": "8.5.0",
+    "eslint-plugin-prettier": "4.2.1",
+    "json-server": "0.17.0",
+    "mini-css-extract-plugin": "2.6.1",
+    "postcss-loader": "7.0.1",
+    "prettier": "2.7.1",
+    "sass": "1.55.0",
+    "sass-loader": "13.1.0",
+    "svg-sprite-loader": "6.0.11",
+    "svg-transform-loader": "2.0.13",
+    "svgo-loader": "3.0.1",
+    "webpack": "5.74.0",
+    "webpack-cli": "4.10.0",
+    "webpack-dev-server": "4.11.1"
+  },
+  "dependencies": {
+    "@fancyapps/ui": "^5.0.22",
+    "air-datepicker": "^3.4.0",
+    "axios": "0.27.2",
+    "html-loader": "^4.2.0",
+    "html-webpack-plugin": "5.5.0",
+    "intl-tel-input": "^18.2.1",
+    "modern-css-reset": "1.4.0",
+    "swiper": "8.4.4",
+    "the-new-css-reset": "1.7.3"
+  },
+  "browserslist": [
+    "defaults",
+    "not ie < 11",
+    "last 2 versions",
+    "> 1%",
+    "iOS 7",
+    "last 3 iOS versions"
+  ]
+}

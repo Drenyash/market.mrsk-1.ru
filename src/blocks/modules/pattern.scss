@@ -1,0 +1,10 @@
+.pattern {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  max-width: 900px;
+  opacity: .25;
+  mix-blend-mode: multiply;
+  pointer-events: none;
+  z-index: 0;
+}

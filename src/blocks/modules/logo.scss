@@ -1,0 +1,29 @@
+.logo {
+  display: block;
+  width: 100%;
+  max-width: rem(147);
+  height: rem(45);
+
+  &:hover {
+    opacity: .7;
+  }
+
+  &__picture {
+    width: 100%;
+    height: 100%;
+
+    img {
+      object-fit: contain;
+    }
+  }
+
+  &--min {
+    max-width: rem(105);
+    opacity: .5;
+    transition: all .3s ease-in-out;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+}

@@ -1,0 +1,30 @@
+.counter {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  &__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 28px;
+    height: 28px;
+    border-radius: 50px;
+    border: 1px solid $color-gray;
+    color: $color-gray;
+    cursor: pointer;
+  }
+
+  &__input {
+    width: 100%;
+    text-align: center;
+    color: $color-gray;
+    appearance: none;
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+  }
+}

@@ -1,0 +1,467 @@
+<footer class="footer">
+  <div class="container">
+    <div class="footer__top">
+      <div class="columns">
+        <div class="columns__col--2 columns__col-laptop--3 columns__col-tab--12">
+          <div class="footer__block">
+            <div class="footer__block-column">
+              <a class="logo" href="/">
+                <picture class="logo__picture">
+                  <img src="./assets/images/logo-market.svg" alt="">
+                </picture>
+              </a>
+              <div class="footer__info">
+                <p class="footer__copyright">&copy; 2023 ПАО «Россети». <br>
+                  Все права защищены.</p>
+                <a href="#" target="_blank" class="footer__confidential tab-visible">Политика конфиденциальности</a>
+              </div>
+            </div>
+            <div class="footer__block-row">
+              <a class="logo logo--min" href="https://mrsk-1.ru" target="_blank">
+                <picture class="logo__picture">
+                  <img src="./assets/images/logo-center.svg" alt="">
+                </picture>
+              </a>
+              <a class="logo logo--min" href="https://mrsk-cp.ru/" target="_blank">
+                <picture class="logo__picture">
+                  <img src="./assets/images/logo-center-plus.svg" alt="">
+                </picture>
+              </a>
+            </div>
+          </div>
+
+        </div>
+        <div class="columns__col--3 columns__col-mob--12">
+          <div class="footer__menu">
+            <a href="#" target="_blank" class="footer__menu-head">Услуги</a>
+            <ul class="footer__menu-list">
+              <li class="footer__menu-item">
+                <a href="#" class="footer__menu-link">Техническое обслуживание</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="#" class="footer__menu-link">Наружное освещение</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="#" class="footer__menu-link">Выдача документов</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="#" class="footer__menu-link">Аренда техники</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="#" class="footer__menu-link">Обслуживание</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="#" class="footer__menu-link">Строительство электросетевых объектов</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="columns__col--2 columns__col-laptop--3 columns__col-tab--4 columns__col-mob--12">
+          <div class="footer__menu">
+            <a href="#" target="_blank" class="footer__menu-head">Контакты</a>
+            <ul class="footer__menu-list">
+              <li class="footer__menu-item">
+                <a href="tel:+78002200220" class="footer__menu-link">+7 (800) 220-02-20</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="mailto:posta@mrsk-1.ru" class="footer__menu-link">
+                  <p>posta@mrsk-1.ru</p>
+                  <p class="footer__menu-link--accent">Написать</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="columns__col--2 columns__col-laptop--3 columns__col-tab--4 columns__col-mob--12">
+          <div class="footer__menu">
+            <a href="#" target="_blank" class="footer__menu-head">О компании</a>
+            <ul class="footer__menu-list">
+              <li class="footer__menu-item">
+                <a href="#" class="footer__menu-link">FAQ</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="columns__col--1 laptop-hidden"></div>
+        <div class="columns__col--2 columns__col-laptop--12">
+          <div class="footer__contacts">
+            <a class="footer__subscribe" href="#">
+              <span>Подписаться на рассылку</span>
+              <span class="footer__subscribe-icon">
+              <svg>
+                <use xlink:href="./assets/sprite.svg#icon-tg"></use>
+              </svg>
+            </span>
+            </a>
+            <div class="footer__socials">
+              <a class="footer__socials-item" href="#">
+              <span class="footer__socials-icon">
+                <svg>
+                <use xlink:href="./assets/sprite.svg#icon-vk"></use>
+              </svg>
+              </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <a href="#" target="_blank" class="footer__confidential tab-hidden">Политика конфиденциальности</a>
+      <a href="#" target="_blank" class="footer__develop">
+        <p>Разработано</p>
+        <picture class="footer__develop-pic">
+          <img src="./assets/images/logo-dnt.svg" alt="">
+        </picture>
+      </a>
+    </div>
+  </div>
+</footer>
+<div class="modals" hidden>
+  <!--  START-->
+  <!--  тут не нужен путь в action, тег form только для семантики-->
+  <div class="modal" id="modalTechConnectionStart">
+    <button class="modal__close-btn modal__serv-btn" data-fancybox-close>
+      <svg>
+        <use xlink:href="./assets/sprite.svg#icon-close"></use>
+      </svg>
+    </button>
+    <div class="modal__head">
+      <p class="modal__title">Оформление заявки</p>
+      <div class="hint modal__subtitle">
+        <p class="hint__text"
+           data-title="* Предоставление услуги возможно только при уже поданной заявке на технологическое присоединение">
+          У меня уже есть договор технологического присоединения</p>
+        <span class="hint__icon">
+          <svg>
+            <use xlink:href="./assets/sprite.svg#icon-hint"></use>
+          </svg>
+        </span>
+      </div>
+    </div>
+    <div class="modal__top">
+      <div class="modal__button-wrap">
+        <a class="modal__button"
+           href="https://xn----7sb7akeedqd.xn--p1ai/platform/portal/tehprisEE_portal"
+           target="_blank"
+        >Подать заявку на технологическое присоединение</a>
+        <button class="modal__button"
+                data-modal-next="modalTechConnectionParams"
+        >Я уже подал заявку на технологическое присоединение
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!--  PARAMS-->
+  <!--  тут не нужен путь в action, тег form только для семантики-->
+  <div class="modal" id="modalTechConnectionParams">
+    <button class="modal__close-btn modal__serv-btn" data-fancybox-close>
+      <svg>
+        <use xlink:href="./assets/sprite.svg#icon-close"></use>
+      </svg>
+    </button>
+    <div class="modal__head">
+      <p class="modal__title">Заявка на технологическое присоединение</p>
+      <div class="hint modal__subtitle">
+        <p class="hint__text"
+           data-title="* Предоставление услуги возможно только при уже поданной заявке на технологическое присоединение">
+          У меня уже есть договор технологического присоединения</p>
+        <span class="hint__icon">
+          <svg>
+            <use xlink:href="./assets/sprite.svg#icon-hint"></use>
+          </svg>
+        </span>
+      </div>
+    </div>
+    <form class="form" action="#">
+      <div class="modal__top">
+        <div class="form__block">
+          <span class="from__text-label">Мощность:</span>
+          <div class="form__block-radio">
+            <label class="form__radio-label">
+              <input type="radio" name="wattage" value="down15" checked>
+              <span>до 15 кВт</span>
+            </label>
+            <label class="form__radio-label">
+              <input type="radio" name="wattage" value="up15">
+              <span>свыше 15 кВт</span>
+            </label>
+          </div>
+        </div>
+        <div class="form__block">
+          <span class="from__text-label">Статус:</span>
+          <div class="form__block-radio">
+            <label class="form__radio-label">
+              <input type="radio" name="status" value="jur" data-value="#modalTechConnectionJUR" checked>
+              <span>Юридическое лицо</span>
+            </label>
+            <label class="form__radio-label">
+              <input type="radio" name="status" value="fiz" data-value="#modalTechConnectionFIZ">
+              <span>Физическое лицо</span>
+            </label>
+          </div>
+        </div>
+        <div class="form__block">
+          <span class="from__text-label">Напряжение:</span>
+          <div class="form__block-radio">
+            <label class="form__radio-label">
+              <input type="radio" name="voltage" value="220" checked>
+              <span>220 В</span>
+            </label>
+            <label class="form__radio-label">
+              <input type="radio" name="voltage" value="360">
+              <span>360 В</span>
+            </label>
+          </div>
+        </div>
+        <div class="form__block">
+          <span class="from__text-label">Материалы:</span>
+          <div class="form__block-radio">
+            <label class="form__radio-label">
+              <input type="radio" name="materials" value="company" checked>
+              <span>Материалы компании</span>
+            </label>
+            <label class="form__radio-label">
+              <input type="radio" name="materials" value="client">
+              <span>Материалы заказчика</span>
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="modal__bottom">
+        <button class="button form__button"
+                data-modal-order>
+          <span>Продолжить</span>
+          <svg>
+            <use xlink:href="./assets/sprite.svg#icon-arrow-empty"></use>
+          </svg>
+        </button>
+        <div class="modal__bottom-info">
+          <span>Стоимость присоединения:</span>
+          <span class="form__price">100 000 руб.</span>
+        </div>
+      </div>
+    </form>
+  </div>
+
+  <!--  FIZ-->
+  <!--  добавить путь в action-->
+  <div class="modal" id="modalTechConnectionFIZ">
+    <button class="modal__back-btn modal__serv-btn" data-modal-back>
+      <svg>
+        <use xlink:href="./assets/sprite.svg#icon-arrow"></use>
+      </svg>
+    </button>
+    <button class="modal__close-btn modal__serv-btn" data-fancybox-close>
+      <svg>
+        <use xlink:href="./assets/sprite.svg#icon-close"></use>
+      </svg>
+    </button>
+    <div class="modal__head">
+      <p class="modal__title">Введите свои данные</p>
+    </div>
+    <form action="#" data-form class="form">
+      <div class="modal__top">
+        <div class="form__block">
+          <span class="from__text-label">Личные данные</span>
+          <div class="form__block-inner">
+            <label class="form__input-label">
+              <input type="text"
+                     name="FIO"
+                     placeholder="ФИО"
+                     required>
+              <span class="form__input-error-msg" hidden></span>
+            </label>
+            <label class="form__input-label">
+              <input type="tel"
+                     name="phone"
+                     placeholder="Телефон"
+                     data-tel
+                     required>
+              <span class="form__input-error-msg" hidden></span>
+            </label>
+          </div>
+        </div>
+        <div class="form__block">
+          <span class="from__text-label">Договор технологического присоединения</span>
+          <div class="form__block-inner">
+            <label class="form__input-label">
+              <input type="text"
+                     name="contractNumber"
+                     placeholder="Номер договора"
+                     required>
+              <span class="form__input-error-msg" hidden></span>
+            </label>
+          </div>
+        </div>
+        <div class="form__agreement">
+          <label class="form__agreement-label">
+            <input type="checkbox"
+                   name="agreement"
+                   data-form-agreement
+                   checked>
+            <span class="form__agreement-checkbox"></span>
+          </label>
+          <span class="form__agreement-text">Согласие на обработку
+          <a href="#" target="_blank">персональных данных</a>
+          </span>
+        </div>
+      </div>
+      <div class="modal__bottom">
+        <button class="button form__button"
+                data-form-submit>
+          <span>Отправить заявку</span>
+        </button>
+        <div class="modal__bottom-info">
+          <span>Стоимость присоединения:</span>
+          <span class="form__price">100 000 руб.</span>
+        </div>
+      </div>
+    </form>
+  </div>
+
+  <!--  JUR-->
+  <!--  добавить путь в action-->
+  <div class="modal" id="modalTechConnectionJUR">
+    <button class="modal__back-btn modal__serv-btn" data-modal-back>
+      <svg>
+        <use xlink:href="./assets/sprite.svg#icon-arrow"></use>
+      </svg>
+    </button>
+    <button class="modal__close-btn modal__serv-btn" data-fancybox-close>
+      <svg>
+        <use xlink:href="./assets/sprite.svg#icon-close"></use>
+      </svg>
+    </button>
+    <div class="modal__head">
+      <p class="modal__title">Введите данные юридического лица</p>
+    </div>
+    <form action="#" data-form class="form">
+      <div class="modal__top">
+        <div class="form__block">
+          <span class="from__text-label">Данные</span>
+          <div class="form__block-inner">
+            <label class="form__input-label">
+              <input type="text"
+                     name="INN"
+                     placeholder="ИНН"
+                     required>
+              <span class="form__input-error-msg" hidden></span>
+            </label>
+            <label class="form__input-label">
+              <input type="text"
+                     name="KPP"
+                     placeholder="КПП"
+                     required>
+              <span class="form__input-error-msg" hidden></span>
+            </label>
+            <label class="form__input-label">
+              <input type="text"
+                     name="OGRN"
+                     placeholder="ОГРН"
+                     required>
+              <span class="form__input-error-msg" hidden></span>
+            </label>
+            <label class="form__input-label">
+              <input type="text"
+                     name="companyName"
+                     placeholder="Наименование компании"
+                     required>
+              <span class="form__input-error-msg" hidden></span>
+            </label>
+            <label class="form__input-label">
+              <input type="text"
+                     name="jurAddrress"
+                     placeholder="Юридический адрес"
+                     required>
+              <span class="form__input-error-msg" hidden></span>
+            </label>
+            <label class="form__input-label">
+              <input type="text"
+                     name="fizAddress"
+                     placeholder="Физический адрес"
+                     required>
+              <span class="form__input-error-msg" hidden></span>
+            </label>
+            <label class="form__input-label">
+              <input type="text"
+                     name="FIO"
+                     placeholder="ФИО"
+                     required>
+              <span class="form__input-error-msg" hidden></span>
+            </label>
+            <label class="form__input-label">
+              <input type="tel"
+                     name="phone"
+                     placeholder="Телефон"
+                     data-tel
+                     required>
+              <span class="form__input-error-msg" hidden></span>
+            </label>
+            <label class="form__input-label">
+              <input type="email"
+                     name="email"
+                     placeholder="E-mail"
+                     required>
+              <span class="form__input-error-msg" hidden></span>
+            </label>
+          </div>
+        </div>
+        <div class="form__block">
+          <span class="from__text-label">Договор технологического присоединения</span>
+          <div class="form__block-inner">
+            <label class="form__input-label">
+              <input type="text"
+                     name="contractNumber"
+                     placeholder="Номер договора"
+                     required>
+              <span class="form__input-error-msg" hidden></span>
+            </label>
+          </div>
+        </div>
+        <div class="form__agreement">
+          <label class="form__agreement-label">
+            <input type="checkbox"
+                   name="agreement"
+                   data-form-agreement
+                   checked>
+            <span class="form__agreement-checkbox"></span>
+          </label>
+          <span class="form__agreement-text">Согласие на обработку
+          <a href="#" target="_blank">персональных данных</a>
+          </span>
+        </div>
+      </div>
+      <div class="modal__bottom">
+        <button class="button form__button"
+                data-form-submit>
+          <span>Отправить заявку</span>
+        </button>
+        <div class="modal__bottom-info">
+          <span>Стоимость присоединения:</span>
+          <span class="form__price">100 000 руб.</span>
+        </div>
+      </div>
+    </form>
+  </div>
+
+  <!--  SUCCESS-->
+  <div class="modal modal--bg-img" data-form-success id="modalTechConnectionSuccess">
+    <div class="modal__container--centered">
+      <span class="modal__success-icon">
+        <svg>
+          <use xlink:href="./assets/sprite.svg#icon-success"></use>
+        </svg>
+      </span>
+      <div class="modal__head">
+        <p class="modal__title">Ваша заявка успешно отправлена!</p>
+        <p class="modal__subtitle">Наш менеджер свяжется с вами для <br class="tab-hidden"> уточнения деталей, ожидайте
+        </p>
+      </div>
+      <div class="modal__bottom modal__bottom--centered">
+        <a class="button form__button" href="/">На главную</a>
+      </div>
+    </div>
+  </div>
+</div>

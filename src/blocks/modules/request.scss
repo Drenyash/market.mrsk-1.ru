@@ -1,0 +1,21 @@
+.request {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 200px;
+  padding: 58px 50px 48px;
+  border-radius: 20px;
+  background: #F1F2F2;
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    display: flex;
+    width: 1px;
+    height: 85%;
+    background-color: #E4E4E5;
+    transform: translate(-50%, -50%);
+  }
+}

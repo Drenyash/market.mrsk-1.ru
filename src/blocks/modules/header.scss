@@ -1,0 +1,130 @@
+.header {
+  position: relative;
+  background-color: $color-dark;
+  color: #FFFFFF;
+  font-family: $font-accent;
+
+  &__row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__top {
+    padding: rem(24) 0;
+  }
+
+  &__top-block {
+    gap: rem(18);
+  }
+
+  &__top-left {
+    gap: rem(30);
+  }
+
+  &__divider {
+    display: block;
+    width: 2px;
+    height: rem(30);
+    background-color: #454A5C;
+    margin: 0 rem(20);
+  }
+
+  &__login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: rem(14);
+    padding: rem(8) rem(14);
+    color: $color-accent;
+    font-size: rem(18);
+  }
+
+  &__login-icon {
+    svg {
+      max-width: rem(17);
+      max-height: rem(17);
+      fill: $color-accent;
+    }
+  }
+
+  &__bottom {
+    padding: rem(14) 0;
+  }
+
+  &__bottom-left {
+    gap: rem(31);
+  }
+
+  &__menu-button {
+    position: relative;
+    &.active {
+      &:before {
+        content: '';
+        position: absolute;
+        top: calc(100% + 13px);
+        left: 50%;
+        display: block;
+        width: rem(14);
+        height: rem(14);
+        background-color: #FFFFFF;
+        transform: rotate(45deg) translateX(-50%);
+      }
+    }
+    svg {
+      width: rem(16);
+      height: rem(16);
+    }
+  }
+
+  &__menu-container {
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: -100%;
+    opacity: 0;
+    z-index: 10;
+    width: 100vw;
+    transition: left .4s ease-in-out, opacity .2s ease-in-out;
+
+    &.active {
+      opacity: 1;
+      left: 0;
+    }
+  }
+
+  &__search {
+    display: flex;
+    align-items: center;
+    height: rem(40);
+  }
+
+  &__search-button {
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding-right: rem(30);
+    height: 100%;
+
+    &:after {
+      content: '';
+      position: absolute;
+      display: block;
+      top: 50%;
+      right: 0;
+      transform: translateY(-50%);
+      width: 2px;
+      height: 100%;
+      background-color: #454A5C;
+    }
+
+    svg {
+      max-width: rem(22);
+      height: rem(20);
+    }
+  }
+
+  &__search-form {
+    margin-left: rem(15);
+  }
+}

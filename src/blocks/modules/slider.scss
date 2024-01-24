@@ -1,0 +1,137 @@
+.slider {
+  position: relative;
+  height: fit-content;
+
+  &__pagination {
+  }
+
+  &--history {
+    .swiper-slide {
+    }
+  }
+
+  &--thumbs {
+    max-width: 550px;
+
+    .swiper-slide {
+      height: auto;
+    }
+  }
+
+  &--hidden {
+    .swiper-slide {
+      opacity: 0;
+      visibility: hidden;
+      transition: .2s linear;
+    }
+    .slider__slide--visible,
+    .swiper-slide-next {
+      opacity: 1;
+      visibility: visible;
+    }
+    .swiper-slide-prev {
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+
+  &--control {
+    margin: 0 auto;
+    max-width: 310px;
+    height: 70px;
+    .swiper {
+      position: static;
+      height: 100%;
+      &-wrapper {
+        position: static;
+      }
+    }
+    .slider__controls {
+      width: calc(100% + 130px);
+    }
+  }
+
+  &__controls {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: calc(100% + 35px);
+    top: 50%;
+    left: 50%;
+    z-index: 10;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+  }
+
+  &__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: rem(50);
+    height: rem(50);
+    border-radius: 50%;
+    background-color: #ffffff;
+    box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.10), 0 2px 6px 0 rgba(0, 0, 0, 0.07);
+    pointer-events: auto;
+
+    svg {
+      fill: $color-accent;
+      max-width: rem(15);
+      max-height: rem(13);
+    }
+  }
+
+  &__button--next {
+  }
+
+  &__button--prev {
+    transform: rotate(180deg);
+  }
+
+  &--overflow {
+    overflow: visible;
+  }
+
+  &--basic {
+    width: 100%;
+    max-width: rem(865);
+    margin: 0 auto;
+
+    .slider--basic__slide-pic {
+      &:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.40) 0%, rgba(0, 0, 0, 0.40) 100%);
+        transition: all .3s ease-in-out;
+      }
+    }
+
+    .slider__slide--visible {
+      .slider--basic__slide-pic:after {
+        opacity: 0;
+      }
+    }
+  }
+
+  &--basic__slide {
+    height: rem(550);
+  }
+
+  &--basic__slide-pic {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    max-width: rem(845);
+    margin: 0 auto;
+    border-radius: 6px;
+    overflow: hidden;
+
+    img {
+      object-fit: cover;
+    }
+  }
+}

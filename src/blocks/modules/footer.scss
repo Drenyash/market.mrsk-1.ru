@@ -1,0 +1,162 @@
+.footer {
+  background-color: $color-dark;
+  color: $color-text-gray;
+
+  &__top {
+    padding: rem(35) 0 rem(47);
+    border-bottom: 2px solid #121521;
+  }
+
+  &__block {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    @include r($mobile) {
+      height: fit-content;
+      justify-content: normal;
+      margin-bottom: rem(20);
+    }
+  }
+
+  &__block-column {
+    display: flex;
+    flex-direction: column;
+    gap: rem(13);
+    @include r($tablet) {
+      margin-bottom: rem(25);
+    }
+  }
+
+  &__block-row {
+    display: flex;
+    align-items: center;
+    gap: rem(20);
+  }
+
+  &__copyright {
+    font-size: rem(11);
+  }
+
+  &__menu {
+    @include r($mobile) {
+      margin-bottom: rem(15);
+    }
+  }
+
+  &__menu-head {
+    display: block;
+    color: #FFFFFF;
+    font-weight: 500;
+    margin-bottom: rem(18);
+  }
+
+  &__menu-list {
+    display: flex;
+    flex-direction: column;
+    gap: rem(18);
+    list-style: none;
+  }
+
+  &__menu-link {
+    display: flex;
+    flex-direction: column;
+    gap: rem(5);
+    text-decoration: none;
+  }
+
+  &__menu-link--accent {
+    color: $color-accent;
+  }
+
+  &__contacts {
+    display: flex;
+    flex-direction: column;
+    gap: rem(18);
+    @include r($tablet) {
+      flex-direction: row;
+    }
+  }
+
+  &__subscribe {
+    display: flex;
+    align-items: center;
+    gap: rem(14);
+    width: fit-content;
+    padding: rem(11) rem(20);
+    border-radius: 5px;
+    background-color: rgba(133, 143, 164, 0.15);
+    font-size: rem(18);
+    font-family: $font-accent;
+    font-weight: 500;
+  }
+
+  &__subscribe-icon {
+    width: rem(20);
+    height: rem(20);
+
+    svg {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__socials {
+    display: flex;
+    flex-wrap: wrap;
+    gap: rem(15);
+  }
+
+  &__socials-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: rem(11) rem(7);
+    border-radius: 10px;
+    background-color: rgba(133, 143, 164, 0.15);
+  }
+
+  &__socials-icon {
+    svg {
+      max-width: rem(21);
+      max-height: rem(13);
+    }
+  }
+
+  &__confidential {
+    font-size: rem(14);
+    @include r($tablet) {
+      font-size: rem(11);
+    }
+  }
+
+  &__develop {
+    display: flex;
+    align-items: flex-end;
+    gap: rem(14);
+    line-height: 1;
+    font-size: rem(14);
+    @include r($tablet) {
+      gap: rem(8);
+      font-size: rem(11);
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: rem(5);
+  }
+
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: rem(20) 0 rem(34);
+  }
+
+  a:hover {
+    color: #FFFFFF;
+  }
+}

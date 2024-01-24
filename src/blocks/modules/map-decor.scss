@@ -1,0 +1,21 @@
+.map-decor {
+  position: relative;
+  &__pic {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    max-width: rem(1167);
+    max-height: rem(617);
+    @include r($tablet) {
+      top: auto;
+      bottom: 0;
+    }
+
+    img {
+      object-fit: contain;
+      object-position: right;
+    }
+  }
+
+}

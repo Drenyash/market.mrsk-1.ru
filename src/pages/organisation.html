@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <%= htmlWebpackPlugin.options.head %>
+  <title><%= htmlWebpackPlugin.options.title %></title>
+</head>
+<body class="body">
+<%= htmlWebpackPlugin.options.sectionHeader %>
+<main class="main main--gray">
+  <%= htmlWebpackPlugin.options.breadcrumbs %>
+  <section class="section mb-70">
+    <div class="container">
+      <div class="page-intro">
+        <picture class="page-intro__pic">
+          <img src="./assets/images/page-intro-bg.jpg" alt="">
+        </picture>
+        <div class="page-intro__content">
+          <h1 class="page-intro__title title title--light">Выдача документации</h1>
+          <p class="page-intro__text">Минимизация процесса получения специальной документации, а так же процесса
+            согласования является одним из приоритетов группы компаний “Россети”. Мы помогаем своим клиентам
+            минимизировать бюрократические процессы. </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section pb-120">
+    <div class="container">
+      <h1 class="title mb-25">Выдача документации</h1>
+      <p class="subtitle mb-40">
+        Мы поможем вам выполнить данные работы легко и просто. Группа компаний “Россети”<br> обладает большим опытом
+        работы,
+        имеет квалифицированных специалистов, а так же<br>собственную технику для выполнения всех видов работ.
+      </p>
+      <div class="tabs tabs-about" data-tabs-container="services">
+        <div class="tabs__controls tabs-about__controls">
+          <button class="tabs__trigger tabs-about__trigger active" data-tabs-trigger="services" data-tabs="about-1">
+            <span class="tabs-about__trigger-text">Разработка проектной документации</span>
+          </button>
+          <button class="tabs__trigger tabs-about__trigger" data-tabs-trigger="services" data-tabs="about-2">
+            <span class="tabs-about__trigger-text">Инженерные изыскания</span>
+          </button>
+          <button class="tabs__trigger tabs-about__trigger" data-tabs-trigger="services" data-tabs="about-3">
+            <span class="tabs-about__trigger-text">Согласования пересечения или сближения</span>
+          </button>
+          <button class="tabs__trigger tabs-about__trigger" data-tabs-trigger="services" data-tabs="about-4">
+            <span class="tabs-about__trigger-text">Выдача дубликатов документов</span>
+          </button>
+        </div>
+        <div class="tabs__list">
+          <div class="tabs__item active" data-tabs-list="services" id="about-1">
+            <div class="tabs-about__item">
+              <div class="tabs-about__card">
+                <div class="tabs-about__card-inner">
+                  <div class="tabs-about__card-title">Заголовок. Технологическое присоединение под ключ</div>
+                  <div class="tabs-about__card-text">
+                    <p>Услуга по выполнению мероприятий, включенных в технические условия договора технологического
+                      присоединения со стороны потребителя.</p>
+                    <p>Условия договора технологического присоединения со стороны потребителя</p>
+                  </div>
+                  <a href="#" class="button tabs-about__card-link">Подробнее</a>
+
+                </div>
+              </div>
+              <div class="slider" data-slider data-slider-fade data-slider-slides="1" data-slider-slides-tab="1"
+                   data-swiper-autoplay="2000">
+                <div class="swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="tabs-about__item-slide">
+                        <img src="./assets/images/about-pic.png" alt="">
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="tabs-about__item-slide">
+                        <img src="./assets/images/bg-trees.png" alt="">
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="tabs-about__item-slide">
+                        <img src="./assets/images/about-pic.png" alt="">
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="tabs-about__item-slide">
+                        <img src="./assets/images/bg-houses.png" alt="">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="slider__pagination" data-slider-pagination></div>
+                </div>
+              </div>
+              <div class="columns">
+                <div class="columns__col--4 columns__col-mob--12">
+                  <div class="info-block__heading">
+                    <h3 class="info-block__title title-content title-content--big">Общие сведения <br class="tab-hidden"> об
+                      услуге</h3>
+                    <div class="info-block__subtitle">
+                      <p>Технологическое присоединение – комплексная услуга, оказываемая сетевыми компаниями юридическим и
+                        физическим лицам для выдачи электрической мощности.</p>
+                      <p>Предусматривающая фактическое присоединение энергопринимающих устройств (энергетических установок)
+                        потребителей к объектам электросетевого хозяйства.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="columns__col--6 columns__col-tab--8 columns__col-mob--12">
+                  <div class="info-block__content">
+                    <p>Технологическое присоединение – комплексная услуга, оказываемая сетевыми компаниями юридическим и
+                      физическим лицам для выдачи электрической мощности и предусматривающая фактическое присоединение
+                      энергопринимающих устройств (энергетических установок) потребителей к объектам электросетевого
+                      хозяйства.</p>
+                    <p>Услуга по технологическому присоединению оказывается в случаях присоединения впервые вводимых в
+                      эксплуатацию энергопринимающих устройств; увеличения максимальной мощности ранее присоединенных
+                      энергопринимающих устройств; изменения категории надежности электроснабжения, точек присоединения, видов
+                      производственной деятельности, не влекущих пересмотра величины максимальной мощности, но изменяющих схему
+                      внешнего электроснабжения ранее присоединенных энергопринимающих устройств; присоединения ранее
+                      присоединенных энергопринимающих устройств, выведенных из эксплуатации (в том числе в целях консервации на
+                      срок более 1 года) в порядке, установленном Правилами вывода объектов электроэнергетики в ремонт и из
+                      эксплуатации, утвержденными постановлением Правительства Российской Федерации от 30 января 2021 г. N 86
+                      «Об утверждении правил вывода объектов электроэнергетики в ремонт и из эксплуатации, а также внесении
+                      изменений в некоторые акты Правительства Российской Федерации по вопросу совершенствования порядка вывода
+                      объектов электроэнергетики в ремонт и из эксплуатации.</p>
+                    <hr>
+                    <p>Услуга по технологическому присоединению оказывается в случаях присоединения впервые вводимых в
+                      эксплуатацию энергопринимающих устройств; увеличения максимальной мощности ранее присоединенных
+                      энергопринимающих устройств; изменения категории надежности электроснабжения, точек присоединения, видов
+                      производственной деятельности, не влекущих пересмотра величины максимальной мощности, но изменяющих схему
+                      внешнего электроснабжения ранее присоединенных энергопринимающих устройств; присоединения ранее
+                      присоединенных энергопринимающих устройств, выведенных из эксплуатации (в том числе в целях консервации на
+                      срок более 1 года) в порядке, установленном Правилами вывода объектов электроэнергетики в ремонт и из
+                      эксплуатации, утвержденными постановлением Правительства Российской Федерации от 30 января 2021 г. N 86
+                      «Об утверждении правил вывода объектов электроэнергетики в ремонт и из эксплуатации, а также внесении
+                      изменений в некоторые акты Правительства Российской Федерации по вопросу совершенствования порядка вывода
+                      объектов электроэнергетики в ремонт и из эксплуатации.</p>
+                    <hr>
+                    <p>Услуга по технологическому присоединению оказывается в случаях присоединения впервые вводимых в
+                      эксплуатацию энергопринимающих устройств; увеличения максимальной мощности ранее присоединенных
+                      энергопринимающих устройств; изменения категории надежности электроснабжения, точек присоединения, видов
+                      производственной деятельности, не влекущих пересмотра величины максимальной мощности, но изменяющих схему
+                      внешнего электроснабжения ранее присоединенных энергопринимающих устройств; присоединения ранее
+                      присоединенных энергопринимающих устройств, выведенных из эксплуатации (в том числе в целях консервации на
+                      срок более 1 года) в порядке, установленном Правилами вывода объектов электроэнергетики в ремонт и из
+                      эксплуатации, утвержденными постановлением Правительства Российской Федерации от 30 января 2021 г. N 86
+                      «Об утверждении правил вывода объектов электроэнергетики в ремонт и из эксплуатации, а также внесении
+                      изменений в некоторые акты Правительства Российской Федерации по вопросу совершенствования порядка вывода
+                      объектов электроэнергетики в ремонт и из эксплуатации.</p>
+                    <hr>
+                  </div>
+                  <div class="info-block__slider">
+                    <div class="info-block__content info-block__content--absolute">
+                      <p>Технологическое присоединение – комплексная услуга, оказываемая сетевыми компаниями юридическим и
+                        физическим лицам для выдачи электрической мощности и предусматривающая фактическое присоединение
+                        энергопринимающих устройств (энергетических установок) потребителей к объектам электросетевого
+                        хозяйства.</p>
+                    </div>
+                    <div class="slider slider--hidden slider--basic" data-slider data-loop data-slider-slides="1" data-slider-slides-tab="1">
+                      <div class="swiper slider--overflow">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                            <div class="slider--basic__slide">
+                              <picture class="slider--basic__slide-pic">
+                                <img src="./assets/images/slider-1.jpg" alt="">
+                              </picture>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="slider--basic__slide">
+                              <picture class="slider--basic__slide-pic">
+                                <img src="./assets/images/slider-2.jpg" alt="">
+                              </picture>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="slider--basic__slide">
+                              <picture class="slider--basic__slide-pic">
+                                <img src="./assets/images/slider-3.jpg" alt="">
+                              </picture>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="slider--basic__slide">
+                              <picture class="slider--basic__slide-pic">
+                                <img src="./assets/images/slider-2.jpg" alt="">
+                              </picture>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="slider--basic__slide">
+                              <picture class="slider--basic__slide-pic">
+                                <img src="./assets/images/slider-1.jpg" alt="">
+                              </picture>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="slider--basic__slide">
+                              <picture class="slider--basic__slide-pic">
+                                <img src="./assets/images/slider-3.jpg" alt="">
+                              </picture>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="slider__controls">
+                          <button class="slider__button slider__button--prev" data-slider-prev>
+                            <svg>
+                              <use xlink:href="./assets/sprite.svg#icon-arrow"></use>
+                            </svg>
+                          </button>
+                          <button class="slider__button slider__button--next" data-slider-next>
+                            <svg>
+                              <use xlink:href="./assets/sprite.svg#icon-arrow"></use>
+                            </svg>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="info-block__content">
+                    <hr>
+                    <p>Технологическое присоединение – комплексная услуга, оказываемая сетевыми компаниями юридическим и
+                      физическим лицам для выдачи электрической мощности и предусматривающая фактическое присоединение
+                      энергопринимающих устройств (энергетических установок) потребителей к объектам электросетевого
+                      хозяйства.</p>
+                    <p>Услуга по технологическому присоединению оказывается в случаях присоединения впервые вводимых в
+                      эксплуатацию энергопринимающих устройств; увеличения максимальной мощности ранее присоединенных
+                      энергопринимающих устройств; изменения категории надежности электроснабжения, точек присоединения, видов
+                      производственной деятельности, не влекущих пересмотра величины максимальной мощности, но изменяющих схему
+                      внешнего электроснабжения ранее присоединенных энергопринимающих устройств; присоединения ранее
+                      присоединенных энергопринимающих устройств, выведенных из эксплуатации (в том числе в целях консервации на
+                      срок более 1 года) в порядке, установленном Правилами вывода объектов электроэнергетики в ремонт и из
+                      эксплуатации, утвержденными постановлением Правительства Российской Федерации от 30 января 2021 г. N 86
+                      «Об утверждении правил вывода объектов электроэнергетики в ремонт и из эксплуатации, а также внесении
+                      изменений в некоторые акты Правительства Российской Федерации по вопросу совершенствования порядка вывода
+                      объектов электроэнергетики в ремонт и из эксплуатации.</p>
+                    <hr>
+                    <p>Услуга по технологическому присоединению оказывается в случаях присоединения впервые вводимых в
+                      эксплуатацию энергопринимающих устройств; увеличения максимальной мощности ранее присоединенных
+                      энергопринимающих устройств; изменения категории надежности электроснабжения, точек присоединения, видов
+                      производственной деятельности, не влекущих пересмотра величины максимальной мощности, но изменяющих схему
+                      внешнего электроснабжения ранее присоединенных энергопринимающих устройств; присоединения ранее
+                      присоединенных энергопринимающих устройств, выведенных из эксплуатации (в том числе в целях консервации на
+                      срок более 1 года) в порядке, установленном Правилами вывода объектов электроэнергетики в ремонт и из
+                      эксплуатации, утвержденными постановлением Правительства Российской Федерации от 30 января 2021 г. N 86
+                      «Об утверждении правил вывода объектов электроэнергетики в ремонт и из эксплуатации, а также внесении
+                      изменений в некоторые акты Правительства Российской Федерации по вопросу совершенствования порядка вывода
+                      объектов электроэнергетики в ремонт и из эксплуатации.</p>
+                    <hr>
+                    <p>Услуга по технологическому присоединению оказывается в случаях присоединения впервые вводимых в
+                      эксплуатацию энергопринимающих устройств; увеличения максимальной мощности ранее присоединенных
+                      энергопринимающих устройств; изменения категории надежности электроснабжения, точек присоединения, видов
+                      производственной деятельности, не влекущих пересмотра величины максимальной мощности, но изменяющих схему
+                      внешнего электроснабжения ранее присоединенных энергопринимающих устройств; присоединения ранее
+                      присоединенных энергопринимающих устройств, выведенных из эксплуатации (в том числе в целях консервации на
+                      срок более 1 года) в порядке, установленном Правилами вывода объектов электроэнергетики в ремонт и из
+                      эксплуатации, утвержденными постановлением Правительства Российской Федерации от 30 января 2021 г. N 86
+                      «Об утверждении правил вывода объектов электроэнергетики в ремонт и из эксплуатации, а также внесении
+                      изменений в некоторые акты Правительства Российской Федерации по вопросу совершенствования порядка вывода
+                      объектов электроэнергетики в ремонт и из эксплуатации.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tabs__item" data-tabs-list="services" id="about-2">
+            <div class="tabs-about__item">
+              <div class="tabs-about__card">
+                <div class="tabs-about__card-inner">
+                  <div class="tabs-about__card-title">Заголовок. Аренда техники</div>
+                  <div class="tabs-about__card-text">
+                    <p>Услуга по выполнению мероприятий, включенных в технические условия договора технологического
+                      присоединения со стороны потребителя.</p>
+                    <p>Условия договора технологического присоединения со стороны потребителя</p>
+                  </div>
+                  <a href="#" class="button tabs-about__card-link">Подробнее</a>
+
+                </div>
+              </div>
+              <div class="slider" data-slider data-slider-fade data-slider-slides="1" data-slider-slides-tab="1"
+                   data-swiper-autoplay="2000">
+                <div class="swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="tabs-about__item-slide">
+                        <img src="./assets/images/about-pic.png" alt="">
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="tabs-about__item-slide">
+                        <img src="./assets/images/bg-trees.png" alt="">
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="tabs-about__item-slide">
+                        <img src="./assets/images/about-pic.png" alt="">
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="tabs-about__item-slide">
+                        <img src="./assets/images/bg-houses.png" alt="">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="slider__pagination" data-slider-pagination></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tabs__item" data-tabs-list="services" id="about-3">
+            <div class="tabs-about__item">
+              <div class="tabs-about__card">
+                <div class="tabs-about__card-inner">
+                  <div class="tabs-about__card-title">Заголовок. Обслуживание электрооборудования</div>
+                  <div class="tabs-about__card-text">
+                    <p>Услуга по выполнению мероприятий, включенных в технические условия договора технологического
+                      присоединения со стороны потребителя.</p>
+                    <p>Условия договора технологического присоединения со стороны потребителя</p>
+                  </div>
+                  <a href="#" class="button tabs-about__card-link">Подробнее</a>
+
+                </div>
+              </div>
+              <div class="slider" data-slider data-slider-fade data-slider-slides="1" data-slider-slides-tab="1"
+                   data-swiper-autoplay="2000">
+                <div class="swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="tabs-about__item-slide">
+                        <img src="./assets/images/about-pic.png" alt="">
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="tabs-about__item-slide">
+                        <img src="./assets/images/bg-trees.png" alt="">
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="tabs-about__item-slide">
+                        <img src="./assets/images/about-pic.png" alt="">
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="tabs-about__item-slide">
+                        <img src="./assets/images/bg-houses.png" alt="">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="slider__pagination" data-slider-pagination></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tabs__item" data-tabs-list="services" id="about-4">
+            <div class="tabs-about__item">
+              <div class="tabs-about__card">
+                <div class="tabs-about__card-inner">
+                  <div class="tabs-about__card-title">Заголовок. Наружное освещение</div>
+                  <div class="tabs-about__card-text">
+                    <p>Услуга по выполнению мероприятий, включенных в технические условия договора технологического
+                      присоединения со стороны потребителя.</p>
+                    <p>Условия договора технологического присоединения со стороны потребителя</p>
+                  </div>
+                  <a href="#" class="button tabs-about__card-link">Подробнее</a>
+
+                </div>
+              </div>
+              <div class="slider" data-slider data-slider-fade data-slider-slides="1" data-slider-slides-tab="1"
+                   data-swiper-autoplay="2000">
+                <div class="swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="tabs-about__item-slide">
+                        <img src="./assets/images/about-pic.png" alt="">
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="tabs-about__item-slide">
+                        <img src="./assets/images/bg-trees.png" alt="">
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="tabs-about__item-slide">
+                        <img src="./assets/images/about-pic.png" alt="">
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="tabs-about__item-slide">
+                        <img src="./assets/images/bg-houses.png" alt="">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="slider__pagination" data-slider-pagination></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tabs__item" data-tabs-list="services" id="about-5">
+            <div class="tabs-about__item">
+              <div class="tabs-about__card">
+                <div class="tabs-about__card-inner">
+                  <div class="tabs-about__card-title">Заголовок. Выдача документации</div>
+                  <div class="tabs-about__card-text">
+                    <p>Услуга по выполнению мероприятий, включенных в технические условия договора технологического
+                      присоединения со стороны потребителя.</p>
+                    <p>Условия договора технологического присоединения со стороны потребителя</p>
+                  </div>
+                  <a href="#" class="button tabs-about__card-link">Подробнее</a>
+
+                </div>
+              </div>
+              <div class="slider" data-slider data-slider-fade data-slider-slides="1" data-slider-slides-tab="1"
+                   data-swiper-autoplay="2000">
+                <div class="swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="tabs-about__item-slide">
+                        <img src="./assets/images/about-pic.png" alt="">
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="tabs-about__item-slide">
+                        <img src="./assets/images/bg-trees.png" alt="">
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="tabs-about__item-slide">
+                        <img src="./assets/images/about-pic.png" alt="">
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="tabs-about__item-slide">
+                        <img src="./assets/images/bg-houses.png" alt="">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="slider__pagination" data-slider-pagination></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tabs__item" data-tabs-list="services" id="about-6">
+            <div class="tabs-about__item">
+              <div class="tabs-about__card">
+                <div class="tabs-about__card-inner">
+                  <div class="tabs-about__card-title">Заголовок. Строительство линий</div>
+                  <div class="tabs-about__card-text">
+                    <p>Услуга по выполнению мероприятий, включенных в технические условия договора технологического
+                      присоединения со стороны потребителя.</p>
+                    <p>Условия договора технологического присоединения со стороны потребителя</p>
+                  </div>
+                  <a href="#" class="button tabs-about__card-link">Подробнее</a>
+
+                </div>
+              </div>
+              <div class="slider" data-slider data-slider-fade data-slider-slides="1" data-slider-slides-tab="1"
+                   data-swiper-autoplay="2000">
+                <div class="swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="tabs-about__item-slide">
+                        <img src="./assets/images/about-pic.png" alt="">
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="tabs-about__item-slide">
+                        <img src="./assets/images/bg-trees.png" alt="">
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="tabs-about__item-slide">
+                        <img src="./assets/images/about-pic.png" alt="">
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="tabs-about__item-slide">
+                        <img src="./assets/images/bg-houses.png" alt="">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="slider__pagination" data-slider-pagination></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<%= htmlWebpackPlugin.options.sectionFooter %>
+<%= htmlWebpackPlugin.options.temp %>
+</body>
+</html>

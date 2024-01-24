@@ -1,0 +1,40 @@
+.input-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+
+  &__detail {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  &__input {
+    display: flex;
+    flex-shrink: 0;
+    width: 19px;
+    height: 19px;
+    border: 4px solid rgba($color-text-gray, 50%);
+    border-radius: 50px;
+    transition: .2s linear;
+    &:checked {
+      border-color: $color-green;
+    }
+  }
+
+  &__text {
+    color: $color-dark;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  &__count {
+    color: $color-text-gray;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.7px;
+  }
+}

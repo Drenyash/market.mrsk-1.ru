@@ -1,0 +1,28 @@
+.breadcrumbs {
+  font-family: $font-accent;
+  font-size: rem(14);
+  padding: rem(18) 0 rem(40);
+
+  &__link {
+    color: $color-gray;
+    transition: all .3s ease-in-out;
+
+    &:hover {
+      color: $color-accent;
+    }
+
+    &:after {
+      content: '-';
+      margin: 0 rem(8);
+      color: inherit;
+      font-size: inherit;
+      font-weight: inherit;
+      cursor: default;
+    }
+  }
+
+  &__current {
+    color: $color-accent;
+    cursor: default;
+  }
+}
