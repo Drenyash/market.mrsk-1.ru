@@ -8,5 +8,11 @@
     display: grid;
     grid-template-columns: repeat(3, minmax(255px, 402px));
     gap: 40px;
+
+    @include r($mobile) {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
   }
 }

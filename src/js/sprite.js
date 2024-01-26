@@ -23,6 +23,10 @@ import vk from "../assets/sprite/icon-vk.svg";
 import chevrone from "../assets/sprite/icon-chevrone.svg";
 import refresh from "../assets/sprite/icon-refresh.svg";
 import pdf from "../assets/sprite/icon-pdf.svg";
+import arrowBold from "../assets/sprite/icon-arrow-bold.svg";
+import external from "../assets/sprite/icon-external.svg";
+import arrowSmall from "../assets/sprite/icon-arrow-small.svg";
+import filter from "../assets/sprite/icon-filter.svg";
 
 export default {
   arrow,
@@ -50,4 +54,8 @@ export default {
   chevrone,
   refresh,
   pdf,
+  arrowBold,
+  external,
+  arrowSmall,
+  filter,
 };

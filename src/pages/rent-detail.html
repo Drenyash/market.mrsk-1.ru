@@ -10,7 +10,14 @@
   <%= htmlWebpackPlugin.options.breadcrumbs %>
   <section class="section pb-120">
     <div class="container">
+      <button class="button button--black button--icon desktop-hidden">
+        <svg>
+          <use xlink:href="./assets/sprite.svg#icon-arrow-small"></use>
+        </svg>
+        <span>Назад</span>
+      </button>
       <div class="product-card product-card--detail">
+        <h3 class="product-card__title desktop-hidden">Кран автомобильный</h3>
         <div class="product-card__slider">
           <div class="slider slider--thumbs" data-slider-thumbs>
             <div class="swiper">
@@ -98,7 +105,7 @@
           </div>
         </div>
         <div class="product-card__content">
-          <h3 class="product-card__title">Кран автомобильный</h3>
+          <h3 class="product-card__title mob-hidden">Кран автомобильный</h3>
           <ul class="product-card__list">
             <li class="product-card__item">
               <span>Марка</span>
@@ -233,7 +240,7 @@
     </div>
   </section>
   <section class="section mb-100">
-    <div class="slider slider--basic" data-slider data-slider-slides="1" data-slider-slides-tab="1">
+    <div class="slider slider--basic slider--mob-min" data-slider data-slider-slides="1" data-slider-slides-tab="1">
       <div class="swiper slider--overflow">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
@@ -279,7 +286,7 @@
             </div>
           </div>
         </div>
-        <div class="slider__controls">
+        <div class="slider__controls mob-hidden">
           <button class="slider__button slider__button--prev" data-slider-prev>
             <svg>
               <use xlink:href="./assets/sprite.svg#icon-arrow"></use>

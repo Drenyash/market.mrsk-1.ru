@@ -12,6 +12,11 @@
 
   &__top {
     padding: rem(24) 0;
+
+    @include r($mobile) {
+      position: relative;
+      padding: 14px 25px;
+    }
   }
 
   &__top-block {
@@ -20,6 +25,17 @@
 
   &__top-left {
     gap: rem(30);
+  }
+  &__top-right {
+    @include r($mobile) {
+      gap: 30px;
+    }
+  }
+
+  &__menu {
+    @include r($mobile) {
+      width: 100%;
+    }
   }
 
   &__divider {
@@ -50,14 +66,26 @@
 
   &__bottom {
     padding: rem(14) 0;
+
+    @include r($mobile) {
+      position: relative;
+      padding: 0;
+    }
   }
 
   &__bottom-left {
     gap: rem(31);
+    @include r($mobile) {
+      width: 100%;
+    }
   }
 
   &__menu-button {
     position: relative;
+    @include r($mobile) {
+      width: 100%;
+      border-radius: 0;
+    }
     &.active {
       &:before {
         content: '';

@@ -141,4 +141,15 @@ module.exports = [
     sectionFooter,
     temp,
   }),
+  new HtmlWebpackPlugin({
+    template: "./src/pages/faq.html",
+    filename: "faq.html",
+    inject: "body",
+    title: "FAQ",
+    head,
+    sectionHeader,
+    breadcrumbs,
+    sectionFooter,
+    temp,
+  }),
 ];

@@ -29,6 +29,12 @@
       top: 0;
       left: -70%;
       max-width: 403px;
+      @include r($mobile) {
+        position: static;
+        left: 0;
+        max-width: initial;
+        margin-bottom: 40px;
+      }
     }
   color: $color-dark-gray;
     p + p {

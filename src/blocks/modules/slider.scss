@@ -3,6 +3,39 @@
   height: fit-content;
 
   &__pagination {
+    position: absolute;
+    left: 0;
+    bottom: 14px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 4px;
+    z-index: 1;
+    pointer-events: none;
+
+    .bullet {
+      display: flex;
+      width: 100%;
+      max-width: 44px;
+      height: 6px;
+      border-radius: 4px;
+      background: rgba(255, 255, 255, 0.40);
+      transition: .2s linear;
+      pointer-events: auto;
+      cursor: pointer;
+      @include r($mobile) {
+        max-width: 30px;
+        height: 5px;
+      }
+
+      &--active {
+        max-width: 117px;
+        background-color: $color-accent;
+        @include r($mobile) {
+          max-width: 50px;
+        }
+      }
+    }
   }
 
   &--history {
@@ -19,19 +52,21 @@
   }
 
   &--hidden {
-    .swiper-slide {
-      opacity: 0;
-      visibility: hidden;
-      transition: .2s linear;
-    }
-    .slider__slide--visible,
-    .swiper-slide-next {
-      opacity: 1;
-      visibility: visible;
-    }
-    .swiper-slide-prev {
-      opacity: 0;
-      visibility: hidden;
+    @include rmin($mobile) {
+      .swiper-slide {
+        opacity: 0;
+        visibility: hidden;
+        transition: .2s linear;
+      }
+      .slider__slide--visible,
+      .swiper-slide-next {
+        opacity: 1;
+        visibility: visible;
+      }
+      .swiper-slide-prev {
+        opacity: 0;
+        visibility: hidden;
+      }
     }
   }
 
@@ -39,13 +74,19 @@
     margin: 0 auto;
     max-width: 310px;
     height: 70px;
+    @include r($mobile) {
+      display: none;
+    }
+
     .swiper {
       position: static;
       height: 100%;
+
       &-wrapper {
         position: static;
       }
     }
+
     .slider__controls {
       width: calc(100% + 130px);
     }
@@ -119,6 +160,9 @@
 
   &--basic__slide {
     height: rem(550);
+    @include r($mobile) {
+      height: 156px;
+    }
   }
 
   &--basic__slide-pic {
@@ -132,6 +176,14 @@
 
     img {
       object-fit: cover;
+    }
+  }
+
+  &--mob-min {
+    @include r($mobile) {
+      .swiper-slide {
+        max-width: 241px;
+      }
     }
   }
 }

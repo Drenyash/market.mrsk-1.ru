@@ -45,6 +45,10 @@
     background-color: rgba($color-accent-gray, 40%);
   }
 
+  &--full {
+    width: 100%;
+  }
+
   &--accent {
     gap: 8px;
     font-size: 18px;
@@ -57,6 +61,14 @@
       display: flex;
       width: 22px;
       height: 22px;
+    }
+  }
+
+  &--black {
+    margin-bottom: 32px;
+    background-color: $color-dark;
+    svg {
+      transform: rotate(180deg);
     }
   }
 }

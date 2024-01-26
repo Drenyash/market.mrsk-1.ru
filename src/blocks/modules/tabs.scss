@@ -14,6 +14,10 @@
 
   &__item.active {
     display: flex;
+    @include r($mobile) {
+      flex-direction: column;
+      gap: 24px;
+    }
   }
 
   &__trigger {

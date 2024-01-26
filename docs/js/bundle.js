@@ -2548,6 +2548,25 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./src/assets/sprite/icon-arrow-bold.svg":
+/*!***********************************************!*\
+  !*** ./src/assets/sprite/icon-arrow-bold.svg ***!
+  \***********************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ({
+      id: "icon-arrow-bold-usage",
+      viewBox: "0 0 10 12",
+      url: "/assets/" + "sprite.svg#icon-arrow-bold-usage",
+      toString: function () {
+        return this.url;
+      }
+    });
+
+/***/ }),
+
 /***/ "./src/assets/sprite/icon-arrow-empty.svg":
 /*!************************************************!*\
   !*** ./src/assets/sprite/icon-arrow-empty.svg ***!
@@ -2579,6 +2598,25 @@ __webpack_require__.r(__webpack_exports__);
       id: "icon-arrow-min-usage",
       viewBox: "0 0 8 6",
       url: "/assets/" + "sprite.svg#icon-arrow-min-usage",
+      toString: function () {
+        return this.url;
+      }
+    });
+
+/***/ }),
+
+/***/ "./src/assets/sprite/icon-arrow-small.svg":
+/*!************************************************!*\
+  !*** ./src/assets/sprite/icon-arrow-small.svg ***!
+  \************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ({
+      id: "icon-arrow-small-usage",
+      viewBox: "0 0 16 16",
+      url: "/assets/" + "sprite.svg#icon-arrow-small-usage",
       toString: function () {
         return this.url;
       }
@@ -2700,6 +2738,25 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./src/assets/sprite/icon-external.svg":
+/*!*********************************************!*\
+  !*** ./src/assets/sprite/icon-external.svg ***!
+  \*********************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ({
+      id: "icon-external-usage",
+      viewBox: "0 0 20 21",
+      url: "/assets/" + "sprite.svg#icon-external-usage",
+      toString: function () {
+        return this.url;
+      }
+    });
+
+/***/ }),
+
 /***/ "./src/assets/sprite/icon-fax.svg":
 /*!****************************************!*\
   !*** ./src/assets/sprite/icon-fax.svg ***!
@@ -2712,6 +2769,25 @@ __webpack_require__.r(__webpack_exports__);
       id: "icon-fax-usage",
       viewBox: "0 0 20 20",
       url: "/assets/" + "sprite.svg#icon-fax-usage",
+      toString: function () {
+        return this.url;
+      }
+    });
+
+/***/ }),
+
+/***/ "./src/assets/sprite/icon-filter.svg":
+/*!*******************************************!*\
+  !*** ./src/assets/sprite/icon-filter.svg ***!
+  \*******************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ({
+      id: "icon-filter-usage",
+      viewBox: "0 0 25 25",
+      url: "/assets/" + "sprite.svg#icon-filter-usage",
       toString: function () {
         return this.url;
       }
@@ -3045,6 +3121,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _app_slider__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./app/slider */ "./src/js/app/slider.js");
 /* harmony import */ var _app_text_writing__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./app/text-writing */ "./src/js/app/text-writing.js");
 /* harmony import */ var _app_text_writing__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_app_text_writing__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var _app_toggle__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./app/toggle */ "./src/js/app/toggle.js");
+/* harmony import */ var _app_toggle__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_app_toggle__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var _app_temp__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./app/temp */ "./src/js/app/temp.js");
+/* harmony import */ var _app_temp__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(_app_temp__WEBPACK_IMPORTED_MODULE_10__);
+
+
 
 
 
@@ -3469,10 +3551,15 @@ function createSliderWidthThumbs(el) {
   });
   const swiperMain = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](el?.querySelector(".swiper"), {
     modules: [swiper__WEBPACK_IMPORTED_MODULE_0__.Navigation, swiper__WEBPACK_IMPORTED_MODULE_0__.Pagination, swiper__WEBPACK_IMPORTED_MODULE_0__.EffectFade, swiper__WEBPACK_IMPORTED_MODULE_0__.Thumbs],
-    slidesPerView: 1,
+    slidesPerView: "auto",
     spaceBetween: 30,
     thumbs: {
-      swiper: swiperThumbs
+      swiper: swiperThumbs,
+    },
+    breakpoints: {
+      1200: {
+        slidesPerView: 1,
+      }
     }
   });
 }
@@ -3560,9 +3647,8 @@ function createSlider(el) {
           slidesPerView: slidesQuantityTab || 2,
           spaceBetween: 20
         },
-
         320: {
-          slidesPerView: slidesQuantityMob || 1,
+          slidesPerView: slidesQuantityMob || "auto",
           spaceBetween: 15
         }
       },
@@ -3721,6 +3807,49 @@ document.addEventListener("DOMContentLoaded", function() {
 
 /***/ }),
 
+/***/ "./src/js/app/temp.js":
+/*!****************************!*\
+  !*** ./src/js/app/temp.js ***!
+  \****************************/
+/***/ (function() {
+
+document.addEventListener("DOMContentLoaded", () => {
+  const burger = document.querySelector("[data-burger]");
+  const mobileMenu = document.querySelector("[data-mobile-menu]");
+  const body = document.querySelector("body");
+  const search = document.querySelector("[data-search]");
+  const mobileSearch = document.querySelector("[data-mobile-search]");
+  const services = document.querySelector("[data-services]");
+  const mobileServices = document.querySelector("[data-mobile-services]");
+  const servicesItems = document.querySelectorAll("[data-services-item]");
+  const servicesContent = document.querySelector("[data-services-content]");
+
+  burger.addEventListener("click", () => {
+    burger.classList.toggle("active");
+    mobileMenu.classList.toggle("active");
+    body.classList.toggle("no-scroll");
+  });
+
+  search.addEventListener("click", () => {
+    mobileSearch.classList.toggle("active");
+    body.classList.toggle("no-scroll");
+  });
+
+  services.addEventListener("click", () => {
+    mobileServices.classList.toggle("active");
+    servicesContent.classList.remove("active");
+    body.classList.toggle("no-scroll");
+  });
+
+  servicesItems.forEach(el => {
+    el.addEventListener("click", () => {
+      servicesContent.classList.toggle("active");
+    });
+  });
+});
+
+/***/ }),
+
 /***/ "./src/js/app/text-writing.js":
 /*!************************************!*\
   !*** ./src/js/app/text-writing.js ***!
@@ -3763,6 +3892,25 @@ class TextWriting {
 
 /***/ }),
 
+/***/ "./src/js/app/toggle.js":
+/*!******************************!*\
+  !*** ./src/js/app/toggle.js ***!
+  \******************************/
+/***/ (function() {
+
+document.addEventListener("DOMContentLoaded", () => {
+  const toggleEls = document.querySelectorAll("[data-toggle]");
+
+  toggleEls.forEach((el) => {
+    el.addEventListener("click", () => {
+      el.classList.toggle("active");
+    });
+  });
+
+});
+
+/***/ }),
+
 /***/ "./src/js/sprite.js":
 /*!**************************!*\
   !*** ./src/js/sprite.js ***!
@@ -3796,6 +3944,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _assets_sprite_icon_chevrone_svg__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ../assets/sprite/icon-chevrone.svg */ "./src/assets/sprite/icon-chevrone.svg");
 /* harmony import */ var _assets_sprite_icon_refresh_svg__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ../assets/sprite/icon-refresh.svg */ "./src/assets/sprite/icon-refresh.svg");
 /* harmony import */ var _assets_sprite_icon_pdf_svg__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ../assets/sprite/icon-pdf.svg */ "./src/assets/sprite/icon-pdf.svg");
+/* harmony import */ var _assets_sprite_icon_arrow_bold_svg__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ../assets/sprite/icon-arrow-bold.svg */ "./src/assets/sprite/icon-arrow-bold.svg");
+/* harmony import */ var _assets_sprite_icon_external_svg__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ../assets/sprite/icon-external.svg */ "./src/assets/sprite/icon-external.svg");
+/* harmony import */ var _assets_sprite_icon_arrow_small_svg__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ../assets/sprite/icon-arrow-small.svg */ "./src/assets/sprite/icon-arrow-small.svg");
+/* harmony import */ var _assets_sprite_icon_filter_svg__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ../assets/sprite/icon-filter.svg */ "./src/assets/sprite/icon-filter.svg");
+
+
+
+
 
 
 
@@ -3848,6 +4004,10 @@ __webpack_require__.r(__webpack_exports__);
   chevrone: _assets_sprite_icon_chevrone_svg__WEBPACK_IMPORTED_MODULE_22__["default"],
   refresh: _assets_sprite_icon_refresh_svg__WEBPACK_IMPORTED_MODULE_23__["default"],
   pdf: _assets_sprite_icon_pdf_svg__WEBPACK_IMPORTED_MODULE_24__["default"],
+  arrowBold: _assets_sprite_icon_arrow_bold_svg__WEBPACK_IMPORTED_MODULE_25__["default"],
+  external: _assets_sprite_icon_external_svg__WEBPACK_IMPORTED_MODULE_26__["default"],
+  arrowSmall: _assets_sprite_icon_arrow_small_svg__WEBPACK_IMPORTED_MODULE_27__["default"],
+  filter: _assets_sprite_icon_filter_svg__WEBPACK_IMPORTED_MODULE_28__["default"],
 });
 
 

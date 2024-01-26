@@ -11,6 +11,9 @@
 
   &--gap {
     gap: 100px 40px;
+    @include r($mobile) {
+      gap: 100px 0;
+    }
   }
 
   &__col {

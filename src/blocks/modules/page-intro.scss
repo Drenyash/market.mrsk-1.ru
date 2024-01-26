@@ -3,6 +3,10 @@
   width: 100%;
   height: rem(495);
 
+  @include r($mobile) {
+    height: 700px;
+  }
+
   &__pic {
     height: 100%;
     width: 100%;
@@ -20,14 +24,27 @@
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+
+    @include r($mobile) {
+      width: 100%;
+    }
   }
 
   &__title {
     margin-bottom: rem(24);
+
+    @include r($mobile) {
+      font-size: 30px;
+      font-weight: 500;
+    }
   }
 
   &__text {
     font-size: rem(18);
     color: #ffffff;
+
+    @include r($mobile) {
+      font-size: 14px;
+    }
   }
 }

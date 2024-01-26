@@ -3,8 +3,17 @@
   grid-template-columns: 1fr 1fr;
   gap: 30px 39px;
 
+  @include r($mobile) {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
   &__item {
     min-height: 200px;
+    @include r($mobile) {
+      min-height: auto;
+    }
   }
 
   &__title {
@@ -16,6 +25,9 @@
     font-style: normal;
     font-weight: 500;
     line-height: normal;
+    @include r($mobile) {
+      font-size: 60px;
+    }
     span {
       font-size: 18px;
     }

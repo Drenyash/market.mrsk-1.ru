@@ -13,7 +13,7 @@
 
 <body class="body">
 <header class="header">
-  <div class="container">
+  <div class="container container--mob-full">
     <div class="header__row header__top">
       <div class="header__row header__top-left">
         <a href="/" class="logo">
@@ -21,7 +21,7 @@
             <img src="./assets/images/logo-market.svg" alt="">
           </picture>
         </a>
-        <div class="custom-select" data-select>
+        <div class="custom-select mob-hidden" data-select>
           <button class="custom-select__button" type="button" data-select-btn>
             <span data-select-btn-tmpl>Выберите регион</span>
             <svg class="custom-select__icon">
@@ -68,7 +68,7 @@
         </div>
       </div>
       <div class="header__row header__top-right">
-        <div class="header__row header__top-block">
+        <div class="header__row header__top-block mob-hidden">
           <a class="" href="tel:+78002200220">+7 (800) 220-02-20</a>
           <div class="callback">
             <div class="callback__text">Заказать звонок</div>
@@ -79,8 +79,8 @@
             </div>
           </div>
         </div>
-        <span class="header__divider"></span>
-        <div class="header__login">
+        <span class="header__divider mob-hidden"></span>
+        <div class="header__login mob-hidden">
           <div class="header__login-text">Войти</div>
           <div class="header__login-icon">
             <svg>
@@ -88,15 +88,132 @@
             </svg>
           </div>
         </div>
+        <div class="header__search desktop-hidden" data-search>
+          <button class="header__search-button">
+            <svg>
+              <use xlink:href="./assets/sprite.svg#icon-search"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="burger" data-burger>
+          <div class="burger__item"></div>
+        </div>
       </div>
-      <div class="burger">
-        <div class="burger__item"></div>
+      <div class="mobile-menu" data-mobile-menu>
+        <div class="mobile-menu__content">
+          <div class="mobile-menu__top">
+            <div class="custom-select" data-select>
+              <button class="custom-select__button" type="button" data-select-btn>
+                <span data-select-btn-tmpl>Выберите регион</span>
+                <svg class="custom-select__icon">
+                  <use xlink:href="./assets/sprite.svg#icon-arrow-min"></use>
+                </svg>
+              </button>
+              <div class="custom-select__list" data-select-list>
+                <div class="custom-select__list-wrapper">
+                  <ul class="custom-select__list-inner" role="listbox">
+                    <li class="custom-select__list-item"
+                        role="option"
+                        data-value="Удмурдская Республика">
+                      <a href="#">Удмурдская Республика</a>
+                    </li>
+                    <li class="custom-select__list-item"
+                        role="option"
+                        data-value="Марий-Эл Республика">
+                      <a href="#">Марий-Эл Республика</a>
+                    </li>
+                    <li class="custom-select__list-item"
+                        role="option"
+                        data-value="Белгородская область">
+                      <a href="#">Белгородская область</a>
+                    </li>
+                    <li class="custom-select__list-item"
+                        role="option"
+                        data-value="Владимирская область">
+                      <a href="#">Владимирская область</a>
+                    </li>
+                    <li class="custom-select__list-item"
+                        role="option"
+                        data-value="Воронежская область">
+                      <a href="#">Воронежская область</a>
+                    </li>
+                    <li class="custom-select__list-item"
+                        role="option"
+                        data-value="Ивановская область">
+                      <a href="#">Ивановская область</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <input type="hidden" data-select-input>
+            </div>
+            <div class="header__login">
+              <div class="header__login-text">Войти</div>
+              <div class="header__login-icon">
+                <svg>
+                  <use xlink:href="./assets/sprite.svg#icon-user"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="mobile-menu__body">
+            <div class="mobile-menu__nav">
+              <div class="mobile-menu__item">
+                <p class="mobile-menu__text">Контакты</p>
+                <svg class="mobile-menu__icon mobile-menu__icon--small">
+                  <use xlink:href="./assets/sprite.svg#icon-arrow-bold"></use>
+                </svg>
+              </div>
+              <div class="mobile-menu__item">
+                <p class="mobile-menu__text">Контакты</p>
+                <svg class="mobile-menu__icon mobile-menu__icon--small">
+                  <use xlink:href="./assets/sprite.svg#icon-arrow-bold"></use>
+                </svg>
+              </div>
+              <div class="mobile-menu__item">
+                <p class="mobile-menu__text">Контакты</p>
+                <svg class="mobile-menu__icon mobile-menu__icon--small">
+                  <use xlink:href="./assets/sprite.svg#icon-arrow-bold"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="mobile-menu__media">
+              <a href="#" class="mobile-menu__item">
+                <picture class="mobile-menu__picture">
+                  <img src="./assets/images/logo-center.svg" alt="">
+                </picture>
+                <svg class="mobile-menu__icon">
+                  <use xlink:href="./assets/sprite.svg#icon-external"></use>
+                </svg>
+              </a>
+              <a href="#" class="mobile-menu__item">
+                <picture class="mobile-menu__picture">
+                  <img src="./assets/images/logo-center-plus.svg" alt="">
+                </picture>
+                <svg class="mobile-menu__icon">
+                  <use xlink:href="./assets/sprite.svg#icon-external"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="mobile-menu__footer">
+            <a class="" href="tel:+78002200220">+7 (800) 220-02-20</a>
+            <div class="callback">
+              <div class="callback__text">Заказать звонок</div>
+              <div class="callback__icon">
+                <svg>
+                  <use xlink:href="./assets/sprite.svg#icon-tel"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <div class="header__row header__bottom">
       <div class="header__row header__bottom-left">
         <div class="header__menu" data-header-menu-block>
-          <button class="header__menu-button button" type="button" data-header-menu-btn>
+          <button class="header__menu-button button" type="button" data-header-menu-btn data-services>
             <svg>
               <use xlink:href="./assets/sprite.svg#icon-menu-service"></use>
             </svg>
@@ -123,7 +240,8 @@
                           data-tabs="tab-5">Выдача документации
                   </button>
                   <button type="button" class="menu__triggers-item tabs__trigger" data-tabs-trigger="outer"
-                          data-tabs="tab-6">Строительство электросетевых объектов</button>
+                          data-tabs="tab-6">Строительство электросетевых объектов
+                  </button>
                 </div>
                 <div class="menu__tabs tabs__list menu-inner">
                   <div class="menu-inner__tab tabs__item active" data-tabs-list="outer" id="tab-1">
@@ -650,7 +768,8 @@
                           <p class="menu__tabs-block-title">Проверка работоспособности трансформаторных подстанций,
                             кабельных линий и др.
                           </p>
-                          <p class="menu__tabs-block-text mb-30">Небольшое описание в две-три строки об оказании услуги </p>
+                          <p class="menu__tabs-block-text mb-30">Небольшое описание в две-три строки об оказании
+                            услуги </p>
                           <a href="/detail-page" class="button button--min">
                             <svg>
                               <use xlink:href="./assets/sprite.svg#icon-arrow"></use>
@@ -809,11 +928,11 @@
                                 </span>
                             </a>
                           </div>
-                           <a href="/detail-page" class="button button--vert mt-10">
-                          <svg>
-                            <use xlink:href="./assets/sprite.svg#icon-arrow"></use>
-                          </svg>
-                        </a>
+                          <a href="/detail-page" class="button button--vert mt-10">
+                            <svg>
+                              <use xlink:href="./assets/sprite.svg#icon-arrow"></use>
+                            </svg>
+                          </a>
                         </div>
                         <div class="menu-inner__item tabs__item" data-tabs-list="inner" id="tab-4.3">
                           <div class="menu__link-grid menu__tabs-controls--border menu__tabs-controls--border-wide">
@@ -866,11 +985,11 @@
                                 </span>
                             </a>
                           </div>
-                           <a href="/detail-page" class="button button--vert mt-10">
-                          <svg>
-                            <use xlink:href="./assets/sprite.svg#icon-arrow"></use>
-                          </svg>
-                        </a>
+                          <a href="/detail-page" class="button button--vert mt-10">
+                            <svg>
+                              <use xlink:href="./assets/sprite.svg#icon-arrow"></use>
+                            </svg>
+                          </a>
                         </div>
                         <div class="menu-inner__item tabs__item" data-tabs-list="inner" id="tab-4.4">
                           <div class="menu__link-grid menu__tabs-controls--border menu__tabs-controls--border-wide">
@@ -907,11 +1026,11 @@
                                 </span>
                             </a>
                           </div>
-                           <a href="/detail-page" class="button button--vert mt-10">
-                          <svg>
-                            <use xlink:href="./assets/sprite.svg#icon-arrow"></use>
-                          </svg>
-                        </a>
+                          <a href="/detail-page" class="button button--vert mt-10">
+                            <svg>
+                              <use xlink:href="./assets/sprite.svg#icon-arrow"></use>
+                            </svg>
+                          </a>
                         </div>
                       </div>
                     </div>
@@ -987,8 +1106,152 @@
               </div>
             </div>
           </div>
+          <div class="mobile-services" data-mobile-services>
+            <div class="mobile-services__header">
+              <div class="mobile-services__item" data-services-item>
+                <svg class="mobile-services__icon">
+                  <use xlink:href="./assets/sprite.svg#icon-connection"></use>
+                </svg>
+                <p class="mobile-services__title">Технологическое присоединение под ключ</p>
+                <button class="mobile-services__button">
+                  <svg>
+                    <use xlink:href="./assets/sprite.svg#icon-arrow-small"></use>
+                  </svg>
+                </button>
+              </div>
+              <div class="mobile-services__item" data-services-item>
+                <svg class="mobile-services__icon">
+                  <use xlink:href="./assets/sprite.svg#icon-bulb"></use>
+                </svg>
+                <p class="mobile-services__title">Обслуживание электрооборужования</p>
+                <button class="mobile-services__button">
+                  <svg>
+                    <use xlink:href="./assets/sprite.svg#icon-arrow-small"></use>
+                  </svg>
+                </button>
+              </div>
+              <div class="mobile-services__item" data-services-item>
+                <svg class="mobile-services__icon">
+                  <use xlink:href="./assets/sprite.svg#icon-lorry"></use>
+                </svg>
+                <p class="mobile-services__title">Аренда техники</p>
+                <button class="mobile-services__button">
+                  <svg>
+                    <use xlink:href="./assets/sprite.svg#icon-arrow-small"></use>
+                  </svg>
+                </button>
+              </div>
+              <div class="mobile-services__item" data-services-item>
+                <svg class="mobile-services__icon">
+                  <use xlink:href="./assets/sprite.svg#icon-connection"></use>
+                </svg>
+                <p class="mobile-services__title">Наружное освещение</p>
+                <button class="mobile-services__button">
+                  <svg>
+                    <use xlink:href="./assets/sprite.svg#icon-arrow-small"></use>
+                  </svg>
+                </button>
+              </div>
+              <div class="mobile-services__item" data-services-item>
+                <svg class="mobile-services__icon">
+                  <use xlink:href="./assets/sprite.svg#icon-connection"></use>
+                </svg>
+                <p class="mobile-services__title">Выдача документации</p>
+                <button class="mobile-services__button">
+                  <svg>
+                    <use xlink:href="./assets/sprite.svg#icon-arrow-small"></use>
+                  </svg>
+                </button>
+              </div>
+              <div class="mobile-services__item" data-services-item>
+                <svg class="mobile-services__icon">
+                  <use xlink:href="./assets/sprite.svg#icon-pillar"></use>
+                </svg>
+                <p class="mobile-services__title">Строительство электросетевых объектов</p>
+                <button class="mobile-services__button">
+                  <svg>
+                    <use xlink:href="./assets/sprite.svg#icon-arrow-small"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="mobile-services__content" data-services-content>
+              <div class="mobile-services__screen active">
+                <div class="mobile-services__item">
+                  <svg class="mobile-services__icon">
+                    <use xlink:href="./assets/sprite.svg#icon-lorry"></use>
+                  </svg>
+                  <p class="mobile-services__title">Аренда техники</p>
+                </div>
+                <ul class="mobile-services__list">
+                  <li class="mobile-services__element">
+                    <a class="mobile-services__link" href="#">
+                      <span>Краны</span>
+                      <svg>
+                        <use xlink:href="./assets/sprite.svg#icon-arrow"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="mobile-services__element">
+                    <a class="mobile-services__link" href="#">
+                      <span>Эксковаторы</span>
+                      <svg>
+                        <use xlink:href="./assets/sprite.svg#icon-arrow"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="mobile-services__element">
+                    <a class="mobile-services__link" href="#">
+                      <span>Фронтальные погрузчики</span>
+                      <svg>
+                        <use xlink:href="./assets/sprite.svg#icon-arrow"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="mobile-services__element">
+                    <a class="mobile-services__link" href="#">
+                      <span>Самосвалы</span>
+                      <svg>
+                        <use xlink:href="./assets/sprite.svg#icon-arrow"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="mobile-services__element">
+                    <a class="mobile-services__link" href="#">
+                      <span>Бульдозеры</span>
+                      <svg>
+                        <use xlink:href="./assets/sprite.svg#icon-arrow"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="mobile-services__element">
+                    <a class="mobile-services__link" href="#">
+                      <span>Манипуляторы</span>
+                      <svg>
+                        <use xlink:href="./assets/sprite.svg#icon-arrow"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="mobile-services__element">
+                    <a class="mobile-services__link" href="#">
+                      <span>Перечень техники</span>
+                      <svg>
+                        <use xlink:href="./assets/sprite.svg#icon-arrow"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+                <button class="button">
+                  <span>Перейти в раздел</span>
+                  <svg class="icon">
+                    <use xlink:href="./assets/sprite.svg#icon-arrow-bold"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="header__search">
+        <div class="header__search mob-hidden">
           <button class="header__search-button">
             <svg>
               <use xlink:href="./assets/sprite.svg#icon-search"></use>
@@ -1001,7 +1264,7 @@
           </form>
         </div>
       </div>
-      <div class="header__bottom-right">
+      <div class="header__bottom-right mob-hidden">
         <nav class="nav nav--header">
           <ul class="nav__list">
             <li class="nav__item">
@@ -1021,6 +1284,16 @@
             </li>
           </ul>
         </nav>
+      </div>
+      <div class="mobile-search" data-mobile-search>
+        <form class="mobile-search__form" action="#">
+          <label class="mobile-search__label">
+            <svg class="mobile-search__icon">
+              <use xlink:href="./assets/sprite.svg#icon-search"></use>
+            </svg>
+            <input type="text" name="search" class="mobile-search__input" placeholder="Поиск">
+          </label>
+        </form>
       </div>
     </div>
   </div>
@@ -1047,7 +1320,65 @@
     <div class="container">
       <h2 class="title mb-30">Услуги компании “Россети”</h2>
       <div class="tabs tabs-about" data-tabs-container="services">
-        <div class="tabs__controls tabs-about__controls">
+        <div class="dropdown mbm-30" data-toggle>
+          <button class="dropdown__button">
+            <span>Выбрать услугу</span>
+            <svg class="dropdown__icon">
+              <use xlink:href="./assets/sprite.svg#icon-arrow-empty"></use>
+            </svg>
+          </button>
+          <div class="dropdown__list">
+            <button class="tabs__trigger tabs-about__trigger active" data-tabs-trigger="services" data-tabs="about-1">
+            <span class="tabs-about__trigger-icon">
+              <svg>
+                <use xlink:href="./assets/sprite.svg#icon-connection"></use>
+              </svg>
+            </span>
+              <span class="tabs-about__trigger-text">Технологическое присоединение под ключ</span>
+            </button>
+            <button class="tabs__trigger tabs-about__trigger" data-tabs-trigger="services" data-tabs="about-2">
+            <span class="tabs-about__trigger-icon">
+               <svg>
+                <use xlink:href="./assets/sprite.svg#icon-lorry"></use>
+              </svg>
+            </span>
+              <span class="tabs-about__trigger-text">Аренда техники</span>
+            </button>
+            <button class="tabs__trigger tabs-about__trigger" data-tabs-trigger="services" data-tabs="about-3">
+            <span class="tabs-about__trigger-icon">
+               <svg>
+                <use xlink:href="./assets/sprite.svg#icon-lightning"></use>
+              </svg>
+            </span>
+              <span class="tabs-about__trigger-text">Обслуживание электрооборудования</span>
+            </button>
+            <button class="tabs__trigger tabs-about__trigger" data-tabs-trigger="services" data-tabs="about-4">
+            <span class="tabs-about__trigger-icon">
+               <svg>
+                <use xlink:href="./assets/sprite.svg#icon-bulb"></use>
+              </svg>
+            </span>
+              <span class="tabs-about__trigger-text">Наружное освещение</span>
+            </button>
+            <button class="tabs__trigger tabs-about__trigger" data-tabs-trigger="services" data-tabs="about-5">
+            <span class="tabs-about__trigger-icon">
+               <svg>
+                <use xlink:href="./assets/sprite.svg#icon-list"></use>
+              </svg>
+            </span>
+              <span class="tabs-about__trigger-text">Выдача документации</span>
+            </button>
+            <button class="tabs__trigger tabs-about__trigger" data-tabs-trigger="services" data-tabs="about-6">
+            <span class="tabs-about__trigger-icon">
+               <svg>
+                <use xlink:href="./assets/sprite.svg#icon-pillar"></use>
+              </svg>
+            </span>
+              <span class="tabs-about__trigger-text">Строительство линий</span>
+            </button>
+          </div>
+        </div>
+        <div class="tabs__controls tabs-about__controls mob-hidden">
           <button class="tabs__trigger tabs-about__trigger active" data-tabs-trigger="services" data-tabs="about-1">
             <span class="tabs-about__trigger-icon">
               <svg>
@@ -1955,6 +2286,160 @@
       </div>
     </div>
   </div>
+
+  <div class="modal modal--bg-img" id="modalFilter">
+    <div class="modal__container--centered">
+      <button class="modal__close-btn modal__serv-btn" data-fancybox-close>
+        <svg>
+          <use xlink:href="./assets/sprite.svg#icon-close"></use>
+        </svg>
+      </button>
+      <div class="filter">
+        <h3 class="filter__title">Перечень техники</h3>
+        <form class="filter__form" action="#" data-form>
+          <div class="filter__item">
+            <div class="filter__top">
+              <p class="filter__head">Краны</p>
+              <svg class="filter__icon">
+                <use xlink:href="./assets/sprite.svg#icon-chevrone"></use>
+              </svg>
+            </div>
+            <div class="filter__content">
+              <label class="input-info">
+                    <span class="input-info__detail">
+                      <input type="checkbox" class="input-info__input">
+                      <span class="input-info__text">Кран автомобильный 30 тн</span>
+                    </span>
+                <span class="input-info__count">120</span>
+              </label>
+              <label class="input-info">
+                    <span class="input-info__detail">
+                      <input type="checkbox" class="input-info__input">
+                      <span class="input-info__text">Кран автомобильный 40 тн</span>
+                    </span>
+                <span class="input-info__count">23</span>
+              </label>
+              <label class="input-info">
+                    <span class="input-info__detail">
+                      <input type="checkbox" class="input-info__input">
+                      <span class="input-info__text">Кран автомобильный 50 тн</span>
+                    </span>
+                <span class="input-info__count">4</span>
+              </label>
+              <label class="input-info">
+                    <span class="input-info__detail">
+                      <input type="checkbox" class="input-info__input">
+                      <span class="input-info__text">Кран автомобильный 60 тн</span>
+                    </span>
+                <span class="input-info__count">82</span>
+              </label>
+              <label class="input-info">
+                    <span class="input-info__detail">
+                      <input type="checkbox" class="input-info__input">
+                      <span class="input-info__text">Кран автомобильный 70 тн</span>
+                    </span>
+                <span class="input-info__count">120</span>
+              </label>
+            </div>
+          </div>
+          <div class="filter__item">
+            <div class="filter__top">
+              <p class="filter__head">Эксковаторы</p>
+              <svg class="filter__icon">
+                <use xlink:href="./assets/sprite.svg#icon-chevrone"></use>
+              </svg>
+            </div>
+            <div class="filter__content">
+              <label class="input-info">
+                    <span class="input-info__detail">
+                      <input type="checkbox" class="input-info__input">
+                      <span class="input-info__text">Кран автомобильный 30 тн</span>
+                    </span>
+                <span class="input-info__count">120</span>
+              </label>
+            </div>
+          </div>
+          <div class="filter__item">
+            <div class="filter__top">
+              <p class="filter__head">Фронтальные погрузчики</p>
+              <svg class="filter__icon">
+                <use xlink:href="./assets/sprite.svg#icon-chevrone"></use>
+              </svg>
+            </div>
+            <div class="filter__content">
+              <label class="input-info">
+                    <span class="input-info__detail">
+                      <input type="checkbox" class="input-info__input">
+                      <span class="input-info__text">Кран автомобильный 30 тн</span>
+                    </span>
+                <span class="input-info__count">120</span>
+              </label>
+            </div>
+          </div>
+          <div class="filter__item">
+            <div class="filter__top">
+              <p class="filter__head">Самосвалы</p>
+              <svg class="filter__icon">
+                <use xlink:href="./assets/sprite.svg#icon-chevrone"></use>
+              </svg>
+            </div>
+            <div class="filter__content">
+              <label class="input-info">
+                    <span class="input-info__detail">
+                      <input type="checkbox" class="input-info__input">
+                      <span class="input-info__text">Кран автомобильный 30 тн</span>
+                    </span>
+                <span class="input-info__count">120</span>
+              </label>
+            </div>
+          </div>
+          <div class="filter__item">
+            <div class="filter__top">
+              <p class="filter__head">Бульдозеры</p>
+              <svg class="filter__icon">
+                <use xlink:href="./assets/sprite.svg#icon-chevrone"></use>
+              </svg>
+            </div>
+            <div class="filter__content">
+              <label class="input-info">
+                    <span class="input-info__detail">
+                      <input type="checkbox" class="input-info__input">
+                      <span class="input-info__text">Кран автомобильный 30 тн</span>
+                    </span>
+                <span class="input-info__count">120</span>
+              </label>
+            </div>
+          </div>
+          <div class="filter__item">
+            <div class="filter__top">
+              <p class="filter__head">Манипуляторы</p>
+              <svg class="filter__icon">
+                <use xlink:href="./assets/sprite.svg#icon-chevrone"></use>
+              </svg>
+            </div>
+            <div class="filter__content">
+              <label class="input-info">
+                    <span class="input-info__detail">
+                      <input type="checkbox" class="input-info__input">
+                      <span class="input-info__text">Кран автомобильный 30 тн</span>
+                    </span>
+                <span class="input-info__count">120</span>
+              </label>
+            </div>
+          </div>
+          <button class="button button--accent button--disabled button--icon">
+            <span>Сбросить фильтр</span>
+            <svg>
+              <use xlink:href="./assets/sprite.svg#icon-refresh"></use>
+            </svg>
+          </button>
+          <button class="button button--accent" type="submit">
+            <span>Применить</span>
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
 </div>
 <!-- Это временная секция, здесь ссылки на все страницы. На продакшене ее не будет -->
 <section class="section">
@@ -1989,6 +2474,7 @@
             <a href="./organisation.html" class="temp__link">Организация наружного освещения</a>
             <a href="./404.html" class="temp__link">404</a>
             <a href="./about.html" class="temp__link">О компании</a>
+            <a href="./faq.html" class="temp__link">FAQ</a>
             <button data-fancybox data-src="#modalTechConnectionStart" class="temp__link">Modal Оформление заявки</button>
             <button data-fancybox data-src="#modalTechConnectionParams" class="temp__link">Modal Заявка на технологическое присоединение</button>
             <button data-fancybox data-src="#modalTechConnectionFIZ" class="temp__link">Modal Введите свои данные / FIZ litso</button>

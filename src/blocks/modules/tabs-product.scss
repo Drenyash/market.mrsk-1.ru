@@ -4,6 +4,11 @@
     align-items: center;
     gap: 30px;
     border-bottom: 1px solid rgba(133, 143, 164, 0.20);
+
+    @include r($mobile) {
+      white-space: nowrap;
+      overflow-x: auto;
+    }
   }
 
   &__head {

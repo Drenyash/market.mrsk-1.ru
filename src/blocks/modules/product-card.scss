@@ -76,6 +76,11 @@
     justify-content: space-between;
     gap: 10px;
     margin-top: auto;
+
+    @include r($mobile) {
+      align-items: stretch;
+      flex-direction: column;
+    }
   }
 
   &__price {
@@ -97,6 +102,9 @@
   &__button {
     width: 100%;
     max-width: 184px;
+    @include r($mobile) {
+      max-width: 100%;
+    }
   }
 
   &__control {
@@ -159,6 +167,15 @@
     flex-direction: row;
     padding: 33px 46px 33px 60px;
     box-shadow: 0 4px 80px 0 rgba(193, 193, 193, 0.45);
+
+    @include r($mobile) {
+      align-items: flex-start;
+      justify-content: flex-start;
+      flex-direction: column;
+      padding: 0;
+      box-shadow: none;
+      background-color: transparent;
+    }
 
     .product-card__title {
       font-size: 30px;

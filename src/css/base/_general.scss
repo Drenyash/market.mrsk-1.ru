@@ -67,7 +67,7 @@ img {
   @include r($mobile) {
     position: absolute;
     visibility: hidden;
-    display: none;
+    display: none !important;
   }
 }
 
@@ -121,7 +121,7 @@ img {
 }
 
 .desktop-hidden {
-  @include rmin(1441) {
+  @include rmin(1200) {
     position: absolute;
     pointer-events: none;
     display: none;
@@ -247,4 +247,14 @@ img {
 *[disabled] {
   opacity: .7;
   pointer-events: none;
+}
+
+.icon {
+  display: flex;
+  width: 16px;
+  height: 16px;
+}
+
+.no-scroll {
+  overflow-y: hidden;
 }

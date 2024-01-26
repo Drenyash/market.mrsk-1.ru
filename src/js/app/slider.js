@@ -17,10 +17,15 @@ function createSliderWidthThumbs(el) {
   });
   const swiperMain = new Swiper(el?.querySelector(".swiper"), {
     modules: [Navigation, Pagination, EffectFade, Thumbs],
-    slidesPerView: 1,
+    slidesPerView: "auto",
     spaceBetween: 30,
     thumbs: {
-      swiper: swiperThumbs
+      swiper: swiperThumbs,
+    },
+    breakpoints: {
+      1200: {
+        slidesPerView: 1,
+      }
     }
   });
 }
@@ -108,9 +113,8 @@ function createSlider(el) {
           slidesPerView: slidesQuantityTab || 2,
           spaceBetween: 20
         },
-
         320: {
-          slidesPerView: slidesQuantityMob || 1,
+          slidesPerView: slidesQuantityMob || "auto",
           spaceBetween: 15
         }
       },

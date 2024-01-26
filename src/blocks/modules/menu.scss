@@ -9,11 +9,19 @@
   background-color: #FFFFFF;
   font-family: $font-main;
 
+  @include r($mobile) {
+    display: none;
+  }
+
   &__triggers {
     display: flex;
     align-items: center;
     gap: rem(28);
     border-bottom: 1px solid rgba(133, 143, 164, 0.2);
+
+    @include r($mobile) {
+      flex-direction: column;
+    }
   }
 
   &__triggers-item {
@@ -103,6 +111,9 @@
         transform: translateX(10px);
       }
     }
+  }
+
+  &__tabs {
   }
 
   &__tabs-icon {

@@ -1,6 +1,6 @@
 .main {
     flex-grow: 1;
-    min-height: 100vh;
+    overflow: hidden;
     &--gray {
         background-color: #F7F9F9;
     }

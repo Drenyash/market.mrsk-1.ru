@@ -7,3 +7,5 @@ import "./app/header-menu";
 import "./app/fancybox";
 import "./app/slider";
 import "./app/text-writing";
+import "./app/toggle";
+import "./app/temp";

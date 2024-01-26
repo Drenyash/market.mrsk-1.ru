@@ -1,16 +1,58 @@
 .burger {
+  position: relative;
   display: none;
+  flex-direction: column;
   width: 24px;
-  height: 24px;
+  height: 17px;
+  overflow: hidden;
+
+  &.active {
+    .burger__item {
+      top: -5px;
+      opacity: 0;
+    }
+    &::before {
+      top: 50%;
+      transform: translateY(-50%) rotate(45deg);
+    }
+    &::after {
+      top: 50%;
+      transform: translateY(-50%) rotate(-45deg);
+    }
+  }
 
   @include r(1200) {
     display: flex;
   }
 
-  &__item {
+  &::before,
+  &::after {
+    position: absolute;
+    left: 0;
+    content: '';
     display: block;
     width: 24px;
     height: 2px;
     background-color: $color-light;
+    transition: .2s linear;
+  }
+
+  &::before {
+    top: 0;
+  }
+
+  &::after {
+    top: 7px;
+  }
+
+  &__item {
+    position: absolute;
+    top: 15px;
+    left: 0;
+    display: block;
+    width: 24px;
+    height: 2px;
+    background-color: $color-light;
+    transition: .2s linear;
   }
 }

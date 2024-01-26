@@ -12,13 +12,13 @@
     <div class="container">
       <h1 class="title title--min tab-hidden mb-25">Контактная информация ПАО «Россети Центр»</h1>
       <h2 class="title title--min tab-visible mb-25">Контакты</h2>
-      <a class="contacts__link mb-50" href="https://yandex.ru/maps/-/CDq3N4K4">
+      <a class="contacts__link mb-50 mob-hidden" href="https://yandex.ru/maps/-/CDq3N4K4">
         <svg>
           <use xlink:href="../assets/sprite.svg#icon-location"></use>
         </svg>
         <span>119017, Россия, г. Москва, ул. Малая Ордынка, д. 15</span>
       </a>
-      <div class="columns mb-100">
+      <div class="columns mb-100 mob-hidden">
         <div class="columns__col--5">
           <div class="contacts__wrapper">
             <div class="contacts__item">
@@ -90,9 +90,52 @@
   </section>
   <section class="section mb-150">
     <div class="container">
-      <h3 class="title mb-40">Филиалы</h3>
+      <h3 class="title mb-40 mob-hidden">Филиалы</h3>
       <div class="tabs tabs-address" data-tabs-container="address">
-        <div class="tabs__controls tabs-address__controls">
+        <div class="dropdown">
+          <button class="dropdown__button">
+            <span>Выбрать услугу</span>
+            <svg class="dropdown__icon">
+              <use xlink:href="./assets/sprite.svg#icon-arrow-empty"></use>
+            </svg>
+          </button>
+          <div class="dropdown__list">
+            <button class="tabs__trigger tabs-address__trigger active" data-tabs-trigger="address" data-tabs="address-1">
+              <span class="tabs-address__trigger-text">Тверьэнерго</span>
+            </button>
+            <button class="tabs__trigger tabs-address__trigger" data-tabs-trigger="address" data-tabs="address-2">
+              <span class="tabs-address__trigger-text">Брянскэнерго</span>
+            </button>
+            <button class="tabs__trigger tabs-address__trigger" data-tabs-trigger="address" data-tabs="address-3">
+              <span class="tabs-address__trigger-text">Белгородэнерго</span>
+            </button>
+            <button class="tabs__trigger tabs-address__trigger" data-tabs-trigger="address" data-tabs="address-4">
+              <span class="tabs-address__trigger-text">Воронежэнерго</span>
+            </button>
+            <button class="tabs__trigger tabs-address__trigger" data-tabs-trigger="address" data-tabs="address-5">
+              <span class="tabs-address__trigger-text">Костромаэнерго</span>
+            </button>
+            <button class="tabs__trigger tabs-address__trigger" data-tabs-trigger="address" data-tabs="address-6">
+              <span class="tabs-address__trigger-text">Курскэнерго</span>
+            </button>
+            <button class="tabs__trigger tabs-address__trigger" data-tabs-trigger="address" data-tabs="address-7">
+              <span class="tabs-address__trigger-text">Липецкэнерго</span>
+            </button>
+            <button class="tabs__trigger tabs-address__trigger" data-tabs-trigger="address" data-tabs="address-8">
+              <span class="tabs-address__trigger-text">Орелэнерго</span>
+            </button>
+            <button class="tabs__trigger tabs-address__trigger" data-tabs-trigger="address" data-tabs="address-9">
+              <span class="tabs-address__trigger-text">Смоленсэнерго</span>
+            </button>
+            <button class="tabs__trigger tabs-address__trigger" data-tabs-trigger="address" data-tabs="address-10">
+              <span class="tabs-address__trigger-text">Тамбовэнерго</span>
+            </button>
+            <button class="tabs__trigger tabs-address__trigger" data-tabs-trigger="address" data-tabs="address-11">
+              <span class="tabs-address__trigger-text">Ярэнерго</span>
+            </button>
+          </div>
+        </div>
+        <div class="tabs__controls tabs-address__controls mob-hidden">
           <button class="tabs__trigger tabs-address__trigger active" data-tabs-trigger="address" data-tabs="address-1">
             <span class="tabs-address__trigger-text">Тверьэнерго</span>
           </button>

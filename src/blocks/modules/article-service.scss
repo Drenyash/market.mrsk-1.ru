@@ -5,6 +5,10 @@
   padding: 40px 30px;
   height: 100%;
 
+  @include r($mobile) {
+    min-height: 620px;
+  }
+
   &--start {
     background: linear-gradient(308deg, #188CE9 0%, #0E8EB7 48.96%, #038F83 95.31%);
   }
@@ -42,6 +46,9 @@
 
   &__button {
     margin-top: 60px;
+    @include r($mobile) {
+      margin-top: 0;
+    }
   }
 
   &__picture {
@@ -50,5 +57,8 @@
     right: -30px;
     max-width: 382px;
     z-index: 0;
+    @include r($mobile) {
+      right: 0;
+    }
   }
 }

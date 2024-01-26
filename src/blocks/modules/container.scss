@@ -5,4 +5,10 @@
   max-width: rem(1760);
   padding-left: rem(15);
   padding-right: rem(15);
+
+  &--mob-full {
+    @include r($mobile) {
+      padding: 0;
+    }
+  }
 }

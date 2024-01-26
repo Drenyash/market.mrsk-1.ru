@@ -1,4 +1,5 @@
 .section {
+  position: relative;
     &--gradient {
       padding: rem(65) 0;
       background: linear-gradient(96deg, #024373 0%, #10172B 37.31%, #17142B 55.72%, #060614 100%);
@@ -11,7 +12,7 @@
   }
 
   &--accent {
-    position: relative;
     background-color: #2034E9;
   }
+
 }

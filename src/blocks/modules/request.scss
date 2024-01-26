@@ -7,6 +7,14 @@
   border-radius: 20px;
   background: #F1F2F2;
 
+  @include r($mobile) {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    padding: 0;
+    background-color: transparent;
+  }
+
   &::before {
     content: '';
     position: absolute;
@@ -17,5 +25,8 @@
     height: 85%;
     background-color: #E4E4E5;
     transform: translate(-50%, -50%);
+    @include r($mobile) {
+      display: none;
+    }
   }
 }

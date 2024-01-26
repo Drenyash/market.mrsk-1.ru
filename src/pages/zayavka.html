@@ -9,7 +9,7 @@
 <main class="main">
   <%= htmlWebpackPlugin.options.breadcrumbs %>
   <section class="section mb-70">
-    <div class="container">
+    <div class="container container--mob-full">
       <div class="page-intro">
         <picture class="page-intro__pic">
           <img src="./assets/images/page-intro-bg.jpg" alt="">
@@ -36,7 +36,29 @@
         </div>
         <div class="columns__col--12">
           <div class="tabs tabs-about" data-tabs-container="techConnection">
-            <div class="tabs__controls tabs-about__controls">
+            <div class="dropdown" data-toggle>
+              <button class="dropdown__button">
+                <span>Выбрать услугу</span>
+                <svg class="dropdown__icon">
+                  <use xlink:href="./assets/sprite.svg#icon-arrow-empty"></use>
+                </svg>
+              </button>
+              <div class="dropdown__list">
+                <button class="tabs__trigger tabs-about__trigger active" data-tabs-trigger="techConnection"
+                        data-tabs="techConnection-1">
+                  <span class="tabs-about__trigger-text">Услуга технологического присоединения</span>
+                </button>
+                <button class="tabs__trigger tabs-about__trigger" data-tabs-trigger="techConnection"
+                        data-tabs="techConnection-2">
+                  <span class="tabs-about__trigger-text">Услуга технологического присоединения</span>
+                </button>
+                <button class="tabs__trigger tabs-about__trigger" data-tabs-trigger="techConnection"
+                        data-tabs="techConnection-3">
+                  <span class="tabs-about__trigger-text">Услуга технологического присоединения</span>
+                </button>
+              </div>
+            </div>
+            <div class="tabs__controls tabs-about__controls mob-hidden">
               <button class="tabs__trigger tabs-about__trigger active" data-tabs-trigger="techConnection"
                       data-tabs="techConnection-1">
                 <span class="tabs-about__trigger-text">Услуга технологического присоединения</span>
@@ -250,7 +272,7 @@
     </div>
   </section>
   <section class="section mb-100">
-    <div class="slider slider--basic" data-slider data-slider-slides="1" data-slider-slides-tab="1">
+    <div class="slider slider--basic slider--mob-min" data-slider data-slider-slides="1" data-slider-slides-tab="1">
       <div class="swiper slider--overflow">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
@@ -296,7 +318,7 @@
             </div>
           </div>
         </div>
-        <div class="slider__controls">
+        <div class="slider__controls mob-hidden">
           <button class="slider__button slider__button--prev" data-slider-prev>
             <svg>
               <use xlink:href="./assets/sprite.svg#icon-arrow"></use>

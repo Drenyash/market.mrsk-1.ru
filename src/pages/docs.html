@@ -32,7 +32,29 @@
         имеет квалифицированных специалистов, а так же<br>собственную технику для выполнения всех видов работ.
       </p>
       <div class="tabs tabs-about" data-tabs-container="services">
-        <div class="tabs__controls tabs-about__controls">
+        <div class="dropdown mbm-30">
+          <button class="dropdown__button">
+            <span>Выбрать услугу</span>
+            <svg class="dropdown__icon">
+              <use xlink:href="./assets/sprite.svg#icon-arrow-empty"></use>
+            </svg>
+          </button>
+          <div class="dropdown__list">
+            <button class="tabs__trigger tabs-about__trigger active" data-tabs-trigger="services" data-tabs="about-1">
+              <span class="tabs-about__trigger-text">Разработка проектной документации</span>
+            </button>
+            <button class="tabs__trigger tabs-about__trigger" data-tabs-trigger="services" data-tabs="about-2">
+              <span class="tabs-about__trigger-text">Инженерные изыскания</span>
+            </button>
+            <button class="tabs__trigger tabs-about__trigger" data-tabs-trigger="services" data-tabs="about-3">
+              <span class="tabs-about__trigger-text">Согласования пересечения или сближения</span>
+            </button>
+            <button class="tabs__trigger tabs-about__trigger" data-tabs-trigger="services" data-tabs="about-4">
+              <span class="tabs-about__trigger-text">Выдача дубликатов документов</span>
+            </button>
+          </div>
+        </div>
+        <div class="tabs__controls tabs-about__controls mob-hidden">
           <button class="tabs__trigger tabs-about__trigger active" data-tabs-trigger="services" data-tabs="about-1">
             <span class="tabs-about__trigger-text">Разработка проектной документации</span>
           </button>

@@ -3,6 +3,12 @@
   margin: 0 auto;
   max-width: 778px;
 
+  &__picture {
+    @include r($mobile) {
+      height: 380px;
+    }
+  }
+
   &__title {
     position: absolute;
     top: -10px;
@@ -15,6 +21,11 @@
     line-height: normal;
     letter-spacing: 16.2px;
     transform: translateX(-50%);
+
+    @include r($mobile) {
+      top: 10px;
+      font-size: 110px;
+    }
   }
 
   &__info {
@@ -27,6 +38,10 @@
     color: $color-light;
     text-align: center;
     transform: translate(-50%, -50%);
+    @include r($mobile) {
+      top: 58%;
+      min-width: 230px;
+    }
   }
 
   &__head {
@@ -34,12 +49,20 @@
     font-family: $font-accent;
     font-size: 40px;
     font-weight: 500;
+    @include r($mobile) {
+      font-size: 24px;
+    }
   }
 
   &__text {
     margin-bottom: 24px;
     line-height: 24px;
     white-space: nowrap;
+
+    @include r($mobile) {
+      font-size: 14px;
+      white-space: initial;
+    }
   }
 
   &__button {

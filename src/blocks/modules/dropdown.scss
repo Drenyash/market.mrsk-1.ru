@@ -1,0 +1,42 @@
+.dropdown {
+  @include rmin($mobile) {
+    display: none;
+  }
+  &.active {
+    .dropdown__list {
+      height: auto;
+    }
+    .dropdown__icon {
+      transform: none;
+    }
+  }
+
+
+  &__button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 11px 20px;
+    width: 100%;
+    color: $color-light;
+    font-family: $font-accent;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: $color-accent;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+
+  &__icon {
+    display: flex;
+    width: 14px;
+    height: 14px;
+    transform: rotate(180deg);
+  }
+
+  &__list {
+    overflow: hidden;
+    height: 0;
+    transition: .2s linear;
+  }
+}
