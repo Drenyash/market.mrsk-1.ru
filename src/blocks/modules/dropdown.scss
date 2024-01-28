@@ -4,6 +4,7 @@
   }
   &.active {
     .dropdown__list {
+      padding: 8px 9px;
       height: auto;
     }
     .dropdown__icon {
@@ -35,8 +36,15 @@
   }
 
   &__list {
-    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 0 9px;
     height: 0;
+    border-radius: 8px;
+    background: #F1F2F8;
+    box-shadow: 5px 8px 50px 0 rgba(0, 0, 0, 0.25);
     transition: .2s linear;
+    overflow: hidden;
   }
 }

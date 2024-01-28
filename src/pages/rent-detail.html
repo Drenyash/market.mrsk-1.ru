@@ -177,12 +177,12 @@
             </div>
           </div>
           <div class="info__footer">
-            <div class="counter">
-              <button class="counter__btn">-</button>
-              <input type="number" class="counter__input" value="1">
-              <button class="counter__btn">+</button>
+            <div class="counter" data-counter>
+              <button class="counter__btn" data-counter-minus>-</button>
+              <input type="number" class="counter__input" value="1" name="QUANTITY" data-counter-input>
+              <button class="counter__btn" data-counter-plus>+</button>
             </div>
-            <button class="button info__button">Арендовать</button>
+            <button class="button info__button" data-fancybox data-src="#modalRent">Арендовать</button>
           </div>
         </div>
       </div>
@@ -190,20 +190,20 @@
   </section>
   <section class="section pb-115">
     <div class="container">
-      <div class="tabs-product">
+      <div class="tabs-product" data-tabs-container="detail">
         <div class="tabs-product__header">
-          <div class="tabs-product__head active">
+          <div class="tabs-product__head active" data-tabs-trigger="detail" data-tabs="detail-1">
             <p class="tabs-product__title">Описание</p>
           </div>
-          <div class="tabs-product__head">
+          <div class="tabs-product__head" data-tabs-trigger="detail" data-tabs="detail-2">
             <p class="tabs-product__title">Характеристики</p>
           </div>
-          <div class="tabs-product__head">
+          <div class="tabs-product__head" data-tabs-trigger="detail" data-tabs="detail-3">
             <p class="tabs-product__title">Доставка и оплата</p>
           </div>
         </div>
         <div class="tabs-product__body">
-          <div class="tabs-product__content">
+          <div class="tabs-product__content" data-tabs-list="detail" id="detail-1">
             <div class="file">
               <svg class="file__icon">
                 <use xlink:href="./assets/sprite.svg#icon-pdf"></use>
@@ -233,8 +233,66 @@
               </ul>
             </div>
           </div>
-          <div class="tabs-product__content"></div>
-          <div class="tabs-product__content"></div>
+          <div class="tabs-product__content" data-tabs-list="detail" id="detail-2">
+            <div class="file">
+              <svg class="file__icon">
+                <use xlink:href="./assets/sprite.svg#icon-pdf"></use>
+              </svg>
+              <p class="file__text">Скачать инструкцию 23</p>
+            </div>
+            <div class="editor">
+              <h4>Заголовок</h4>
+              <ul>
+                <li>Автокран Галичанин KC-55713-1В-1 на шасси КамАЗ 65115</li>
+                <li>Грузоподъемность, т - 25</li>
+                <li>Длина стрелы, м - 28,2</li>
+                <li>Грузовой момент, тм - 86</li>
+                <li>Модель дв. - КАМАЗ 667.511-300</li>
+                <li>Модель КП - 1310TO</li>
+                <li>Модель шасси - Камаз-65115</li>
+              </ul>
+              <h4>Заголовок</h4>
+              <ul>
+                <li>Автокран Галичанин KC-55713-1В-1 на шасси КамАЗ 65115</li>
+                <li>Грузоподъемность, т - 25</li>
+                <li>Длина стрелы, м - 28,2</li>
+                <li>Грузовой момент, тм - 86</li>
+                <li>Модель дв. - КАМАЗ 667.511-300</li>
+                <li>Модель КП - 1310TO</li>
+                <li>Модель шасси - Камаз-65115</li>
+              </ul>
+            </div>
+          </div>
+          <div class="tabs-product__content" data-tabs-list="detail" id="detail-3">
+            <div class="file">
+              <svg class="file__icon">
+                <use xlink:href="./assets/sprite.svg#icon-pdf"></use>
+              </svg>
+              <p class="file__text">Скачать инструкцию</p>
+            </div>
+            <div class="editor">
+              <h4>Заголовок</h4>
+              <ul>
+                <li>Автокран Галичанин KC-55713-1В-1 на шасси КамАЗ 65115</li>
+                <li>Грузоподъемность, т - 25</li>
+                <li>Длина стрелы, м - 28,2</li>
+                <li>Грузовой момент, тм - 86</li>
+                <li>Модель дв. - КАМАЗ 667.511-300</li>
+                <li>Модель КП - 1310TO</li>
+                <li>Модель шасси - Камаз-65115</li>
+              </ul>
+              <h4>Заголовок</h4>
+              <ul>
+                <li>Автокран Галичанин KC-55713-1В-1 на шасси КамАЗ 65115</li>
+                <li>Грузоподъемность, т - 25</li>
+                <li>Длина стрелы, м - 28,2</li>
+                <li>Грузовой момент, тм - 86</li>
+                <li>Модель дв. - КАМАЗ 667.511-300</li>
+                <li>Модель КП - 1310TO</li>
+                <li>Модель шасси - Камаз-65115</li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -304,5 +362,118 @@
 </main>
 <%= htmlWebpackPlugin.options.sectionFooter %>
 <%= htmlWebpackPlugin.options.temp %>
+<div class="modal modal--big" id="modalRent">
+  <div class="modal__container--centered">
+    <button class="modal__close-btn modal__serv-btn" data-fancybox-close>
+      <svg>
+        <use xlink:href="./assets/sprite.svg#icon-close"></use>
+      </svg>
+    </button>
+    <div class="modal__wrapper">
+      <div class="modal__item">
+        <div class="product-card product-card--modal">
+          <picture class="product-card__picture">
+            <img src="./assets/images/cran-2.png" alt="">
+          </picture>
+          <div class="product-card__content">
+            <h3 class="product-card__title">Кран автомобильный</h3>
+            <ul class="product-card__list">
+              <li class="product-card__item">
+                <span>Марка</span>
+                <span>Камаз</span>
+              </li>
+              <li class="product-card__item">
+                <span>Грузоподъемность</span>
+                <span>30 тн</span>
+              </li>
+              <li class="product-card__item">
+                <span>Вылет стрелы</span>
+                <span>25 м</span>
+              </li>
+              <li class="product-card__item">
+                <span>Высота подъема</span>
+                <span>30 м</span>
+              </li>
+              <li class="product-card__item">
+                <span>Скорость передвижения</span>
+                <span>60 км/ч</span>
+              </li>
+              <li class="product-card__item">
+                <span>Вылет стрелы</span>
+                <span>25 м</span>
+              </li>
+            </ul>
+            <div class="product-card__footer">
+              <p class="product-card__price">
+                <span>2 000 ₽</span>
+                <small>час</small>
+              </p>
+              <button class="button product-card__button">Подробнее</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal__item">
+        <div class="modal__head">
+          <p class="modal__title">Введите свои данные</p>
+        </div>
+        <form action="#" data-form class="form">
+          <div class="modal__top">
+            <div class="form__block">
+              <span class="from__text-label">Личные данные</span>
+              <div class="form__block-inner">
+                <label class="form__input-label">
+                  <input type="text"
+                         name="FIO"
+                         placeholder="ФИО"
+                         required>
+                  <span class="form__input-error-msg" hidden></span>
+                </label>
+                <label class="form__input-label">
+                  <input type="tel"
+                         name="phone"
+                         placeholder="Телефон"
+                         data-tel
+                         required>
+                  <span class="form__input-error-msg" hidden></span>
+                </label>
+                <label class="form__input-label">
+                  <input type="text"
+                         name="EMAIL"
+                         placeholder="E-mail"
+                         required>
+                  <span class="form__input-error-msg" hidden></span>
+                </label>
+              </div>
+            </div>
+            <div class="form__agreement">
+              <label class="form__agreement-label">
+                <input type="checkbox"
+                       name="agreement"
+                       data-form-agreement
+                       checked>
+                <span class="form__agreement-checkbox"></span>
+              </label>
+              <span class="form__agreement-text">Согласие на обработку
+          <a href="#" target="_blank">персональных данных</a>
+          </span>
+            </div>
+          </div>
+          <div class="modal__bottom">
+            <button class="button form__button"
+                    data-form-submit>
+              <span>Отправить заявку</span>
+            </button>
+            <div class="modal__bottom-info">
+              <span>Стоимость в час:</span>
+              <span class="form__price">2 000 руб.</span>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
 </body>
 </html>

@@ -17,7 +17,9 @@ class Form {
     this.inputs = this.form.querySelectorAll("input");
     this.requiredInputs = this.form.querySelectorAll("[required]");
     this.agreement = this.form.querySelector("[data-form-agreement]");
-    this.formValid = this.form.getAttribute("data-form-valid");
+    this.formValid = this.form.hasAttribute("data-form-valid");
+    this.submitSuccess = this.form.hasAttribute("data-submit-msg");
+    this.counter = document.querySelector("[data-counter-input]");
     this.validateInputs();
     this.submit();
   }
@@ -69,7 +71,7 @@ class Form {
   }
 
   checkAgreement() {
-    this.agreement.addEventListener("change", () => {
+    this.agreement?.addEventListener("change", () => {
       if (this.agreement.checked) {
         this.disableSubmit(false);
       } else {
@@ -93,8 +95,11 @@ class Form {
     const els = [
       ...this.form.querySelectorAll("input"),
       ...this.form.querySelectorAll("textarea"),
-      ...this.form.querySelectorAll("select"),
+      ...this.form.querySelectorAll("select")
     ];
+    if (this.counter) {
+      els.push(this.counter);
+    }
 
     els.forEach((item) => {
       if (item.type === "file") {
@@ -121,26 +126,23 @@ class Form {
     this.checkAgreement();
     this.form.addEventListener("submit", (e) => {
       e.preventDefault();
-      if (this.formValid) {
-        axios
-          .post(this.url, this.getData())
-          .then((response) => {
+      axios
+        .post(this.url, this.getData())
+        .then((response) => {
+          if (!this.submitSuccess) {
             this.showSuccess();
-            console.log(response);
-          })
-          .catch((error) => {
-            console.error(error);
-          })
-          .finally(() => {
-            setTimeout(() => {
-              this.form.reset();
-              Fancybox.close();
-            }, 2000);
-          });
-      } else {
-        this.disableSubmit(true);
-
-      }
+          }
+          console.log(response);
+        })
+        .catch((error) => {
+          console.error(error);
+        })
+        .finally(() => {
+          setTimeout(() => {
+            this.form.reset();
+            Fancybox.close();
+          }, 2000);
+        });
     });
   }
 

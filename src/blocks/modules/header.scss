@@ -103,6 +103,9 @@
       width: rem(16);
       height: rem(16);
     }
+    #icon-step-1 {
+      transform: rotate(180deg);
+    }
   }
 
   &__menu-container {

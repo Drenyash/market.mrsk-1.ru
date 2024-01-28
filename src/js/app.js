@@ -9,3 +9,5 @@ import "./app/slider";
 import "./app/text-writing";
 import "./app/toggle";
 import "./app/temp";
+import "./app/menu";
+import "./app/counter";

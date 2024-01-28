@@ -9,6 +9,10 @@
     gap: rem(15);
   }
 
+  &--center {
+    align-items: center;
+  }
+
   &--gap {
     gap: 100px 40px;
     @include r($mobile) {

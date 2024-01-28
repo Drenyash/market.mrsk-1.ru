@@ -10,17 +10,17 @@
   <%= htmlWebpackPlugin.options.breadcrumbs %>
   <section class="section contacts">
     <div class="container">
-      <h1 class="title title--min tab-hidden mb-25">Контактная информация ПАО «Россети Центр»</h1>
       <h2 class="title title--min tab-visible mb-25">Контакты</h2>
-      <a class="contacts__link mb-50 mob-hidden" href="https://yandex.ru/maps/-/CDq3N4K4">
-        <svg>
-          <use xlink:href="../assets/sprite.svg#icon-location"></use>
-        </svg>
-        <span>119017, Россия, г. Москва, ул. Малая Ордынка, д. 15</span>
-      </a>
-      <div class="columns mb-100 mob-hidden">
-        <div class="columns__col--5">
-          <div class="contacts__wrapper">
+      <div class="columns columns--center mb-100 mob-hidden">
+        <div class="columns__col--6">
+          <div class="contacts__wrapper mb-50">
+            <h2 class="title title--min tab-hidden">Контактная информация ПАО «Россети Центр»</h2>
+            <a class="contacts__link mob-hidden" href="https://yandex.ru/maps/-/CDq3N4K4">
+              <svg>
+                <use xlink:href="../assets/sprite.svg#icon-location"></use>
+              </svg>
+              <span>119017, Россия, г. Москва, ул. Малая Ордынка, д. 15</span>
+            </a>
             <div class="contacts__item">
               <p class="contacts__item-text">Телефон:</p>
               <a href="tel:+70000000000" class="contacts__item-link">
@@ -58,8 +58,53 @@
               </a>
             </div>
           </div>
+          <div class="contacts__wrapper">
+            <h2 class="title title--min tab-hidden">Контактная информация ПАО «Россети Центр и Приволжье»</h2>
+            <a class="contacts__link mob-hidden" href="https://yandex.ru/maps/-/CDq3N4K4">
+              <svg>
+                <use xlink:href="../assets/sprite.svg#icon-location"></use>
+              </svg>
+              <span>Россия, 603950, г. Нижний Новгород, ул. Рождественская, д. 33</span>
+            </a>
+            <div class="contacts__item">
+              <p class="contacts__item-text">Телефон:</p>
+              <a href="tel:+70000000000" class="contacts__item-link">
+                <svg>
+                  <use xlink:href="../assets/sprite.svg#icon-tel"></use>
+                </svg>
+                <span>+7 (831) 431-74-00</span>
+              </a>
+            </div>
+            <div class="contacts__item">
+              <p class="contacts__item-text">Почта:</p>
+              <a href="mailto:posta@mrsk-1.ru" class="contacts__item-link">
+                <svg>
+                  <use xlink:href="../assets/sprite.svg#icon-mail"></use>
+                </svg>
+                <span>info@mrsk-cp.ru</span>
+              </a>
+            </div>
+            <div class="contacts__item">
+              <p class="contacts__item-text">Факс:</p>
+              <p class="contacts__item-link">
+                <svg>
+                  <use xlink:href="../assets/sprite.svg#icon-fax"></use>
+                </svg>
+                <span>+7 (495) 747-92-95</span>
+              </p>
+            </div>
+            <div class="contacts__item">
+              <p class="contacts__item-text">Реквизиты компании:</p>
+              <a href="tel:+70000000000" class="contacts__item-link">
+                <svg>
+                  <use xlink:href="../assets/sprite.svg#icon-doc"></use>
+                </svg>
+                <span>PDF - 0.2 МБ</span>
+              </a>
+            </div>
+          </div>
         </div>
-        <div class="columns__col--4">
+        <div class="columns__col--3">
           <div class="contacts__card contacts__card--light">
             <div class="contacts__card-inner">
               <p class="contacts__card-title">Центры обслуживания потребителей</p>
@@ -92,7 +137,7 @@
     <div class="container">
       <h3 class="title mb-40 mob-hidden">Филиалы</h3>
       <div class="tabs tabs-address" data-tabs-container="address">
-        <div class="dropdown">
+        <div class="dropdown" data-toggle>
           <button class="dropdown__button">
             <span>Выбрать услугу</span>
             <svg class="dropdown__icon">
@@ -100,7 +145,8 @@
             </svg>
           </button>
           <div class="dropdown__list">
-            <button class="tabs__trigger tabs-address__trigger active" data-tabs-trigger="address" data-tabs="address-1">
+            <button class="tabs__trigger tabs-address__trigger active" data-tabs-trigger="address"
+                    data-tabs="address-1">
               <span class="tabs-address__trigger-text">Тверьэнерго</span>
             </button>
             <button class="tabs__trigger tabs-address__trigger" data-tabs-trigger="address" data-tabs="address-2">

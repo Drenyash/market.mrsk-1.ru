@@ -7,6 +7,10 @@
   padding: 0;
   background-color: #F1F2F2;
 
+  &--big {
+    max-width: 850px;
+    background-color: transparent;
+  }
 
   &--bg-img {
     &:before {
@@ -26,6 +30,44 @@
 
   &__container--centered {
     text-align: center;
+  }
+
+  &__wrapper {
+    display: flex;
+    gap: 40px;
+
+    & > div {
+      width: 50%;
+    }
+
+    .modal__head {
+      margin: 0;
+      text-align: left;
+      padding-bottom: 30px;
+      background-color: #F2F2F2;
+    }
+    .form {
+      text-align: left;
+    }
+    .modal__top {
+      border-radius: 0;
+    }
+    .modal__title {
+      margin: 0;
+    }
+    .modal__bottom {
+      gap: 20px;
+      padding: 30px 40px;
+    }
+    .modal__bottom-info {
+      flex-shrink: 0;
+    }
+  }
+
+  &__item {
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: $color-light;
   }
 
   &__top {
@@ -102,6 +144,9 @@
 
   &__close-btn {
     right: rem(-52);
+    @include r($mobile) {
+      right: 0;
+    }
   }
 
   &__back-btn {

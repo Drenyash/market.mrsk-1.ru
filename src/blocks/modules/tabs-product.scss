@@ -20,6 +20,7 @@
     font-weight: 500;
     line-height: 130%;
     transition: .2s linear;
+    cursor: pointer;
 
     &::after {
       position: absolute;
@@ -53,8 +54,11 @@
   }
 
   &__content {
-    display: flex;
+    display: none;
     flex-direction: column;
     gap: 40px;
+    &.active {
+      display: flex;
+    }
   }
 }

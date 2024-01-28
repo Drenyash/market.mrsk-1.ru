@@ -1,6 +1,7 @@
 .counter {
   display: flex;
   align-items: center;
+  min-width: 110px;
   gap: 10px;
 
   &__btn {
