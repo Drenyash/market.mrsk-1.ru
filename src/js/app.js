@@ -11,3 +11,5 @@ import "./app/toggle";
 import "./app/temp";
 import "./app/menu";
 import "./app/counter";
+import "./app/rent";
+import "./app/filter";

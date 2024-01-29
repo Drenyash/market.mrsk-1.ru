@@ -15,9 +15,10 @@ document.addEventListener("DOMContentLoaded", () => {
         {
           src: newModalId,
           type: "inline",
-          closeButton: false
+          closeButton: false,
+          autofocus: true,
         }
-      ]);
+      ], { dragToClose: false });
       const modalParams = document.getElementById("modalTechConnectionParams");
       const inputsParams = modalParams.querySelectorAll("input");
 
@@ -46,7 +47,7 @@ document.addEventListener("DOMContentLoaded", () => {
               closeButton: false,
               autofocus: true,
             }
-          ]);
+          ], { dragToClose: false, groupAttr: null, });
         } else {
           modalParamsCurrent.close();
           new Fancybox([
@@ -56,7 +57,7 @@ document.addEventListener("DOMContentLoaded", () => {
               closeButton: false,
               autofocus: true,
             }
-          ]);
+          ], { dragToClose: false });
         }
       });
     });
@@ -77,7 +78,7 @@ document.addEventListener("DOMContentLoaded", () => {
           closeButton: false,
           autofocus: true,
         }
-      ]);
+      ], { dragToClose: false });
     });
   });
 });

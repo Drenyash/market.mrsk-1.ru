@@ -34,7 +34,7 @@
           </button>
           <div class="filter mob-hidden">
             <h3 class="filter__title">Перечень техники</h3>
-            <form class="filter__form" action="#">
+            <form class="filter__form" action="#" data-filter>
               <div class="filter__item" data-toggle>
                 <div class="filter__top">
                   <p class="filter__head">Краны</p>
@@ -165,7 +165,7 @@
                   </label>
                 </div>
               </div>
-              <button class="button button--accent button--disabled button--icon">
+              <button class="button button--accent button--disabled button--icon" type="reset">
                 <span>Сбросить фильтр</span>
                 <svg>
                   <use xlink:href="./assets/sprite.svg#icon-refresh"></use>
@@ -202,7 +202,7 @@
                       <span>2 000 ₽</span>
                       <small>час</small>
                     </p>
-                    <button class="button product-card__button">Подробнее</button>
+                    <a href="#" class="button product-card__button">Подробнее</a>
                   </div>
                 </div>
                 <div class="product-card__modal">
@@ -242,7 +242,7 @@
                       <small>час</small>
                     </p>
                     <div class="product-card__control">
-                      <button class="button product-card__button">Арендовать</button>
+                      <button class="button product-card__button" data-fancybox data-src="#modalRent">Арендовать</button>
                       <button class="button button--invert button--icon product-card__button">
                         <span>Подробнее</span>
                         <svg>
@@ -253,7 +253,7 @@
                   </div>
                 </div>
               </div>
-              <div class="product-card product-card--disabled">
+              <div class="product-card">
                 <picture class="product-card__picture">
                   <img src="./assets/images/cran-2.png" alt="">
                 </picture>
@@ -278,7 +278,54 @@
                       <span>2 000 ₽</span>
                       <small>час</small>
                     </p>
-                    <button class="button product-card__button">Подробнее</button>
+                    <a href="#" class="button product-card__button">Подробнее</a>
+                  </div>
+                  <div class="product-card__modal">
+                    <picture class="product-card__picture">
+                      <img src="./assets/images/cran-1.png" alt="">
+                    </picture>
+                    <h3 class="product-card__title">Кран автомобильный</h3>
+                    <ul class="product-card__list">
+                      <li class="product-card__item">
+                        <span>Марка</span>
+                        <span>Камаз</span>
+                      </li>
+                      <li class="product-card__item">
+                        <span>Грузоподъемность</span>
+                        <span>30 тн</span>
+                      </li>
+                      <li class="product-card__item">
+                        <span>Вылет стрелы</span>
+                        <span>25 м</span>
+                      </li>
+                      <li class="product-card__item">
+                        <span>Марка</span>
+                        <span>Камаз</span>
+                      </li>
+                      <li class="product-card__item">
+                        <span>Грузоподъемность</span>
+                        <span>30 тн</span>
+                      </li>
+                      <li class="product-card__item">
+                        <span>Вылет стрелы</span>
+                        <span>25 м</span>
+                      </li>
+                    </ul>
+                    <div class="product-card__footer">
+                      <p class="product-card__price">
+                        <span>2 000 ₽</span>
+                        <small>час</small>
+                      </p>
+                      <div class="product-card__control">
+                        <button class="button product-card__button" data-fancybox data-src="#modalRent">Арендовать</button>
+                        <button class="button button--invert button--icon product-card__button">
+                          <span>Подробнее</span>
+                          <svg>
+                            <use xlink:href="./assets/sprite.svg#icon-arrow"></use>
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -307,7 +354,54 @@
                       <span>2 000 ₽</span>
                       <small>час</small>
                     </p>
-                    <button class="button product-card__button">Подробнее</button>
+                    <a href="#" class="button product-card__button">Подробнее</a>
+                  </div>
+                  <div class="product-card__modal">
+                    <picture class="product-card__picture">
+                      <img src="./assets/images/cran-1.png" alt="">
+                    </picture>
+                    <h3 class="product-card__title">Кран автомобильный</h3>
+                    <ul class="product-card__list">
+                      <li class="product-card__item">
+                        <span>Марка</span>
+                        <span>Камаз</span>
+                      </li>
+                      <li class="product-card__item">
+                        <span>Грузоподъемность</span>
+                        <span>30 тн</span>
+                      </li>
+                      <li class="product-card__item">
+                        <span>Вылет стрелы</span>
+                        <span>25 м</span>
+                      </li>
+                      <li class="product-card__item">
+                        <span>Марка</span>
+                        <span>Камаз</span>
+                      </li>
+                      <li class="product-card__item">
+                        <span>Грузоподъемность</span>
+                        <span>30 тн</span>
+                      </li>
+                      <li class="product-card__item">
+                        <span>Вылет стрелы</span>
+                        <span>25 м</span>
+                      </li>
+                    </ul>
+                    <div class="product-card__footer">
+                      <p class="product-card__price">
+                        <span>2 000 ₽</span>
+                        <small>час</small>
+                      </p>
+                      <div class="product-card__control">
+                        <button class="button product-card__button" data-fancybox data-src="#modalRent">Арендовать</button>
+                        <button class="button button--invert button--icon product-card__button">
+                          <span>Подробнее</span>
+                          <svg>
+                            <use xlink:href="./assets/sprite.svg#icon-arrow"></use>
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -336,7 +430,54 @@
                       <span>2 000 ₽</span>
                       <small>час</small>
                     </p>
-                    <button class="button product-card__button">Подробнее</button>
+                    <a href="#" class="button product-card__button">Подробнее</a>
+                  </div>
+                  <div class="product-card__modal">
+                    <picture class="product-card__picture">
+                      <img src="./assets/images/cran-1.png" alt="">
+                    </picture>
+                    <h3 class="product-card__title">Кран автомобильный</h3>
+                    <ul class="product-card__list">
+                      <li class="product-card__item">
+                        <span>Марка</span>
+                        <span>Камаз</span>
+                      </li>
+                      <li class="product-card__item">
+                        <span>Грузоподъемность</span>
+                        <span>30 тн</span>
+                      </li>
+                      <li class="product-card__item">
+                        <span>Вылет стрелы</span>
+                        <span>25 м</span>
+                      </li>
+                      <li class="product-card__item">
+                        <span>Марка</span>
+                        <span>Камаз</span>
+                      </li>
+                      <li class="product-card__item">
+                        <span>Грузоподъемность</span>
+                        <span>30 тн</span>
+                      </li>
+                      <li class="product-card__item">
+                        <span>Вылет стрелы</span>
+                        <span>25 м</span>
+                      </li>
+                    </ul>
+                    <div class="product-card__footer">
+                      <p class="product-card__price">
+                        <span>2 000 ₽</span>
+                        <small>час</small>
+                      </p>
+                      <div class="product-card__control">
+                        <button class="button product-card__button" data-fancybox data-src="#modalRent">Арендовать</button>
+                        <button class="button button--invert button--icon product-card__button">
+                          <span>Подробнее</span>
+                          <svg>
+                            <use xlink:href="./assets/sprite.svg#icon-arrow"></use>
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -365,7 +506,54 @@
                       <span>2 000 ₽</span>
                       <small>час</small>
                     </p>
-                    <button class="button product-card__button">Подробнее</button>
+                    <a href="#" class="button product-card__button">Подробнее</a>
+                  </div>
+                  <div class="product-card__modal">
+                    <picture class="product-card__picture">
+                      <img src="./assets/images/cran-1.png" alt="">
+                    </picture>
+                    <h3 class="product-card__title">Кран автомобильный</h3>
+                    <ul class="product-card__list">
+                      <li class="product-card__item">
+                        <span>Марка</span>
+                        <span>Камаз</span>
+                      </li>
+                      <li class="product-card__item">
+                        <span>Грузоподъемность</span>
+                        <span>30 тн</span>
+                      </li>
+                      <li class="product-card__item">
+                        <span>Вылет стрелы</span>
+                        <span>25 м</span>
+                      </li>
+                      <li class="product-card__item">
+                        <span>Марка</span>
+                        <span>Камаз</span>
+                      </li>
+                      <li class="product-card__item">
+                        <span>Грузоподъемность</span>
+                        <span>30 тн</span>
+                      </li>
+                      <li class="product-card__item">
+                        <span>Вылет стрелы</span>
+                        <span>25 м</span>
+                      </li>
+                    </ul>
+                    <div class="product-card__footer">
+                      <p class="product-card__price">
+                        <span>2 000 ₽</span>
+                        <small>час</small>
+                      </p>
+                      <div class="product-card__control">
+                        <button class="button product-card__button" data-fancybox data-src="#modalRent">Арендовать</button>
+                        <button class="button button--invert button--icon product-card__button">
+                          <span>Подробнее</span>
+                          <svg>
+                            <use xlink:href="./assets/sprite.svg#icon-arrow"></use>
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>

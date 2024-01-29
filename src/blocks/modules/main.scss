@@ -1,6 +1,10 @@
 .main {
     flex-grow: 1;
     overflow: hidden;
+
+    @include r($mobile) {
+        padding-top: 121px;
+    }
     &--gray {
         background-color: #F7F9F9;
     }

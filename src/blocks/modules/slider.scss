@@ -102,6 +102,10 @@
     z-index: 10;
     transform: translate(-50%, -50%);
     pointer-events: none;
+
+    @include r($mobile) {
+      width: calc(100% + 20px);
+    }
   }
 
   &__button {
@@ -119,6 +123,14 @@
       fill: $color-accent;
       max-width: rem(15);
       max-height: rem(13);
+    }
+    &--small {
+      width: 24px;
+      height: 24px;
+      background-color: $color-accent;
+      svg {
+        fill: $color-light;
+      }
     }
   }
 

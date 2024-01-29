@@ -3129,6 +3129,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _app_menu__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(_app_menu__WEBPACK_IMPORTED_MODULE_11__);
 /* harmony import */ var _app_counter__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./app/counter */ "./src/js/app/counter.js");
 /* harmony import */ var _app_counter__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(_app_counter__WEBPACK_IMPORTED_MODULE_12__);
+/* harmony import */ var _app_rent__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./app/rent */ "./src/js/app/rent.js");
+/* harmony import */ var _app_rent__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(_app_rent__WEBPACK_IMPORTED_MODULE_13__);
+/* harmony import */ var _app_filter__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./app/filter */ "./src/js/app/filter.js");
+/* harmony import */ var _app_filter__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(_app_filter__WEBPACK_IMPORTED_MODULE_14__);
+
+
+
 
 
 
@@ -3207,6 +3214,47 @@ document.addEventListener("DOMContentLoaded", () => {
     autoFocus: true,
   });
 })
+
+
+/***/ }),
+
+/***/ "./src/js/app/filter.js":
+/*!******************************!*\
+  !*** ./src/js/app/filter.js ***!
+  \******************************/
+/***/ (function() {
+
+document.addEventListener("DOMContentLoaded", () => {
+  const forms = document.querySelectorAll("[data-filter]");
+
+  forms.forEach(filter => {
+    const resetButton = filter.querySelector(".button");
+    let totalCheckedEls = [];
+    const els = [
+      ...filter.querySelectorAll("input")
+    ];
+
+    els.forEach(el => {
+      el.addEventListener("change", () => {
+        totalCheckedEls = els.filter(element => {
+          return !!element.checked;
+        });
+        if (totalCheckedEls.length >= 1) {
+          resetButton.classList.remove("button--disabled");
+        } else {
+          resetButton.classList.add("button--disabled");
+        }
+      });
+    });
+
+    resetButton.addEventListener("click", () => {
+      if (!resetButton.classList.contains("button--disabled")) {
+        resetButton.classList.add("button--disabled");
+      }
+    });
+  });
+});
+
 
 /***/ }),
 
@@ -3373,7 +3421,8 @@ class Form {
       {
         src: this.successMsg.id,
         type: "inline",
-        closeButton: false
+        closeButton: false,
+        draggable: false,
       }
     ]);
   }
@@ -3433,50 +3482,54 @@ document.addEventListener("DOMContentLoaded", () => {
   const body = document.querySelector("body");
   let step = 0;
   let currentIndex = 0;
-  const defaultIcon = document.getElementById('icon-step-0');
-  const behindIcon = document.getElementById('icon-step-1');
+  const defaultIcon = document.getElementById("icon-step-0");
+  const behindIcon = document.getElementById("icon-step-1");
+  let currentWidth = window.screen.availWidth;
 
   const updateIcon = () => {
     if (step < 1) {
-      defaultIcon.style.display = 'flex';
-      behindIcon.style.display = 'none';
+      defaultIcon.style.display = "flex";
+      behindIcon.style.display = "none";
     } else {
-      defaultIcon.style.display = 'none';
-      behindIcon.style.display = 'flex';
+      defaultIcon.style.display = "none";
+      behindIcon.style.display = "flex";
     }
-  }
+  };
 
-  updateIcon()
+  updateIcon();
 
   const showMenu = () => {
     step += 1;
     menu.classList.add("active");
     body.classList.add("no-scroll");
     servicesBtn.querySelector("span").textContent = "Назад";
-    updateIcon()
+    updateIcon();
   };
+
   const closeMenu = () => {
     step -= 1;
     menu.classList.remove("active");
     body.classList.remove("no-scroll");
     servicesBtn.querySelector("span").textContent = "Услуги";
-    updateIcon()
+    updateIcon();
   };
 
   const updateMenu = (step, idx) => {
-    currentIndex = idx;
-    if (step === 0) {
-      showMenu()
-    } else if (step <= 1) {
-      closeMenu()
-    } else if (step > 2) {
-      servicesContent.children[currentIndex].classList.add('active')
-    } else {
-      servicesContent.children[currentIndex].classList.remove('active')
+    if (currentWidth < 1200) {
+      currentIndex = idx;
+      if (step === 0) {
+        showMenu();
+      } else if (step <= 1) {
+        closeMenu();
+      } else if (step > 2) {
+        servicesContent.children[currentIndex].classList.add("active");
+      } else {
+        servicesContent.children[currentIndex].classList.remove("active");
+      }
     }
   };
 
-  servicesBtn.addEventListener("click", (evt) => {
+  servicesBtn.addEventListener("click", () => {
     if (step > 1) {
       step -= 1;
     }
@@ -3493,7 +3546,13 @@ document.addEventListener("DOMContentLoaded", () => {
       updateMenu(step, idx);
     });
   });
+
+  window.addEventListener("resize", () => {
+    currentWidth = window.screen.availWidth;
+  });
+
 });
+
 
 /***/ }),
 
@@ -3523,9 +3582,10 @@ document.addEventListener("DOMContentLoaded", () => {
         {
           src: newModalId,
           type: "inline",
-          closeButton: false
+          closeButton: false,
+          autofocus: true,
         }
-      ]);
+      ], { dragToClose: false });
       const modalParams = document.getElementById("modalTechConnectionParams");
       const inputsParams = modalParams.querySelectorAll("input");
 
@@ -3554,7 +3614,7 @@ document.addEventListener("DOMContentLoaded", () => {
               closeButton: false,
               autofocus: true,
             }
-          ]);
+          ], { dragToClose: false, groupAttr: null, });
         } else {
           modalParamsCurrent.close();
           new _fancyapps_ui__WEBPACK_IMPORTED_MODULE_0__.Fancybox([
@@ -3564,7 +3624,7 @@ document.addEventListener("DOMContentLoaded", () => {
               closeButton: false,
               autofocus: true,
             }
-          ]);
+          ], { dragToClose: false });
         }
       });
     });
@@ -3585,10 +3645,78 @@ document.addEventListener("DOMContentLoaded", () => {
           closeButton: false,
           autofocus: true,
         }
-      ]);
+      ], { dragToClose: false });
     });
   });
 });
+
+
+/***/ }),
+
+/***/ "./src/js/app/rent.js":
+/*!****************************!*\
+  !*** ./src/js/app/rent.js ***!
+  \****************************/
+/***/ (function() {
+
+document.addEventListener("DOMContentLoaded", () => {
+  const catalog = document.querySelector(".catalog");
+  if (!catalog) return;
+  const products = document.querySelectorAll(".catalog__wrapper .product-card");
+  let currentWidth = window.screen.availWidth;
+
+  products.forEach((product, idx) => {
+    const showBtn = product.querySelector(".product-card__button");
+    const modal = product.querySelector(".product-card__modal");
+
+    showBtn.addEventListener("click", (evt) => {
+      if (currentWidth > 1200) {
+        evt.preventDefault();
+
+        products.forEach((el, elIdx) => {
+          if (idx !== elIdx) {
+            el.classList.toggle("product-card--disabled");
+          }
+        });
+        if (showBtn.textContent === "Скрыть") {
+          showBtn.textContent = "Подробнее";
+        } else {
+          showBtn.textContent = "Скрыть";
+        }
+        modal.classList.toggle("active");
+        if (modal.getBoundingClientRect().x > catalog.getBoundingClientRect().width) {
+          modal.style.left = "initial";
+          modal.style.right = "0";
+        } else if (modal.getBoundingClientRect().bottom > catalog.getBoundingClientRect().bottom) {
+          modal.style.top = "50%";
+        }
+      }
+    });
+
+    window.addEventListener("click", (evt) => {
+      if (modal.classList.contains('active')) {
+        if (!product.contains(evt.target)) {
+          products.forEach((el, elIdx) => {
+            if (idx !== elIdx) {
+              el.classList.remove("product-card--disabled");
+            }
+          });
+          modal.classList.remove("active");
+          if (showBtn.textContent === "Скрыть") {
+            showBtn.textContent = "Подробнее";
+          } else {
+            showBtn.textContent = "Скрыть";
+          }
+        }
+      }
+    });
+  });
+
+  window.addEventListener("resize", () => {
+    currentWidth = window.screen.availWidth;
+  });
+});
+
 
 /***/ }),
 

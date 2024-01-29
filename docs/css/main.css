@@ -3079,6 +3079,11 @@ svg {
           transform: translate(-50%, -50%);
   pointer-events: none;
 }
+@media only screen and (max-width: 1199.9px) {
+  .slider__controls {
+    width: calc(100% + 20px);
+  }
+}
 .slider__button {
   display: -webkit-box;
   display: -webkit-flex;
@@ -3104,6 +3109,14 @@ svg {
   fill: #2034E9;
   max-width: 0.9375rem;
   max-height: 0.8125rem;
+}
+.slider__button--small {
+  width: 24px;
+  height: 24px;
+  background-color: #2034E9;
+}
+.slider__button--small svg {
+  fill: #FFFFFF;
 }
 .slider__button--prev {
   -webkit-transform: rotate(180deg);
@@ -3373,6 +3386,24 @@ svg {
   transition: 0.2s linear;
 }
 
+@media only screen and (max-width: 1199.9px) {
+  .fancybox__backdrop {
+    background-color: transparent;
+  }
+}
+@media only screen and (max-width: 1199.9px) {
+  .fancybox__slide {
+    height: calc(100% - 121px);
+    top: 121px;
+    padding: 0;
+    overflow-x: hidden;
+  }
+  .fancybox__slide .modal {
+    height: 100%;
+    border-radius: 0;
+  }
+}
+
 .columns {
   gap: 2.5rem 2.5rem;
   display: grid;
@@ -3585,6 +3616,11 @@ svg {
           flex-grow: 1;
   overflow: hidden;
 }
+@media only screen and (max-width: 1199.9px) {
+  .main {
+    padding-top: 121px;
+  }
+}
 .main--gray {
   background-color: #F7F9F9;
 }
@@ -3639,6 +3675,13 @@ svg {
   background-color: #060614;
   color: #FFFFFF;
   font-family: "PF Din Text Cond Pro", sans-serif;
+}
+@media only screen and (max-width: 1199.9px) {
+  .header {
+    position: fixed;
+    width: 100%;
+    z-index: 30;
+  }
 }
 .header__row {
   display: -webkit-box;
@@ -3746,6 +3789,11 @@ svg {
   background-color: #FFFFFF;
   -webkit-transform: rotate(45deg) translateX(-50%);
           transform: rotate(45deg) translateX(-50%);
+}
+@media only screen and (max-width: 1199.9px) {
+  .header__menu-button.active:before {
+    display: none;
+  }
 }
 .header__menu-button svg {
   width: 1rem;
@@ -5205,6 +5253,11 @@ svg {
   width: 100%;
   border-radius: 1.875rem;
 }
+@media only screen and (max-width: 1199.9px) {
+  .tabs-about__item {
+    gap: 20px;
+  }
+}
 .tabs-about__item-slide {
   height: 37.5rem;
   width: 100%;
@@ -5238,6 +5291,8 @@ svg {
 @media only screen and (max-width: 1199.9px) {
   .tabs-about__card {
     position: static;
+    -webkit-box-shadow: 0 4px 80px 0 rgba(193, 193, 193, 0.45);
+            box-shadow: 0 4px 80px 0 rgba(193, 193, 193, 0.45);
   }
 }
 .tabs-about__card-title {
@@ -5539,6 +5594,11 @@ svg {
   height: 50rem;
   background: url("../assets/images/intro-bg.jpg") #060614 no-repeat center 25%;
   background-size: cover;
+}
+@media only screen and (max-width: 1199.9px) {
+  .intro {
+    height: calc(100vh - 121px);
+  }
 }
 .intro__container {
   display: -webkit-box;

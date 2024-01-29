@@ -54,6 +54,10 @@
     gap: 100px;
     width: 100%;
     border-radius: rem(30);
+
+    @include r($mobile) {
+      gap: 20px;
+    }
   }
   &__item-slide{
     height: rem(600);
@@ -83,6 +87,7 @@
 
     @include r($mobile) {
       position: static;
+      box-shadow: 0 4px 80px 0 rgba(193, 193, 193, 0.45);
     }
   }
   &__card-title {

@@ -4,6 +4,10 @@
   background: url("../assets/images/intro-bg.jpg") $color-dark no-repeat center 25%;
   background-size: cover;
 
+  @include r($mobile) {
+    height: calc(100vh - 121px);
+  }
+
   &__container {
     display: flex;
     align-items: flex-end;

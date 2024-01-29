@@ -1,0 +1,20 @@
+.fancybox {
+  &__backdrop {
+    @include r($mobile) {
+      background-color: transparent;
+    }
+  }
+  &__slide {
+    @include r($mobile) {
+      height: calc(100% - 121px);
+      top: 121px;
+      padding: 0;
+      overflow-x: hidden;
+
+      .modal {
+        height: 100%;
+        border-radius: 0;
+      }
+    }
+  }
+}

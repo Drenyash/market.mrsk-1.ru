@@ -156,24 +156,24 @@
           </div>
           <div class="mobile-menu__body">
             <div class="mobile-menu__nav">
-              <div class="mobile-menu__item">
+              <a href="#" class="mobile-menu__item">
                 <p class="mobile-menu__text">Контакты</p>
                 <svg class="mobile-menu__icon mobile-menu__icon--small">
                   <use xlink:href="./assets/sprite.svg#icon-arrow-bold"></use>
                 </svg>
-              </div>
-              <div class="mobile-menu__item">
-                <p class="mobile-menu__text">Контакты</p>
+              </a>
+              <a href="#" class="mobile-menu__item">
+                <p class="mobile-menu__text">О компании</p>
                 <svg class="mobile-menu__icon mobile-menu__icon--small">
                   <use xlink:href="./assets/sprite.svg#icon-arrow-bold"></use>
                 </svg>
-              </div>
-              <div class="mobile-menu__item">
-                <p class="mobile-menu__text">Контакты</p>
+              </a>
+              <a href="#" class="mobile-menu__item">
+                <p class="mobile-menu__text">Список услуг</p>
                 <svg class="mobile-menu__icon mobile-menu__icon--small">
                   <use xlink:href="./assets/sprite.svg#icon-arrow-bold"></use>
                 </svg>
-              </div>
+              </a>
             </div>
             <div class="mobile-menu__media">
               <a href="#" class="mobile-menu__item">
@@ -1807,12 +1807,18 @@
   <!--  START-->
   <!--  тут не нужен путь в action, тег form только для семантики-->
   <div class="modal" id="modalTechConnectionStart">
-    <button class="modal__close-btn modal__serv-btn" data-fancybox-close>
+    <button class="modal__close-btn modal__serv-btn mob-hidden" data-fancybox-close>
       <svg>
         <use xlink:href="./assets/sprite.svg#icon-close"></use>
       </svg>
     </button>
     <div class="modal__head">
+      <button class="button button--black button--icon desktop-hidden" data-fancybox-close>
+        <svg>
+          <use xlink:href="./assets/sprite.svg#icon-arrow-small"></use>
+        </svg>
+        <span>Назад</span>
+      </button>
       <p class="modal__title">Оформление заявки</p>
       <div class="hint modal__subtitle">
         <p class="hint__text"
@@ -1842,12 +1848,18 @@
   <!--  PARAMS-->
   <!--  тут не нужен путь в action, тег form только для семантики-->
   <div class="modal" id="modalTechConnectionParams">
-    <button class="modal__close-btn modal__serv-btn" data-fancybox-close>
+    <button class="modal__close-btn modal__serv-btn mob-hidden" data-fancybox-close>
       <svg>
         <use xlink:href="./assets/sprite.svg#icon-close"></use>
       </svg>
     </button>
     <div class="modal__head">
+      <button class="button button--black button--icon desktop-hidden" data-fancybox-close>
+        <svg>
+          <use xlink:href="./assets/sprite.svg#icon-arrow-small"></use>
+        </svg>
+        <span>Назад</span>
+      </button>
       <p class="modal__title">Заявка на технологическое присоединение</p>
       <div class="hint modal__subtitle">
         <p class="hint__text"
@@ -1934,17 +1946,23 @@
   <!--  FIZ-->
   <!--  добавить путь в action-->
   <div class="modal" id="modalTechConnectionFIZ">
-    <button class="modal__back-btn modal__serv-btn" data-modal-back>
+    <button class="modal__back-btn modal__serv-btn mob-hidden" data-modal-back>
       <svg>
         <use xlink:href="./assets/sprite.svg#icon-arrow"></use>
       </svg>
     </button>
-    <button class="modal__close-btn modal__serv-btn" data-fancybox-close>
+    <button class="modal__close-btn modal__serv-btn mob-hidden" data-fancybox-close>
       <svg>
         <use xlink:href="./assets/sprite.svg#icon-close"></use>
       </svg>
     </button>
     <div class="modal__head">
+      <button class="button button--black button--icon desktop-hidden" data-modal-back>
+        <svg>
+          <use xlink:href="./assets/sprite.svg#icon-arrow-small"></use>
+        </svg>
+        <span>Назад</span>
+      </button>
       <p class="modal__title">Введите свои данные</p>
     </div>
     <form action="#" data-form class="form">
@@ -2010,17 +2028,23 @@
   <!--  JUR-->
   <!--  добавить путь в action-->
   <div class="modal" id="modalTechConnectionJUR">
-    <button class="modal__back-btn modal__serv-btn" data-modal-back>
+    <button class="modal__back-btn modal__serv-btn mob-hidden" data-modal-back>
       <svg>
         <use xlink:href="./assets/sprite.svg#icon-arrow"></use>
       </svg>
     </button>
-    <button class="modal__close-btn modal__serv-btn" data-fancybox-close>
+    <button class="modal__close-btn modal__serv-btn mob-hidden" data-fancybox-close>
       <svg>
         <use xlink:href="./assets/sprite.svg#icon-close"></use>
       </svg>
     </button>
     <div class="modal__head">
+      <button class="button button--black button--icon desktop-hidden" data-modal-back>
+        <svg>
+          <use xlink:href="./assets/sprite.svg#icon-arrow-small"></use>
+        </svg>
+        <span>Назад</span>
+      </button>
       <p class="modal__title">Введите данные юридического лица</p>
     </div>
     <form action="#" data-form class="form">
@@ -2160,7 +2184,7 @@
       </button>
       <div class="filter">
         <h3 class="filter__title">Перечень техники</h3>
-        <form class="filter__form" action="#" data-form data-submit-msg>
+        <form class="filter__form" action="#" data-filter>
           <div class="filter__item" data-toggle>
             <div class="filter__top">
               <p class="filter__head">Краны</p>
@@ -2306,12 +2330,18 @@
   </div>
 
   <div class="modal" id="modalCallBack">
-    <button class="modal__close-btn modal__serv-btn" data-fancybox-close>
+    <button class="modal__close-btn modal__serv-btn mob-hidden" data-fancybox-close>
       <svg>
         <use xlink:href="./assets/sprite.svg#icon-close"></use>
       </svg>
     </button>
     <div class="modal__head">
+      <button class="button button--black button--icon desktop-hidden" data-fancybox-close>
+        <svg>
+          <use xlink:href="./assets/sprite.svg#icon-arrow-small"></use>
+        </svg>
+        <span>Назад</span>
+      </button>
       <p class="modal__title">Заказать обратный звонок</p>
     </div>
     <form action="#" data-form class="form">
@@ -2354,6 +2384,118 @@
         </button>
       </div>
     </form>
+  </div>
+  <div class="modal modal--big" id="modalRent">
+    <div class="modal__container--centered">
+      <button class="modal__close-btn modal__serv-btn" data-fancybox-close>
+        <svg>
+          <use xlink:href="./assets/sprite.svg#icon-close"></use>
+        </svg>
+      </button>
+      <div class="modal__wrapper">
+        <div class="modal__item">
+          <div class="product-card product-card--modal">
+            <picture class="product-card__picture">
+              <img src="./assets/images/cran-2.png" alt="">
+            </picture>
+            <div class="product-card__content">
+              <h3 class="product-card__title">Кран автомобильный</h3>
+              <ul class="product-card__list">
+                <li class="product-card__item">
+                  <span>Марка</span>
+                  <span>Камаз</span>
+                </li>
+                <li class="product-card__item">
+                  <span>Грузоподъемность</span>
+                  <span>30 тн</span>
+                </li>
+                <li class="product-card__item">
+                  <span>Вылет стрелы</span>
+                  <span>25 м</span>
+                </li>
+                <li class="product-card__item">
+                  <span>Высота подъема</span>
+                  <span>30 м</span>
+                </li>
+                <li class="product-card__item">
+                  <span>Скорость передвижения</span>
+                  <span>60 км/ч</span>
+                </li>
+                <li class="product-card__item">
+                  <span>Вылет стрелы</span>
+                  <span>25 м</span>
+                </li>
+              </ul>
+              <div class="product-card__footer">
+                <p class="product-card__price">
+                  <span>2 000 ₽</span>
+                  <small>час</small>
+                </p>
+                <button class="button product-card__button">Подробнее</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal__item">
+          <div class="modal__head">
+            <p class="modal__title">Введите свои данные</p>
+          </div>
+          <form action="#" data-form class="form">
+            <div class="modal__top">
+              <div class="form__block">
+                <span class="from__text-label">Личные данные</span>
+                <div class="form__block-inner">
+                  <label class="form__input-label">
+                    <input type="text"
+                           name="FIO"
+                           placeholder="ФИО"
+                           required>
+                    <span class="form__input-error-msg" hidden></span>
+                  </label>
+                  <label class="form__input-label">
+                    <input type="tel"
+                           name="phone"
+                           placeholder="Телефон"
+                           data-tel
+                           required>
+                    <span class="form__input-error-msg" hidden></span>
+                  </label>
+                  <label class="form__input-label">
+                    <input type="text"
+                           name="EMAIL"
+                           placeholder="E-mail"
+                           required>
+                    <span class="form__input-error-msg" hidden></span>
+                  </label>
+                </div>
+              </div>
+              <div class="form__agreement">
+                <label class="form__agreement-label">
+                  <input type="checkbox"
+                         name="agreement"
+                         data-form-agreement
+                         checked>
+                  <span class="form__agreement-checkbox"></span>
+                </label>
+                <span class="form__agreement-text">Согласие на обработку
+          <a href="#" target="_blank">персональных данных</a>
+          </span>
+              </div>
+            </div>
+            <div class="modal__bottom">
+              <button class="button form__button"
+                      data-form-submit>
+                <span>Отправить заявку</span>
+              </button>
+              <div class="modal__bottom-info">
+                <span>Стоимость в час:</span>
+                <span class="form__price">2 000 руб.</span>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 

@@ -4,6 +4,12 @@
   color: #FFFFFF;
   font-family: $font-accent;
 
+  @include r($mobile) {
+    position: fixed;
+    width: 100%;
+    z-index: 30;
+  }
+
   &__row {
     display: flex;
     align-items: center;
@@ -97,6 +103,9 @@
         height: rem(14);
         background-color: #FFFFFF;
         transform: rotate(45deg) translateX(-50%);
+        @include r($mobile) {
+          display: none;
+        }
       }
     }
     svg {

@@ -151,7 +151,8 @@ class Form {
       {
         src: this.successMsg.id,
         type: "inline",
-        closeButton: false
+        closeButton: false,
+        draggable: false,
       }
     ]);
   }
