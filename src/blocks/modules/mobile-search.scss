@@ -6,6 +6,7 @@
   bottom: 0;
   display: none;
   width: 100%;
+  padding: 0 24px;
   height: calc(100vh - 100%);
   background-color: $color-light;
   opacity: 0;
@@ -16,17 +17,19 @@
   &.active {
     opacity: 1;
     visibility: visible;
+    padding: 24px;
     z-index: 3;
   }
 
   @include r($mobile) {
     display: flex;
+    flex-direction: column;
+    gap: 20px;
   }
 
   &__form {
     display: flex;
     flex-direction: column;
-    padding: 24px;
     width: 100%;
   }
 
@@ -54,5 +57,22 @@
     font-family: $font-accent;
     font-size: 18px;
     color: rgba(144, 156, 181, 0.70);
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  &__item {
+    display: flex;
+    padding: 10px;
+    background-color: $color-light-gray;
+  }
+
+  &__link {
+    color: $color-dark-blue;
+    font-size: 16px;
   }
 }

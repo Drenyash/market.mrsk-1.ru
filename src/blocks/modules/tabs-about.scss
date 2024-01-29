@@ -88,6 +88,7 @@
     @include r($mobile) {
       position: static;
       box-shadow: 0 4px 80px 0 rgba(193, 193, 193, 0.45);
+      max-width: 100%;
     }
   }
   &__card-title {

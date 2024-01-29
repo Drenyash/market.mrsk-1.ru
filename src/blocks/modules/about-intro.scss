@@ -29,6 +29,7 @@
 
   &__callback-pic {
     max-width: rem(215);
+    height: max-content;
 
     img {
       object-fit: contain;
@@ -78,14 +79,17 @@
 
   &__list {
     list-style: none;
+
     li {
       display: flex;
       align-items: baseline;
       gap: rem(13);
       color: $color-gray;
+
       li + li {
         margin-top: rem(18);
       }
+
       &:before {
         content: '';
         display: block;
@@ -95,6 +99,7 @@
         background-size: contain;
       }
     }
+
     @include r($tablet) {
       order: 2;
     }

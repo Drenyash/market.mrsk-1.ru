@@ -36,8 +36,16 @@
     display: flex;
     gap: 40px;
 
+    @include r($mobile) {
+      flex-direction: column;
+      gap: 0;
+    }
+
     & > div {
       width: 50%;
+      @include r($mobile) {
+        width: 100%;
+      }
     }
 
     .modal__head {
@@ -157,6 +165,7 @@
 
   &__close-btn {
     right: rem(-52);
+    z-index: 1;
     @include r($mobile) {
       right: 0;
     }

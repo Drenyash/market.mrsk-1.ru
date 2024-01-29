@@ -47,6 +47,14 @@
     color: $color-light;
     background-color: $color-accent;
     border-radius: 4px;
+
+    @include r($mobile) {
+      left: 0;
+      bottom: 0;
+      top: initial;
+      right: initial;
+      border-radius: 0;
+    }
   }
 
   &__text {
