@@ -1,0 +1,2467 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <title>Заявка на тех. присоединение</title>
+<link href="./css/main.css" rel="stylesheet"></head>
+<body class="body">
+<header class="header">
+  <div class="container container--mob-full">
+    <div class="header__row header__top">
+      <div class="header__row header__top-left">
+        <a href="/" class="logo">
+          <picture class="logo__picture">
+            <img src="./assets/images/logo-market.svg" alt="">
+          </picture>
+        </a>
+        <div class="custom-select mob-hidden" data-select>
+          <button class="custom-select__button" type="button" data-select-btn>
+            <span data-select-btn-tmpl>Выберите регион</span>
+            <svg class="custom-select__icon">
+              <use xlink:href="./assets/sprite.svg#icon-arrow-min"></use>
+            </svg>
+          </button>
+          <div class="custom-select__list" data-select-list>
+            <div class="custom-select__list-wrapper">
+              <ul class="custom-select__list-inner" role="listbox">
+                <li class="custom-select__list-item"
+                    role="option"
+                    data-value="Удмурдская Республика">
+                  <a href="#">Удмурдская Республика</a>
+                </li>
+                <li class="custom-select__list-item"
+                    role="option"
+                    data-value="Марий-Эл Республика">
+                  <a href="#">Марий-Эл Республика</a>
+                </li>
+                <li class="custom-select__list-item"
+                    role="option"
+                    data-value="Белгородская область">
+                  <a href="#">Белгородская область</a>
+                </li>
+                <li class="custom-select__list-item"
+                    role="option"
+                    data-value="Владимирская область">
+                  <a href="#">Владимирская область</a>
+                </li>
+                <li class="custom-select__list-item"
+                    role="option"
+                    data-value="Воронежская область">
+                  <a href="#">Воронежская область</a>
+                </li>
+                <li class="custom-select__list-item"
+                    role="option"
+                    data-value="Ивановская область">
+                  <a href="#">Ивановская область</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <input type="text" data-select-input>
+        </div>
+      </div>
+      <div class="header__row header__top-right">
+        <div class="header__row header__top-block mob-hidden">
+          <a class="" href="tel:+78002200220">+7 (800) 220-02-20</a>
+          <div class="callback">
+            <div class="callback__text">Заказать звонок</div>
+            <div class="callback__icon">
+              <svg>
+                <use xlink:href="./assets/sprite.svg#icon-tel"></use>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <span class="header__divider mob-hidden"></span>
+        <div class="header__login mob-hidden">
+          <div class="header__login-text">Войти</div>
+          <div class="header__login-icon">
+            <svg>
+              <use xlink:href="./assets/sprite.svg#icon-user"></use>
+            </svg>
+          </div>
+        </div>
+        <div class="header__search desktop-hidden" data-search>
+          <button class="header__search-button">
+            <svg>
+              <use xlink:href="./assets/sprite.svg#icon-search"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="burger" data-burger>
+          <div class="burger__item"></div>
+        </div>
+      </div>
+      <div class="mobile-menu" data-mobile-menu>
+        <div class="mobile-menu__content">
+          <div class="mobile-menu__top">
+            <div class="custom-select" data-select>
+              <button class="custom-select__button" type="button" data-select-btn>
+                <span data-select-btn-tmpl>Выберите регион</span>
+                <svg class="custom-select__icon">
+                  <use xlink:href="./assets/sprite.svg#icon-arrow-min"></use>
+                </svg>
+              </button>
+              <div class="custom-select__list" data-select-list>
+                <div class="custom-select__list-wrapper">
+                  <ul class="custom-select__list-inner" role="listbox">
+                    <li class="custom-select__list-item"
+                        role="option"
+                        data-value="Удмурдская Республика">
+                      <a href="#">Удмурдская Республика</a>
+                    </li>
+                    <li class="custom-select__list-item"
+                        role="option"
+                        data-value="Марий-Эл Республика">
+                      <a href="#">Марий-Эл Республика</a>
+                    </li>
+                    <li class="custom-select__list-item"
+                        role="option"
+                        data-value="Белгородская область">
+                      <a href="#">Белгородская область</a>
+                    </li>
+                    <li class="custom-select__list-item"
+                        role="option"
+                        data-value="Владимирская область">
+                      <a href="#">Владимирская область</a>
+                    </li>
+                    <li class="custom-select__list-item"
+                        role="option"
+                        data-value="Воронежская область">
+                      <a href="#">Воронежская область</a>
+                    </li>
+                    <li class="custom-select__list-item"
+                        role="option"
+                        data-value="Ивановская область">
+                      <a href="#">Ивановская область</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <input type="hidden" data-select-input>
+            </div>
+            <div class="header__login">
+              <div class="header__login-text">Войти</div>
+              <div class="header__login-icon">
+                <svg>
+                  <use xlink:href="./assets/sprite.svg#icon-user"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="mobile-menu__body">
+            <div class="mobile-menu__nav">
+              <div class="mobile-menu__item">
+                <p class="mobile-menu__text">Контакты</p>
+                <svg class="mobile-menu__icon mobile-menu__icon--small">
+                  <use xlink:href="./assets/sprite.svg#icon-arrow-bold"></use>
+                </svg>
+              </div>
+              <div class="mobile-menu__item">
+                <p class="mobile-menu__text">Контакты</p>
+                <svg class="mobile-menu__icon mobile-menu__icon--small">
+                  <use xlink:href="./assets/sprite.svg#icon-arrow-bold"></use>
+                </svg>
+              </div>
+              <div class="mobile-menu__item">
+                <p class="mobile-menu__text">Контакты</p>
+                <svg class="mobile-menu__icon mobile-menu__icon--small">
+                  <use xlink:href="./assets/sprite.svg#icon-arrow-bold"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="mobile-menu__media">
+              <a href="#" class="mobile-menu__item">
+                <picture class="mobile-menu__picture">
+                  <img src="./assets/images/logo-center.svg" alt="">
+                </picture>
+                <svg class="mobile-menu__icon">
+                  <use xlink:href="./assets/sprite.svg#icon-external"></use>
+                </svg>
+              </a>
+              <a href="#" class="mobile-menu__item">
+                <picture class="mobile-menu__picture">
+                  <img src="./assets/images/logo-center-plus.svg" alt="">
+                </picture>
+                <svg class="mobile-menu__icon">
+                  <use xlink:href="./assets/sprite.svg#icon-external"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="mobile-menu__footer">
+            <a class="" href="tel:+78002200220">+7 (800) 220-02-20</a>
+            <div class="callback">
+              <div class="callback__text">Заказать звонок</div>
+              <div class="callback__icon">
+                <svg>
+                  <use xlink:href="./assets/sprite.svg#icon-tel"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="header__row header__bottom">
+      <div class="header__row header__bottom-left">
+        <div class="header__menu" data-header-menu-block>
+          <button class="header__menu-button button" type="button" data-header-menu-btn data-services>
+            <svg id="icon-step-0">
+              <use xlink:href="./assets/sprite.svg#icon-menu-service"></use>
+            </svg>
+            <svg id="icon-step-1">
+              <use xlink:href="./assets/sprite.svg#icon-arrow-small"></use>
+            </svg>
+            <span>Услуги</span>
+          </button>
+          <div class="header__menu-container" data-header-menu>
+            <div class="menu tabs" data-tabs-container="outer">
+              <div class="container">
+                <div class="menu__triggers tabs__controls">
+                  <button type="button" class="menu__triggers-item tabs__trigger active" data-tabs-trigger="outer"
+                          data-tabs="tab-1">
+                    Технологическое присоединение под ключ
+                  </button>
+                  <button type="button" class="menu__triggers-item tabs__trigger" data-tabs-trigger="outer"
+                          data-tabs="tab-2">Аренда техники
+                  </button>
+                  <button type="button" class="menu__triggers-item tabs__trigger" data-tabs-trigger="outer"
+                          data-tabs="tab-3">Обслуживание электрооборудования
+                  </button>
+                  <button type="button" class="menu__triggers-item tabs__trigger" data-tabs-trigger="outer"
+                          data-tabs="tab-4">Наружное освещение
+                  </button>
+                  <button type="button" class="menu__triggers-item tabs__trigger" data-tabs-trigger="outer"
+                          data-tabs="tab-5">Выдача документации
+                  </button>
+                  <button type="button" class="menu__triggers-item tabs__trigger" data-tabs-trigger="outer"
+                          data-tabs="tab-6">Строительство электросетевых объектов
+                  </button>
+                </div>
+                <div class="menu__tabs tabs__list menu-inner">
+                  <div class="menu-inner__tab tabs__item active" data-tabs-list="outer" id="tab-1">
+                    <div class="menu__tabs-menu menu__tabs-menu--bg-gray">
+                      <div class="menu__tabs-block menu__tabs-block--wide">
+                        <div class="menu__tabs-block-content">
+                          <p class="menu__tabs-block-title">Сопровождение технологического присоединения</p>
+                          <p class="menu__tabs-block-text">Выполним все мероприятия, включенные в технологические
+                            условия заказчика при осуществлении процедуры технологического присоединения.</p>
+                        </div>
+                        <a href="/detail-page" class="button button--vert">
+                          <svg>
+                            <use xlink:href="./assets/sprite.svg#icon-arrow"></use>
+                          </svg>
+                        </a>
+                      </div>
+                      <div class="menu__block-pic">
+                        <div class="menu__block-bg"
+                             style="background-image: url('./assets/images/bg-houses.png')"></div>
+                        <div class="menu__block-list-wrapper">
+
+                          <div class="menu-list">
+                            <p class="title-content">Технологическое присоединение</p>
+                            <ul class="menu-list__list">
+                              <li>составление и согласование с заказчиком технического задания на проектирование;</li>
+                              <li>инженерные изыскания;</li>
+                              <li>разработка проектной документации;</li>
+                            </ul>
+                          </div>
+
+                          <div class="menu-list menu-list--back">
+                            <ul class="menu-list__list">
+                              <li>получение согласований со всеми заинтересованными лицами, организациями и службами;
+                              </li>
+                              <li>выполнение строительно-монтажных, пуско-наладочных и приемо-сдаточных мероприятий;
+                              </li>
+                              <li>организацию коммерческого учета.</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="menu-inner__tab tabs__item" data-tabs-list="outer" id="tab-2">
+                    <div class="menu__tabs-menu tabs" data-tabs-container="inner">
+                      <div class="tabs__controls menu__tabs-controls menu__tabs-controls--border">
+                        <button class="menu__tabs-triggers tabs__trigger active" data-tabs-trigger="inner"
+                                data-tabs="tab-2.1">
+                          <span>Краны</span>
+                          <span class="menu__tabs-icon">
+                            <svg>
+                              <use xlink:href="./assets/sprite.svg#icon-arrow"></use>
+                            </svg>
+                          </span>
+                        </button>
+                        <button class="menu__tabs-triggers tabs__trigger" data-tabs-trigger="inner" data-tabs="tab-2.2">
+                          <span>Эксковаторы</span>
+                          <span class="menu__tabs-icon">
+                            <svg>
+                              <use xlink:href="./assets/sprite.svg#icon-arrow"></use>
+                            </svg>
+                          </span>
+                        </button>
+                        <button class="menu__tabs-triggers tabs__trigger" data-tabs-trigger="inner" data-tabs="tab-2.3">
+                          <span>Фронтальные погрузчики</span>
+                          <span class="menu__tabs-icon">
+                            <svg>
+                              <use xlink:href="./assets/sprite.svg#icon-arrow"></use>
+                            </svg>
+                          </span>
+                        </button>
+                        <button class="menu__tabs-triggers tabs__trigger" data-tabs-trigger="inner" data-tabs="tab-2.4">
+                          <span>Самосвалы</span>
+                          <span class="menu__tabs-icon">
+                            <svg>
+                              <use xlink:href="./assets/sprite.svg#icon-arrow"></use>
+                            </svg>
+                          </span>
+                        </button>
+                        <button class="menu__tabs-triggers tabs__trigger" data-tabs-trigger="inner" data-tabs="tab-2.5">
+                          <span>Бульдозеры</span>
+                          <span class="menu__tabs-icon">
+                            <svg>
+                              <use xlink:href="./assets/sprite.svg#icon-arrow"></use>
+                            </svg>
+                          </span>
+                        </button>
+                        <button class="menu__tabs-triggers tabs__trigger" data-tabs-trigger="inner" data-tabs="tab-2.6">
+                          <span>Манипуляторы</span>
+                          <span class="menu__tabs-icon">
+                            <svg>
+                              <use xlink:href="./assets/sprite.svg#icon-arrow"></use>
+                            </svg>
+                          </span>
+                        </button>
+                        <button class="menu__tabs-triggers tabs__trigger" data-tabs-trigger="inner" data-tabs="tab-2.7">
+                          <span>Перечень техники</span>
+                          <span class="menu__tabs-icon">
+                            <svg>
+                              <use xlink:href="./assets/sprite.svg#icon-arrow"></use>
+                            </svg>
+                          </span>
+                        </button>
+                      </div>
+                      <div class="menu__tabs-inner tabs__list mt-20">
+                        <a href="#" class="button button--vert mr-40 ml-60">
+                          <svg>
+                            <use xlink:href="./assets/sprite.svg#icon-arrow"></use>
+                          </svg>
+                        </a>
+                        <div class="menu-inner__item tabs__item active" data-tabs-list="inner" id="tab-2.1">
+                          <div class="menu__tabs-grid">
+                            <a href="#" class="menu-card">
+                              <picture class="menu-card__picture">
+                                <img src="./assets/images/menu-tech-1.png" alt="">
+                              </picture>
+                              <div class="menu-card__content">
+                                <div class="menu-card__title">Фронтальный погрузчик</div>
+                                <div class="menu-card__text">Грузоподьемность 1,5 тн</div>
+                              </div>
+                            </a>
+                            <a href="#" class="menu-card">
+                              <picture class="menu-card__picture">
+                                <img src="./assets/images/menu-tech-2.png" alt="">
+                              </picture>
+                              <div class="menu-card__content">
+                                <div class="menu-card__title">Фронтальный погрузчик</div>
+                                <div class="menu-card__text">Грузоподьемность 1,5 тн</div>
+                              </div>
+                            </a>
+                            <a href="#" class="menu-card">
+                              <picture class="menu-card__picture">
+                                <img src="./assets/images/menu-tech-3.png" alt="">
+                              </picture>
+                              <div class="menu-card__content">
+                                <div class="menu-card__title">Фронтальный погрузчик</div>
+                                <div class="menu-card__text">Грузоподьемность 1,5 тн</div>
+                              </div>
+                            </a>
+                            <a href="#" class="menu-card">
+                              <picture class="menu-card__picture">
+                                <img src="./assets/images/menu-tech-4.png" alt="">
+                              </picture>
+                              <div class="menu-card__content">
+                                <div class="menu-card__title">Фронтальный погрузчик</div>
+                                <div class="menu-card__text">Грузоподьемность 1,5 тн</div>
+                              </div>
+                            </a>
+                            <a href="#" class="menu-card">
+                              <picture class="menu-card__picture">
+                                <img src="./assets/images/menu-tech-5.png" alt="">
+                              </picture>
+                              <div class="menu-card__content">
+                                <div class="menu-card__title">Фронтальный погрузчик</div>
+                                <div class="menu-card__text">Грузоподьемность 1,5 тн</div>
+                              </div>
+                            </a>
+                            <a href="#" class="menu-card">
+                              <picture class="menu-card__picture">
+                                <img src="./assets/images/menu-tech-6.png" alt="">
+                              </picture>
+                              <div class="menu-card__content">
+                                <div class="menu-card__title">Фронтальный погрузчик</div>
+                                <div class="menu-card__text">Грузоподьемность 1,5 тн</div>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="menu-inner__item tabs__item" data-tabs-list="inner" id="tab-2.2">
+                          <div class="menu__tabs-grid">
+                            <a href="#" class="menu-card">
+                              <picture class="menu-card__picture">
+                                <img src="./assets/images/menu-tech-1.png" alt="">
+                              </picture>
+                              <div class="menu-card__content">
+                                <div class="menu-card__title">Фронтальный погрузчик / tab-2</div>
+                                <div class="menu-card__text">Грузоподьемность 1,5 тн</div>
+                              </div>
+                            </a>
+                            <a href="#" class="menu-card">
+                              <picture class="menu-card__picture">
+                                <img src="./assets/images/menu-tech-2.png" alt="">
+                              </picture>
+                              <div class="menu-card__content">
+                                <div class="menu-card__title">Фронтальный погрузчик / tab-2</div>
+                                <div class="menu-card__text">Грузоподьемность 1,5 тн</div>
+                              </div>
+                            </a>
+                            <a href="#" class="menu-card">
+                              <picture class="menu-card__picture">
+                                <img src="./assets/images/menu-tech-3.png" alt="">
+                              </picture>
+                              <div class="menu-card__content">
+                                <div class="menu-card__title">Фронтальный погрузчик / tab-2</div>
+                                <div class="menu-card__text">Грузоподьемность 1,5 тн</div>
+                              </div>
+                            </a>
+                            <a href="#" class="menu-card">
+                              <picture class="menu-card__picture">
+                                <img src="./assets/images/menu-tech-4.png" alt="">
+                              </picture>
+                              <div class="menu-card__content">
+                                <div class="menu-card__title">Фронтальный погрузчик / tab-2</div>
+                                <div class="menu-card__text">Грузоподьемность 1,5 тн</div>
+                              </div>
+                            </a>
+                            <a href="#" class="menu-card">
+                              <picture class="menu-card__picture">
+                                <img src="./assets/images/menu-tech-5.png" alt="">
+                              </picture>
+                              <div class="menu-card__content">
+                                <div class="menu-card__title">Фронтальный погрузчик / tab-2</div>
+                                <div class="menu-card__text">Грузоподьемность 1,5 тн</div>
+                              </div>
+                            </a>
+                            <a href="#" class="menu-card">
+                              <picture class="menu-card__picture">
+                                <img src="./assets/images/menu-tech-6.png" alt="">
+                              </picture>
+                              <div class="menu-card__content">
+                                <div class="menu-card__title">Фронтальный погрузчик / tab-2</div>
+                                <div class="menu-card__text">Грузоподьемность 1,5 тн</div>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="menu-inner__item tabs__item" data-tabs-list="inner" id="tab-2.3">
+                          <div class="menu__tabs-grid">
+                            <a href="#" class="menu-card">
+                              <picture class="menu-card__picture">
+                                <img src="./assets/images/menu-tech-1.png" alt="">
+                              </picture>
+                              <div class="menu-card__content">
+                                <div class="menu-card__title">Фронтальный погрузчик / tab-3</div>
+                                <div class="menu-card__text">Грузоподьемность 1,5 тн</div>
+                              </div>
+                            </a>
+                            <a href="#" class="menu-card">
+                              <picture class="menu-card__picture">
+                                <img src="./assets/images/menu-tech-2.png" alt="">
+                              </picture>
+                              <div class="menu-card__content">
+                                <div class="menu-card__title">Фронтальный погрузчик / tab-3</div>
+                                <div class="menu-card__text">Грузоподьемность 1,5 тн</div>
+                              </div>
+                            </a>
+                            <a href="#" class="menu-card">
+                              <picture class="menu-card__picture">
+                                <img src="./assets/images/menu-tech-3.png" alt="">
+                              </picture>
+                              <div class="menu-card__content">
+                                <div class="menu-card__title">Фронтальный погрузчик / tab-3</div>
+                                <div class="menu-card__text">Грузоподьемность 1,5 тн</div>
+                              </div>
+                            </a>
+                            <a href="#" class="menu-card">
+                              <picture class="menu-card__picture">
+                                <img src="./assets/images/menu-tech-4.png" alt="">
+                              </picture>
+                              <div class="menu-card__content">
+                                <div class="menu-card__title">Фронтальный погрузчик / tab-3</div>
+                                <div class="menu-card__text">Грузоподьемность 1,5 тн</div>
+                              </div>
+                            </a>
+                            <a href="#" class="menu-card">
+                              <picture class="menu-card__picture">
+                                <img src="./assets/images/menu-tech-5.png" alt="">
+                              </picture>
+                              <div class="menu-card__content">
+                                <div class="menu-card__title">Фронтальный погрузчик / tab-3</div>
+                                <div class="menu-card__text">Грузоподьемность 1,5 тн</div>
+                              </div>
+                            </a>
+                            <a href="#" class="menu-card">
+                              <picture class="menu-card__picture">
+                                <img src="./assets/images/menu-tech-6.png" alt="">
+                              </picture>
+                              <div class="menu-card__content">
+                                <div class="menu-card__title">Фронтальный погрузчик / tab-3</div>
+                                <div class="menu-card__text">Грузоподьемность 1,5 тн</div>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="menu-inner__item tabs__item" data-tabs-list="inner" id="tab-2.4">
+                          <div class="menu__tabs-grid">
+                            <a href="#" class="menu-card">
+                              <picture class="menu-card__picture">
+                                <img src="./assets/images/menu-tech-1.png" alt="">
+                              </picture>
+                              <div class="menu-card__content">
+                                <div class="menu-card__title">Фронтальный погрузчик / tab-4</div>
+                                <div class="menu-card__text">Грузоподьемность 1,5 тн</div>
+                              </div>
+                            </a>
+                            <a href="#" class="menu-card">
+                              <picture class="menu-card__picture">
+                                <img src="./assets/images/menu-tech-2.png" alt="">
+                              </picture>
+                              <div class="menu-card__content">
+                                <div class="menu-card__title">Фронтальный погрузчик / tab-4</div>
+                                <div class="menu-card__text">Грузоподьемность 1,5 тн</div>
+                              </div>
+                            </a>
+                            <a href="#" class="menu-card">
+                              <picture class="menu-card__picture">
+                                <img src="./assets/images/menu-tech-3.png" alt="">
+                              </picture>
+                              <div class="menu-card__content">
+                                <div class="menu-card__title">Фронтальный погрузчик / tab-4</div>
+                                <div class="menu-card__text">Грузоподьемность 1,5 тн</div>
+                              </div>
+                            </a>
+                            <a href="#" class="menu-card">
+                              <picture class="menu-card__picture">
+                                <img src="./assets/images/menu-tech-4.png" alt="">
+                              </picture>
+                              <div class="menu-card__content">
+                                <div class="menu-card__title">Фронтальный погрузчик / tab-4</div>
+                                <div class="menu-card__text">Грузоподьемность 1,5 тн</div>
+                              </div>
+                            </a>
+                            <a href="#" class="menu-card">
+                              <picture class="menu-card__picture">
+                                <img src="./assets/images/menu-tech-5.png" alt="">
+                              </picture>
+                              <div class="menu-card__content">
+                                <div class="menu-card__title">Фронтальный погрузчик / tab-4</div>
+                                <div class="menu-card__text">Грузоподьемность 1,5 тн</div>
+                              </div>
+                            </a>
+                            <a href="#" class="menu-card">
+                              <picture class="menu-card__picture">
+                                <img src="./assets/images/menu-tech-6.png" alt="">
+                              </picture>
+                              <div class="menu-card__content">
+                                <div class="menu-card__title">Фронтальный погрузчик / tab-4</div>
+                                <div class="menu-card__text">Грузоподьемность 1,5 тн</div>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="menu-inner__item tabs__item" data-tabs-list="inner" id="tab-2.5">
+                          <div class="menu__tabs-grid">
+                            <a href="#" class="menu-card">
+                              <picture class="menu-card__picture">
+                                <img src="./assets/images/menu-tech-1.png" alt="">
+                              </picture>
+                              <div class="menu-card__content">
+                                <div class="menu-card__title">Фронтальный погрузчик / tab-5</div>
+                                <div class="menu-card__text">Грузоподьемность 1,5 тн</div>
+                              </div>
+                            </a>
+                            <a href="#" class="menu-card">
+                              <picture class="menu-card__picture">
+                                <img src="./assets/images/menu-tech-2.png" alt="">
+                              </picture>
+                              <div class="menu-card__content">
+                                <div class="menu-card__title">Фронтальный погрузчик / tab-5</div>
+                                <div class="menu-card__text">Грузоподьемность 1,5 тн</div>
+                              </div>
+                            </a>
+                            <a href="#" class="menu-card">
+                              <picture class="menu-card__picture">
+                                <img src="./assets/images/menu-tech-3.png" alt="">
+                              </picture>
+                              <div class="menu-card__content">
+                                <div class="menu-card__title">Фронтальный погрузчик / tab-5</div>
+                                <div class="menu-card__text">Грузоподьемность 1,5 тн</div>
+                              </div>
+                            </a>
+                            <a href="#" class="menu-card">
+                              <picture class="menu-card__picture">
+                                <img src="./assets/images/menu-tech-4.png" alt="">
+                              </picture>
+                              <div class="menu-card__content">
+                                <div class="menu-card__title">Фронтальный погрузчик / tab-5</div>
+                                <div class="menu-card__text">Грузоподьемность 1,5 тн</div>
+                              </div>
+                            </a>
+                            <a href="#" class="menu-card">
+                              <picture class="menu-card__picture">
+                                <img src="./assets/images/menu-tech-5.png" alt="">
+                              </picture>
+                              <div class="menu-card__content">
+                                <div class="menu-card__title">Фронтальный погрузчик / tab-5</div>
+                                <div class="menu-card__text">Грузоподьемность 1,5 тн</div>
+                              </div>
+                            </a>
+                            <a href="#" class="menu-card">
+                              <picture class="menu-card__picture">
+                                <img src="./assets/images/menu-tech-6.png" alt="">
+                              </picture>
+                              <div class="menu-card__content">
+                                <div class="menu-card__title">Фронтальный погрузчик / tab-5</div>
+                                <div class="menu-card__text">Грузоподьемность 1,5 тн</div>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="menu-inner__item tabs__item" data-tabs-list="inner" id="tab-2.6">
+                          <div class="menu__tabs-grid">
+                            <a href="#" class="menu-card">
+                              <picture class="menu-card__picture">
+                                <img src="./assets/images/menu-tech-1.png" alt="">
+                              </picture>
+                              <div class="menu-card__content">
+                                <div class="menu-card__title">Фронтальный погрузчик / tab-6</div>
+                                <div class="menu-card__text">Грузоподьемность 1,5 тн</div>
+                              </div>
+                            </a>
+                            <a href="#" class="menu-card">
+                              <picture class="menu-card__picture">
+                                <img src="./assets/images/menu-tech-2.png" alt="">
+                              </picture>
+                              <div class="menu-card__content">
+                                <div class="menu-card__title">Фронтальный погрузчик / tab-6</div>
+                                <div class="menu-card__text">Грузоподьемность 1,5 тн</div>
+                              </div>
+                            </a>
+                            <a href="#" class="menu-card">
+                              <picture class="menu-card__picture">
+                                <img src="./assets/images/menu-tech-3.png" alt="">
+                              </picture>
+                              <div class="menu-card__content">
+                                <div class="menu-card__title">Фронтальный погрузчик / tab-6</div>
+                                <div class="menu-card__text">Грузоподьемность 1,5 тн</div>
+                              </div>
+                            </a>
+                            <a href="#" class="menu-card">
+                              <picture class="menu-card__picture">
+                                <img src="./assets/images/menu-tech-4.png" alt="">
+                              </picture>
+                              <div class="menu-card__content">
+                                <div class="menu-card__title">Фронтальный погрузчик / tab-6</div>
+                                <div class="menu-card__text">Грузоподьемность 1,5 тн</div>
+                              </div>
+                            </a>
+                            <a href="#" class="menu-card">
+                              <picture class="menu-card__picture">
+                                <img src="./assets/images/menu-tech-5.png" alt="">
+                              </picture>
+                              <div class="menu-card__content">
+                                <div class="menu-card__title">Фронтальный погрузчик / tab-5</div>
+                                <div class="menu-card__text">Грузоподьемность 1,5 тн</div>
+                              </div>
+                            </a>
+                            <a href="#" class="menu-card">
+                              <picture class="menu-card__picture">
+                                <img src="./assets/images/menu-tech-6.png" alt="">
+                              </picture>
+                              <div class="menu-card__content">
+                                <div class="menu-card__title">Фронтальный погрузчик / tab-6</div>
+                                <div class="menu-card__text">Грузоподьемность 1,5 тн</div>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="menu-inner__item tabs__item" data-tabs-list="inner" id="tab-2.7">
+                          <div class="menu__tabs-grid">
+                            <a href="#" class="menu-card">
+                              <picture class="menu-card__picture">
+                                <img src="./assets/images/menu-tech-1.png" alt="">
+                              </picture>
+                              <div class="menu-card__content">
+                                <div class="menu-card__title">Фронтальный погрузчик / tab-5</div>
+                                <div class="menu-card__text">Грузоподьемность 1,5 тн</div>
+                              </div>
+                            </a>
+                            <a href="#" class="menu-card">
+                              <picture class="menu-card__picture">
+                                <img src="./assets/images/menu-tech-2.png" alt="">
+                              </picture>
+                              <div class="menu-card__content">
+                                <div class="menu-card__title">Фронтальный погрузчик / tab-5</div>
+                                <div class="menu-card__text">Грузоподьемность 1,5 тн</div>
+                              </div>
+                            </a>
+                            <a href="#" class="menu-card">
+                              <picture class="menu-card__picture">
+                                <img src="./assets/images/menu-tech-3.png" alt="">
+                              </picture>
+                              <div class="menu-card__content">
+                                <div class="menu-card__title">Фронтальный погрузчик / tab-5</div>
+                                <div class="menu-card__text">Грузоподьемность 1,5 тн</div>
+                              </div>
+                            </a>
+                            <a href="#" class="menu-card">
+                              <picture class="menu-card__picture">
+                                <img src="./assets/images/menu-tech-4.png" alt="">
+                              </picture>
+                              <div class="menu-card__content">
+                                <div class="menu-card__title">Фронтальный погрузчик / tab-5</div>
+                                <div class="menu-card__text">Грузоподьемность 1,5 тн</div>
+                              </div>
+                            </a>
+                            <a href="#" class="menu-card">
+                              <picture class="menu-card__picture">
+                                <img src="./assets/images/menu-tech-5.png" alt="">
+                              </picture>
+                              <div class="menu-card__content">
+                                <div class="menu-card__title">Фронтальный погрузчик / tab-5</div>
+                                <div class="menu-card__text">Грузоподьемность 1,5 тн</div>
+                              </div>
+                            </a>
+                            <a href="#" class="menu-card">
+                              <picture class="menu-card__picture">
+                                <img src="./assets/images/menu-tech-6.png" alt="">
+                              </picture>
+                              <div class="menu-card__content">
+                                <div class="menu-card__title">Фронтальный погрузчик / tab-5</div>
+                                <div class="menu-card__text">Грузоподьемность 1,5 тн</div>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="menu-inner__tab tabs__item" data-tabs-list="outer" id="tab-3">
+                    <div class="menu__tabs-menu">
+                      <div class="menu__tabs-block">
+                        <div class="menu__tabs-block-content">
+                          <p class="menu__tabs-block-title">Проверка работоспособности трансформаторных подстанций,
+                            кабельных линий и др.
+                          </p>
+                          <p class="menu__tabs-block-text mb-30">Небольшое описание в две-три строки об оказании
+                            услуги </p>
+                          <a href="/detail-page" class="button button--min">
+                            <svg>
+                              <use xlink:href="./assets/sprite.svg#icon-arrow"></use>
+                            </svg>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="menu__tabs-grid mt-20 ml-30">
+                        <a href="#" class="menu-card">
+                          <picture class="menu-card__picture">
+                            <img src="./assets/images/menu-electr-1.png" alt="">
+                          </picture>
+                          <div class="menu-card__content">
+                            <div class="menu-card__title">Допуск</div>
+                          </div>
+                        </a>
+                        <a href="#" class="menu-card">
+                          <picture class="menu-card__picture">
+                            <img src="./assets/images/menu-electr-2.png" alt="">
+                          </picture>
+                          <div class="menu-card__content">
+                            <div class="menu-card__title">Ремонт</div>
+                          </div>
+                        </a>
+                        <a href="#" class="menu-card">
+                          <picture class="menu-card__picture">
+                            <img src="./assets/images/menu-electr-1.png" alt="">
+                          </picture>
+                          <div class="menu-card__content">
+                            <div class="menu-card__title">Оперативное обслуживание</div>
+                          </div>
+                        </a>
+                        <a href="#" class="menu-card">
+                          <picture class="menu-card__picture">
+                            <img src="./assets/images/menu-electr-2.png" alt="">
+                          </picture>
+                          <div class="menu-card__content">
+                            <div class="menu-card__title">Ввод ограничений по заявкам пользователей</div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="menu-inner__tab tabs__item" data-tabs-list="outer" id="tab-4">
+                    <div class="menu__tabs-menu tabs" data-tabs-container="inner">
+                      <div
+                        class="tabs__controls menu__tabs-controls menu__tabs-controls--border menu__tabs-controls--border-wide">
+                        <button class="menu__tabs-triggers tabs__trigger active" data-tabs-trigger="inner"
+                                data-tabs="tab-4.1">
+                          <span>Проектирование и строительство</span>
+                          <span class="menu__tabs-icon">
+                            <svg>
+                              <use xlink:href="./assets/sprite.svg#icon-arrow"></use>
+                            </svg>
+                          </span>
+                        </button>
+                        <button class="menu__tabs-triggers tabs__trigger" data-tabs-trigger="inner" data-tabs="tab-4.2">
+                          <span>Модернизация системы наружного освещения</span>
+                          <span class="menu__tabs-icon">
+                            <svg>
+                              <use xlink:href="./assets/sprite.svg#icon-arrow"></use>
+                            </svg>
+                          </span>
+                        </button>
+                        <button class="menu__tabs-triggers tabs__trigger" data-tabs-trigger="inner" data-tabs="tab-4.3">
+                          <span>Свето-технический аудит</span>
+                          <span class="menu__tabs-icon">
+                            <svg>
+                              <use xlink:href="./assets/sprite.svg#icon-arrow"></use>
+                            </svg>
+                          </span>
+                        </button>
+                        <button class="menu__tabs-triggers tabs__trigger" data-tabs-trigger="inner" data-tabs="tab-4.4">
+                          <span>Ландшафтное освещение</span>
+                          <span class="menu__tabs-icon">
+                            <svg>
+                              <use xlink:href="./assets/sprite.svg#icon-arrow"></use>
+                            </svg>
+                          </span>
+                        </button>
+                      </div>
+                      <div class="menu__tabs-inner tabs__list">
+                        <div class="menu-inner__item tabs__item active" data-tabs-list="inner" id="tab-4.1">
+                          <div class="menu__link-grid menu__tabs-controls--border menu__tabs-controls--border-wide">
+                            <a href="#" class="menu-link menu__tabs-triggers">
+                              <span class="menu-link__text">Переустройство системы наружного освещения</span>
+                              <span class="menu-link__icon menu__tabs-icon">
+                                   <svg>
+                                     <use xlink:href="./assets/sprite.svg#icon-arrow"></use>
+                                   </svg>
+                                </span>
+                            </a>
+                            <a href="#" class="menu-link menu__tabs-triggers">
+                              <span class="menu-link__text">Архитектурно-художественная подстветка</span>
+                              <span class="menu-link__icon menu__tabs-icon">
+                                   <svg>
+                                     <use xlink:href="./assets/sprite.svg#icon-arrow"></use>
+                                   </svg>
+                                </span>
+                            </a>
+                            <a href="#" class="menu-link menu__tabs-triggers">
+                              <span class="menu-link__text">Техническое обслуживание системы наружного освещения</span>
+                              <span class="menu-link__icon menu__tabs-icon">
+                                   <svg>
+                                     <use xlink:href="./assets/sprite.svg#icon-arrow"></use>
+                                   </svg>
+                                </span>
+                            </a>
+                            <a href="#" class="menu-link menu__tabs-triggers">
+                              <span class="menu-link__text">Оснащение и предоставление праздничной подстветки и иллюминации</span>
+                              <span class="menu-link__icon menu__tabs-icon">
+                                   <svg>
+                                     <use xlink:href="./assets/sprite.svg#icon-arrow"></use>
+                                   </svg>
+                                </span>
+                            </a>
+                          </div>
+                          <a href="/detail-page" class="button button--vert mt-10">
+                            <svg>
+                              <use xlink:href="./assets/sprite.svg#icon-arrow"></use>
+                            </svg>
+                          </a>
+                        </div>
+                        <div class="menu-inner__item tabs__item" data-tabs-list="inner" id="tab-4.2">
+                          <div class="menu__link-grid menu__tabs-controls--border menu__tabs-controls--border-wide">
+                            <a href="#" class="menu-link menu__tabs-triggers">
+                              <span class="menu-link__text">Оснащение и предоставление праздничной подстветки</span>
+                              <span class="menu-link__icon menu__tabs-icon">
+                                   <svg>
+                                     <use xlink:href="./assets/sprite.svg#icon-arrow"></use>
+                                   </svg>
+                                </span>
+                            </a>
+                            <a href="#" class="menu-link menu__tabs-triggers">
+                              <span class="menu-link__text">Архитектурно-художественная подстветка</span>
+                              <span class="menu-link__icon menu__tabs-icon">
+                                   <svg>
+                                     <use xlink:href="./assets/sprite.svg#icon-arrow"></use>
+                                   </svg>
+                                </span>
+                            </a>
+                            <a href="#" class="menu-link menu__tabs-triggers">
+                              <span class="menu-link__text">Техническое обслуживание системы наружного освещения</span>
+                              <span class="menu-link__icon menu__tabs-icon">
+                                   <svg>
+                                     <use xlink:href="./assets/sprite.svg#icon-arrow"></use>
+                                   </svg>
+                                </span>
+                            </a>
+                            <a href="#" class="menu-link menu__tabs-triggers">
+                              <span class="menu-link__text">Переустройство системы наружного освещения</span>
+                              <span class="menu-link__icon menu__tabs-icon">
+                                   <svg>
+                                     <use xlink:href="./assets/sprite.svg#icon-arrow"></use>
+                                   </svg>
+                                </span>
+                            </a>
+                          </div>
+                          <a href="/detail-page" class="button button--vert mt-10">
+                            <svg>
+                              <use xlink:href="./assets/sprite.svg#icon-arrow"></use>
+                            </svg>
+                          </a>
+                        </div>
+                        <div class="menu-inner__item tabs__item" data-tabs-list="inner" id="tab-4.3">
+                          <div class="menu__link-grid menu__tabs-controls--border menu__tabs-controls--border-wide">
+                            <a href="#" class="menu-link menu__tabs-triggers">
+                              <span class="menu-link__text">Переустройство системы наружного освещения</span>
+                              <span class="menu-link__icon menu__tabs-icon">
+                                   <svg>
+                                     <use xlink:href="./assets/sprite.svg#icon-arrow"></use>
+                                   </svg>
+                                </span>
+                            </a>
+                            <a href="#" class="menu-link menu__tabs-triggers">
+                              <span class="menu-link__text">Архитектурно-художественная подстветка</span>
+                              <span class="menu-link__icon menu__tabs-icon">
+                                   <svg>
+                                     <use xlink:href="./assets/sprite.svg#icon-arrow"></use>
+                                   </svg>
+                                </span>
+                            </a>
+                            <a href="#" class="menu-link menu__tabs-triggers">
+                              <span class="menu-link__text">Техническое обслуживание системы наружного освещения</span>
+                              <span class="menu-link__icon menu__tabs-icon">
+                                   <svg>
+                                     <use xlink:href="./assets/sprite.svg#icon-arrow"></use>
+                                   </svg>
+                                </span>
+                            </a>
+                            <a href="#" class="menu-link menu__tabs-triggers">
+                              <span class="menu-link__text">Оснащение и предоставление праздничной подстветки</span>
+                              <span class="menu-link__icon menu__tabs-icon">
+                                   <svg>
+                                     <use xlink:href="./assets/sprite.svg#icon-arrow"></use>
+                                   </svg>
+                                </span>
+                            </a>
+                            <a href="#" class="menu-link menu__tabs-triggers">
+                              <span class="menu-link__text">Архитектурно-художественная подстветка</span>
+                              <span class="menu-link__icon menu__tabs-icon">
+                                   <svg>
+                                     <use xlink:href="./assets/sprite.svg#icon-arrow"></use>
+                                   </svg>
+                                </span>
+                            </a>
+                            <a href="#" class="menu-link menu__tabs-triggers">
+                              <span class="menu-link__text">Техническое обслуживание системы наружного освещения</span>
+                              <span class="menu-link__icon menu__tabs-icon">
+                                   <svg>
+                                     <use xlink:href="./assets/sprite.svg#icon-arrow"></use>
+                                   </svg>
+                                </span>
+                            </a>
+                          </div>
+                          <a href="/detail-page" class="button button--vert mt-10">
+                            <svg>
+                              <use xlink:href="./assets/sprite.svg#icon-arrow"></use>
+                            </svg>
+                          </a>
+                        </div>
+                        <div class="menu-inner__item tabs__item" data-tabs-list="inner" id="tab-4.4">
+                          <div class="menu__link-grid menu__tabs-controls--border menu__tabs-controls--border-wide">
+                            <a href="#" class="menu-link menu__tabs-triggers">
+                              <span class="menu-link__text">Архитектурно-художественная подстветка</span>
+                              <span class="menu-link__icon menu__tabs-icon">
+                                   <svg>
+                                     <use xlink:href="./assets/sprite.svg#icon-arrow"></use>
+                                   </svg>
+                                </span>
+                            </a>
+                            <a href="#" class="menu-link menu__tabs-triggers">
+                              <span class="menu-link__text">Переустройство системы наружного освещения</span>
+                              <span class="menu-link__icon menu__tabs-icon">
+                                   <svg>
+                                     <use xlink:href="./assets/sprite.svg#icon-arrow"></use>
+                                   </svg>
+                                </span>
+                            </a>
+                            <a href="#" class="menu-link menu__tabs-triggers">
+                              <span class="menu-link__text">Оснащение и предоставление праздничной подстветки</span>
+                              <span class="menu-link__icon menu__tabs-icon">
+                                   <svg>
+                                     <use xlink:href="./assets/sprite.svg#icon-arrow"></use>
+                                   </svg>
+                                </span>
+                            </a>
+                            <a href="#" class="menu-link menu__tabs-triggers">
+                              <span class="menu-link__text">Техническое обслуживание системы наружного освещения</span>
+                              <span class="menu-link__icon menu__tabs-icon">
+                                   <svg>
+                                     <use xlink:href="./assets/sprite.svg#icon-arrow"></use>
+                                   </svg>
+                                </span>
+                            </a>
+                          </div>
+                          <a href="/detail-page" class="button button--vert mt-10">
+                            <svg>
+                              <use xlink:href="./assets/sprite.svg#icon-arrow"></use>
+                            </svg>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="menu-inner__tab tabs__item" data-tabs-list="outer" id="tab-5">
+                    <div class="menu__tabs-menu menu__tabs-menu--bg-gray">
+                      <div class="menu__tabs-block">
+                        <div class="menu__tabs-block-content">
+                          <p class="menu__tabs-block-title">Выдача документации</p>
+                          <p class="menu__tabs-block-text">Выполним все мероприятия, включенные в технологические
+                            условия заказчика при осуществлении процедуры технологического присоединения.</p>
+                        </div>
+                        <a href="/detail-page" class="button button--vert">
+                          <svg>
+                            <use xlink:href="./assets/sprite.svg#icon-arrow"></use>
+                          </svg>
+                        </a>
+                      </div>
+                      <div class="menu__block-pic">
+                        <div class="menu__block-bg" style="background-image: url('./assets/images/bg-trees.png')"></div>
+                        <div class="menu__block-list-wrapper menu__block-list-wrapper--right">
+                          <div class="menu-list menu-list--wide">
+                            <p class="title-content">Выдача документации</p>
+                            <ul class="menu-list__list menu-list__list--two-columns">
+                              <li>инженерные изыскания;</li>
+                              <li>разработка проектной документации;</li>
+                              <li>согласование пересечения или сближения с коммуникациями компании;</li>
+                              <li>выдача дубликатов документов.</li>
+                            </ul>
+                          </div>
+                          <picture class="menu-list__pic-decor">
+                            <img src="./assets/images/doc.png" alt="">
+                          </picture>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="menu-inner__tab tabs__item" data-tabs-list="outer" id="tab-6">
+                    <div class="menu__tabs-menu menu__tabs-menu--bg-gray">
+                      <div class="menu__tabs-block">
+                        <div class="menu__tabs-block-content">
+                          <p class="menu__tabs-block-title">Строительство электросетевых объектов</p>
+                          <p class="menu__tabs-block-text">Выполним все мероприятия, включенные в технологические
+                            условия заказчика при осуществлении процедуры технологического присоединения.</p>
+                        </div>
+                        <a href="/detail-page" class="button button--vert">
+                          <svg>
+                            <use xlink:href="./assets/sprite.svg#icon-arrow"></use>
+                          </svg>
+                        </a>
+                      </div>
+                      <div class="menu__block-pic">
+                        <div class="menu__block-bg" style="background-image: url('./assets/images/bg-trees.png')"></div>
+                        <div class="menu__block-list-wrapper menu__block-list-wrapper--right">
+                          <div class="menu-list menu-list--wide">
+                            <p class="title-content">Строительство электросетевых объектов</p>
+                            <ul class="menu-list__list menu-list__list--two-columns">
+                              <li>составление и согласование с заказчиком технического задания на проектирование;</li>
+                              <li>инженерные изыскания;</li>
+                              <li>разработка проектной документации;</li>
+                              <li>согласование пересечения или сближения с коммуникациями компании;</li>
+                              <li>выдача дубликатов документов.</li>
+                            </ul>
+                          </div>
+                          <picture class="menu-list__pic-decor">
+                            <img src="./assets/images/doc.png" alt="">
+                          </picture>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mobile-services" data-mobile-services>
+            <div class="mobile-services__header">
+              <div class="mobile-services__item" data-services-item>
+                <svg class="mobile-services__icon">
+                  <use xlink:href="./assets/sprite.svg#icon-connection"></use>
+                </svg>
+                <p class="mobile-services__title">Технологическое присоединение под ключ</p>
+                <button class="mobile-services__button">
+                  <svg>
+                    <use xlink:href="./assets/sprite.svg#icon-arrow-small"></use>
+                  </svg>
+                </button>
+              </div>
+              <div class="mobile-services__item" data-services-item>
+                <svg class="mobile-services__icon">
+                  <use xlink:href="./assets/sprite.svg#icon-bulb"></use>
+                </svg>
+                <p class="mobile-services__title">Обслуживание электрооборужования</p>
+                <button class="mobile-services__button">
+                  <svg>
+                    <use xlink:href="./assets/sprite.svg#icon-arrow-small"></use>
+                  </svg>
+                </button>
+              </div>
+              <div class="mobile-services__item" data-services-item>
+                <svg class="mobile-services__icon">
+                  <use xlink:href="./assets/sprite.svg#icon-lorry"></use>
+                </svg>
+                <p class="mobile-services__title">Аренда техники</p>
+                <button class="mobile-services__button">
+                  <svg>
+                    <use xlink:href="./assets/sprite.svg#icon-arrow-small"></use>
+                  </svg>
+                </button>
+              </div>
+              <div class="mobile-services__item" data-services-item>
+                <svg class="mobile-services__icon">
+                  <use xlink:href="./assets/sprite.svg#icon-connection"></use>
+                </svg>
+                <p class="mobile-services__title">Наружное освещение</p>
+                <button class="mobile-services__button">
+                  <svg>
+                    <use xlink:href="./assets/sprite.svg#icon-arrow-small"></use>
+                  </svg>
+                </button>
+              </div>
+              <div class="mobile-services__item" data-services-item>
+                <svg class="mobile-services__icon">
+                  <use xlink:href="./assets/sprite.svg#icon-connection"></use>
+                </svg>
+                <p class="mobile-services__title">Выдача документации</p>
+                <button class="mobile-services__button">
+                  <svg>
+                    <use xlink:href="./assets/sprite.svg#icon-arrow-small"></use>
+                  </svg>
+                </button>
+              </div>
+              <div class="mobile-services__item" data-services-item>
+                <svg class="mobile-services__icon">
+                  <use xlink:href="./assets/sprite.svg#icon-pillar"></use>
+                </svg>
+                <p class="mobile-services__title">Строительство электросетевых объектов</p>
+                <button class="mobile-services__button">
+                  <svg>
+                    <use xlink:href="./assets/sprite.svg#icon-arrow-small"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="mobile-services__content" data-services-content>
+              <div class="mobile-services__screen">
+                <div class="mobile-services__item">
+                  <svg class="mobile-services__icon">
+                    <use xlink:href="./assets/sprite.svg#icon-lorry"></use>
+                  </svg>
+                  <p class="mobile-services__title">Аренда техники</p>
+                </div>
+                <ul class="mobile-services__list">
+                  <li class="mobile-services__element">
+                    <a class="mobile-services__link" href="#">
+                      <span>Краны</span>
+                      <svg>
+                        <use xlink:href="./assets/sprite.svg#icon-arrow"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="mobile-services__element">
+                    <a class="mobile-services__link" href="#">
+                      <span>Эксковаторы</span>
+                      <svg>
+                        <use xlink:href="./assets/sprite.svg#icon-arrow"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="mobile-services__element">
+                    <a class="mobile-services__link" href="#">
+                      <span>Фронтальные погрузчики</span>
+                      <svg>
+                        <use xlink:href="./assets/sprite.svg#icon-arrow"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="mobile-services__element">
+                    <a class="mobile-services__link" href="#">
+                      <span>Самосвалы</span>
+                      <svg>
+                        <use xlink:href="./assets/sprite.svg#icon-arrow"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="mobile-services__element">
+                    <a class="mobile-services__link" href="#">
+                      <span>Бульдозеры</span>
+                      <svg>
+                        <use xlink:href="./assets/sprite.svg#icon-arrow"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="mobile-services__element">
+                    <a class="mobile-services__link" href="#">
+                      <span>Манипуляторы</span>
+                      <svg>
+                        <use xlink:href="./assets/sprite.svg#icon-arrow"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="mobile-services__element">
+                    <a class="mobile-services__link" href="#">
+                      <span>Перечень техники</span>
+                      <svg>
+                        <use xlink:href="./assets/sprite.svg#icon-arrow"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+                <button class="button">
+                  <span>Перейти в раздел</span>
+                  <svg class="icon">
+                    <use xlink:href="./assets/sprite.svg#icon-arrow-bold"></use>
+                  </svg>
+                </button>
+              </div>
+              <div class="mobile-services__screen">
+                <div class="mobile-services__item">
+                  <svg class="mobile-services__icon">
+                    <use xlink:href="./assets/sprite.svg#icon-lorry"></use>
+                  </svg>
+                  <p class="mobile-services__title">Аренда техники 2</p>
+                </div>
+                <ul class="mobile-services__list">
+                  <li class="mobile-services__element">
+                    <a class="mobile-services__link" href="#">
+                      <span>Краны</span>
+                      <svg>
+                        <use xlink:href="./assets/sprite.svg#icon-arrow"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="mobile-services__element">
+                    <a class="mobile-services__link" href="#">
+                      <span>Эксковаторы</span>
+                      <svg>
+                        <use xlink:href="./assets/sprite.svg#icon-arrow"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="mobile-services__element">
+                    <a class="mobile-services__link" href="#">
+                      <span>Фронтальные погрузчики</span>
+                      <svg>
+                        <use xlink:href="./assets/sprite.svg#icon-arrow"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="mobile-services__element">
+                    <a class="mobile-services__link" href="#">
+                      <span>Самосвалы</span>
+                      <svg>
+                        <use xlink:href="./assets/sprite.svg#icon-arrow"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="mobile-services__element">
+                    <a class="mobile-services__link" href="#">
+                      <span>Бульдозеры</span>
+                      <svg>
+                        <use xlink:href="./assets/sprite.svg#icon-arrow"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="mobile-services__element">
+                    <a class="mobile-services__link" href="#">
+                      <span>Манипуляторы</span>
+                      <svg>
+                        <use xlink:href="./assets/sprite.svg#icon-arrow"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="mobile-services__element">
+                    <a class="mobile-services__link" href="#">
+                      <span>Перечень техники</span>
+                      <svg>
+                        <use xlink:href="./assets/sprite.svg#icon-arrow"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+                <button class="button">
+                  <span>Перейти в раздел</span>
+                  <svg class="icon">
+                    <use xlink:href="./assets/sprite.svg#icon-arrow-bold"></use>
+                  </svg>
+                </button>
+              </div>
+              <div class="mobile-services__screen">
+                <div class="mobile-services__item">
+                  <svg class="mobile-services__icon">
+                    <use xlink:href="./assets/sprite.svg#icon-lorry"></use>
+                  </svg>
+                  <p class="mobile-services__title">Аренда техники 3</p>
+                </div>
+                <ul class="mobile-services__list">
+                  <li class="mobile-services__element">
+                    <a class="mobile-services__link" href="#">
+                      <span>Краны</span>
+                      <svg>
+                        <use xlink:href="./assets/sprite.svg#icon-arrow"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="mobile-services__element">
+                    <a class="mobile-services__link" href="#">
+                      <span>Эксковаторы</span>
+                      <svg>
+                        <use xlink:href="./assets/sprite.svg#icon-arrow"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="mobile-services__element">
+                    <a class="mobile-services__link" href="#">
+                      <span>Фронтальные погрузчики</span>
+                      <svg>
+                        <use xlink:href="./assets/sprite.svg#icon-arrow"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="mobile-services__element">
+                    <a class="mobile-services__link" href="#">
+                      <span>Самосвалы</span>
+                      <svg>
+                        <use xlink:href="./assets/sprite.svg#icon-arrow"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="mobile-services__element">
+                    <a class="mobile-services__link" href="#">
+                      <span>Бульдозеры</span>
+                      <svg>
+                        <use xlink:href="./assets/sprite.svg#icon-arrow"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="mobile-services__element">
+                    <a class="mobile-services__link" href="#">
+                      <span>Манипуляторы</span>
+                      <svg>
+                        <use xlink:href="./assets/sprite.svg#icon-arrow"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="mobile-services__element">
+                    <a class="mobile-services__link" href="#">
+                      <span>Перечень техники</span>
+                      <svg>
+                        <use xlink:href="./assets/sprite.svg#icon-arrow"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+                <button class="button">
+                  <span>Перейти в раздел</span>
+                  <svg class="icon">
+                    <use xlink:href="./assets/sprite.svg#icon-arrow-bold"></use>
+                  </svg>
+                </button>
+              </div>
+              <div class="mobile-services__screen">
+                <div class="mobile-services__item">
+                  <svg class="mobile-services__icon">
+                    <use xlink:href="./assets/sprite.svg#icon-lorry"></use>
+                  </svg>
+                  <p class="mobile-services__title">Аренда техники 4</p>
+                </div>
+                <ul class="mobile-services__list">
+                  <li class="mobile-services__element">
+                    <a class="mobile-services__link" href="#">
+                      <span>Краны</span>
+                      <svg>
+                        <use xlink:href="./assets/sprite.svg#icon-arrow"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="mobile-services__element">
+                    <a class="mobile-services__link" href="#">
+                      <span>Эксковаторы</span>
+                      <svg>
+                        <use xlink:href="./assets/sprite.svg#icon-arrow"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="mobile-services__element">
+                    <a class="mobile-services__link" href="#">
+                      <span>Фронтальные погрузчики</span>
+                      <svg>
+                        <use xlink:href="./assets/sprite.svg#icon-arrow"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="mobile-services__element">
+                    <a class="mobile-services__link" href="#">
+                      <span>Самосвалы</span>
+                      <svg>
+                        <use xlink:href="./assets/sprite.svg#icon-arrow"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="mobile-services__element">
+                    <a class="mobile-services__link" href="#">
+                      <span>Бульдозеры</span>
+                      <svg>
+                        <use xlink:href="./assets/sprite.svg#icon-arrow"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="mobile-services__element">
+                    <a class="mobile-services__link" href="#">
+                      <span>Манипуляторы</span>
+                      <svg>
+                        <use xlink:href="./assets/sprite.svg#icon-arrow"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="mobile-services__element">
+                    <a class="mobile-services__link" href="#">
+                      <span>Перечень техники</span>
+                      <svg>
+                        <use xlink:href="./assets/sprite.svg#icon-arrow"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+                <button class="button">
+                  <span>Перейти в раздел</span>
+                  <svg class="icon">
+                    <use xlink:href="./assets/sprite.svg#icon-arrow-bold"></use>
+                  </svg>
+                </button>
+              </div>
+              <div class="mobile-services__screen">
+                <div class="mobile-services__item">
+                  <svg class="mobile-services__icon">
+                    <use xlink:href="./assets/sprite.svg#icon-lorry"></use>
+                  </svg>
+                  <p class="mobile-services__title">Аренда техники 5</p>
+                </div>
+                <ul class="mobile-services__list">
+                  <li class="mobile-services__element">
+                    <a class="mobile-services__link" href="#">
+                      <span>Краны</span>
+                      <svg>
+                        <use xlink:href="./assets/sprite.svg#icon-arrow"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="mobile-services__element">
+                    <a class="mobile-services__link" href="#">
+                      <span>Эксковаторы</span>
+                      <svg>
+                        <use xlink:href="./assets/sprite.svg#icon-arrow"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="mobile-services__element">
+                    <a class="mobile-services__link" href="#">
+                      <span>Фронтальные погрузчики</span>
+                      <svg>
+                        <use xlink:href="./assets/sprite.svg#icon-arrow"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="mobile-services__element">
+                    <a class="mobile-services__link" href="#">
+                      <span>Самосвалы</span>
+                      <svg>
+                        <use xlink:href="./assets/sprite.svg#icon-arrow"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="mobile-services__element">
+                    <a class="mobile-services__link" href="#">
+                      <span>Бульдозеры</span>
+                      <svg>
+                        <use xlink:href="./assets/sprite.svg#icon-arrow"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="mobile-services__element">
+                    <a class="mobile-services__link" href="#">
+                      <span>Манипуляторы</span>
+                      <svg>
+                        <use xlink:href="./assets/sprite.svg#icon-arrow"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="mobile-services__element">
+                    <a class="mobile-services__link" href="#">
+                      <span>Перечень техники</span>
+                      <svg>
+                        <use xlink:href="./assets/sprite.svg#icon-arrow"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+                <button class="button">
+                  <span>Перейти в раздел</span>
+                  <svg class="icon">
+                    <use xlink:href="./assets/sprite.svg#icon-arrow-bold"></use>
+                  </svg>
+                </button>
+              </div>
+              <div class="mobile-services__screen">
+                <div class="mobile-services__item">
+                  <svg class="mobile-services__icon">
+                    <use xlink:href="./assets/sprite.svg#icon-lorry"></use>
+                  </svg>
+                  <p class="mobile-services__title">Аренда техники 6</p>
+                </div>
+                <ul class="mobile-services__list">
+                  <li class="mobile-services__element">
+                    <a class="mobile-services__link" href="#">
+                      <span>Краны</span>
+                      <svg>
+                        <use xlink:href="./assets/sprite.svg#icon-arrow"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="mobile-services__element">
+                    <a class="mobile-services__link" href="#">
+                      <span>Эксковаторы</span>
+                      <svg>
+                        <use xlink:href="./assets/sprite.svg#icon-arrow"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="mobile-services__element">
+                    <a class="mobile-services__link" href="#">
+                      <span>Фронтальные погрузчики</span>
+                      <svg>
+                        <use xlink:href="./assets/sprite.svg#icon-arrow"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="mobile-services__element">
+                    <a class="mobile-services__link" href="#">
+                      <span>Самосвалы</span>
+                      <svg>
+                        <use xlink:href="./assets/sprite.svg#icon-arrow"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="mobile-services__element">
+                    <a class="mobile-services__link" href="#">
+                      <span>Бульдозеры</span>
+                      <svg>
+                        <use xlink:href="./assets/sprite.svg#icon-arrow"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="mobile-services__element">
+                    <a class="mobile-services__link" href="#">
+                      <span>Манипуляторы</span>
+                      <svg>
+                        <use xlink:href="./assets/sprite.svg#icon-arrow"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="mobile-services__element">
+                    <a class="mobile-services__link" href="#">
+                      <span>Перечень техники</span>
+                      <svg>
+                        <use xlink:href="./assets/sprite.svg#icon-arrow"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+                <button class="button">
+                  <span>Перейти в раздел</span>
+                  <svg class="icon">
+                    <use xlink:href="./assets/sprite.svg#icon-arrow-bold"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="header__search mob-hidden">
+          <button class="header__search-button">
+            <svg>
+              <use xlink:href="./assets/sprite.svg#icon-search"></use>
+            </svg>
+          </button>
+          <form class="header__search-form" action="#">
+            <label class="header__search-label">
+              <input type="text" name="search">
+            </label>
+          </form>
+        </div>
+      </div>
+      <div class="header__bottom-right mob-hidden">
+        <nav class="nav nav--header">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#" target="_blank" class="nav__item-link">Главная</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" target="_blank" class="nav__item-link">Список услуг</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" target="_blank" class="nav__item-link">Контакты</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" target="_blank" class="nav__item-link">О компании</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" target="_blank" class="nav__item-link">FAQ</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="mobile-search" data-mobile-search>
+        <form class="mobile-search__form" action="#">
+          <label class="mobile-search__label">
+            <svg class="mobile-search__icon">
+              <use xlink:href="./assets/sprite.svg#icon-search"></use>
+            </svg>
+            <input type="text" name="search" class="mobile-search__input" placeholder="Поиск">
+          </label>
+        </form>
+      </div>
+    </div>
+  </div>
+</header>
+<main class="main">
+  <section class="section">
+  <div class="container">
+    <div class="breadcrumbs">
+      <a href="/" class="breadcrumbs__link">Главная</a>
+      <a href="/" class="breadcrumbs__link">Услуги</a>
+      <span class="breadcrumbs__current">Выдача документации</span>
+    </div>
+  </div>
+</section>
+  <section class="section mb-70">
+    <div class="container container--mob-full">
+      <div class="page-intro">
+        <picture class="page-intro__pic">
+          <img src="./assets/images/page-intro-bg.jpg" alt="">
+        </picture>
+        <div class="page-intro__content">
+          <h1 class="page-intro__title title title--light">Технологическое присоединение под ключ, просто и надёжно</h1>
+          <p class="page-intro__text">Минимизация процесса получения специальной документации, а так же процесса
+            согласования является одним из приоритетов группы компаний “Россети”. Мы помогаем своим клиентам
+            минимизировать бюрократические процессы. </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section mb-40">
+    <div class="container">
+      <div class="columns">
+        <div class="columns__col--7 columns__col-tab--12">
+          <h2 class="title mb-20">Технологическое присоединение</h2>
+          <div class="subtitle">
+            <p>Мы поможем вам выполнить данные работы легко и просто. Группа компаний “Россети” обладает большим опытом
+              работы, имеет квалифицированных специалистов, а так же собственную технику для выполнения всех видов
+              работ. </p>
+          </div>
+        </div>
+        <div class="columns__col--12">
+          <div class="tabs__item active" data-tabs-list="techConnection" id="techConnection-1">
+            <div class="tabs-about__item">
+              <div class="tabs-about__card">
+                <div class="tabs-about__card-inner">
+                  <div class="tabs-about__card-title">Технологическое присоединение tab - 1</div>
+                  <div class="tabs-about__card-text">
+                    <p>Технологическое присоединение — комплекс технических мероприятий и юридических процедур,
+                      обеспечивающих в совокупности фактическое присоединение объектов заявителя (энергопринимающих
+                      устройств, энергетических установок, объектов электросетевого хозяйств) к объектам
+                      электросетевого хозяйства сетевой организации, в которую была подана заявка на технологическое
+                      присоединение.</p>
+                  </div>
+                  <button data-fancybox data-src="#modalTechConnectionStart" class="button tabs-about__card-link">
+                    Оформить заявку
+                  </button>
+
+                </div>
+              </div>
+              <div class="slider" data-slider data-slider-fade data-slider-slides="1" data-slider-slides-tab="1"
+                   data-swiper-autoplay="2000">
+                <div class="swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="tabs-about__item-slide">
+                        <img src="./assets/images/about-pic.png" alt="">
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="tabs-about__item-slide">
+                        <img src="./assets/images/bg-trees.png" alt="">
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="tabs-about__item-slide">
+                        <img src="./assets/images/about-pic.png" alt="">
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="tabs-about__item-slide">
+                        <img src="./assets/images/bg-houses.png" alt="">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="slider__pagination" data-slider-pagination></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section info-block mb-55">
+    <div class="container">
+      <div class="columns">
+        <div class="columns__col--4 columns__col-mob--12">
+          <div class="info-block__heading">
+            <h3 class="info-block__title title-content title-content--big">Общие сведения <br class="tab-hidden"> об
+              услуге</h3>
+            <div class="info-block__subtitle">
+              <p>Технологическое присоединение – комплексная услуга, оказываемая сетевыми компаниями юридическим и
+                физическим лицам для выдачи электрической мощности.</p>
+              <p>Предусматривающая фактическое присоединение энергопринимающих устройств (энергетических установок)
+                потребителей к объектам электросетевого хозяйства.</p>
+            </div>
+          </div>
+        </div>
+        <div class="columns__col--6 columns__col-tab--8 columns__col-mob--12">
+          <div class="info-block__content">
+            <p>Технологическое присоединение – комплексная услуга, оказываемая сетевыми компаниями юридическим и
+              физическим лицам для выдачи электрической мощности и предусматривающая фактическое присоединение
+              энергопринимающих устройств (энергетических установок) потребителей к объектам электросетевого
+              хозяйства.</p>
+            <p>Услуга по технологическому присоединению оказывается в случаях присоединения впервые вводимых в
+              эксплуатацию энергопринимающих устройств; увеличения максимальной мощности ранее присоединенных
+              энергопринимающих устройств; изменения категории надежности электроснабжения, точек присоединения, видов
+              производственной деятельности, не влекущих пересмотра величины максимальной мощности, но изменяющих схему
+              внешнего электроснабжения ранее присоединенных энергопринимающих устройств; присоединения ранее
+              присоединенных энергопринимающих устройств, выведенных из эксплуатации (в том числе в целях консервации на
+              срок более 1 года) в порядке, установленном Правилами вывода объектов электроэнергетики в ремонт и из
+              эксплуатации, утвержденными постановлением Правительства Российской Федерации от 30 января 2021 г. N 86
+              «Об утверждении правил вывода объектов электроэнергетики в ремонт и из эксплуатации, а также внесении
+              изменений в некоторые акты Правительства Российской Федерации по вопросу совершенствования порядка вывода
+              объектов электроэнергетики в ремонт и из эксплуатации.</p>
+            <hr>
+            <p>Услуга по технологическому присоединению оказывается в случаях присоединения впервые вводимых в
+              эксплуатацию энергопринимающих устройств; увеличения максимальной мощности ранее присоединенных
+              энергопринимающих устройств; изменения категории надежности электроснабжения, точек присоединения, видов
+              производственной деятельности, не влекущих пересмотра величины максимальной мощности, но изменяющих схему
+              внешнего электроснабжения ранее присоединенных энергопринимающих устройств; присоединения ранее
+              присоединенных энергопринимающих устройств, выведенных из эксплуатации (в том числе в целях консервации на
+              срок более 1 года) в порядке, установленном Правилами вывода объектов электроэнергетики в ремонт и из
+              эксплуатации, утвержденными постановлением Правительства Российской Федерации от 30 января 2021 г. N 86
+              «Об утверждении правил вывода объектов электроэнергетики в ремонт и из эксплуатации, а также внесении
+              изменений в некоторые акты Правительства Российской Федерации по вопросу совершенствования порядка вывода
+              объектов электроэнергетики в ремонт и из эксплуатации.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="footer">
+  <div class="container">
+    <div class="footer__top">
+      <div class="columns">
+        <div class="columns__col--2 columns__col-laptop--3 columns__col-tab--12">
+          <div class="footer__block">
+            <div class="footer__block-column">
+              <a class="logo" href="/">
+                <picture class="logo__picture">
+                  <img src="./assets/images/logo-market.svg" alt="">
+                </picture>
+              </a>
+              <div class="footer__info">
+                <p class="footer__copyright">&copy; 2023 ПАО «Россети». <br>
+                  Все права защищены.</p>
+                <a href="#" target="_blank" class="footer__confidential tab-visible">Политика конфиденциальности</a>
+              </div>
+            </div>
+            <div class="footer__block-row">
+              <a class="logo logo--min" href="https://mrsk-1.ru" target="_blank">
+                <picture class="logo__picture">
+                  <img src="./assets/images/logo-center.svg" alt="">
+                </picture>
+              </a>
+              <a class="logo logo--min" href="https://mrsk-cp.ru/" target="_blank">
+                <picture class="logo__picture">
+                  <img src="./assets/images/logo-center-plus.svg" alt="">
+                </picture>
+              </a>
+            </div>
+          </div>
+
+        </div>
+        <div class="columns__col--3 columns__col-mob--12">
+          <div class="footer__menu">
+            <a href="#" target="_blank" class="footer__menu-head">Услуги</a>
+            <ul class="footer__menu-list">
+              <li class="footer__menu-item">
+                <a href="#" class="footer__menu-link">Техническое обслуживание</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="#" class="footer__menu-link">Наружное освещение</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="#" class="footer__menu-link">Выдача документов</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="#" class="footer__menu-link">Аренда техники</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="#" class="footer__menu-link">Обслуживание</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="#" class="footer__menu-link">Строительство электросетевых объектов</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="columns__col--2 columns__col-laptop--3 columns__col-tab--4 columns__col-mob--12">
+          <div class="footer__menu">
+            <a href="#" target="_blank" class="footer__menu-head">Контакты</a>
+            <ul class="footer__menu-list">
+              <li class="footer__menu-item">
+                <a href="tel:+78002200220" class="footer__menu-link">+7 (800) 220-02-20</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="mailto:posta@mrsk-1.ru" class="footer__menu-link">
+                  <p>posta@mrsk-1.ru</p>
+                  <p class="footer__menu-link--accent">Написать</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="columns__col--2 columns__col-laptop--3 columns__col-tab--4 columns__col-mob--12">
+          <div class="footer__menu">
+            <a href="#" target="_blank" class="footer__menu-head">О компании</a>
+            <ul class="footer__menu-list">
+              <li class="footer__menu-item">
+                <a href="#" class="footer__menu-link">FAQ</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="columns__col--1 laptop-hidden"></div>
+        <div class="columns__col--2 columns__col-laptop--12">
+          <div class="footer__contacts">
+            <a class="footer__subscribe" href="#">
+              <span>Подписаться на рассылку</span>
+              <span class="footer__subscribe-icon">
+              <svg>
+                <use xlink:href="./assets/sprite.svg#icon-tg"></use>
+              </svg>
+            </span>
+            </a>
+            <div class="footer__socials">
+              <a class="footer__socials-item" href="#">
+              <span class="footer__socials-icon">
+                <svg>
+                <use xlink:href="./assets/sprite.svg#icon-vk"></use>
+              </svg>
+              </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <a href="#" target="_blank" class="footer__confidential tab-hidden">Политика конфиденциальности</a>
+      <a href="#" target="_blank" class="footer__develop">
+        <p>Разработано</p>
+        <picture class="footer__develop-pic">
+          <img src="./assets/images/logo-dnt.svg" alt="">
+        </picture>
+      </a>
+    </div>
+  </div>
+</footer>
+<div class="modals" hidden>
+  <!--  START-->
+  <!--  тут не нужен путь в action, тег form только для семантики-->
+  <div class="modal" id="modalTechConnectionStart">
+    <button class="modal__close-btn modal__serv-btn" data-fancybox-close>
+      <svg>
+        <use xlink:href="./assets/sprite.svg#icon-close"></use>
+      </svg>
+    </button>
+    <div class="modal__head">
+      <p class="modal__title">Оформление заявки</p>
+      <div class="hint modal__subtitle">
+        <p class="hint__text"
+           data-title="* Предоставление услуги возможно только при уже поданной заявке на технологическое присоединение">
+          У меня уже есть договор технологического присоединения</p>
+        <span class="hint__icon">
+          <svg>
+            <use xlink:href="./assets/sprite.svg#icon-hint"></use>
+          </svg>
+        </span>
+      </div>
+    </div>
+    <div class="modal__top">
+      <div class="modal__button-wrap">
+        <a class="modal__button"
+           href="https://xn----7sb7akeedqd.xn--p1ai/platform/portal/tehprisEE_portal"
+           target="_blank"
+        >Подать заявку на технологическое присоединение</a>
+        <button class="modal__button"
+                data-modal-next="modalTechConnectionParams"
+        >Я уже подал заявку на технологическое присоединение
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!--  PARAMS-->
+  <!--  тут не нужен путь в action, тег form только для семантики-->
+  <div class="modal" id="modalTechConnectionParams">
+    <button class="modal__close-btn modal__serv-btn" data-fancybox-close>
+      <svg>
+        <use xlink:href="./assets/sprite.svg#icon-close"></use>
+      </svg>
+    </button>
+    <div class="modal__head">
+      <p class="modal__title">Заявка на технологическое присоединение</p>
+      <div class="hint modal__subtitle">
+        <p class="hint__text"
+           data-title="* Предоставление услуги возможно только при уже поданной заявке на технологическое присоединение">
+          У меня уже есть договор технологического присоединения</p>
+        <span class="hint__icon">
+          <svg>
+            <use xlink:href="./assets/sprite.svg#icon-hint"></use>
+          </svg>
+        </span>
+      </div>
+    </div>
+    <form class="form" action="#">
+      <div class="modal__top">
+        <div class="form__block">
+          <span class="from__text-label">Мощность:</span>
+          <div class="form__block-radio">
+            <label class="form__radio-label">
+              <input type="radio" name="wattage" value="down15" checked>
+              <span>до 15 кВт</span>
+            </label>
+            <label class="form__radio-label">
+              <input type="radio" name="wattage" value="up15">
+              <span>свыше 15 кВт</span>
+            </label>
+          </div>
+        </div>
+        <div class="form__block">
+          <span class="from__text-label">Статус:</span>
+          <div class="form__block-radio">
+            <label class="form__radio-label">
+              <input type="radio" name="status" value="jur" data-value="#modalTechConnectionJUR" checked>
+              <span>Юридическое лицо</span>
+            </label>
+            <label class="form__radio-label">
+              <input type="radio" name="status" value="fiz" data-value="#modalTechConnectionFIZ">
+              <span>Физическое лицо</span>
+            </label>
+          </div>
+        </div>
+        <div class="form__block">
+          <span class="from__text-label">Напряжение:</span>
+          <div class="form__block-radio">
+            <label class="form__radio-label">
+              <input type="radio" name="voltage" value="220" checked>
+              <span>220 В</span>
+            </label>
+            <label class="form__radio-label">
+              <input type="radio" name="voltage" value="360">
+              <span>360 В</span>
+            </label>
+          </div>
+        </div>
+        <div class="form__block">
+          <span class="from__text-label">Материалы:</span>
+          <div class="form__block-radio">
+            <label class="form__radio-label">
+              <input type="radio" name="materials" value="company" checked>
+              <span>Материалы компании</span>
+            </label>
+            <label class="form__radio-label">
+              <input type="radio" name="materials" value="client">
+              <span>Материалы заказчика</span>
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="modal__bottom">
+        <button class="button form__button"
+                data-modal-order>
+          <span>Продолжить</span>
+          <svg>
+            <use xlink:href="./assets/sprite.svg#icon-arrow-empty"></use>
+          </svg>
+        </button>
+        <div class="modal__bottom-info">
+          <span>Стоимость присоединения:</span>
+          <span class="form__price">100 000 руб.</span>
+        </div>
+      </div>
+    </form>
+  </div>
+
+  <!--  FIZ-->
+  <!--  добавить путь в action-->
+  <div class="modal" id="modalTechConnectionFIZ">
+    <button class="modal__back-btn modal__serv-btn" data-modal-back>
+      <svg>
+        <use xlink:href="./assets/sprite.svg#icon-arrow"></use>
+      </svg>
+    </button>
+    <button class="modal__close-btn modal__serv-btn" data-fancybox-close>
+      <svg>
+        <use xlink:href="./assets/sprite.svg#icon-close"></use>
+      </svg>
+    </button>
+    <div class="modal__head">
+      <p class="modal__title">Введите свои данные</p>
+    </div>
+    <form action="#" data-form class="form">
+      <div class="modal__top">
+        <div class="form__block">
+          <span class="from__text-label">Личные данные</span>
+          <div class="form__block-inner">
+            <label class="form__input-label">
+              <input type="text"
+                     name="FIO"
+                     placeholder="ФИО"
+                     required>
+              <span class="form__input-error-msg" hidden></span>
+            </label>
+            <label class="form__input-label">
+              <input type="tel"
+                     name="phone"
+                     placeholder="Телефон"
+                     data-tel
+                     required>
+              <span class="form__input-error-msg" hidden></span>
+            </label>
+          </div>
+        </div>
+        <div class="form__block">
+          <span class="from__text-label">Договор технологического присоединения</span>
+          <div class="form__block-inner">
+            <label class="form__input-label">
+              <input type="text"
+                     name="contractNumber"
+                     placeholder="Номер договора"
+                     required>
+              <span class="form__input-error-msg" hidden></span>
+            </label>
+          </div>
+        </div>
+        <div class="form__agreement">
+          <label class="form__agreement-label">
+            <input type="checkbox"
+                   name="agreement"
+                   data-form-agreement
+                   checked>
+            <span class="form__agreement-checkbox"></span>
+          </label>
+          <span class="form__agreement-text">Согласие на обработку
+          <a href="#" target="_blank">персональных данных</a>
+          </span>
+        </div>
+      </div>
+      <div class="modal__bottom">
+        <button class="button form__button"
+                data-form-submit>
+          <span>Отправить заявку</span>
+        </button>
+        <div class="modal__bottom-info">
+          <span>Стоимость присоединения:</span>
+          <span class="form__price">100 000 руб.</span>
+        </div>
+      </div>
+    </form>
+  </div>
+
+  <!--  JUR-->
+  <!--  добавить путь в action-->
+  <div class="modal" id="modalTechConnectionJUR">
+    <button class="modal__back-btn modal__serv-btn" data-modal-back>
+      <svg>
+        <use xlink:href="./assets/sprite.svg#icon-arrow"></use>
+      </svg>
+    </button>
+    <button class="modal__close-btn modal__serv-btn" data-fancybox-close>
+      <svg>
+        <use xlink:href="./assets/sprite.svg#icon-close"></use>
+      </svg>
+    </button>
+    <div class="modal__head">
+      <p class="modal__title">Введите данные юридического лица</p>
+    </div>
+    <form action="#" data-form class="form">
+      <div class="modal__top">
+        <div class="form__block">
+          <span class="from__text-label">Данные</span>
+          <div class="form__block-inner">
+            <label class="form__input-label">
+              <input type="text"
+                     name="INN"
+                     placeholder="ИНН"
+                     required>
+              <span class="form__input-error-msg" hidden></span>
+            </label>
+            <label class="form__input-label">
+              <input type="text"
+                     name="KPP"
+                     placeholder="КПП"
+                     required>
+              <span class="form__input-error-msg" hidden></span>
+            </label>
+            <label class="form__input-label">
+              <input type="text"
+                     name="OGRN"
+                     placeholder="ОГРН"
+                     required>
+              <span class="form__input-error-msg" hidden></span>
+            </label>
+            <label class="form__input-label">
+              <input type="text"
+                     name="companyName"
+                     placeholder="Наименование компании"
+                     required>
+              <span class="form__input-error-msg" hidden></span>
+            </label>
+            <label class="form__input-label">
+              <input type="text"
+                     name="jurAddrress"
+                     placeholder="Юридический адрес"
+                     required>
+              <span class="form__input-error-msg" hidden></span>
+            </label>
+            <label class="form__input-label">
+              <input type="text"
+                     name="fizAddress"
+                     placeholder="Физический адрес"
+                     required>
+              <span class="form__input-error-msg" hidden></span>
+            </label>
+            <label class="form__input-label">
+              <input type="text"
+                     name="FIO"
+                     placeholder="ФИО"
+                     required>
+              <span class="form__input-error-msg" hidden></span>
+            </label>
+            <label class="form__input-label">
+              <input type="tel"
+                     name="phone"
+                     placeholder="Телефон"
+                     data-tel
+                     required>
+              <span class="form__input-error-msg" hidden></span>
+            </label>
+            <label class="form__input-label">
+              <input type="email"
+                     name="email"
+                     placeholder="E-mail"
+                     required>
+              <span class="form__input-error-msg" hidden></span>
+            </label>
+          </div>
+        </div>
+        <div class="form__block">
+          <span class="from__text-label">Договор технологического присоединения</span>
+          <div class="form__block-inner">
+            <label class="form__input-label">
+              <input type="text"
+                     name="contractNumber"
+                     placeholder="Номер договора"
+                     required>
+              <span class="form__input-error-msg" hidden></span>
+            </label>
+          </div>
+        </div>
+        <div class="form__agreement">
+          <label class="form__agreement-label">
+            <input type="checkbox"
+                   name="agreement"
+                   data-form-agreement
+                   checked>
+            <span class="form__agreement-checkbox"></span>
+          </label>
+          <span class="form__agreement-text">Согласие на обработку
+          <a href="#" target="_blank">персональных данных</a>
+          </span>
+        </div>
+      </div>
+      <div class="modal__bottom">
+        <button class="button form__button"
+                data-form-submit>
+          <span>Отправить заявку</span>
+        </button>
+        <div class="modal__bottom-info">
+          <span>Стоимость присоединения:</span>
+          <span class="form__price">100 000 руб.</span>
+        </div>
+      </div>
+    </form>
+  </div>
+
+  <!--  SUCCESS-->
+  <div class="modal modal--bg-img" data-form-success id="modalTechConnectionSuccess">
+    <div class="modal__container--centered">
+      <span class="modal__success-icon">
+        <svg>
+          <use xlink:href="./assets/sprite.svg#icon-success"></use>
+        </svg>
+      </span>
+      <div class="modal__head">
+        <p class="modal__title">Ваша заявка успешно отправлена!</p>
+        <p class="modal__subtitle">Наш менеджер свяжется с вами для <br class="tab-hidden"> уточнения деталей, ожидайте
+        </p>
+      </div>
+      <div class="modal__bottom modal__bottom--centered">
+        <a class="button form__button" href="/">На главную</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal modal--bg-img" id="modalFilter">
+    <div class="modal__container--centered">
+      <button class="modal__close-btn modal__serv-btn" data-fancybox-close>
+        <svg>
+          <use xlink:href="./assets/sprite.svg#icon-close"></use>
+        </svg>
+      </button>
+      <div class="filter">
+        <h3 class="filter__title">Перечень техники</h3>
+        <form class="filter__form" action="#" data-form data-submit-msg>
+          <div class="filter__item" data-toggle>
+            <div class="filter__top">
+              <p class="filter__head">Краны</p>
+              <svg class="filter__icon">
+                <use xlink:href="./assets/sprite.svg#icon-chevrone"></use>
+              </svg>
+            </div>
+            <div class="filter__content">
+              <label class="input-info">
+                    <span class="input-info__detail">
+                      <input type="checkbox" class="input-info__input" name="30 тн">
+                      <span class="input-info__text">Кран автомобильный 30 тн</span>
+                    </span>
+                <span class="input-info__count">120</span>
+              </label>
+              <label class="input-info">
+                    <span class="input-info__detail">
+                      <input type="checkbox" class="input-info__input">
+                      <span class="input-info__text">Кран автомобильный 40 тн</span>
+                    </span>
+                <span class="input-info__count">23</span>
+              </label>
+              <label class="input-info">
+                    <span class="input-info__detail">
+                      <input type="checkbox" class="input-info__input">
+                      <span class="input-info__text">Кран автомобильный 50 тн</span>
+                    </span>
+                <span class="input-info__count">4</span>
+              </label>
+              <label class="input-info">
+                    <span class="input-info__detail">
+                      <input type="checkbox" class="input-info__input">
+                      <span class="input-info__text">Кран автомобильный 60 тн</span>
+                    </span>
+                <span class="input-info__count">82</span>
+              </label>
+              <label class="input-info">
+                    <span class="input-info__detail">
+                      <input type="checkbox" class="input-info__input">
+                      <span class="input-info__text">Кран автомобильный 70 тн</span>
+                    </span>
+                <span class="input-info__count">120</span>
+              </label>
+            </div>
+          </div>
+          <div class="filter__item" data-toggle>
+            <div class="filter__top">
+              <p class="filter__head">Эксковаторы</p>
+              <svg class="filter__icon">
+                <use xlink:href="./assets/sprite.svg#icon-chevrone"></use>
+              </svg>
+            </div>
+            <div class="filter__content">
+              <label class="input-info">
+                    <span class="input-info__detail">
+                      <input type="checkbox" class="input-info__input">
+                      <span class="input-info__text">Кран автомобильный 30 тн</span>
+                    </span>
+                <span class="input-info__count">120</span>
+              </label>
+            </div>
+          </div>
+          <div class="filter__item" data-toggle>
+            <div class="filter__top">
+              <p class="filter__head">Фронтальные погрузчики</p>
+              <svg class="filter__icon">
+                <use xlink:href="./assets/sprite.svg#icon-chevrone"></use>
+              </svg>
+            </div>
+            <div class="filter__content">
+              <label class="input-info">
+                    <span class="input-info__detail">
+                      <input type="checkbox" class="input-info__input">
+                      <span class="input-info__text">Кран автомобильный 30 тн</span>
+                    </span>
+                <span class="input-info__count">120</span>
+              </label>
+            </div>
+          </div>
+          <div class="filter__item" data-toggle>
+            <div class="filter__top">
+              <p class="filter__head">Самосвалы</p>
+              <svg class="filter__icon">
+                <use xlink:href="./assets/sprite.svg#icon-chevrone"></use>
+              </svg>
+            </div>
+            <div class="filter__content">
+              <label class="input-info">
+                    <span class="input-info__detail">
+                      <input type="checkbox" class="input-info__input">
+                      <span class="input-info__text">Кран автомобильный 30 тн</span>
+                    </span>
+                <span class="input-info__count">120</span>
+              </label>
+            </div>
+          </div>
+          <div class="filter__item" data-toggle>
+            <div class="filter__top">
+              <p class="filter__head">Бульдозеры</p>
+              <svg class="filter__icon">
+                <use xlink:href="./assets/sprite.svg#icon-chevrone"></use>
+              </svg>
+            </div>
+            <div class="filter__content">
+              <label class="input-info">
+                    <span class="input-info__detail">
+                      <input type="checkbox" class="input-info__input">
+                      <span class="input-info__text">Кран автомобильный 30 тн</span>
+                    </span>
+                <span class="input-info__count">120</span>
+              </label>
+            </div>
+          </div>
+          <div class="filter__item" data-toggle>
+            <div class="filter__top">
+              <p class="filter__head">Манипуляторы</p>
+              <svg class="filter__icon">
+                <use xlink:href="./assets/sprite.svg#icon-chevrone"></use>
+              </svg>
+            </div>
+            <div class="filter__content">
+              <label class="input-info">
+                    <span class="input-info__detail">
+                      <input type="checkbox" class="input-info__input">
+                      <span class="input-info__text">Кран автомобильный 30 тн</span>
+                    </span>
+                <span class="input-info__count">120</span>
+              </label>
+            </div>
+          </div>
+          <button class="button button--accent button--disabled button--icon">
+            <span>Сбросить фильтр</span>
+            <svg>
+              <use xlink:href="./assets/sprite.svg#icon-refresh"></use>
+            </svg>
+          </button>
+          <button class="button button--accent" type="submit">
+            <span>Применить</span>
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Это временная секция, здесь ссылки на все страницы. На продакшене ее не будет -->
+<section class="section">
+    <div class="container">
+        <style>
+            .temp {
+                gap: 15px;
+                display: flex;
+                flex-direction: column;
+            }
+
+            .temp__link {
+                color: inherit;
+                font-size: 16px;
+                text-decoration: underline;
+            }
+
+            .temp__link:hover {
+                text-decoration: none;
+            }
+        </style>
+        <div class="temp">
+            <a href="./index.html" class="temp__link">Главная</a>
+            <a href="./zayavka.html" class="temp__link">Заявка на тех. присоединение</a>
+            <a href="./services.html" class="temp__link">Услуги</a>
+            <a href="./contacts.html" class="temp__link">Контакты</a>
+            <a href="./rent.html" class="temp__link">Аренда техники</a>
+            <a href="./rent-detail.html" class="temp__link">Аренда техники деталка</a>
+            <a href="./service.html" class="temp__link">Обслуживание электрооборудования</a>
+            <a href="./construction.html" class="temp__link">Строительство электросетевых объектов</a>
+            <a href="./docs.html" class="temp__link">Выдача документации</a>
+            <a href="./organisation.html" class="temp__link">Организация наружного освещения</a>
+            <a href="./404.html" class="temp__link">404</a>
+            <a href="./about.html" class="temp__link">О компании</a>
+            <a href="./faq.html" class="temp__link">FAQ</a>
+            <button data-fancybox data-src="#modalTechConnectionStart" class="temp__link">Modal Оформление заявки</button>
+            <button data-fancybox data-src="#modalTechConnectionParams" class="temp__link">Modal Заявка на технологическое присоединение</button>
+            <button data-fancybox data-src="#modalTechConnectionFIZ" class="temp__link">Modal Введите свои данные / FIZ litso</button>
+            <button data-fancybox data-src="#modalTechConnectionJUR" class="temp__link">Modal Введите данные юридического лица / JUR litso</button>
+            <button data-fancybox data-src="#modalTechConnectionSuccess" class="temp__link">Modal Ваша заявка успешно отправлена!</button>
+        </div>
+    </div>
+</section>
+
+<script defer src="js/bundle.js"></script></body>
+</html>
