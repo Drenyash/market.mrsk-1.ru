@@ -75,6 +75,10 @@
     font-size: rem(18);
     padding: 0 rem(63) rem(30);
     border-radius: rem(8);
+
+    @include r($mobile) {
+      padding: 0 24px 40px;
+    }
   }
 
   &__bottom {
@@ -86,6 +90,11 @@
     background-color: $color-dark;
     border-radius: rem(8);
     color: #ffffff;
+
+    @include r($mobile) {
+      gap: 16px;
+      padding: 31px 24px;
+    }
 
     &:after {
       content: '';
@@ -116,6 +125,10 @@
   &__head {
     padding: rem(50) rem(63) 0;
     margin-bottom: rem(37);
+
+    @include r($mobile) {
+      padding: 14px 24px;
+    }
   }
 
   &__serv-btn {

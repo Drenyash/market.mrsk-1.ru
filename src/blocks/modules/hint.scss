@@ -35,5 +35,9 @@
     background: #FFFFFF;
     box-shadow: 0 0 1px rgba(0, 0, 0, 0.20), 0 0 32px rgba(0, 0, 0, 0.12), 0 32px 32px rgba(0, 0, 0, 0.08);
     transition: opacity .3s ease-in-out;
+
+    @include r($mobile) {
+      left: 0;
+    }
   }
 }

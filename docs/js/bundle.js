@@ -3186,6 +3186,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 });
 
+
 /***/ }),
 
 /***/ "./src/js/app/fancybox.js":

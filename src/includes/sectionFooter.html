@@ -618,4 +618,55 @@
       </div>
     </div>
   </div>
+
+  <div class="modal" id="modalCallBack">
+    <button class="modal__close-btn modal__serv-btn" data-fancybox-close>
+      <svg>
+        <use xlink:href="./assets/sprite.svg#icon-close"></use>
+      </svg>
+    </button>
+    <div class="modal__head">
+      <p class="modal__title">Заказать обратный звонок</p>
+    </div>
+    <form action="#" data-form class="form">
+      <div class="modal__top">
+        <div class="form__block">
+          <span class="from__text-label">Личные данные</span>
+          <div class="form__block-inner">
+            <label class="form__input-label form__input-label--full">
+              <input type="text"
+                     name="FIO"
+                     placeholder="ФИО"
+                     required>
+              <span class="form__input-error-msg" hidden></span>
+            </label>
+            <label class="form__input-label form__input-label--full">
+              <input type="tel"
+                     name="phone"
+                     placeholder="Телефон"
+                     data-tel
+                     required>
+              <span class="form__input-error-msg" hidden></span>
+            </label>
+          </div>
+        </div>
+        <div class="form__agreement mb-25">
+          <label class="form__agreement-label">
+            <input type="checkbox"
+                   name="agreement"
+                   data-form-agreement
+                   checked>
+            <span class="form__agreement-checkbox"></span>
+          </label>
+          <span class="form__agreement-text">Согласие на обработку
+          <a href="#" target="_blank">персональных данных</a>
+          </span>
+        </div>
+        <button class="button form__button form__button--full"
+                data-form-submit>
+          <span>Отправить заявку</span>
+        </button>
+      </div>
+    </form>
+  </div>
 </div>
