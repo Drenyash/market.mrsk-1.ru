@@ -4164,6 +4164,9 @@ svg {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
@@ -5953,6 +5956,7 @@ svg {
 .product-card--modal .product-card__title {
   font-size: 24px;
   font-weight: 500;
+  text-align: left;
 }
 .product-card--modal .product-card__item span {
   font-size: 16px;

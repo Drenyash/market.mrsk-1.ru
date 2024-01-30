@@ -15,6 +15,7 @@
 
   &__triggers {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     gap: rem(28);
     border-bottom: 1px solid rgba(133, 143, 164, 0.2);

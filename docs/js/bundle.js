@@ -3101,9 +3101,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _app_counter__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./app/counter */ "./src/js/app/counter.js");
 /* harmony import */ var _app_counter__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(_app_counter__WEBPACK_IMPORTED_MODULE_12__);
 /* harmony import */ var _app_rent__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./app/rent */ "./src/js/app/rent.js");
-/* harmony import */ var _app_rent__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(_app_rent__WEBPACK_IMPORTED_MODULE_13__);
 /* harmony import */ var _app_filter__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./app/filter */ "./src/js/app/filter.js");
-/* harmony import */ var _app_filter__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(_app_filter__WEBPACK_IMPORTED_MODULE_14__);
 
 
 
@@ -3193,7 +3191,12 @@ document.addEventListener("DOMContentLoaded", () => {
 /*!******************************!*\
   !*** ./src/js/app/filter.js ***!
   \******************************/
-/***/ (function() {
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _rent__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./rent */ "./src/js/app/rent.js");
+
 
 document.addEventListener("DOMContentLoaded", () => {
   const forms = document.querySelectorAll("[data-filter]");
@@ -3215,6 +3218,7 @@ document.addEventListener("DOMContentLoaded", () => {
         } else {
           resetButton.classList.add("button--disabled");
         }
+        (0,_rent__WEBPACK_IMPORTED_MODULE_0__.updateCatalog)()
       });
     });
 
@@ -3628,17 +3632,32 @@ document.addEventListener("DOMContentLoaded", () => {
 /*!****************************!*\
   !*** ./src/js/app/rent.js ***!
   \****************************/
-/***/ (function() {
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "updateCatalog": function() { return /* binding */ updateCatalog; }
+/* harmony export */ });
 document.addEventListener("DOMContentLoaded", () => {
+  updateCatalog();
+});
+
+const updateCatalog = () => {
   const catalog = document.querySelector(".catalog");
   if (!catalog) return;
-  const products = document.querySelectorAll(".catalog__wrapper .product-card");
   let currentWidth = window.screen.availWidth;
+  let products = null;
+  products = document.querySelectorAll(".catalog__wrapper .product-card");
+  const modalRent = document.getElementById("modalRent");
 
   products.forEach((product, idx) => {
     const showBtn = product.querySelector(".product-card__button");
     const modal = product.querySelector(".product-card__modal");
+    const modalButton = modal.querySelector("[data-fancybox]");
+    const productList = modal.querySelector(".product-card__list");
+    const productTitle = modal.querySelector(".product-card__title");
+    const productImage = modal.querySelector(".product-card__picture img");
 
     showBtn.addEventListener("click", (evt) => {
       if (currentWidth > 1200) {
@@ -3664,8 +3683,20 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
 
+    modalButton.addEventListener("click", () => {
+      const id = modalButton.getAttribute("data-product-id");
+      let modalList = modalRent.querySelector(".product-card__list");
+      const modalTitle = modalRent.querySelector(".product-card__title");
+      const modalImage = modalRent.querySelector(".product-card__picture img");
+      const modalId = modalRent.querySelector("input[name='PRODUCT_ID']");
+      modalList.replaceWith(productList.cloneNode(true));
+      modalTitle.textContent = productTitle.textContent;
+      modalImage.src = productImage.src;
+      modalId.value = id;
+    });
+
     window.addEventListener("click", (evt) => {
-      if (modal.classList.contains('active')) {
+      if (modal.classList.contains("active")) {
         if (!product.contains(evt.target)) {
           products.forEach((el, elIdx) => {
             if (idx !== elIdx) {
@@ -3686,7 +3717,7 @@ document.addEventListener("DOMContentLoaded", () => {
   window.addEventListener("resize", () => {
     currentWidth = window.screen.availWidth;
   });
-});
+};
 
 
 /***/ }),

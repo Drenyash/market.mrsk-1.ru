@@ -1,3 +1,5 @@
+import { updateCatalog } from "./rent";
+
 document.addEventListener("DOMContentLoaded", () => {
   const forms = document.querySelectorAll("[data-filter]");
 
@@ -18,6 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
         } else {
           resetButton.classList.add("button--disabled");
         }
+        updateCatalog()
       });
     });
 
