@@ -2493,6 +2493,80 @@
       </div>
     </div>
   </div>
+
+  <div class="modal" id="modalService">
+    <button class="modal__close-btn modal__serv-btn mob-hidden" data-fancybox-close>
+      <svg>
+        <use xlink:href="./assets/sprite.svg#icon-close"></use>
+      </svg>
+    </button>
+    <div class="modal__head">
+      <button class="button button--black button--icon desktop-hidden" data-modal-back>
+        <svg>
+          <use xlink:href="./assets/sprite.svg#icon-arrow-small"></use>
+        </svg>
+        <span>Назад</span>
+      </button>
+      <p class="modal__title">Введите свои данные</p>
+    </div>
+    <form action="#" data-form class="form">
+      <div class="modal__top">
+        <div class="form__block">
+          <span class="from__text-label">Личные данные</span>
+          <div class="form__block-inner">
+            <label class="form__input-label">
+              <input type="text"
+                     name="FIO"
+                     placeholder="ФИО"
+                     required>
+              <span class="form__input-error-msg" hidden></span>
+            </label>
+            <label class="form__input-label">
+              <input type="tel"
+                     name="phone"
+                     placeholder="Телефон"
+                     data-tel
+                     required>
+              <span class="form__input-error-msg" hidden></span>
+            </label>
+          </div>
+        </div>
+        <div class="form__block">
+          <span class="from__text-label">Тип и вид электрообуродвания</span>
+          <div class="form__block-inner">
+            <label class="form__input-label form__input-label--area">
+              <textarea name="contractNumber"
+                        placeholder="Коммутирующий аппарт постоянного тока, напряжением свыше 5А, трех полюсной"
+                        required></textarea>
+              <span class="form__input-error-msg" hidden></span>
+            </label>
+          </div>
+        </div>
+        <div class="form__agreement">
+          <label class="form__agreement-label">
+            <input type="checkbox"
+                   name="agreement"
+                   data-form-agreement
+                   checked>
+            <span class="form__agreement-checkbox"></span>
+          </label>
+          <span class="form__agreement-text">Согласие на обработку
+          <a href="#" target="_blank">персональных данных</a>
+          </span>
+        </div>
+      </div>
+      <div class="modal__bottom">
+        <button class="button form__button"
+                data-form-submit>
+          <span>Отправить заявку</span>
+        </button>
+        <div class="modal__bottom-info">
+          <span>Стоимость присоединения:</span>
+          <span class="form__price">100 000 руб.</span>
+        </div>
+      </div>
+    </form>
+  </div>
 </div>
 
 <!-- Это временная секция, здесь ссылки на все страницы. На продакшене ее не будет -->

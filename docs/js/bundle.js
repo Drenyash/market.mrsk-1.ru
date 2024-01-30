@@ -19,35 +19,6 @@ const t=(t,e=1e4)=>(t=parseFloat(t+"")||0,Math.round((t+Number.EPSILON)*e)/e),e=
 
 /***/ }),
 
-/***/ "./node_modules/air-datepicker/locale/ar.js":
-/*!**************************************************!*\
-  !*** ./node_modules/air-datepicker/locale/ar.js ***!
-  \**************************************************/
-/***/ (function(__unused_webpack_module, exports) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", ({
-  value: true
-}));
-exports["default"] = void 0;
-var _default = {
-  days: ['الأحد', 'الأثنين', 'الثلاثاء', 'الأربعاء', 'الخميس', 'الجمعه', 'السبت'],
-  daysShort: ['الأحد', 'الأثنين', 'الثلاثاء', 'الأربعاء', 'الخميس', 'الجمعه', 'السبت'],
-  daysMin: ['الأحد', 'الأثنين', 'الثلاثاء', 'الأربعاء', 'الخميس', 'الجمعه', 'السبت'],
-  months: ['يناير', 'فبراير', 'مارس', 'أبريل', 'مايو', 'يونيو', 'يوليو', 'أغسطس', 'سبتمبر', 'اكتوبر', 'نوفمبر', 'ديسمبر'],
-  monthsShort: ['يناير', 'فبراير', 'مارس', 'أبريل', 'مايو', 'يونيو', 'يوليو', 'أغسطس', 'سبتمبر', 'اكتوبر', 'نوفمبر', 'ديسمبر'],
-  today: 'اليوم',
-  clear: 'حذف',
-  dateFormat: 'dd/MM/yyyy',
-  timeFormat: 'hh:mm aa',
-  firstDay: 0
-};
-exports["default"] = _default;
-
-/***/ }),
-
 /***/ "./node_modules/axios/index.js":
 /*!*************************************!*\
   !*** ./node_modules/axios/index.js ***!
@@ -3789,8 +3760,6 @@ class Select {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var swiper__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! swiper */ "./node_modules/swiper/swiper.esm.js");
-/* harmony import */ var air_datepicker_locale_ar__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! air-datepicker/locale/ar */ "./node_modules/air-datepicker/locale/ar.js");
-
 
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -3804,11 +3773,16 @@ document.addEventListener("DOMContentLoaded", () => {
 
 function createSliderWidthThumbs(el) {
   const swiperThumbs = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](document.querySelector(".slider--control")?.querySelector(".swiper"), {
+    modules: [swiper__WEBPACK_IMPORTED_MODULE_0__.Navigation],
     slidesPerView: 4,
-    spaceBetween: 10
+    spaceBetween: 10,
+    navigation: {
+      nextEl: document.querySelector(".slider--control")?.querySelector("[data-slider-next]"),
+      prevEl: document.querySelector(".slider--control")?.querySelector("[data-slider-prev]")
+    },
   });
   const swiperMain = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](el?.querySelector(".swiper"), {
-    modules: [swiper__WEBPACK_IMPORTED_MODULE_0__.Navigation, swiper__WEBPACK_IMPORTED_MODULE_0__.Pagination, swiper__WEBPACK_IMPORTED_MODULE_0__.EffectFade, swiper__WEBPACK_IMPORTED_MODULE_0__.Thumbs],
+    modules: [swiper__WEBPACK_IMPORTED_MODULE_0__.Thumbs],
     slidesPerView: "auto",
     spaceBetween: 30,
     thumbs: {

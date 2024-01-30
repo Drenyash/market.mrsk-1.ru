@@ -2701,7 +2701,8 @@ svg {
 .form__input-label--full {
   max-width: 100%;
 }
-.form__input-label input {
+.form__input-label input,
+.form__input-label textarea {
   width: 100%;
   max-height: 100%;
   display: block;
@@ -2711,27 +2712,28 @@ svg {
   border: 2px solid #E4E4E5;
   line-height: normal;
 }
-.form__input-label input::-webkit-input-placeholder {
+.form__input-label input::-webkit-input-placeholder, .form__input-label textarea::-webkit-input-placeholder {
   color: #C8C8C8;
   font-size: 1rem;
   font-family: "Roboto", sans-serif;
 }
-.form__input-label input::-moz-placeholder {
+.form__input-label input::-moz-placeholder, .form__input-label textarea::-moz-placeholder {
   color: #C8C8C8;
   font-size: 1rem;
   font-family: "Roboto", sans-serif;
 }
-.form__input-label input:-ms-input-placeholder {
+.form__input-label input:-ms-input-placeholder, .form__input-label textarea:-ms-input-placeholder {
   color: #C8C8C8;
   font-size: 1rem;
   font-family: "Roboto", sans-serif;
 }
-.form__input-label input::-ms-input-placeholder {
+.form__input-label input::-ms-input-placeholder, .form__input-label textarea::-ms-input-placeholder {
   color: #C8C8C8;
   font-size: 1rem;
   font-family: "Roboto", sans-serif;
 }
-.form__input-label input::placeholder {
+.form__input-label input::placeholder,
+.form__input-label textarea::placeholder {
   color: #C8C8C8;
   font-size: 1rem;
   font-family: "Roboto", sans-serif;
@@ -2753,6 +2755,12 @@ svg {
 }
 .form__input-label input[data-valid=false]::placeholder {
   color: #BB2525;
+}
+.form__input-label--area {
+  min-height: 110px;
+}
+.form__input-label--area textarea {
+  height: 100%;
 }
 .form__input-error-msg[hidden] {
   opacity: 0;

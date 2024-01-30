@@ -1,5 +1,4 @@
 import Swiper, { Navigation, Pagination, EffectFade, Thumbs } from "swiper";
-import ar from "air-datepicker/locale/ar";
 
 document.addEventListener("DOMContentLoaded", () => {
   const slider = document.querySelectorAll("[data-slider]");
@@ -12,11 +11,16 @@ document.addEventListener("DOMContentLoaded", () => {
 
 function createSliderWidthThumbs(el) {
   const swiperThumbs = new Swiper(document.querySelector(".slider--control")?.querySelector(".swiper"), {
+    modules: [Navigation],
     slidesPerView: 4,
-    spaceBetween: 10
+    spaceBetween: 10,
+    navigation: {
+      nextEl: document.querySelector(".slider--control")?.querySelector("[data-slider-next]"),
+      prevEl: document.querySelector(".slider--control")?.querySelector("[data-slider-prev]")
+    },
   });
   const swiperMain = new Swiper(el?.querySelector(".swiper"), {
-    modules: [Navigation, Pagination, EffectFade, Thumbs],
+    modules: [Thumbs],
     slidesPerView: "auto",
     spaceBetween: 30,
     thumbs: {
