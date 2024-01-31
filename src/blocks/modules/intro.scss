@@ -6,6 +6,7 @@
 
   @include r($mobile) {
     height: calc(100vh - 121px);
+    background-position: left 14% center;
   }
 
   &__container {

@@ -5629,6 +5629,7 @@ svg {
 @media only screen and (max-width: 1199.9px) {
   .intro {
     height: calc(100vh - 121px);
+    background-position: left 14% center;
   }
 }
 .intro__container {
