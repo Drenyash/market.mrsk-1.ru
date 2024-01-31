@@ -262,3 +262,13 @@ img {
 svg {
   pointer-events: none;
 }
+
+.line {
+  opacity: 0;
+  overflow: hidden;
+}
+
+.animate {
+  opacity: 1;
+  transition: .1s linear;
+}

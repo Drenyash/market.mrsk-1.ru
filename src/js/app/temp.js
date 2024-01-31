@@ -11,6 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
     body.classList.toggle("no-scroll");
   });
 
+  if (!search) return
   search.addEventListener("click", () => {
     mobileSearch.classList.toggle("active");
     body.classList.toggle("no-scroll");

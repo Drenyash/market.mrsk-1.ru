@@ -22,6 +22,7 @@
     @include r($mobile) {
       position: relative;
       padding: 14px 25px;
+      gap: 30px;
     }
   }
 
@@ -30,11 +31,11 @@
   }
 
   &__top-left {
-    gap: rem(30);
+    gap: rem(10);
   }
   &__top-right {
     @include r($mobile) {
-      gap: 30px;
+      gap: 10px;
     }
   }
 
@@ -145,6 +146,10 @@
     position: relative;
     padding-right: rem(30);
     height: 100%;
+
+    @include r($mobile) {
+      padding-right: 10px;
+    }
 
     &:after {
       content: '';

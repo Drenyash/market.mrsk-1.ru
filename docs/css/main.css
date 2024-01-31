@@ -1458,6 +1458,17 @@ svg {
   pointer-events: none;
 }
 
+.line {
+  opacity: 0;
+  overflow: hidden;
+}
+
+.animate {
+  opacity: 1;
+  -webkit-transition: 0.1s linear;
+  transition: 0.1s linear;
+}
+
 .mr-40 {
   margin-right: 2.5rem;
 }
@@ -3712,17 +3723,18 @@ svg {
   .header__top {
     position: relative;
     padding: 14px 25px;
+    gap: 30px;
   }
 }
 .header__top-block {
   gap: 1.125rem;
 }
 .header__top-left {
-  gap: 1.875rem;
+  gap: 0.625rem;
 }
 @media only screen and (max-width: 1199.9px) {
   .header__top-right {
-    gap: 30px;
+    gap: 10px;
   }
 }
 @media only screen and (max-width: 1199.9px) {
@@ -3849,6 +3861,11 @@ svg {
   position: relative;
   padding-right: 1.875rem;
   height: 100%;
+}
+@media only screen and (max-width: 1199.9px) {
+  .header__search-button {
+    padding-right: 10px;
+  }
 }
 .header__search-button:after {
   content: "";

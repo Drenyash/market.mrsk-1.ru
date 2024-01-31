@@ -9,25 +9,34 @@ class TextWriting {
   constructor(text) {
     this.block = text;
     this.text = text.getAttribute("data-text-writing");
-    this.speed = 50;
+    this.speed = 1000;
     this.position = this.block.getBoundingClientRect();
+    this.iterator = 1;
+    this.interval = null;
+
     this.setListener();
   }
 
   setListener() {
-    window.addEventListener("scroll", () => {
-      if (this.position.y >= window.pageYOffset) {
-        this.typeWriter();
-      }
-    });
+    this.typeWriter();
   }
 
   typeWriter() {
-    let i = 1;
-    if (i === this.text.length) {
-      this.block.innerHTML = this.text.substr(0, i);
-      setTimeout(this.typeWriter, this.speed);
+    if (this.text) {
+      setInterval(() => {
+        if (this.iterator <= this.text.length) {
+          this.block.innerHTML = this.text.substr(0, this.iterator) + "<span class='line'>|</span>";
+          this.iterator += 1;
+        } else {
+          this.iterator = 1;
+        }
+      }, this.speed);
+      setInterval(() => {
+        let line = this.block.querySelector("span");
+        if (line) {
+          line.classList.contains('animate') ? line.classList.remove('animate') : line.classList.add('animate');
+        }
+      }, 400);
     }
-    i++;
   }
 }

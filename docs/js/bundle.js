@@ -3741,7 +3741,7 @@ class Select {
     this.btn = this.select.querySelector("[data-select-btn]");
     this.btnText = this.btn.querySelector("[data-select-btn-tmpl]");
     this.list = this.select.querySelector("[data-select-list]");
-    this.items = this.list.querySelectorAll("li");
+    this.items = this.list?.querySelectorAll("li");
     this.input = this.select.querySelector("[data-select-input]");
     this.listeners();
   }
@@ -3749,11 +3749,11 @@ class Select {
   listeners() {
     this.btn.addEventListener("click", (e) => {
       e.preventDefault();
-      this.list.classList.toggle("open");
+      this.list?.classList.toggle("open");
       this.btn.classList.toggle("active");
     });
 
-    this.items.forEach((item) => {
+    this.items?.forEach((item) => {
       item.addEventListener("click", (e) => {
         e.preventDefault();
         this.btnText.innerText = item.innerText;
@@ -3762,7 +3762,7 @@ class Select {
     });
 
     document.addEventListener("click", (e) => {
-      if (!this.btn.contains(e.target) && !this.list.contains(e.target)) {
+      if (!this.btn.contains(e.target) && !this.list?.contains(e.target)) {
         this.hideSelectsList();
       }
     });
@@ -3775,10 +3775,11 @@ class Select {
   }
 
   hideSelectsList() {
-    this.list.classList.remove("open");
+    this.list?.classList.remove("open");
     this.btn.classList.remove("active");
   }
 }
+
 
 /***/ }),
 
@@ -4089,11 +4090,13 @@ document.addEventListener("DOMContentLoaded", () => {
     body.classList.toggle("no-scroll");
   });
 
+  if (!search) return
   search.addEventListener("click", () => {
     mobileSearch.classList.toggle("active");
     body.classList.toggle("no-scroll");
   });
 });
+
 
 /***/ }),
 
@@ -4114,28 +4117,38 @@ class TextWriting {
   constructor(text) {
     this.block = text;
     this.text = text.getAttribute("data-text-writing");
-    this.speed = 50;
+    this.speed = 1000;
     this.position = this.block.getBoundingClientRect();
+    this.iterator = 1;
+    this.interval = null;
+
     this.setListener();
   }
 
   setListener() {
-    window.addEventListener("scroll", () => {
-      if (this.position.y >= window.pageYOffset) {
-        this.typeWriter();
-      }
-    });
+    this.typeWriter();
   }
 
   typeWriter() {
-    let i = 1;
-    if (i === this.text.length) {
-      this.block.innerHTML = this.text.substr(0, i);
-      setTimeout(this.typeWriter, this.speed);
+    if (this.text) {
+      setInterval(() => {
+        if (this.iterator <= this.text.length) {
+          this.block.innerHTML = this.text.substr(0, this.iterator) + "<span class='line'>|</span>";
+          this.iterator += 1;
+        } else {
+          this.iterator = 1;
+        }
+      }, this.speed);
+      setInterval(() => {
+        let line = this.block.querySelector("span");
+        if (line) {
+          line.classList.contains('animate') ? line.classList.remove('animate') : line.classList.add('animate');
+        }
+      }, 400);
     }
-    i++;
   }
 }
+
 
 /***/ }),
 
