@@ -7,6 +7,10 @@
   padding: 0;
   background-color: #F1F2F2;
 
+  &--fit {
+    max-width: fit-content;
+  }
+
   &--big {
     max-width: 850px;
     background-color: transparent;

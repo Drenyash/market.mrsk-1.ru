@@ -1706,7 +1706,7 @@
 
   <!--  PARAMS-->
   <!--  тут не нужен путь в action, тег form только для семантики-->
-  <div class="modal" id="modalTechConnectionParams">
+  <div class="modal modal--fit" id="modalTechConnectionParams">
     <button class="modal__close-btn modal__serv-btn mob-hidden" data-fancybox-close>
       <svg>
         <use xlink:href="./assets/sprite.svg#icon-close"></use>
@@ -1804,7 +1804,7 @@
 
   <!--  FIZ-->
   <!--  добавить путь в action-->
-  <div class="modal" id="modalTechConnectionFIZ">
+  <div class="modal modal--fit" id="modalTechConnectionFIZ">
     <button class="modal__back-btn modal__serv-btn mob-hidden" data-modal-back>
       <svg>
         <use xlink:href="./assets/sprite.svg#icon-arrow"></use>
@@ -1884,9 +1884,93 @@
     </form>
   </div>
 
+  <div class="modal modal--fit" id="modalTechUniversalFIZ">
+    <button class="modal__close-btn modal__serv-btn mob-hidden" data-fancybox-close>
+      <svg>
+        <use xlink:href="./assets/sprite.svg#icon-close"></use>
+      </svg>
+    </button>
+    <div class="modal__head">
+      <button class="button button--black button--icon desktop-hidden" data-fancybox-close>
+        <svg>
+          <use xlink:href="./assets/sprite.svg#icon-arrow-small"></use>
+        </svg>
+        <span>Назад</span>
+      </button>
+      <p class="modal__title">Введите свои данные</p>
+    </div>
+    <form action="#" data-form class="form">
+      <div class="modal__top">
+        <div class="form__block">
+          <span class="from__text-label">Личные данные</span>
+          <div class="form__block-inner">
+            <label class="form__input-label">
+              <input type="text"
+                     name="FIO"
+                     placeholder="ФИО"
+                     required>
+              <span class="form__input-error-msg" hidden></span>
+            </label>
+            <label class="form__input-label">
+              <input type="tel"
+                     name="phone"
+                     placeholder="Телефон"
+                     data-tel
+                     required>
+              <span class="form__input-error-msg" hidden></span>
+            </label>
+            <label class="form__input-label">
+              <input type="email"
+                     name="email"
+                     placeholder="Электронная почта"
+                     required>
+              <span class="form__input-error-msg" hidden></span>
+            </label>
+          </div>
+        </div>
+        <div class="form__block">
+          <span class="from__text-label">Выберите тип услуги</span>
+          <div class="form__block-inner">
+            <label class="form__input-select">
+              <select name="services_type" required>
+                <option value="0">Тип услуги</option>
+                <option value="1">Услуга 1</option>
+                <option value="2">Услуга 2</option>
+                <option value="3">Услуга 3</option>
+                <option value="4">Услуга 4</option>
+              </select>
+              <svg>
+                <use xlink:href="./assets/sprite.svg#icon-arrow-min"></use>
+              </svg>
+              <span class="form__input-error-msg" hidden></span>
+            </label>
+          </div>
+        </div>
+        <div class="form__agreement">
+          <label class="form__agreement-label">
+            <input type="checkbox"
+                   name="agreement"
+                   data-form-agreement
+                   checked>
+            <span class="form__agreement-checkbox"></span>
+          </label>
+          <span class="form__agreement-text">Согласие на обработку
+          <a href="#" target="_blank">персональных данных</a>
+          </span>
+        </div>
+      </div>
+      <div class="modal__bottom">
+        <button class="button form__button"
+                data-form-submit>
+          <span>Отправить заявку</span>
+        </button>
+      </div>
+    </form>
+  </div>
+
   <!--  JUR-->
   <!--  добавить путь в action-->
-  <div class="modal" id="modalTechConnectionJUR">
+  <div class="modal modal--fit" id="modalTechConnectionJUR">
     <button class="modal__back-btn modal__serv-btn mob-hidden" data-modal-back>
       <svg>
         <use xlink:href="./assets/sprite.svg#icon-arrow"></use>
@@ -2016,7 +2100,7 @@
   </div>
 
   <!--  SUCCESS-->
-  <div class="modal modal--bg-img" data-form-success id="modalTechConnectionSuccess">
+  <div class="modal modal--bg-img modal--fit" data-form-success id="modalTechConnectionSuccess">
     <div class="modal__container--centered">
       <span class="modal__success-icon">
         <svg>
@@ -2034,7 +2118,7 @@
     </div>
   </div>
 
-  <div class="modal modal--bg-img" id="modalFilter">
+  <div class="modal modal--bg-img modal--fit" id="modalFilter">
     <div class="modal__container--centered">
       <button class="modal__close-btn modal__serv-btn" data-fancybox-close>
         <svg>
@@ -2188,7 +2272,7 @@
     </div>
   </div>
 
-  <div class="modal" id="modalCallBack">
+  <div class="modal modal--fit" id="modalCallBack">
     <button class="modal__close-btn modal__serv-btn mob-hidden" data-fancybox-close>
       <svg>
         <use xlink:href="./assets/sprite.svg#icon-close"></use>
@@ -2358,7 +2442,7 @@
     </div>
   </div>
 
-  <div class="modal" id="modalService">
+  <div class="modal modal--fit" id="modalService">
     <button class="modal__close-btn modal__serv-btn mob-hidden" data-fancybox-close>
       <svg>
         <use xlink:href="./assets/sprite.svg#icon-close"></use>
@@ -2473,6 +2557,8 @@
             <button data-fancybox data-src="#modalTechConnectionJUR" class="temp__link">Modal Введите данные юридического лица / JUR litso</button>
             <button data-fancybox data-src="#modalTechConnectionSuccess" class="temp__link">Modal Ваша заявка успешно отправлена!</button>
             <button data-fancybox data-src="#modalCallBack" class="temp__link">Modal Обратный вызов</button>
+            <button data-fancybox data-src="#modalRent" class="temp__link">Modal Аренда техники</button>
+            <button data-fancybox data-src="#modalTechUniversalFIZ" class="temp__link">Modal Универсальная</button>
         </div>
     </div>
 </section>
