@@ -6,559 +6,124 @@
 </head>
 <body class="body">
 <%= htmlWebpackPlugin.options.sectionHeader %>
-<main class="main main--gray">
+<main class="main">
   <%= htmlWebpackPlugin.options.breadcrumbs %>
   <section class="section mb-70">
-    <div class="container">
+    <div class="container container--mob-full">
       <div class="page-intro">
         <picture class="page-intro__pic">
           <img src="./assets/images/page-intro-bg.jpg" alt="">
         </picture>
         <div class="page-intro__content">
-          <h1 class="page-intro__title title title--light">Аренда техники группы<br>компаний “Россети” </h1>
-          <p class="page-intro__text">Аренда специальной техники в удобное для вас время. </p>
+          <h1 class="page-intro__title title title--light">Аренда техники группы<br>компаний “Россети”</h1>
+          <p class="page-intro__text">Аренда специальной техники в удобное для вас время.</p>
         </div>
       </div>
     </div>
   </section>
-  <section class="section pb-120">
+  <section class="section mb-40">
     <div class="container">
-      <h1 class="title mb-40">Аренда техники</h1>
       <div class="columns">
-        <div class="columns__col--3 columns__col-laptop--3 columns__col-tab--3 columns__col-mob--12">
-          <button class="button button--icon button--full desktop-hidden" data-fancybox data-src="#modalFilter">
-            <svg>
-              <use xlink:href="./assets/sprite.svg#icon-filter"></use>
-            </svg>
-            <span>Фильтр</span>
-          </button>
-          <div class="filter mob-hidden">
-            <h3 class="filter__title">Перечень техники</h3>
-            <form class="filter__form" action="#" data-filter>
-              <div class="filter__item" data-toggle>
-                <div class="filter__top">
-                  <p class="filter__head">Краны</p>
-                  <svg class="filter__icon">
-                    <use xlink:href="./assets/sprite.svg#icon-chevrone"></use>
-                  </svg>
-                </div>
-                <div class="filter__content">
-                  <label class="input-info">
-                    <span class="input-info__detail">
-                      <input type="checkbox" class="input-info__input">
-                      <span class="input-info__text">Кран автомобильный 30 тн</span>
-                    </span>
-                    <span class="input-info__count">120</span>
-                  </label>
-                  <label class="input-info">
-                    <span class="input-info__detail">
-                      <input type="checkbox" class="input-info__input">
-                      <span class="input-info__text">Кран автомобильный 40 тн</span>
-                    </span>
-                    <span class="input-info__count">23</span>
-                  </label>
-                  <label class="input-info">
-                    <span class="input-info__detail">
-                      <input type="checkbox" class="input-info__input">
-                      <span class="input-info__text">Кран автомобильный 50 тн</span>
-                    </span>
-                    <span class="input-info__count">4</span>
-                  </label>
-                  <label class="input-info">
-                    <span class="input-info__detail">
-                      <input type="checkbox" class="input-info__input">
-                      <span class="input-info__text">Кран автомобильный 60 тн</span>
-                    </span>
-                    <span class="input-info__count">82</span>
-                  </label>
-                  <label class="input-info">
-                    <span class="input-info__detail">
-                      <input type="checkbox" class="input-info__input">
-                      <span class="input-info__text">Кран автомобильный 70 тн</span>
-                    </span>
-                    <span class="input-info__count">120</span>
-                  </label>
-                </div>
-              </div>
-              <div class="filter__item" data-toggle>
-                <div class="filter__top">
-                  <p class="filter__head">Эксковаторы</p>
-                  <svg class="filter__icon">
-                    <use xlink:href="./assets/sprite.svg#icon-chevrone"></use>
-                  </svg>
-                </div>
-                <div class="filter__content">
-                  <label class="input-info">
-                    <span class="input-info__detail">
-                      <input type="checkbox" class="input-info__input">
-                      <span class="input-info__text">Кран автомобильный 30 тн</span>
-                    </span>
-                    <span class="input-info__count">120</span>
-                  </label>
-                </div>
-              </div>
-              <div class="filter__item" data-toggle>
-                <div class="filter__top">
-                  <p class="filter__head">Фронтальные погрузчики</p>
-                  <svg class="filter__icon">
-                    <use xlink:href="./assets/sprite.svg#icon-chevrone"></use>
-                  </svg>
-                </div>
-                <div class="filter__content">
-                  <label class="input-info">
-                    <span class="input-info__detail">
-                      <input type="checkbox" class="input-info__input">
-                      <span class="input-info__text">Кран автомобильный 30 тн</span>
-                    </span>
-                    <span class="input-info__count">120</span>
-                  </label>
-                </div>
-              </div>
-              <div class="filter__item" data-toggle>
-                <div class="filter__top">
-                  <p class="filter__head">Самосвалы</p>
-                  <svg class="filter__icon">
-                    <use xlink:href="./assets/sprite.svg#icon-chevrone"></use>
-                  </svg>
-                </div>
-                <div class="filter__content">
-                  <label class="input-info">
-                    <span class="input-info__detail">
-                      <input type="checkbox" class="input-info__input">
-                      <span class="input-info__text">Кран автомобильный 30 тн</span>
-                    </span>
-                    <span class="input-info__count">120</span>
-                  </label>
-                </div>
-              </div>
-              <div class="filter__item" data-toggle>
-                <div class="filter__top">
-                  <p class="filter__head">Бульдозеры</p>
-                  <svg class="filter__icon">
-                    <use xlink:href="./assets/sprite.svg#icon-chevrone"></use>
-                  </svg>
-                </div>
-                <div class="filter__content">
-                  <label class="input-info">
-                    <span class="input-info__detail">
-                      <input type="checkbox" class="input-info__input">
-                      <span class="input-info__text">Кран автомобильный 30 тн</span>
-                    </span>
-                    <span class="input-info__count">120</span>
-                  </label>
-                </div>
-              </div>
-              <div class="filter__item" data-toggle>
-                <div class="filter__top">
-                  <p class="filter__head">Манипуляторы</p>
-                  <svg class="filter__icon">
-                    <use xlink:href="./assets/sprite.svg#icon-chevrone"></use>
-                  </svg>
-                </div>
-                <div class="filter__content">
-                  <label class="input-info">
-                    <span class="input-info__detail">
-                      <input type="checkbox" class="input-info__input">
-                      <span class="input-info__text">Кран автомобильный 30 тн</span>
-                    </span>
-                    <span class="input-info__count">120</span>
-                  </label>
-                </div>
-              </div>
-              <button class="button button--accent button--disabled button--icon" type="reset">
-                <span>Сбросить фильтр</span>
-                <svg>
-                  <use xlink:href="./assets/sprite.svg#icon-refresh"></use>
-                </svg>
-              </button>
-            </form>
+        <div class="columns__col--7 columns__col-tab--12">
+          <h2 class="title mb-20">Аренда техники</h2>
+          <div class="subtitle">
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam
+              rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
+              explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut </p>
           </div>
         </div>
-        <div class="columns__col--9 columns__col-laptop--9 columns__col-tab--9 columns__col-mob--12">
-          <div class="catalog">
-            <div class="catalog__wrapper">
-              <div class="product-card">
-                <picture class="product-card__picture">
-                  <img src="./assets/images/cran-1.png" alt="">
-                </picture>
-                <div class="product-card__content">
-                  <h3 class="product-card__title">Кран автомобильный</h3>
-                  <ul class="product-card__list">
-                    <li class="product-card__item">
-                      <span>Марка</span>
-                      <span>Камаз</span>
-                    </li>
-                    <li class="product-card__item">
-                      <span>Грузоподъемность</span>
-                      <span>30 тн</span>
-                    </li>
-                    <li class="product-card__item">
-                      <span>Вылет стрелы</span>
-                      <span>25 м</span>
-                    </li>
-                  </ul>
-                  <div class="product-card__footer">
-                    <p class="product-card__price">
-                      <span>2 000 ₽</span>
-                      <small>час</small>
-                    </p>
-                    <a href="#" class="button product-card__button">Подробнее</a>
+        <div class="columns__col--12">
+          <div class="tabs__item active" data-tabs-list="techConnection" id="techConnection-1">
+            <div class="tabs-about__item">
+              <div class="tabs-about__card">
+                <div class="tabs-about__card-inner">
+                  <div class="tabs-about__card-title">Аренда техники</div>
+                  <div class="tabs-about__card-text">
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+                      totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae
+                      dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+                      sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
                   </div>
-                </div>
-                <div class="product-card__modal">
-                  <picture class="product-card__picture">
-                    <img src="./assets/images/cran-1.png" alt="">
-                  </picture>
-                  <h3 class="product-card__title">Кран автомобильный</h3>
-                  <ul class="product-card__list">
-                    <li class="product-card__item">
-                      <span>Марка</span>
-                      <span>Камаз</span>
-                    </li>
-                    <li class="product-card__item">
-                      <span>Грузоподъемность</span>
-                      <span>30 тн</span>
-                    </li>
-                    <li class="product-card__item">
-                      <span>Вылет стрелы</span>
-                      <span>25 м</span>
-                    </li>
-                    <li class="product-card__item">
-                      <span>Марка</span>
-                      <span>Камаз</span>
-                    </li>
-                    <li class="product-card__item">
-                      <span>Грузоподъемность</span>
-                      <span>30 тн</span>
-                    </li>
-                    <li class="product-card__item">
-                      <span>Вылет стрелы</span>
-                      <span>25 м</span>
-                    </li>
-                  </ul>
-                  <div class="product-card__footer">
-                    <p class="product-card__price">
-                      <span>2 000 ₽</span>
-                      <small>час</small>
-                    </p>
-                    <div class="product-card__control">
-                      <button class="button product-card__button" data-fancybox data-src="#modalRent" data-product-id="0">Арендовать</button>
-                      <button class="button button--invert button--icon product-card__button">
-                        <span>Подробнее</span>
-                        <svg>
-                          <use xlink:href="./assets/sprite.svg#icon-arrow"></use>
-                        </svg>
-                      </button>
-                    </div>
-                  </div>
+                  <a href="#" class="button">
+                    Арендовать технику
+                  </a>
+
                 </div>
               </div>
-              <div class="product-card">
-                <picture class="product-card__picture">
-                  <img src="./assets/images/cran-2.png" alt="">
-                </picture>
-                <div class="product-card__content">
-                  <h3 class="product-card__title">Краник</h3>
-                  <ul class="product-card__list">
-                    <li class="product-card__item">
-                      <span>Марка</span>
-                      <span>Камаз</span>
-                    </li>
-                    <li class="product-card__item">
-                      <span>Грузоподъемность</span>
-                      <span>30 тн</span>
-                    </li>
-                    <li class="product-card__item">
-                      <span>Вылет стрелы</span>
-                      <span>885 м</span>
-                    </li>
-                  </ul>
-                  <div class="product-card__footer">
-                    <p class="product-card__price">
-                      <span>2 000 ₽</span>
-                      <small>час</small>
-                    </p>
-                    <a href="#" class="button product-card__button">Подробнее</a>
-                  </div>
-                  <div class="product-card__modal">
-                    <picture class="product-card__picture">
-                      <img src="./assets/images/cran-1.png" alt="">
-                    </picture>
-                    <h3 class="product-card__title">Краник</h3>
-                    <ul class="product-card__list">
-                      <li class="product-card__item">
-                        <span>Марка</span>
-                        <span>Камаз</span>
-                      </li>
-                      <li class="product-card__item">
-                        <span>Грузоподъемность</span>
-                        <span>30 тн</span>
-                      </li>
-                      <li class="product-card__item">
-                        <span>Вылет стрелы</span>
-                        <span>885 м</span>
-                      </li>
-                      <li class="product-card__item">
-                        <span>Марка</span>
-                        <span>Камаз</span>
-                      </li>
-                      <li class="product-card__item">
-                        <span>Грузоподъемность</span>
-                        <span>30 тн</span>
-                      </li>
-                      <li class="product-card__item">
-                        <span>Вылет стрелы</span>
-                        <span>25 м</span>
-                      </li>
-                    </ul>
-                    <div class="product-card__footer">
-                      <p class="product-card__price">
-                        <span>2 000 ₽</span>
-                        <small>час</small>
-                      </p>
-                      <div class="product-card__control">
-                        <button class="button product-card__button" data-fancybox data-src="#modalRent" data-product-id="1">Арендовать</button>
-                        <button class="button button--invert button--icon product-card__button">
-                          <span>Подробнее</span>
-                          <svg>
-                            <use xlink:href="./assets/sprite.svg#icon-arrow"></use>
-                          </svg>
-                        </button>
+              <div class="slider" data-slider data-slider-fade data-slider-slides="1" data-slider-slides-tab="1"
+                   data-swiper-autoplay="2000">
+                <div class="swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="tabs-about__item-slide">
+                        <img src="./assets/images/rent-tech-1.png" alt="">
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="tabs-about__item-slide">
+                        <img src="./assets/images/about-pic.png" alt="">
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="tabs-about__item-slide">
+                        <img src="./assets/images/rent-tech-1.png" alt="">
                       </div>
                     </div>
                   </div>
-                </div>
-              </div>
-              <div class="product-card">
-                <picture class="product-card__picture">
-                  <img src="https://placehold.co/600x900" alt="">
-                </picture>
-                <div class="product-card__content">
-                  <h3 class="product-card__title">Кран автомобильный</h3>
-                  <ul class="product-card__list">
-                    <li class="product-card__item">
-                      <span>Марка</span>
-                      <span>Камаз</span>
-                    </li>
-                    <li class="product-card__item">
-                      <span>Грузоподъемность</span>
-                      <span>30 тн</span>
-                    </li>
-                    <li class="product-card__item">
-                      <span>Вылет стрелы</span>
-                      <span>25 м</span>
-                    </li>
-                  </ul>
-                  <div class="product-card__footer">
-                    <p class="product-card__price">
-                      <span>2 000 ₽</span>
-                      <small>час</small>
-                    </p>
-                    <a href="#" class="button product-card__button">Подробнее</a>
-                  </div>
-                  <div class="product-card__modal">
-                    <picture class="product-card__picture">
-                      <img src="./assets/images/cran-1.png" alt="">
-                    </picture>
-                    <h3 class="product-card__title">Кран автомобильный</h3>
-                    <ul class="product-card__list">
-                      <li class="product-card__item">
-                        <span>Марка</span>
-                        <span>Камаз</span>
-                      </li>
-                      <li class="product-card__item">
-                        <span>Грузоподъемность</span>
-                        <span>30 тн</span>
-                      </li>
-                      <li class="product-card__item">
-                        <span>Вылет стрелы</span>
-                        <span>25 м</span>
-                      </li>
-                      <li class="product-card__item">
-                        <span>Марка</span>
-                        <span>Камаз</span>
-                      </li>
-                      <li class="product-card__item">
-                        <span>Грузоподъемность</span>
-                        <span>30 тн</span>
-                      </li>
-                      <li class="product-card__item">
-                        <span>Вылет стрелы</span>
-                        <span>25 м</span>
-                      </li>
-                    </ul>
-                    <div class="product-card__footer">
-                      <p class="product-card__price">
-                        <span>2 000 ₽</span>
-                        <small>час</small>
-                      </p>
-                      <div class="product-card__control">
-                        <button class="button product-card__button" data-fancybox data-src="#modalRent" data-product-id="2">Арендовать</button>
-                        <button class="button button--invert button--icon product-card__button">
-                          <span>Подробнее</span>
-                          <svg>
-                            <use xlink:href="./assets/sprite.svg#icon-arrow"></use>
-                          </svg>
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="product-card">
-                <picture class="product-card__picture">
-                  <img src="./assets/images/cran-1.png" alt="">
-                </picture>
-                <div class="product-card__content">
-                  <h3 class="product-card__title">Кран автомобильный</h3>
-                  <ul class="product-card__list">
-                    <li class="product-card__item">
-                      <span>Марка</span>
-                      <span>Камаз</span>
-                    </li>
-                    <li class="product-card__item">
-                      <span>Грузоподъемность</span>
-                      <span>30 тн</span>
-                    </li>
-                    <li class="product-card__item">
-                      <span>Вылет стрелы</span>
-                      <span>25 м</span>
-                    </li>
-                  </ul>
-                  <div class="product-card__footer">
-                    <p class="product-card__price">
-                      <span>2 000 ₽</span>
-                      <small>час</small>
-                    </p>
-                    <a href="#" class="button product-card__button">Подробнее</a>
-                  </div>
-                  <div class="product-card__modal">
-                    <picture class="product-card__picture">
-                      <img src="./assets/images/cran-1.png" alt="">
-                    </picture>
-                    <h3 class="product-card__title">Кран автомобильный</h3>
-                    <ul class="product-card__list">
-                      <li class="product-card__item">
-                        <span>Марка</span>
-                        <span>Камаз</span>
-                      </li>
-                      <li class="product-card__item">
-                        <span>Грузоподъемность</span>
-                        <span>30 тн</span>
-                      </li>
-                      <li class="product-card__item">
-                        <span>Вылет стрелы</span>
-                        <span>25 м</span>
-                      </li>
-                      <li class="product-card__item">
-                        <span>Марка</span>
-                        <span>Камаз</span>
-                      </li>
-                      <li class="product-card__item">
-                        <span>Грузоподъемность</span>
-                        <span>30 тн</span>
-                      </li>
-                      <li class="product-card__item">
-                        <span>Вылет стрелы</span>
-                        <span>25 м</span>
-                      </li>
-                    </ul>
-                    <div class="product-card__footer">
-                      <p class="product-card__price">
-                        <span>2 000 ₽</span>
-                        <small>час</small>
-                      </p>
-                      <div class="product-card__control">
-                        <button class="button product-card__button" data-fancybox data-src="#modalRent" data-product-id="3">Арендовать</button>
-                        <button class="button button--invert button--icon product-card__button">
-                          <span>Подробнее</span>
-                          <svg>
-                            <use xlink:href="./assets/sprite.svg#icon-arrow"></use>
-                          </svg>
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="product-card">
-                <picture class="product-card__picture">
-                  <img src="./assets/images/cran-1.png" alt="">
-                </picture>
-                <div class="product-card__content">
-                  <h3 class="product-card__title">Кран автомобильный</h3>
-                  <ul class="product-card__list">
-                    <li class="product-card__item">
-                      <span>Марка</span>
-                      <span>Камаз</span>
-                    </li>
-                    <li class="product-card__item">
-                      <span>Грузоподъемность</span>
-                      <span>30 тн</span>
-                    </li>
-                    <li class="product-card__item">
-                      <span>Вылет стрелы</span>
-                      <span>25 м</span>
-                    </li>
-                  </ul>
-                  <div class="product-card__footer">
-                    <p class="product-card__price">
-                      <span>2 000 ₽</span>
-                      <small>час</small>
-                    </p>
-                    <a href="#" class="button product-card__button">Подробнее</a>
-                  </div>
-                  <div class="product-card__modal">
-                    <picture class="product-card__picture">
-                      <img src="./assets/images/cran-1.png" alt="">
-                    </picture>
-                    <h3 class="product-card__title">Кран автомобильный</h3>
-                    <ul class="product-card__list">
-                      <li class="product-card__item">
-                        <span>Марка</span>
-                        <span>Камаз</span>
-                      </li>
-                      <li class="product-card__item">
-                        <span>Грузоподъемность</span>
-                        <span>30 тн</span>
-                      </li>
-                      <li class="product-card__item">
-                        <span>Вылет стрелы</span>
-                        <span>25 м</span>
-                      </li>
-                      <li class="product-card__item">
-                        <span>Марка</span>
-                        <span>Камаз</span>
-                      </li>
-                      <li class="product-card__item">
-                        <span>Грузоподъемность</span>
-                        <span>30 тн</span>
-                      </li>
-                      <li class="product-card__item">
-                        <span>Вылет стрелы</span>
-                        <span>25 м</span>
-                      </li>
-                    </ul>
-                    <div class="product-card__footer">
-                      <p class="product-card__price">
-                        <span>2 000 ₽</span>
-                        <small>час</small>
-                      </p>
-                      <div class="product-card__control">
-                        <button class="button product-card__button" data-fancybox data-src="#modalRent" data-product-id="4">Арендовать</button>
-                        <button class="button button--invert button--icon product-card__button">
-                          <span>Подробнее</span>
-                          <svg>
-                            <use xlink:href="./assets/sprite.svg#icon-arrow"></use>
-                          </svg>
-                        </button>
-                      </div>
-                    </div>
-                  </div>
+                  <div class="slider__pagination" data-slider-pagination></div>
                 </div>
               </div>
             </div>
-            <button class="button">Показать ещё</button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section info-block mb-55">
+    <div class="container">
+      <div class="columns">
+        <div class="columns__col--4 columns__col-mob--12">
+          <div class="info-block__heading">
+            <h3 class="info-block__title title-content title-content--big">Общие сведения <br class="tab-hidden"> об
+              услуге</h3>
+            <div class="info-block__subtitle">
+              <p>Технологическое присоединение – комплексная услуга, оказываемая сетевыми компаниями юридическим и
+                физическим лицам для выдачи электрической мощности.</p>
+              <p>Предусматривающая фактическое присоединение энергопринимающих устройств (энергетических установок)
+                потребителей к объектам электросетевого хозяйства.</p>
+            </div>
+          </div>
+        </div>
+        <div class="columns__col--6 columns__col-tab--8 columns__col-mob--12">
+          <div class="info-block__content">
+            <p>Технологическое присоединение – комплексная услуга, оказываемая сетевыми компаниями юридическим и
+              физическим лицам для выдачи электрической мощности и предусматривающая фактическое присоединение
+              энергопринимающих устройств (энергетических установок) потребителей к объектам электросетевого
+              хозяйства.</p>
+            <p>Услуга по технологическому присоединению оказывается в случаях присоединения впервые вводимых в
+              эксплуатацию энергопринимающих устройств; увеличения максимальной мощности ранее присоединенных
+              энергопринимающих устройств; изменения категории надежности электроснабжения, точек присоединения, видов
+              производственной деятельности, не влекущих пересмотра величины максимальной мощности, но изменяющих схему
+              внешнего электроснабжения ранее присоединенных энергопринимающих устройств; присоединения ранее
+              присоединенных энергопринимающих устройств, выведенных из эксплуатации (в том числе в целях консервации на
+              срок более 1 года) в порядке, установленном Правилами вывода объектов электроэнергетики в ремонт и из
+              эксплуатации, утвержденными постановлением Правительства Российской Федерации от 30 января 2021 г. N 86
+              «Об утверждении правил вывода объектов электроэнергетики в ремонт и из эксплуатации, а также внесении
+              изменений в некоторые акты Правительства Российской Федерации по вопросу совершенствования порядка вывода
+              объектов электроэнергетики в ремонт и из эксплуатации.</p>
+            <hr>
+            <p>Услуга по технологическому присоединению оказывается в случаях присоединения впервые вводимых в
+              эксплуатацию энергопринимающих устройств; увеличения максимальной мощности ранее присоединенных
+              энергопринимающих устройств; изменения категории надежности электроснабжения, точек присоединения, видов
+              производственной деятельности, не влекущих пересмотра величины максимальной мощности, но изменяющих схему
+              внешнего электроснабжения ранее присоединенных энергопринимающих устройств; присоединения ранее
+              присоединенных энергопринимающих устройств, выведенных из эксплуатации (в том числе в целях консервации на
+              срок более 1 года) в порядке, установленном Правилами вывода объектов электроэнергетики в ремонт и из
+              эксплуатации, утвержденными постановлением Правительства Российской Федерации от 30 января 2021 г. N 86
+              «Об утверждении правил вывода объектов электроэнергетики в ремонт и из эксплуатации, а также внесении
+              изменений в некоторые акты Правительства Российской Федерации по вопросу совершенствования порядка вывода
+              объектов электроэнергетики в ремонт и из эксплуатации.</p>
           </div>
         </div>
       </div>
