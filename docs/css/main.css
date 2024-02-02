@@ -2580,6 +2580,9 @@ svg {
   max-height: 0.6875rem;
 }
 .button--vert {
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
   padding: 0.625rem;
   width: 2.8125rem;
   height: 100%;

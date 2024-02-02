@@ -20,6 +20,7 @@
   }
 
   &--vert {
+    flex-shrink: 0;
     padding: rem(10);
     width: rem(45);
     height: 100%;
