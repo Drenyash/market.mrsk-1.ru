@@ -24,24 +24,24 @@
       <div class="header__row header__top-right">
         <div class="header__row header__top-block mob-hidden">
           <a class="" href="tel:+78002200220">+7 (800) 220-02-20</a>
-          <div class="callback">
-            <div class="callback__text">Заказать звонок</div>
-            <div class="callback__icon">
+          <button class="callback" data-fancybox data-src="#modalCallBack">
+            <span class="callback__text">Заказать звонок</span>
+            <span class="callback__icon">
               <svg>
                 <use xlink:href="./assets/sprite.svg#icon-tel"></use>
               </svg>
-            </div>
-          </div>
+            </span>
+          </button>
         </div>
         <span class="header__divider mob-hidden"></span>
-        <div class="header__login mob-hidden">
-          <div class="header__login-text">Войти</div>
-          <div class="header__login-icon">
+        <button class="header__login mob-hidden">
+          <span class="header__login-text">Войти</span>
+          <span class="header__login-icon">
             <svg>
               <use xlink:href="./assets/sprite.svg#icon-user"></use>
             </svg>
-          </div>
-        </div>
+          </span>
+        </button>
         <div class="burger" data-burger>
           <div class="burger__item"></div>
         </div>
@@ -1458,18 +1458,6 @@
               </div>
             </div>
           </div>
-        </div>
-        <div class="header__search mob-hidden">
-          <button class="header__search-button">
-            <svg>
-              <use xlink:href="./assets/sprite.svg#icon-search"></use>
-            </svg>
-          </button>
-          <form class="header__search-form" action="#">
-            <label class="header__search-label">
-              <input type="text" name="search">
-            </label>
-          </form>
         </div>
       </div>
       <div class="header__bottom-right mob-hidden">

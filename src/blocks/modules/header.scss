@@ -1,8 +1,12 @@
 .header {
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   background-color: $color-dark;
   color: #FFFFFF;
   font-family: $font-accent;
+  z-index: 100;
 
   @include r($mobile) {
     position: fixed;
@@ -61,10 +65,19 @@
     padding: rem(8) rem(14);
     color: $color-accent;
     font-size: rem(18);
+    background-color: $color-dark;
+    border-radius: 8px;
+    transition: .2s linear;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #242432;
+    }
   }
 
   &__login-icon {
     svg {
+      display: flex;
       max-width: rem(17);
       max-height: rem(17);
       fill: $color-accent;
@@ -104,6 +117,7 @@
         height: rem(14);
         background-color: #FFFFFF;
         transform: rotate(45deg) translateX(-50%);
+        transition: .2s linear;
         @include r($mobile) {
           display: none;
         }

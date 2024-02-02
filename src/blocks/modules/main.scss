@@ -1,6 +1,7 @@
 .main {
     flex-grow: 1;
     overflow: hidden;
+    padding-top: 169px;
 
     @include r($mobile) {
         padding-top: 121px;
