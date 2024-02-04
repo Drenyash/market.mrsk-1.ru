@@ -321,6 +321,7 @@ meter {
 /*!**************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!./node_modules/sass-loader/dist/cjs.js!./src/css/main.scss ***!
   \**************************************************************************************************************************************************************************************************************/
+@charset "UTF-8";
 .pt-1 {
   padding-top: 0.0625rem;
 }
@@ -5455,9 +5456,21 @@ svg {
   gap: 1.125rem;
   width: 100%;
   max-width: 15.9375rem;
+  max-height: 41.25rem;
   padding: 1.1875rem 2.1875rem;
   background-color: #F0F1F6;
   border-radius: 1.25rem;
+  overflow-y: auto;
+}
+.tabs-address__controls::-webkit-scrollbar {
+  width: 4px; /* ширина scrollbar */
+}
+.tabs-address__controls::-webkit-scrollbar-track {
+  background: #FFFFFF; /* цвет дорожки */
+}
+.tabs-address__controls::-webkit-scrollbar-thumb {
+  background-color: #2034E9; /* цвет плашки */
+  border-radius: 20px; /* закругления плашки */
 }
 @media only screen and (max-width: 1199.9px) {
   .tabs-address__controls {
@@ -5485,6 +5498,10 @@ svg {
   color: #60606E;
   font-size: 1.125rem;
   line-height: 1;
+}
+.tabs-address__trigger.active {
+  background-color: #2034E9;
+  color: #FFFFFF;
 }
 .tabs-address__list {
   width: 100%;
@@ -7042,6 +7059,18 @@ svg {
   -webkit-transition: 0.2s linear;
   transition: 0.2s linear;
   overflow: hidden;
+  max-height: 300px;
+  overflow-y: auto;
+}
+.dropdown__list::-webkit-scrollbar {
+  width: 4px; /* ширина scrollbar */
+}
+.dropdown__list::-webkit-scrollbar-track {
+  background: #FFFFFF; /* цвет дорожки */
+}
+.dropdown__list::-webkit-scrollbar-thumb {
+  background-color: #2034E9; /* цвет плашки */
+  border-radius: 20px; /* закругления плашки */
 }
 
 .mobile-menu {

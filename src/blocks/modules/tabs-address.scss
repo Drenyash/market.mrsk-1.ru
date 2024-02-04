@@ -14,9 +14,22 @@
     gap: rem(18);
     width: 100%;
     max-width: rem(255);
+    max-height: rem(660);
     padding: rem(19) rem(35);
     background-color: #F0F1F6;
     border-radius: rem(20);
+    overflow-y: auto;
+
+    &::-webkit-scrollbar {
+      width: 4px;               /* ширина scrollbar */
+    }
+    &::-webkit-scrollbar-track {
+      background: $color-light;        /* цвет дорожки */
+    }
+    &::-webkit-scrollbar-thumb {
+      background-color: $color-accent;    /* цвет плашки */
+      border-radius: 20px;       /* закругления плашки */
+    }
 
     @include r($mobile) {
       max-width: 100%;
@@ -38,6 +51,8 @@
   }
 
   &__trigger.active {
+    background-color: $color-accent;
+    color: $color-light;
   }
 
   &__list {

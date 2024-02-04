@@ -3100,6 +3100,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _app_menu__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(_app_menu__WEBPACK_IMPORTED_MODULE_11__);
 /* harmony import */ var _app_counter__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./app/counter */ "./src/js/app/counter.js");
 /* harmony import */ var _app_counter__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(_app_counter__WEBPACK_IMPORTED_MODULE_12__);
+/* harmony import */ var _app_contacts__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./app/contacts */ "./src/js/app/contacts.js");
+/* harmony import */ var _app_contacts__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(_app_contacts__WEBPACK_IMPORTED_MODULE_13__);
+
 
 
 
@@ -3116,6 +3119,28 @@ __webpack_require__.r(__webpack_exports__);
 // import "./app/rent";
 // import "./app/filter";
 
+
+/***/ }),
+
+/***/ "./src/js/app/contacts.js":
+/*!********************************!*\
+  !*** ./src/js/app/contacts.js ***!
+  \********************************/
+/***/ (function() {
+
+document.addEventListener("DOMContentLoaded", () => {
+  const activeElements = document.querySelectorAll(
+    ".tabs-address__trigger.active"
+  );
+  if (!activeElements) return;
+  activeElements.forEach((element) => {
+    const container = element.parentNode;
+    container.scrollTo({
+      top: element.offsetTop,
+      behavior: "smooth",
+    });
+  });
+});
 
 /***/ }),
 
