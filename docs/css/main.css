@@ -4407,6 +4407,8 @@ svg {
   -webkit-filter: blur(7px);
           filter: blur(7px);
   background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .menu__block-list-wrapper {
   display: -webkit-box;

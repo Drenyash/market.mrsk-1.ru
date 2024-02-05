@@ -177,6 +177,8 @@
     height: 100%;
     filter: blur(7px);
     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
   }
 
   &__block-list-wrapper {
