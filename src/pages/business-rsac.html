@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <%= htmlWebpackPlugin.options.head %>
+  <title><%= htmlWebpackPlugin.options.title %></title>
+</head>
+<body class="body">
+<%= htmlWebpackPlugin.options.sectionHeader %>
+<main class="main main--gray">
+  <%= htmlWebpackPlugin.options.breadcrumbs %>
+  <section class="section mb-70">
+    <div class="container">
+      <div class="page-intro">
+        <picture class="page-intro__pic">
+          <img src="./assets/images/page-intro-bg.jpg" alt="">
+        </picture>
+        <div class="page-intro__content">
+          <h1 class="page-intro__title title title--light">Услуги бизнес-аналитики</h1>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section mb-40">
+    <div class="container">
+      <div class="columns">
+        <div class="columns__col--7 columns__col-tab--12">
+          <h2 class="title mb-20">Услуга аналитики. О РСАЦ</h2>
+          <div class="subtitle">
+            <p>Региональный ситуационно-аналитический центр (РСАЦ) филиала ПАО «Россети Центр» - «Белгородэнерго»</p>
+          </div>
+        </div>
+        <div class="columns__col--12">
+          <div class="tabs tabs-about" data-tabs-container="services">
+            <div class="dropdown mbm-30" data-toggle>
+              <button class="dropdown__button">
+                <span>Выбрать услугу</span>
+                <svg class="dropdown__icon">
+                  <use xlink:href="./assets/sprite.svg#icon-arrow-empty"></use>
+                </svg>
+              </button>
+              <div class="dropdown__list">
+                <a href="./business-rsac.html" class="tabs__trigger tabs-about__trigger active">
+                  <span class="tabs-about__trigger-text">О РСАЦ</span>
+                </a>
+                <a href="./business-decision.html" class="tabs__trigger tabs-about__trigger">
+                  <span class="tabs-about__trigger-text">Наши решения</span>
+                </a>
+                <a href="./business-customer.html" class="tabs__trigger tabs-about__trigger">
+                  <span class="tabs-about__trigger-text">Заказчики</span>
+                </a>
+                <a href="./business-contacts.html" class="tabs__trigger tabs-about__trigger">
+                  <span class="tabs-about__trigger-text">Контакты</span>
+                </a>
+              </div>
+            </div>
+            <div class="tabs__controls tabs-about__controls mob-hidden">
+              <a href="./business-rsac.html" class="tabs__trigger tabs-about__trigger active">
+                <span class="tabs-about__trigger-text">О РСАЦ</span>
+              </a>
+              <a href="./business-decision.html" class="tabs__trigger tabs-about__trigger">
+                <span class="tabs-about__trigger-text">Наши решения</span>
+              </a>
+              <a href="./business-customer.html" class="tabs__trigger tabs-about__trigger">
+                <span class="tabs-about__trigger-text">Заказчики</span>
+              </a>
+              <a href="./business-contacts.html" class="tabs__trigger tabs-about__trigger">
+                <span class="tabs-about__trigger-text">Контакты</span>
+              </a>
+            </div>
+            <div class="tabs__list tabs__list--column">
+              <div class="tabs__item active">
+                <div class="editor editor--light mb-60 mbm-16">
+                  <h3>Успешный опыт работы с 2021 года</h3>
+                  <p>В рамках Петербургского международного экономического форума 3 июня 2021 года между генеральным
+                    директором ПАО «Россети Центр» Игорем Маковским и врио губернатора Белгородской области Вячеславом
+                    Гладковым подписано соглашение о стратегическом взаимодействии, направленном на повышение качества и
+                    оперативности принимаемых решений в интересах жителей региона.
+                    В результате подписания соглашения в структурном подразделении Департамента развития услуг и
+                    сервисов, взаимодействия с клиентами ПАО «Россети Центр» - «Белгородэнерго» создан Региональный
+                    ситуационно-аналитический центр, оказывающий информационно-аналитические услуги.</p>
+                  <img src="./assets/images/business-1.png" alt="">
+                </div>
+                <div class="columns">
+                  <div class="columns__col--1 laptop-hidden"></div>
+                  <div class="columns__col--10 columns__col-laptop--12">
+                    <h2 class="title title--min mb-30">Наши преимущества:</h2>
+                    <div class="slider slider--auto mb-100 mbm-80" data-slider data-slider-slides="5" data-loop>
+                      <div class="swiper">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                            <div class="features">
+                              <img class="features__icon" src="./assets/images/icon-circle.svg" alt="">
+                              <p class="features__title">Качественная аналитика</p>
+                              <p class="features__subtitle">(многофакторный анализ)</p>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="features">
+                              <img class="features__icon" src="./assets/images/icon-businessman.svg" alt="">
+                              <p class="features__title">Индивидуальный подход
+                                к каждому заказчику</p>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="features">
+                              <img class="features__icon" src="./assets/images/icon-features.svg" alt="">
+                              <p class="features__title">Прогнозирование с применением
+                                научных методов</p>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="features">
+                              <img class="features__icon" src="./assets/images/icon-nextgen.svg" alt="">
+                              <p class="features__title">Современные цифровые решения</p>
+                              <p class="features__subtitle">(BI-системы отечественных разработчиков)</p>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="features">
+                              <img class="features__icon" src="./assets/images/icon-time.svg" alt="">
+                              <p class="features__title">Решение нестандартных задач в сжатые сроки</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <h2 class="title title--min mb-30">Предлагаем услуги:</h2>
+                    <div class="services mb-100 mbm-40">
+                      <article class="article-benefit">
+                        <h3 class="article-benefit__title">Инвесторам:</h3>
+                        <ul class="article-benefit__list">
+                          <li class="article-benefit__item">
+                            выбор площадки для бизнеса;
+                          </li>
+                          <li class="article-benefit__item">
+                            детальный анализ ресурсов (трудовых, природных, энергетических);
+                          </li>
+                          <li class="article-benefit__item">
+                            оптимизация производственных и логистических процессов.
+                          </li>
+                        </ul>
+                      </article>
+                      <article class="article-benefit">
+                        <h3 class="article-benefit__title">Органам власти:</h3>
+                        <ul class="article-benefit__list">
+                          <li class="article-benefit__item">
+                            аналитика по всем направлениям деятельности;
+                          </li>
+                          <li class="article-benefit__item">
+                            визуализация данных в виде дашбордов;
+                          </li>
+                          <li class="article-benefit__item">
+                            разработка аналитических материалов с применением научных методов.
+                          </li>
+                        </ul>
+                      </article>
+                      <article class="article-benefit">
+                        <h3 class="article-benefit__title">Субъектам хозяйствования:</h3>
+                        <ul class="article-benefit__list">
+                          <li class="article-benefit__item">
+                            анализ производственных показателей и сферы маркетинга;
+                          </li>
+                          <li class="article-benefit__item">
+                            обзор поставщиков и конкурентов;
+                          </li>
+                          <li class="article-benefit__item">
+                            трекинг проектов и показателей HR;
+                          </li>
+                          <li class="article-benefit__item">
+                            анализ инвестиционной программы;
+                          </li>
+                          <li class="article-benefit__item">
+                            бэнчмаркинг регионов.
+                          </li>
+                          <li class="article-benefit__item">
+                            Организация взаимодействия
+                          </li>
+                          <li class="article-benefit__item">
+                            В процессе взаимодействия индивидуально для каждого заказчика определяются детали оказания
+                            информационно-аналитических услуг, форма и срок предоставления данных.
+                          </li>
+                        </ul>
+                      </article>
+                    </div>
+                    <div class="editor">
+                      <img src="./assets/images/graph-1.png" alt="">
+                      <figure>
+                        <img src="./assets/images/graph-2.png" alt="">
+                        <figcaption class="mb-18">
+                          <span>
+                            Схема работы с данными<br>
+                            Схема работы с данными определяется индивидуально для каждого заказчика, возможен автоматизированный сбор данных, интеграция<br>
+                            со сторонними системами для формирования отчетов в формате «здесь и сейчас».
+                          </span>
+                        </figcaption>
+                        <button class="button centered" data-fancybox data-src="#modalTechUniversalFIZ">Оформить заявку</button>
+                      </figure>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<%= htmlWebpackPlugin.options.sectionFooter %>
+<%= htmlWebpackPlugin.options.temp %>
+</body>
+</html>

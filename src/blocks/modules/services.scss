@@ -1,0 +1,14 @@
+.services {
+  display: flex;
+  justify-content: space-between;
+  gap: 114px;
+
+  @include r($laptop) {
+    gap: 80px;
+  }
+
+  @include r($mobile) {
+    flex-direction: column;
+    gap: 20px;
+  }
+}

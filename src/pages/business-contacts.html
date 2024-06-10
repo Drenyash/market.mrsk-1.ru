@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <%= htmlWebpackPlugin.options.head %>
+  <title><%= htmlWebpackPlugin.options.title %></title>
+</head>
+<body class="body">
+<%= htmlWebpackPlugin.options.sectionHeader %>
+<main class="main main--gray">
+  <%= htmlWebpackPlugin.options.breadcrumbs %>
+  <section class="section mb-70">
+    <div class="container">
+      <div class="page-intro">
+        <picture class="page-intro__pic">
+          <img src="./assets/images/page-intro-bg.jpg" alt="">
+        </picture>
+        <div class="page-intro__content">
+          <h1 class="page-intro__title title title--light">Услуги бизнес-аналитики</h1>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section mb-40">
+    <div class="container">
+      <div class="columns">
+        <div class="columns__col--7 columns__col-tab--12">
+          <h2 class="title mb-20">Контакты</h2>
+          <div class="subtitle">
+            <p>Региональный ситуационно-аналитический центр (РСАЦ) филиала ПАО «Россети Центр» - «Белгородэнерго»</p>
+          </div>
+        </div>
+        <div class="columns__col--12">
+          <div class="tabs tabs-about" data-tabs-container="services">
+            <div class="dropdown mbm-30" data-toggle>
+              <button class="dropdown__button">
+                <span>Выбрать услугу</span>
+                <svg class="dropdown__icon">
+                  <use xlink:href="./assets/sprite.svg#icon-arrow-empty"></use>
+                </svg>
+              </button>
+              <div class="dropdown__list">
+                <a href="./business-rsac.html" class="tabs__trigger tabs-about__trigger">
+                  <span class="tabs-about__trigger-text">О РСАЦ</span>
+                </a>
+                <a href="./business-decision.html" class="tabs__trigger tabs-about__trigger">
+                  <span class="tabs-about__trigger-text">Наши решения</span>
+                </a>
+                <a href="./business-customer.html" class="tabs__trigger tabs-about__trigger">
+                  <span class="tabs-about__trigger-text">Заказчики</span>
+                </a>
+                <a href="./business-contacts.html" class="tabs__trigger tabs-about__trigger active">
+                  <span class="tabs-about__trigger-text">Контакты</span>
+                </a>
+              </div>
+            </div>
+            <div class="tabs__controls tabs-about__controls mob-hidden">
+              <a href="./business-rsac.html" class="tabs__trigger tabs-about__trigger">
+                <span class="tabs-about__trigger-text">О РСАЦ</span>
+              </a>
+              <a href="./business-decision.html" class="tabs__trigger tabs-about__trigger">
+                <span class="tabs-about__trigger-text">Наши решения</span>
+              </a>
+              <a href="./business-customer.html" class="tabs__trigger tabs-about__trigger">
+                <span class="tabs-about__trigger-text">Заказчики</span>
+              </a>
+              <a href="./business-contacts.html" class="tabs__trigger tabs-about__trigger active">
+                <span class="tabs-about__trigger-text">Контакты</span>
+              </a>
+            </div>
+            <div class="tabs__list tabs__list--column">
+              <div class="tabs__item tabs-address__item active">
+                <div class="tabs-address__card">
+                  <div class="tabs-address__card-title">Контактная информация регионального ситуационно-аналитический
+                    центра филиала ПАО «Россети Центр» - «Белгородэнерго» (РСАЦ):
+                  </div>
+                  <div class="tabs-address__card-item">
+                    <p class="tabs-address__card-item-text">Руководитель:</p>
+                    <div class="tabs-address__card-item-link">
+                      <a href="#" target="_blank">Чумаченко Александр Иванович</a>
+                    </div>
+                  </div>
+                  <div class="tabs-address__card-item">
+                    <p class="tabs-address__card-item-text">Почта:</p>
+                    <div class="tabs-address__card-item-link">
+                      <svg>
+                        <use xlink:href="../assets/sprite.svg#icon-mail"></use>
+                      </svg>
+                      <a href="mailto:bryanskenergo@mrsk-1.ru">Chumachenko.AI@mrsk-1.ru.</a>
+                    </div>
+                  </div>
+                  <div class="tabs-address__card-item">
+                    <p class="tabs-address__card-item-text">Телефон:</p>
+                    <div class="tabs-address__card-item-link">
+                      <svg>
+                        <use xlink:href="../assets/sprite.svg#icon-tel"></use>
+                      </svg>
+                      <a href="tel:+78002200220">+7-4722-30-45-66</a>
+                    </div>
+                    <div class="tabs-address__card-item-link">
+                      <svg>
+                        <use xlink:href="../assets/sprite.svg#icon-tel"></use>
+                      </svg>
+                      <a href="tel:+78002200220">+7-910-221-57-71</a>
+                    </div>
+                  </div>
+                  <div class="tabs-address__card-item">
+                    <p class="tabs-address__card-item-text">Адрес:</p>
+                    <div class="tabs-address__card-item-link">
+                      <svg>
+                        <use xlink:href="../assets/sprite.svg#icon-location"></use>
+                      </svg>
+                      <a href="https://yandex.ru/maps/-/CDqtnG0P" target="_blank">г. Белгород, 2-й Карьерный переулок, 12;</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="tabs-address__map">
+                  <div style="position:relative;overflow:hidden;"><a
+                    href="https://yandex.ru/maps/191/bryansk/?utm_medium=mapframe&utm_source=maps"
+                    style="color:#eee;font-size:12px;position:absolute;top:0px;">Брянск</a><a
+                    href="https://yandex.ru/maps/191/bryansk/house/sovetskaya_ulitsa_35/Z00YdQJhTEwDQFtpfX51eHtjYA==/?ll=34.351595%2C53.249704&utm_medium=mapframe&utm_source=maps&z=17.23"
+                    style="color:#eee;font-size:12px;position:absolute;top:14px;">Советская улица, 35 — Яндекс Карты</a>
+                    <iframe
+                      src="https://yandex.ru/map-widget/v1/?ll=34.351595%2C53.249704&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NjAwMzc2NxI90KDQvtGB0YHQuNGPLCDQkdGA0Y_QvdGB0LosINCh0L7QstC10YLRgdC60LDRjyDRg9C70LjRhtCwLCAzNSIKDQloCUIVs_9UQg%2C%2C&z=17.23"
+                      frameborder="0" allowfullscreen="true" style="position:relative;"></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<%= htmlWebpackPlugin.options.sectionFooter %>
+<%= htmlWebpackPlugin.options.temp %>
+</body>
+</html>

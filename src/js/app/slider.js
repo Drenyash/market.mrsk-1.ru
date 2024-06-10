@@ -17,18 +17,18 @@ function createSliderWidthThumbs(el) {
     navigation: {
       nextEl: document.querySelector(".slider--control")?.querySelector("[data-slider-next]"),
       prevEl: document.querySelector(".slider--control")?.querySelector("[data-slider-prev]")
-    },
+    }
   });
   const swiperMain = new Swiper(el?.querySelector(".swiper"), {
     modules: [Thumbs],
     slidesPerView: "auto",
     spaceBetween: 30,
     thumbs: {
-      swiper: swiperThumbs,
+      swiper: swiperThumbs
     },
     breakpoints: {
       1200: {
-        slidesPerView: 1,
+        slidesPerView: 1
       }
     }
   });
@@ -57,6 +57,8 @@ function createSlider(el) {
   const effect = el.hasAttribute("data-slider-fade") ? "fade" : null;
   const timeline = document.querySelectorAll(".timeline__item");
   const articleHistory = document.querySelectorAll(".article-history");
+  const infoSlides = el.querySelectorAll("[data-picture-info]") || null;
+  const infoTitle = el.querySelector("[data-slider-title]") || null;
 
   function initSlider(el) {
     if (mobileOnly && mobile.matches) {
@@ -138,6 +140,7 @@ function createSlider(el) {
           const currentIndex = swiper.realIndex;
           timelineToggle(currentIndex, swiper);
           historyToggle(currentIndex);
+          changeInfo(currentIndex);
         },
         snapGridLengthChange: function() {
           if (timeline.length > 0) {
@@ -148,6 +151,11 @@ function createSlider(el) {
         }
       }
     });
+  }
+
+  function changeInfo(currentIndex) {
+    if (!infoTitle || !infoSlides) return;
+    infoTitle.textContent = infoSlides[currentIndex].dataset.pictureInfo;
   }
 
   function timelineToggle(currentIndex, swiper) {

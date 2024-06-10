@@ -332,6 +332,12 @@
     }
   }
 
+  &-16 {
+    @include r(1200) {
+      margin-bottom: rem(16);
+    }
+  }
+
   &-20 {
     @include r(1200) {
       margin-bottom: rem(20);

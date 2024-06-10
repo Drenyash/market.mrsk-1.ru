@@ -5,6 +5,12 @@
   }
   &__list {
     min-height: rem(150);
+
+    &--column {
+      .tabs__item {
+        flex-direction: column;
+      }
+    }
   }
 
   &__item {

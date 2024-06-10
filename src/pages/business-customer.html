@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <%= htmlWebpackPlugin.options.head %>
+  <title><%= htmlWebpackPlugin.options.title %></title>
+</head>
+<body class="body">
+<%= htmlWebpackPlugin.options.sectionHeader %>
+<main class="main main--gray">
+  <%= htmlWebpackPlugin.options.breadcrumbs %>
+  <section class="section mb-70">
+    <div class="container">
+      <div class="page-intro">
+        <picture class="page-intro__pic">
+          <img src="./assets/images/page-intro-bg.jpg" alt="">
+        </picture>
+        <div class="page-intro__content">
+          <h1 class="page-intro__title title title--light">Услуги бизнес-аналитики</h1>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section mb-40">
+    <div class="container">
+      <div class="columns">
+        <div class="columns__col--7 columns__col-tab--12">
+          <h2 class="title mb-20">Заказчики</h2>
+          <div class="subtitle">
+            <p>Региональный ситуационно-аналитический центр (РСАЦ) филиала ПАО «Россети Центр» - «Белгородэнерго»</p>
+          </div>
+        </div>
+        <div class="columns__col--12">
+          <div class="tabs tabs-about" data-tabs-container="services">
+            <div class="dropdown mbm-30" data-toggle>
+              <button class="dropdown__button">
+                <span>Выбрать услугу</span>
+                <svg class="dropdown__icon">
+                  <use xlink:href="./assets/sprite.svg#icon-arrow-empty"></use>
+                </svg>
+              </button>
+              <div class="dropdown__list">
+                <a href="./business-rsac.html" class="tabs__trigger tabs-about__trigger">
+                  <span class="tabs-about__trigger-text">О РСАЦ</span>
+                </a>
+                <a href="./business-decision.html" class="tabs__trigger tabs-about__trigger">
+                  <span class="tabs-about__trigger-text">Наши решения</span>
+                </a>
+                <a href="./business-customer.html" class="tabs__trigger tabs-about__trigger active">
+                  <span class="tabs-about__trigger-text">Заказчики</span>
+                </a>
+                <a href="./business-contacts.html" class="tabs__trigger tabs-about__trigger">
+                  <span class="tabs-about__trigger-text">Контакты</span>
+                </a>
+              </div>
+            </div>
+            <div class="tabs__controls tabs-about__controls mob-hidden">
+              <a href="./business-rsac.html" class="tabs__trigger tabs-about__trigger">
+                <span class="tabs-about__trigger-text">О РСАЦ</span>
+              </a>
+              <a href="./business-decision.html" class="tabs__trigger tabs-about__trigger">
+                <span class="tabs-about__trigger-text">Наши решения</span>
+              </a>
+              <a href="./business-customer.html" class="tabs__trigger tabs-about__trigger active">
+                <span class="tabs-about__trigger-text">Заказчики</span>
+              </a>
+              <a href="./business-contacts.html" class="tabs__trigger tabs-about__trigger">
+                <span class="tabs-about__trigger-text">Контакты</span>
+              </a>
+            </div>
+            <div class="tabs__list tabs__list--column">
+              <div class="tabs__item active">
+                <div class="columns">
+                  <div class="columns__col--6 columns__col-tab--12">
+                    <div class="editor editor--light mb-60 mbm-16">
+                      <p><strong>За 4 года успешной работы Региональным ситуационно-аналитическим центром разработаны
+                        аналитические
+                        материалы как для органов власти, так и для субъектов хозяйствования.</strong><br>
+                        <br>
+                        <strong>Среди наших заказчиков:</strong>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="columns mob-hidden mb-30">
+                  <div class="columns__col--2">
+                    <article class="article-preview">
+                      <div class="article-preview__wrapper">
+                        <picture class="article-preview__picture">
+                          <img src="./assets/images/logo-1.png" alt="">
+                        </picture>
+                      </div>
+                      <p class="article-preview__text">Правительство Белгородской области</p>
+                    </article>
+                  </div>
+                  <div class="columns__col--2">
+                    <article class="article-preview">
+                      <div class="article-preview__wrapper">
+                        <picture class="article-preview__picture">
+                          <img src="./assets/images/logo-1.png" alt="">
+                        </picture>
+                      </div>
+                      <p class="article-preview__text">Администрации муниципальных образований Белгородской области</p>
+                    </article>
+                  </div>
+                  <div class="columns__col--2">
+                    <article class="article-preview">
+                      <div class="article-preview__wrapper">
+                        <picture class="article-preview__picture">
+                          <img src="./assets/images/logo-2.png" alt="">
+                        </picture>
+                      </div>
+                      <p class="article-preview__text">ГУП «Белоблводоканал»</p>
+                    </article>
+                  </div>
+                  <div class="columns__col--2">
+                    <article class="article-preview">
+                      <div class="article-preview__wrapper">
+                        <picture class="article-preview__picture">
+                          <img src="./assets/images/logo-3.png" alt="">
+                        </picture>
+                      </div>
+                      <p class="article-preview__text">ООО «РУСАГРО-Белгород»</p>
+                    </article>
+                  </div>
+                  <div class="columns__col--2">
+                    <article class="article-preview">
+                      <div class="article-preview__wrapper">
+                        <picture class="article-preview__picture">
+                          <img src="./assets/images/logo-3.png" alt="">
+                        </picture>
+                      </div>
+                      <p class="article-preview__text">ООО «РУСАГРО ИНВЕСТ»</p>
+                    </article>
+                  </div>
+                  <div class="columns__col--2">
+                    <article class="article-preview">
+                      <div class="article-preview__wrapper">
+                        <picture class="article-preview__picture">
+                          <img src="./assets/images/logo-4.png" alt="">
+                        </picture>
+                      </div>
+                      <p class="article-preview__text">ООО «Инстех»</p>
+                    </article>
+                  </div>
+                  <div class="columns__col--2">
+                    <article class="article-preview">
+                      <div class="article-preview__wrapper">
+                        <picture class="article-preview__picture">
+                          <img src="./assets/images/logo-5.png" alt="">
+                        </picture>
+                      </div>
+                      <p class="article-preview__text">ООО «Селекционно-гибридный Центр»</p>
+                    </article>
+                  </div>
+                  <div class="columns__col--2">
+                    <article class="article-preview">
+                      <div class="article-preview__wrapper">
+                        <picture class="article-preview__picture">
+                          <img src="./assets/images/logo-6.png" alt="">
+                        </picture>
+                      </div>
+                      <p class="article-preview__text">ООО «Вторсырье»;</p>
+                    </article>
+                  </div>
+                </div>
+                <div class="slider slider--auto desktop-hidden mb-30" data-slider data-loop>
+                  <div class="swiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <article class="article-preview">
+                          <div class="article-preview__wrapper">
+                            <picture class="article-preview__picture">
+                              <img src="./assets/images/logo-1.png" alt="">
+                            </picture>
+                          </div>
+                          <p class="article-preview__text">Правительство Белгородской области</p>
+                        </article>
+                      </div>
+                      <div class="swiper-slide">
+                        <article class="article-preview">
+                          <div class="article-preview__wrapper">
+                            <picture class="article-preview__picture">
+                              <img src="./assets/images/logo-1.png" alt="">
+                            </picture>
+                          </div>
+                          <p class="article-preview__text">Администрации муниципальных образований Белгородской
+                            области</p>
+                        </article>
+                      </div>
+                      <div class="swiper-slide">
+                        <article class="article-preview">
+                          <div class="article-preview__wrapper">
+                            <picture class="article-preview__picture">
+                              <img src="./assets/images/logo-2.png" alt="">
+                            </picture>
+                          </div>
+                          <p class="article-preview__text">ГУП «Белоблводоканал»</p>
+                        </article>
+                      </div>
+                      <div class="swiper-slide">
+                        <article class="article-preview">
+                          <div class="article-preview__wrapper">
+                            <picture class="article-preview__picture">
+                              <img src="./assets/images/logo-3.png" alt="">
+                            </picture>
+                          </div>
+                          <p class="article-preview__text">ООО «РУСАГРО-Белгород»</p>
+                        </article>
+                      </div>
+                      <div class="swiper-slide">
+                        <article class="article-preview">
+                          <div class="article-preview__wrapper">
+                            <picture class="article-preview__picture">
+                              <img src="./assets/images/logo-3.png" alt="">
+                            </picture>
+                          </div>
+                          <p class="article-preview__text">ООО «РУСАГРО ИНВЕСТ»</p>
+                        </article>
+                      </div>
+                      <div class="swiper-slide">
+                        <article class="article-preview">
+                          <div class="article-preview__wrapper">
+                            <picture class="article-preview__picture">
+                              <img src="./assets/images/logo-4.png" alt="">
+                            </picture>
+                          </div>
+                          <p class="article-preview__text">ООО «Инстех»</p>
+                        </article>
+                      </div>
+                      <div class="swiper-slide">
+                        <article class="article-preview">
+                          <div class="article-preview__wrapper">
+                            <picture class="article-preview__picture">
+                              <img src="./assets/images/logo-5.png" alt="">
+                            </picture>
+                          </div>
+                          <p class="article-preview__text">ООО «Селекционно-гибридный Центр»</p>
+                        </article>
+                      </div>
+                      <div class="swiper-slide">
+                        <article class="article-preview">
+                          <div class="article-preview__wrapper">
+                            <picture class="article-preview__picture">
+                              <img src="./assets/images/logo-6.png" alt="">
+                            </picture>
+                          </div>
+                          <p class="article-preview__text">ООО «Вторсырье»;</p>
+                        </article>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<%= htmlWebpackPlugin.options.sectionFooter %>
+<%= htmlWebpackPlugin.options.temp %>
+</body>
+</html>
