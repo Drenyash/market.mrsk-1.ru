@@ -5305,11 +5305,12 @@ svg {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 1rem 1.25rem;
+  padding: 1rem 1.5rem;
   background-color: #004072;
   border-radius: 0.75rem;
   color: #FFFFFF;
   font-size: 1.125rem;
+  text-align: center;
 }
 .modal__success-icon {
   display: block;

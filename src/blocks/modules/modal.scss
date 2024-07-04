@@ -204,11 +204,12 @@
   &__button {
     display: flex;
     justify-content: center;
-    padding: rem(16) rem(20);
+    padding: rem(16) rem(24);
     background-color: #004072;
     border-radius: rem(12);
     color: #FFFFFF;
     font-size: rem(18);
+    text-align: center;
   }
 
   &__success-icon {
