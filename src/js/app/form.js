@@ -45,7 +45,7 @@ class Form {
             el.focus();
           }
         } else if (el.type === "tel") {
-          if (el.value.length < 17) {
+          if (el.value.length < 18) {
             el.setAttribute("data-valid", false);
             errorMsg.removeAttribute("hidden");
             this.form.setAttribute("data-form-valid", false);
