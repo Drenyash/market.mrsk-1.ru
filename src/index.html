@@ -8,29 +8,903 @@
 
 <body class="body">
 <%= htmlWebpackPlugin.options.sectionHeader %>
-<main class="main">
-  <section class="section intro mb-120 mbm-60">
-    <div class="intro__container">
-      <div class="container">
-        <div class="columns">
-          <div class="columns__col--6 columns__col-mob--12">
-            <h1 class="intro__title title">Технологическое присоединение <br class="mob-hidden"> под ключ, просто и
-              надёжно
-            </h1>
-            <p class="intro__subtitle">Услуга по выполнению мероприятий, включенных в технические условия договора
-              технологического присоединения со стороны потребителя</p>
-            <button class="intro__button button" data-fancybox data-src="#modalTechConnectionStart">Оформить заявку
-            </button>
+<main class="main main--gray">
+  <section class="section pt-20 pb-100 pbm-70" id="services" data-observ>
+    <div class="container">
+      <div class="preview">
+        <div class="preview__item preview__item--main">
+          <div class="preview__info">
+            <div class="preview__top">
+              <h2 class="preview__title">
+                Дополнительные<br>
+                услуги и сервисы
+              </h2>
+              <p class="preview__text">
+                <span>“Россети Центр” и “Россети Центр и Приволжье”</span> предлагают перечень дополнительных услуг в
+                рамках обслуживания электросетевого хозяйства
+              </p>
+            </div>
+            <div class="preview__content">
+              <p class="preview__head">
+                Основные показатели деятельности
+              </p>
+              <div class="preview__stats-block stats-block">
+                <div class="stats-block__item">
+                  <p class="stats-block__counter" data-num="20000">><span>20 000</span></p>
+                  <p class="stats-block__text">
+                    Выполнено договоров технологического<br>
+                    присоединения под ключ для заявителей до 15 кв.
+                  </p>
+                </div>
+                <div class="stats-block__item">
+                  <p class="stats-block__counter" data-num="1000000">><span>1 000 000</span></p>
+                  <p class="stats-block__text">
+                    Общее количество<br>
+                    обслуживаемых светоточек
+                  </p>
+                </div>
+              </div>
+              <div class="preview__list">
+                <article class="article-preview-intro active" data-tab="1">
+                  <svg class="article-preview-intro__icon">
+                    <use xlink:href="./assets/sprite.svg#icon-plug"></use>
+                  </svg>
+                  <h3 class="article-preview-intro__title">Технологическое<br> присоединение под ключ</h3>
+                </article>
+                <article class="article-preview-intro" data-tab="2">
+                  <svg class="article-preview-intro__icon">
+                    <use xlink:href="./assets/sprite.svg#icon-bulb-2"></use>
+                  </svg>
+                  <h3 class="article-preview-intro__title">Наружное освещение</h3>
+                </article>
+                <article class="article-preview-intro" data-tab="3">
+                  <svg class="article-preview-intro__icon">
+                    <use xlink:href="./assets/sprite.svg#icon-zap"></use>
+                  </svg>
+                  <h3 class="article-preview-intro__title">Обслуживание и испытание<br> электрооборудования</h3>
+                </article>
+                <article class="article-preview-intro" data-tab="4">
+                  <svg class="article-preview-intro__icon">
+                    <use xlink:href="./assets/sprite.svg#icon-check"></use>
+                  </svg>
+                  <h3 class="article-preview-intro__title">Согласование проектной<br> документации</h3>
+                </article>
+                <article class="article-preview-intro" data-tab="5">
+                  <svg class="article-preview-intro__icon">
+                    <use xlink:href="./assets/sprite.svg#icon-lorry-2"></use>
+                  </svg>
+                  <h3 class="article-preview-intro__title">Аренда техники</h3>
+                </article>
+                <article class="article-preview-intro" data-tab="6">
+                  <svg class="article-preview-intro__icon">
+                    <use xlink:href="./assets/sprite.svg#icon-tower"></use>
+                  </svg>
+                  <h3 class="article-preview-intro__title">Строительство и реконструкция<br> электросетевых объектов</h3>
+                </article>
+                <article class="article-preview-intro" data-tab="7">
+                  <svg class="article-preview-intro__icon">
+                    <use xlink:href="./assets/sprite.svg#icon-check"></use>
+                  </svg>
+                  <h3 class="article-preview-intro__title">Услуги аналитики</h3>
+                </article>
+                <article class="article-preview-intro" data-tab="8">
+                  <svg class="article-preview-intro__icon">
+                    <use xlink:href="./assets/sprite.svg#icon-zap"></use>
+                  </svg>
+                  <h3 class="article-preview-intro__title">Подвеска ВОЛС</h3>
+                </article>
+              </div>
+            </div>
+          </div>
+          <div class="preview__detail">
+            <div class="preview__slider active slider" data-slider-slides="1" data-slider-slides-tab="1" data-slider
+                 data-auto>
+              <div class="swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <article class="article-slide">
+                      <picture class="article-slide__picture">
+                        <img src="./assets/images/slide-1.jpg" alt="">
+                      </picture>
+                      <div class="article-slide__info">
+                        <h2 class="article-slide__title">Наши преимущества</h2>
+                      </div>
+                      <div class="article-slide__detail">
+                        <p class="article-slide__head">
+                          Качество выполнения
+                        </p>
+                        <p class="article-slide__text">
+                          Мы выполняем работы с неизменно высоким качеством, чтобы Вы могли быть уверены в надежности
+                          результата
+                        </p>
+                      </div>
+                    </article>
+                  </div>
+                  <div class="swiper-slide">
+                    <article class="article-slide">
+                      <picture class="article-slide__picture">
+                        <img src="./assets/images/build.jpg" alt="">
+                      </picture>
+                      <div class="article-slide__info">
+                        <h2 class="article-slide__title">Наши преимущества</h2>
+                      </div>
+                      <div class="article-slide__detail">
+                        <p class="article-slide__head">
+                          Качество выполнения
+                        </p>
+                        <p class="article-slide__text">
+                          Мы выполняем работы с неизменно высоким качеством, чтобы Вы могли быть уверены в надежности
+                          результата
+                        </p>
+                      </div>
+                    </article>
+                  </div>
+                  <div class="swiper-slide">
+                    <article class="article-slide">
+                      <picture class="article-slide__picture">
+                        <img src="./assets/images/service.jpg" alt="">
+                      </picture>
+                      <div class="article-slide__info">
+                        <h2 class="article-slide__title">Наши преимущества</h2>
+                      </div>
+                      <div class="article-slide__detail">
+                        <p class="article-slide__head">
+                          Качество выполнения
+                        </p>
+                        <p class="article-slide__text">
+                          Мы выполняем работы с неизменно высоким качеством, чтобы Вы могли быть уверены в надежности
+                          результата
+                        </p>
+                      </div>
+                    </article>
+                  </div>
+                </div>
+                <div class="slider__pagination" data-slider-pagination></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="preview__item" data-content="1">
+          <div class="preview__info">
+            <div class="preview__top">
+              <div class="preview__back">
+                <svg>
+                  <use xlink:href="./assets/sprite.svg#icon-back"></use>
+                </svg>
+                <span>Назад</span>
+              </div>
+              <h2 class="preview__title">
+                Технологическое присоединение<br>
+                «Под ключ» - просто и надежно
+              </h2>
+              <p class="preview__text">
+                Комплекс работ по выполнению технических условий по договору<br>
+                технологического присоединения на стороне клиента.
+              </p>
+            </div>
+            <div class="preview__content">
+              <div class="editor editor--preview">
+                <h3>ПАО «Россети Центр», ПАО «Россети Центр» в рамках оказания услуги выполнит:</h3>
+                <ul>
+                  <li>- Монтаж провода ВЛ 0,38 кВ;</li>
+                  <li>- Сборка/монтаж распределительного щита;</li>
+                  <li>- Монтаж/испытание/измерение контура заземления;</li>
+                  <li>- Установка одностоечной железобетонной опоры ВЛ 0,38 кВ.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="preview__control">
+              <a href="#" class="preview__button preview__button--blue">Оформить заявку</a>
+              <button class="preview__button" data-content-show-btn>
+                Узнать про услугу
+                <svg>
+                  <use xlink:href="./assets/sprite.svg#icon-back"></use>
+                </svg>
+              </button>
+              <button class="preview__button preview__button--full" data-fancybox data-src="technical-request"
+                      data-type="inline">Рассчитать стоимость услуг
+              </button>
+            </div>
+          </div>
+          <div class="preview__detail">
+            <picture class="preview__picture">
+              <img src="./assets/images/tp_pod_kluch.jpg" alt="">
+            </picture>
+            <ol class="preview__items" data-content-show>
+              <li class="preview__element">1. Подали заявку на технологическое присоединение на <a href="#">Портале ТП
+                РФ</a></li>
+              <li class="preview__element">2. Получили договор технологического присоединения</li>
+              <li class="preview__element">3. Ознакомились с мероприятиями для выполнения с Вашей стороны</li>
+              <li class="preview__element">4. Направили заявку на выполнение Ваших мероприятий по договору</li>
+              <li class="preview__element">5. Качественно и быстро подключились к сетям</li>
+            </ol>
+          </div>
+        </div>
+        <div class="preview__item" data-content="2">
+          <div class="preview__info">
+            <div class="preview__top">
+              <div class="preview__back">
+                <svg>
+                  <use xlink:href="./assets/sprite.svg#icon-back"></use>
+                </svg>
+                <span>Назад</span>
+              </div>
+              <h2 class="preview__title">
+                Услуга организации наружного освещения
+              </h2>
+              <p class="preview__text">
+                Комплекс работ по выполнению технических условий по договору<br>
+                технологического присоединения на стороне клиента.
+              </p>
+            </div>
+            <div class="preview__content">
+              <div class="editor editor--preview">
+                <h3>ПАО «Россети Центр», ПАО «Россети Центр» в рамках оказания услуги выполнит:</h3>
+                <ul>
+                  <li>- Монтаж провода ВЛ 0,38 кВ;</li>
+                  <li>- Сборка/монтаж распределительного щита;</li>
+                  <li>- Монтаж/испытание/измерение контура заземления;</li>
+                  <li>- Установка одностоечной железобетонной опоры ВЛ 0,38 кВ.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="preview__control">
+              <a href="#" class="preview__button preview__button--blue" data-fancybox data-src="request"
+                 data-type="inline">Оформить заявку</a>
+              <button class="preview__button" data-content-show-btn>
+                Узнать про услугу
+                <svg>
+                  <use xlink:href="./assets/sprite.svg#icon-back"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="preview__detail">
+            <picture class="preview__picture">
+              <img src="./assets/images/outside_light.jpg" alt="">
+            </picture>
+            <ol class="preview__items" data-content-show>
+              <li class="preview__element">1. Направили заявку на оказание услуги</li>
+              <li class="preview__element">2. Заключили договор</li>
+              <li class="preview__element">
+                3. Получили качественно и быстро<br>
+                выполненные работы по договору
+              </li>
+            </ol>
+          </div>
+        </div>
+        <div class="preview__item" data-content="3">
+          <div class="preview__info">
+            <div class="preview__top">
+              <div class="preview__back">
+                <svg>
+                  <use xlink:href="./assets/sprite.svg#icon-back"></use>
+                </svg>
+                <span>Назад</span>
+              </div>
+              <h2 class="preview__title">
+                Услуга организации наружного освещения
+              </h2>
+              <p class="preview__text">
+                Комплекс работ по выполнению технических условий по договору<br>
+                технологического присоединения на стороне клиента.
+              </p>
+            </div>
+            <div class="preview__content">
+              <div class="editor editor--preview">
+                <h3>ПАО «Россети Центр», ПАО «Россети Центр» в рамках оказания услуги выполнит:</h3>
+                <ul>
+                  <li>- Монтаж провода ВЛ 0,38 кВ;</li>
+                  <li>- Сборка/монтаж распределительного щита;</li>
+                  <li>- Монтаж/испытание/измерение контура заземления;</li>
+                  <li>- Установка одностоечной железобетонной опоры ВЛ 0,38 кВ.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="preview__control">
+              <a href="#" class="preview__button preview__button--blue" data-fancybox data-src="request"
+                 data-type="inline">Оформить заявку</a>
+              <button class="preview__button" data-content-show-btn>
+                Узнать про услугу
+                <svg>
+                  <use xlink:href="./assets/sprite.svg#icon-back"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="preview__detail">
+            <picture class="preview__picture">
+              <img src="./assets/images/service.jpg" alt="">
+            </picture>
+            <ol class="preview__items" data-content-show>
+              <li class="preview__element">1. Направили заявку на оказание услуги</li>
+              <li class="preview__element">2. Заключили договор</li>
+              <li class="preview__element">
+                3. Получили качественно и быстро<br>
+                выполненные работы по договору
+              </li>
+            </ol>
+          </div>
+        </div>
+        <div class="preview__item" data-content="4">
+          <div class="preview__info">
+            <div class="preview__top">
+              <div class="preview__back">
+                <svg>
+                  <use xlink:href="./assets/sprite.svg#icon-back"></use>
+                </svg>
+                <span>Назад</span>
+              </div>
+              <h2 class="preview__title">
+                Услуга организации наружного освещения
+              </h2>
+              <p class="preview__text">
+                Комплекс работ по выполнению технических условий по договору<br>
+                технологического присоединения на стороне клиента.
+              </p>
+            </div>
+            <div class="preview__content">
+              <div class="editor editor--preview">
+                <h3>ПАО «Россети Центр», ПАО «Россети Центр» в рамках оказания услуги выполнит:</h3>
+                <ul>
+                  <li>- Монтаж провода ВЛ 0,38 кВ;</li>
+                  <li>- Сборка/монтаж распределительного щита;</li>
+                  <li>- Монтаж/испытание/измерение контура заземления;</li>
+                  <li>- Установка одностоечной железобетонной опоры ВЛ 0,38 кВ.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="preview__control">
+              <a href="#" class="preview__button preview__button--blue" data-fancybox data-src="request"
+                 data-type="inline">Оформить заявку</a>
+              <button class="preview__button" data-content-show-btn>
+                Узнать про услугу
+                <svg>
+                  <use xlink:href="./assets/sprite.svg#icon-back"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="preview__detail">
+            <picture class="preview__picture">
+              <img src="./assets/images/docs.jpg" alt="">
+            </picture>
+            <ol class="preview__items" data-content-show>
+              <li class="preview__element">1. Направили заявку на оказание услуги</li>
+              <li class="preview__element">2. Заключили договор</li>
+              <li class="preview__element">
+                3. Получили качественно и быстро<br>
+                выполненные работы по договору
+              </li>
+            </ol>
+          </div>
+        </div>
+        <div class="preview__item" data-content="5">
+          <div class="preview__info">
+            <div class="preview__top">
+              <div class="preview__back">
+                <svg>
+                  <use xlink:href="./assets/sprite.svg#icon-back"></use>
+                </svg>
+                <span>Назад</span>
+              </div>
+              <h2 class="preview__title">
+                Услуга организации наружного освещения
+              </h2>
+              <p class="preview__text">
+                Комплекс работ по выполнению технических условий по договору<br>
+                технологического присоединения на стороне клиента.
+              </p>
+            </div>
+            <div class="preview__content">
+              <div class="editor editor--preview">
+                <h3>ПАО «Россети Центр», ПАО «Россети Центр» в рамках оказания услуги выполнит:</h3>
+                <ul>
+                  <li>- Монтаж провода ВЛ 0,38 кВ;</li>
+                  <li>- Сборка/монтаж распределительного щита;</li>
+                  <li>- Монтаж/испытание/измерение контура заземления;</li>
+                  <li>- Установка одностоечной железобетонной опоры ВЛ 0,38 кВ.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="preview__control">
+              <a href="#" class="preview__button preview__button--blue" data-fancybox data-src="request"
+                 data-type="inline">Оформить заявку</a>
+              <button class="preview__button" data-content-show-btn>
+                Узнать про услугу
+                <svg>
+                  <use xlink:href="./assets/sprite.svg#icon-back"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="preview__detail">
+            <picture class="preview__picture">
+              <img src="./assets/images/vehicle.JPG" alt="">
+            </picture>
+            <ol class="preview__items" data-content-show>
+              <li class="preview__element">1. Направили заявку на оказание услуги</li>
+              <li class="preview__element">2. Заключили договор</li>
+              <li class="preview__element">
+                3. Получили качественно и быстро<br>
+                выполненные работы по договору
+              </li>
+            </ol>
+          </div>
+        </div>
+        <div class="preview__item" data-content="6">
+          <div class="preview__info">
+            <div class="preview__top">
+              <div class="preview__back">
+                <svg>
+                  <use xlink:href="./assets/sprite.svg#icon-back"></use>
+                </svg>
+                <span>Назад</span>
+              </div>
+              <h2 class="preview__title">
+                Услуга организации наружного освещения
+              </h2>
+              <p class="preview__text">
+                Комплекс работ по выполнению технических условий по договору<br>
+                технологического присоединения на стороне клиента.
+              </p>
+            </div>
+            <div class="preview__content">
+              <div class="editor editor--preview">
+                <h3>ПАО «Россети Центр», ПАО «Россети Центр» в рамках оказания услуги выполнит:</h3>
+                <ul>
+                  <li>- Монтаж провода ВЛ 0,38 кВ;</li>
+                  <li>- Сборка/монтаж распределительного щита;</li>
+                  <li>- Монтаж/испытание/измерение контура заземления;</li>
+                  <li>- Установка одностоечной железобетонной опоры ВЛ 0,38 кВ.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="preview__control">
+              <a href="#" class="preview__button preview__button--blue" data-fancybox data-src="request"
+                 data-type="inline">Оформить заявку</a>
+              <button class="preview__button" data-content-show-btn>
+                Узнать про услугу
+                <svg>
+                  <use xlink:href="./assets/sprite.svg#icon-back"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="preview__detail">
+            <picture class="preview__picture">
+              <img src="./assets/images/build.jpg" alt="">
+            </picture>
+            <ol class="preview__items" data-content-show>
+              <li class="preview__element">1. Направили заявку на оказание услуги</li>
+              <li class="preview__element">2. Заключили договор</li>
+              <li class="preview__element">
+                3. Получили качественно и быстро<br>
+                выполненные работы по договору
+              </li>
+            </ol>
+          </div>
+        </div>
+        <div class="preview__item" data-content="7">
+          <div class="preview__info">
+            <div class="preview__top">
+              <div class="preview__back">
+                <svg>
+                  <use xlink:href="./assets/sprite.svg#icon-back"></use>
+                </svg>
+                <span>Назад</span>
+              </div>
+              <h2 class="preview__title">
+                Услуга организации наружного освещения
+              </h2>
+              <p class="preview__text">
+                Комплекс работ по выполнению технических условий по договору<br>
+                технологического присоединения на стороне клиента.
+              </p>
+            </div>
+            <div class="preview__content">
+              <div class="editor editor--preview">
+                <h3>ПАО «Россети Центр», ПАО «Россети Центр» в рамках оказания услуги выполнит:</h3>
+                <ul>
+                  <li>- Монтаж провода ВЛ 0,38 кВ;</li>
+                  <li>- Сборка/монтаж распределительного щита;</li>
+                  <li>- Монтаж/испытание/измерение контура заземления;</li>
+                  <li>- Установка одностоечной железобетонной опоры ВЛ 0,38 кВ.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="preview__control">
+              <a href="#" class="preview__button preview__button--blue" data-fancybox data-src="request"
+                 data-type="inline">Оформить заявку</a>
+              <button class="preview__button" data-content-show-btn>
+                Узнать про услугу
+                <svg>
+                  <use xlink:href="./assets/sprite.svg#icon-back"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="preview__detail">
+            <picture class="preview__picture">
+              <img src="./assets/images/analytics.jpg" alt="">
+            </picture>
+            <ol class="preview__items" data-content-show>
+              <li class="preview__element">1. Направили заявку на оказание услуги</li>
+              <li class="preview__element">2. Заключили договор</li>
+              <li class="preview__element">
+                3. Получили качественно и быстро<br>
+                выполненные работы по договору
+              </li>
+            </ol>
+          </div>
+        </div>
+        <div class="preview__item" data-content="8">
+          <div class="preview__info">
+            <div class="preview__top">
+              <div class="preview__back">
+                <svg>
+                  <use xlink:href="./assets/sprite.svg#icon-back"></use>
+                </svg>
+                <span>Назад</span>
+              </div>
+              <h2 class="preview__title">
+                Услуга организации наружного освещения
+              </h2>
+              <p class="preview__text">
+                Комплекс работ по выполнению технических условий по договору<br>
+                технологического присоединения на стороне клиента.
+              </p>
+            </div>
+            <div class="preview__content">
+              <div class="editor editor--preview">
+                <h3>ПАО «Россети Центр», ПАО «Россети Центр» в рамках оказания услуги выполнит:</h3>
+                <ul>
+                  <li>- Монтаж провода ВЛ 0,38 кВ;</li>
+                  <li>- Сборка/монтаж распределительного щита;</li>
+                  <li>- Монтаж/испытание/измерение контура заземления;</li>
+                  <li>- Установка одностоечной железобетонной опоры ВЛ 0,38 кВ.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="preview__control">
+              <a href="#" class="preview__button preview__button--blue" data-fancybox data-src="request"
+                 data-type="inline">Оформить заявку</a>
+              <button class="preview__button" data-content-show-btn>
+                Узнать про услугу
+                <svg>
+                  <use xlink:href="./assets/sprite.svg#icon-back"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="preview__detail">
+            <picture class="preview__picture">
+              <img src="./assets/images/vols.jpg" alt="">
+            </picture>
+            <ol class="preview__items" data-content-show>
+              <li class="preview__element">1. Направили заявку на оказание услуги</li>
+              <li class="preview__element">2. Заключили договор</li>
+              <li class="preview__element">
+                3. Получили качественно и быстро<br>
+                выполненные работы по договору
+              </li>
+            </ol>
           </div>
         </div>
       </div>
     </div>
   </section>
-  <section class="section mb-130 mbm-90">
+  <section class="section pb-100 pbm-70" id="about" data-observ>
     <div class="container">
-      <h2 class="title mb-30">Услуги компании “Россети”</h2>
-      <div class="tabs tabs-about" data-tabs-container="services">
-        <div class="dropdown mbm-30" data-toggle>
+      <div class="container">
+        <h1 class="title mb-25">О компании</h1>
+        <div class="columns">
+          <div class="columns__col--4 columns__col-tab--12">
+            <div class="info-block__heading">
+              <div class="info-block__subtitle">
+                <p>Технологическое присоединение – комплексная услуга, оказываемая сетевыми компаниями юридическим и
+                  физическим лицам для выдачи электрической мощности.</p>
+                <p>Предусматривающая фактическое присоединение энергопринимающих устройств (энергетических установок)
+                  потребителей к объектам электросетевого хозяйства.</p>
+              </div>
+            </div>
+          </div>
+          <div class="columns__col--1 tab-hidden"></div>
+          <div class="columns__col--5 columns__col-tab--12">
+            <div class="info-block__content">
+              <p>Группа «Россети» – один из крупнейших в мире электросетевых холдингов, обеспечивающий электроснабжение
+                потребителей в 82 регионах России. В управлении находятся 2,47 млн км линий электропередачи и
+                электрические подстанции общей мощностью 835 тыс. МВА. По сетям Группы «Россети» передается более 77%
+                всей
+                вырабатываемой в стране электроэнергии.<br>
+                <br>
+                В состав Группы входят 43 дочерних и зависимых общества, в том числе 16 распределительных сетевых
+                компаний. Общая численность персонала составляет порядка 230 тыс. человек.<br>
+                <br>
+                Контролирующим акционером материнской компании – ПАО «Россети» – является государство в лице
+                Федерального
+                агентства по управлению государственным имуществом.</p>
+              <hr>
+            </div>
+            <div class="stats">
+              <div class="stats__item">
+                <h2 class="stats__title">
+                  82<span>региона РФ</span>
+                </h2>
+                <p class="stats__text">география деятельности</p>
+              </div>
+              <div class="stats__item">
+                <h2 class="stats__title">
+                  2,47<span>млн км</span>
+                </h2>
+                <p class="stats__text">протяженность линий электропередачи</p>
+              </div>
+              <div class="stats__item">
+                <h2 class="stats__title">
+                  835<span>ГВА</span>
+                </h2>
+                <p class="stats__text">трансформаторная мощность</p>
+              </div>
+              <div class="stats__item">
+                <h2 class="stats__title">
+                  560<span>тыс.</span>
+                </h2>
+                <p class="stats__text">подстанция и трансформаторных подстанций</p>
+              </div>
+              <div class="stats__item">
+                <h2 class="stats__title">
+                  230<span>тыс.</span>
+                </h2>
+                <p class="stats__text">сотрудников</p>
+              </div>
+              <div class="stats__item">
+                <h2 class="stats__title">
+                  77%
+                </h2>
+                <p class="stats__text">вырабатываемой в РФ электроэнергии передается по нашим сетям</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section pb-100 pbm-70" id="questions" data-observ>
+    <div class="container">
+      <div class="container">
+        <h1 class="title mb-25">Вопросы Россети Центр</h1>
+        <div class="columns">
+          <div class="columns__col--4 columns__col-tab--12">
+            <div class="info-block__heading">
+              <div class="info-block__subtitle">
+                <p>Технологическое присоединение – комплексная услуга, оказываемая сетевыми компаниями юридическим и
+                  физическим лицам для выдачи электрической мощности.</p>
+              </div>
+            </div>
+          </div>
+          <div class="columns__col--1 tab-hidden"></div>
+          <div class="columns__col--6 columns__col-tab--12">
+            <div class="faq">
+              <div class="faq__item">
+                <div class="faq__header">
+                  <p class="faq__title">В какую сетевую организацию должны подаваться заявки?</p>
+                  <button class="faq__button"></button>
+                </div>
+                <div class="faq__content">
+                  <p>
+                    Заявки на технологическое присоединение, увеличение ранее присоединенной мощности, изменение
+                    категории надежности электроснабжения, изменение точки присоединения, изменение схемы внешнего
+                    электроснабжения должны направляться в сетевую компанию, объекты электросетевого хозяйства которой
+                    расположены на наименьшем расстоянии от границ участка заявителя. Если на расстоянии менее 300
+                    метров от границ участка заявителя находятся объекты электросетевого хозяйства нескольких сетевых
+                    организаций, заявитель вправе направить заявку в любую из них (за исключением заявителей, имеющих
+                    намерение осуществить технологическое присоединение энергопринимающих устройств по индивидуальному
+                    проекту).<br>
+                    <br>
+                    Иные заявки (на переоформление / подтверждение мощности и пр.) подаются в сетевые организации, к
+                    объектам электросетевого хозяйства которых присоединены энергопринимающие устройства заявителей.<br>
+                    <br>
+                    Информация о принадлежности объекта электросетевого хозяйства той или иной сетевой организации
+                    предоставляется в органах местного самоуправления в течение 15 дней с момента поступления
+                    соответствующего запроса.
+                  </p>
+                </div>
+              </div>
+              <div class="faq__item">
+                <div class="faq__header">
+                  <p class="faq__title">Что понимается под мероприятиями по технологическому присоединению энергопринимающих устройств к электрическим сетям?</p>
+                  <button class="faq__button"></button>
+                </div>
+                <div class="faq__content">
+                  <p>
+                    Заявки на технологическое присоединение, увеличение ранее присоединенной мощности, изменение
+                    категории надежности электроснабжения, изменение точки присоединения, изменение схемы внешнего
+                    электроснабжения должны направляться в сетевую компанию, объекты электросетевого хозяйства которой
+                    расположены на наименьшем расстоянии от границ участка заявителя. Если на расстоянии менее 300
+                    метров от границ участка заявителя находятся объекты электросетевого хозяйства нескольких сетевых
+                    организаций, заявитель вправе направить заявку в любую из них (за исключением заявителей, имеющих
+                    намерение осуществить технологическое присоединение энергопринимающих устройств по индивидуальному
+                    проекту).<br>
+                    <br>
+                    Иные заявки (на переоформление / подтверждение мощности и пр.) подаются в сетевые организации, к
+                    объектам электросетевого хозяйства которых присоединены энергопринимающие устройства заявителей.<br>
+                    <br>
+                    Информация о принадлежности объекта электросетевого хозяйства той или иной сетевой организации
+                    предоставляется в органах местного самоуправления в течение 15 дней с момента поступления
+                    соответствующего запроса.
+                  </p>
+                </div>
+              </div>
+              <div class="faq__item">
+                <div class="faq__header">
+                  <p class="faq__title">Каким образом осуществляется оплата технологического присоединения?</p>
+                  <button class="faq__button"></button>
+                </div>
+                <div class="faq__content">
+                  <p>
+                    Заявки на технологическое присоединение, увеличение ранее присоединенной мощности, изменение
+                    категории надежности электроснабжения, изменение точки присоединения, изменение схемы внешнего
+                    электроснабжения должны направляться в сетевую компанию, объекты электросетевого хозяйства которой
+                    расположены на наименьшем расстоянии от границ участка заявителя. Если на расстоянии менее 300
+                    метров от границ участка заявителя находятся объекты электросетевого хозяйства нескольких сетевых
+                    организаций, заявитель вправе направить заявку в любую из них (за исключением заявителей, имеющих
+                    намерение осуществить технологическое присоединение энергопринимающих устройств по индивидуальному
+                    проекту).<br>
+                    <br>
+                    Иные заявки (на переоформление / подтверждение мощности и пр.) подаются в сетевые организации, к
+                    объектам электросетевого хозяйства которых присоединены энергопринимающие устройства заявителей.<br>
+                    <br>
+                    Информация о принадлежности объекта электросетевого хозяйства той или иной сетевой организации
+                    предоставляется в органах местного самоуправления в течение 15 дней с момента поступления
+                    соответствующего запроса.
+                  </p>
+                </div>
+              </div>
+              <div class="faq__item">
+                <div class="faq__header">
+                  <p class="faq__title">Как подать заявку на оказание услуги «ТП под ключ»?</p>
+                  <button class="faq__button"></button>
+                </div>
+                <div class="faq__content">
+                  <p>
+                    Заявки на технологическое присоединение, увеличение ранее присоединенной мощности, изменение
+                    категории надежности электроснабжения, изменение точки присоединения, изменение схемы внешнего
+                    электроснабжения должны направляться в сетевую компанию, объекты электросетевого хозяйства которой
+                    расположены на наименьшем расстоянии от границ участка заявителя. Если на расстоянии менее 300
+                    метров от границ участка заявителя находятся объекты электросетевого хозяйства нескольких сетевых
+                    организаций, заявитель вправе направить заявку в любую из них (за исключением заявителей, имеющих
+                    намерение осуществить технологическое присоединение энергопринимающих устройств по индивидуальному
+                    проекту).<br>
+                    <br>
+                    Иные заявки (на переоформление / подтверждение мощности и пр.) подаются в сетевые организации, к
+                    объектам электросетевого хозяйства которых присоединены энергопринимающие устройства заявителей.<br>
+                    <br>
+                    Информация о принадлежности объекта электросетевого хозяйства той или иной сетевой организации
+                    предоставляется в органах местного самоуправления в течение 15 дней с момента поступления
+                    соответствующего запроса.
+                  </p>
+                </div>
+              </div>
+              <div class="faq__item">
+                <div class="faq__header">
+                  <p class="faq__title">Что требуется от меня для оказания услуги?</p>
+                  <button class="faq__button"></button>
+                </div>
+                <div class="faq__content">
+                  <p>
+                    Заявки на технологическое присоединение, увеличение ранее присоединенной мощности, изменение
+                    категории надежности электроснабжения, изменение точки присоединения, изменение схемы внешнего
+                    электроснабжения должны направляться в сетевую компанию, объекты электросетевого хозяйства которой
+                    расположены на наименьшем расстоянии от границ участка заявителя. Если на расстоянии менее 300
+                    метров от границ участка заявителя находятся объекты электросетевого хозяйства нескольких сетевых
+                    организаций, заявитель вправе направить заявку в любую из них (за исключением заявителей, имеющих
+                    намерение осуществить технологическое присоединение энергопринимающих устройств по индивидуальному
+                    проекту).<br>
+                    <br>
+                    Иные заявки (на переоформление / подтверждение мощности и пр.) подаются в сетевые организации, к
+                    объектам электросетевого хозяйства которых присоединены энергопринимающие устройства заявителей.<br>
+                    <br>
+                    Информация о принадлежности объекта электросетевого хозяйства той или иной сетевой организации
+                    предоставляется в органах местного самоуправления в течение 15 дней с момента поступления
+                    соответствующего запроса.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section pb-100 pbm-70" id="contacts" data-observ>
+    <div class="container">
+      <div class="columns">
+        <div class="columns__col--4 columns__col-tab--12">
+          <h2 class="title mb-25">Контактная информация ПАО «Россети Центр» </h2>
+          <a class="contacts__link mb-50" href="https://yandex.ru/maps/-/CDq3N4K4">
+            <svg>
+              <use xlink:href="../assets/sprite.svg#icon-location"></use>
+            </svg>
+            <span>119017, Россия, г. Москва, ул. Малая Ордынка, д. 15</span>
+          </a>
+        </div>
+      </div>
+      <div class="columns">
+        <div class="columns__col--4 columns__col-tab--12">
+          <div class="contacts__wrapper">
+            <div class="contacts__item">
+              <p class="contacts__item-text">Телефон:</p>
+              <a href="tel:+70000000000" class="contacts__item-link">
+                <svg>
+                  <use xlink:href="../assets/sprite.svg#icon-tel"></use>
+                </svg>
+                <span>+7 (000) 000-00-00</span>
+              </a>
+            </div>
+            <div class="contacts__item">
+              <p class="contacts__item-text">Почта:</p>
+              <a href="mailto:posta@mrsk-1.ru" class="contacts__item-link">
+                <svg>
+                  <use xlink:href="../assets/sprite.svg#icon-mail"></use>
+                </svg>
+                <span>posta@mrsk-1.ru</span>
+              </a>
+            </div>
+            <div class="contacts__item">
+              <p class="contacts__item-text">Факс:</p>
+              <p class="contacts__item-link">
+                <svg>
+                  <use xlink:href="../assets/sprite.svg#icon-fax"></use>
+                </svg>
+                <span>+7 (495) 747-92-95</span>
+              </p>
+            </div>
+            <div class="contacts__item">
+              <p class="contacts__item-text">Реквизиты компании:</p>
+              <a href="tel:+70000000000" class="contacts__item-link">
+                <svg>
+                  <use xlink:href="../assets/sprite.svg#icon-doc"></use>
+                </svg>
+                <span>PDF - 0.2 МБ</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="columns__col--1 laptop-hidden"></div>
+        <div class="columns__col--4 columns__col-tab--12">
+          <div class="contacts__card contacts__card--light">
+            <div class="contacts__card-inner">
+              <p class="contacts__card-title">Центры обслуживания потребителей</p>
+              <p class="contacts__card-text">Адреса и режим работы центров обслуживания потребителейв регионах
+                присутствия</p>
+              <a href="#" class="contacts__card-button button">Перейти</a>
+            </div>
+          </div>
+        </div>
+        <div class="columns__col--3 columns__col-laptop--4 columns__col-tab--12">
+          <div class="contacts__card contacts__card--accent">
+            <div class="contacts__card-inner">
+              <div class="contacts__card-item">
+                <a href="tel:+78002200220" class="contacts__card-title">8 (800) 220-02-20</a>
+                <p class="contacts__card-item-text">Бесплатный номер телефона по вопросоам перерывов в передаче и
+                  качества электрической энергии</p>
+              </div>
+              <div class="contacts__card-item">
+                <a href="tel:13-50" class="contacts__card-title">13-50</a>
+                <p class="contacts__card-item-text">Контактный телефон для жителей регионов присутствия по вопросам
+                  технологического присоединения, передаче электрической энергии обслуживания потребителей.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section pb-100 pbm-70">
+    <div class="container">
+      <h3 class="title mb-40 mob-hidden">Филиалы</h3>
+      <div class="tabs tabs-address" data-tabs-container="address">
+        <div class="dropdown" data-toggle>
           <button class="dropdown__button">
             <span>Выбрать услугу</span>
             <svg class="dropdown__icon">
@@ -38,436 +912,706 @@
             </svg>
           </button>
           <div class="dropdown__list">
-            <button class="tabs__trigger tabs-about__trigger active" data-tabs-trigger="services" data-tabs="about-1">
-            <span class="tabs-about__trigger-icon">
-              <svg>
-                <use xlink:href="./assets/sprite.svg#icon-connection"></use>
-              </svg>
-            </span>
-              <span class="tabs-about__trigger-text">Технологическое присоединение под ключ</span>
+            <button class="tabs__trigger tabs-address__trigger" data-tabs-trigger="address"
+                    data-tabs="address-1">
+              <span class="tabs-address__trigger-text">Тверьэнерго</span>
             </button>
-            <button class="tabs__trigger tabs-about__trigger" data-tabs-trigger="services" data-tabs="about-2">
-            <span class="tabs-about__trigger-icon">
-               <svg>
-                <use xlink:href="./assets/sprite.svg#icon-lorry"></use>
-              </svg>
-            </span>
-              <span class="tabs-about__trigger-text">Аренда техники</span>
+            <button class="tabs__trigger tabs-address__trigger" data-tabs-trigger="address" data-tabs="address-2">
+              <span class="tabs-address__trigger-text">Брянскэнерго</span>
             </button>
-            <button class="tabs__trigger tabs-about__trigger" data-tabs-trigger="services" data-tabs="about-3">
-            <span class="tabs-about__trigger-icon">
-               <svg>
-                <use xlink:href="./assets/sprite.svg#icon-lightning"></use>
-              </svg>
-            </span>
-              <span class="tabs-about__trigger-text">Обслуживание электрооборудования</span>
+            <button class="tabs__trigger tabs-address__trigger" data-tabs-trigger="address" data-tabs="address-3">
+              <span class="tabs-address__trigger-text">Белгородэнерго</span>
             </button>
-            <button class="tabs__trigger tabs-about__trigger" data-tabs-trigger="services" data-tabs="about-4">
-            <span class="tabs-about__trigger-icon">
-               <svg>
-                <use xlink:href="./assets/sprite.svg#icon-bulb"></use>
-              </svg>
-            </span>
-              <span class="tabs-about__trigger-text">Наружное освещение</span>
+            <button class="tabs__trigger tabs-address__trigger" data-tabs-trigger="address" data-tabs="address-4">
+              <span class="tabs-address__trigger-text">Воронежэнерго</span>
             </button>
-            <button class="tabs__trigger tabs-about__trigger" data-tabs-trigger="services" data-tabs="about-5">
-            <span class="tabs-about__trigger-icon">
-               <svg>
-                <use xlink:href="./assets/sprite.svg#icon-list"></use>
-              </svg>
-            </span>
-              <span class="tabs-about__trigger-text">Выдача документации</span>
+            <button class="tabs__trigger tabs-address__trigger" data-tabs-trigger="address" data-tabs="address-5">
+              <span class="tabs-address__trigger-text">Костромаэнерго</span>
             </button>
-            <button class="tabs__trigger tabs-about__trigger" data-tabs-trigger="services" data-tabs="about-6">
-            <span class="tabs-about__trigger-icon">
-               <svg>
-                <use xlink:href="./assets/sprite.svg#icon-pillar"></use>
-              </svg>
-            </span>
-              <span class="tabs-about__trigger-text">Строительство линий</span>
+            <button class="tabs__trigger tabs-address__trigger" data-tabs-trigger="address" data-tabs="address-6">
+              <span class="tabs-address__trigger-text">Курскэнерго</span>
+            </button>
+            <button class="tabs__trigger tabs-address__trigger" data-tabs-trigger="address" data-tabs="address-7">
+              <span class="tabs-address__trigger-text">Липецкэнерго</span>
+            </button>
+            <button class="tabs__trigger tabs-address__trigger" data-tabs-trigger="address" data-tabs="address-8">
+              <span class="tabs-address__trigger-text">Орелэнерго</span>
+            </button>
+            <button class="tabs__trigger tabs-address__trigger" data-tabs-trigger="address" data-tabs="address-9">
+              <span class="tabs-address__trigger-text">Смоленсэнерго</span>
+            </button>
+            <button class="tabs__trigger tabs-address__trigger" data-tabs-trigger="address" data-tabs="address-10">
+              <span class="tabs-address__trigger-text">Тамбовэнерго</span>
+            </button>
+            <button class="tabs__trigger tabs-address__trigger" data-tabs-trigger="address" data-tabs="address-11">
+              <span class="tabs-address__trigger-text">Ярэнерго</span>
+            </button>
+            <button class="tabs__trigger tabs-address__trigger" data-tabs-trigger="address" data-tabs="address-12">
+              <span class="tabs-address__trigger-text">Ярэнерго</span>
+            </button>
+            <button class="tabs__trigger tabs-address__trigger" data-tabs-trigger="address" data-tabs="address-13">
+              <span class="tabs-address__trigger-text">Ярэнерго</span>
+            </button>
+            <button class="tabs__trigger tabs-address__trigger active" data-tabs-trigger="address" data-tabs="address-14">
+              <span class="tabs-address__trigger-text">Ярэнерго</span>
+            </button>
+            <button class="tabs__trigger tabs-address__trigger" data-tabs-trigger="address" data-tabs="address-15">
+              <span class="tabs-address__trigger-text">Ярэнерго</span>
+            </button>
+            <button class="tabs__trigger tabs-address__trigger" data-tabs-trigger="address" data-tabs="address-16">
+              <span class="tabs-address__trigger-text">Ярэнерго</span>
+            </button>
+            <button class="tabs__trigger tabs-address__trigger" data-tabs-trigger="address" data-tabs="address-17">
+              <span class="tabs-address__trigger-text">Ярэнерго</span>
+            </button>
+            <button class="tabs__trigger tabs-address__trigger" data-tabs-trigger="address" data-tabs="address-18">
+              <span class="tabs-address__trigger-text">Ярэнерго</span>
             </button>
           </div>
         </div>
-        <div class="tabs__controls tabs-about__controls mob-hidden">
-          <button class="tabs__trigger tabs-about__trigger active" data-tabs-trigger="services" data-tabs="about-1">
-            <span class="tabs-about__trigger-icon">
-              <svg>
-                <use xlink:href="./assets/sprite.svg#icon-connection"></use>
-              </svg>
-            </span>
-            <span class="tabs-about__trigger-text">Технологическое присоединение под ключ</span>
+        <div class="tabs__controls tabs-address__controls mob-hidden">
+          <button class="tabs__trigger tabs-address__trigger" data-tabs-trigger="address"
+                  data-tabs="address-1">
+            <span class="tabs-address__trigger-text">Тверьэнерго</span>
           </button>
-          <button class="tabs__trigger tabs-about__trigger" data-tabs-trigger="services" data-tabs="about-2">
-            <span class="tabs-about__trigger-icon">
-               <svg>
-                <use xlink:href="./assets/sprite.svg#icon-lorry"></use>
-              </svg>
-            </span>
-            <span class="tabs-about__trigger-text">Аренда техники</span>
+          <button class="tabs__trigger tabs-address__trigger" data-tabs-trigger="address" data-tabs="address-2">
+            <span class="tabs-address__trigger-text">Брянскэнерго</span>
           </button>
-          <button class="tabs__trigger tabs-about__trigger" data-tabs-trigger="services" data-tabs="about-3">
-            <span class="tabs-about__trigger-icon">
-               <svg>
-                <use xlink:href="./assets/sprite.svg#icon-lightning"></use>
-              </svg>
-            </span>
-            <span class="tabs-about__trigger-text">Обслуживание электрооборудования</span>
+          <button class="tabs__trigger tabs-address__trigger" data-tabs-trigger="address" data-tabs="address-3">
+            <span class="tabs-address__trigger-text">Белгородэнерго</span>
           </button>
-          <button class="tabs__trigger tabs-about__trigger" data-tabs-trigger="services" data-tabs="about-4">
-            <span class="tabs-about__trigger-icon">
-               <svg>
-                <use xlink:href="./assets/sprite.svg#icon-bulb"></use>
-              </svg>
-            </span>
-            <span class="tabs-about__trigger-text">Наружное освещение</span>
+          <button class="tabs__trigger tabs-address__trigger" data-tabs-trigger="address" data-tabs="address-4">
+            <span class="tabs-address__trigger-text">Воронежэнерго</span>
           </button>
-          <button class="tabs__trigger tabs-about__trigger" data-tabs-trigger="services" data-tabs="about-5">
-            <span class="tabs-about__trigger-icon">
-               <svg>
-                <use xlink:href="./assets/sprite.svg#icon-list"></use>
-              </svg>
-            </span>
-            <span class="tabs-about__trigger-text">Выдача документации</span>
+          <button class="tabs__trigger tabs-address__trigger" data-tabs-trigger="address" data-tabs="address-5">
+            <span class="tabs-address__trigger-text">Костромаэнерго</span>
           </button>
-          <button class="tabs__trigger tabs-about__trigger" data-tabs-trigger="services" data-tabs="about-6">
-            <span class="tabs-about__trigger-icon">
-               <svg>
-                <use xlink:href="./assets/sprite.svg#icon-pillar"></use>
-              </svg>
-            </span>
-            <span class="tabs-about__trigger-text">Строительство линий</span>
+          <button class="tabs__trigger tabs-address__trigger" data-tabs-trigger="address" data-tabs="address-6">
+            <span class="tabs-address__trigger-text">Курскэнерго</span>
+          </button>
+          <button class="tabs__trigger tabs-address__trigger" data-tabs-trigger="address" data-tabs="address-7">
+            <span class="tabs-address__trigger-text">Липецкэнерго</span>
+          </button>
+          <button class="tabs__trigger tabs-address__trigger" data-tabs-trigger="address" data-tabs="address-8">
+            <span class="tabs-address__trigger-text">Орелэнерго</span>
+          </button>
+          <button class="tabs__trigger tabs-address__trigger" data-tabs-trigger="address" data-tabs="address-9">
+            <span class="tabs-address__trigger-text">Смоленсэнерго</span>
+          </button>
+          <button class="tabs__trigger tabs-address__trigger" data-tabs-trigger="address" data-tabs="address-10">
+            <span class="tabs-address__trigger-text">Тамбовэнерго</span>
+          </button>
+          <button class="tabs__trigger tabs-address__trigger" data-tabs-trigger="address" data-tabs="address-11">
+            <span class="tabs-address__trigger-text">Ярэнерго</span>
+          </button>
+          <button class="tabs__trigger tabs-address__trigger" data-tabs-trigger="address" data-tabs="address-12">
+            <span class="tabs-address__trigger-text">Ярэнерго</span>
+          </button>
+          <button class="tabs__trigger tabs-address__trigger active" data-tabs-trigger="address" data-tabs="address-13">
+            <span class="tabs-address__trigger-text">Ярэнерго</span>
+          </button>
+          <button class="tabs__trigger tabs-address__trigger" data-tabs-trigger="address" data-tabs="address-14">
+            <span class="tabs-address__trigger-text">Ярэнерго</span>
+          </button>
+          <button class="tabs__trigger tabs-address__trigger" data-tabs-trigger="address" data-tabs="address-15">
+            <span class="tabs-address__trigger-text">Ярэнерго</span>
+          </button>
+          <button class="tabs__trigger tabs-address__trigger" data-tabs-trigger="address" data-tabs="address-16">
+            <span class="tabs-address__trigger-text">Ярэнерго</span>
+          </button>
+          <button class="tabs__trigger tabs-address__trigger" data-tabs-trigger="address" data-tabs="address-17">
+            <span class="tabs-address__trigger-text">Ярэнерго</span>
+          </button>
+          <button class="tabs__trigger tabs-address__trigger" data-tabs-trigger="address" data-tabs="address-18">
+            <span class="tabs-address__trigger-text">Ярэнерго</span>
           </button>
         </div>
-        <div class="tabs__list">
-          <div class="tabs__item active" data-tabs-list="services" id="about-1">
-            <div class="tabs-about__item">
-              <div class="tabs-about__card">
-                <div class="tabs-about__card-inner">
-                  <div class="tabs-about__card-title">Заголовок. Технологическое присоединение под ключ</div>
-                  <div class="tabs-about__card-text">
-                    <p>Услуга по выполнению мероприятий, включенных в технические условия договора технологического
-                      присоединения со стороны потребителя.</p>
-                    <p>Условия договора технологического присоединения со стороны потребителя</p>
-                  </div>
-                  <a href="#" class="button tabs-about__card-link">Подробнее</a>
-
+        <div class="tabs__list tabs-address__list">
+          <div class="tabs__item tabs-address__item active" data-tabs-list="address" id="address-1">
+            <div class="tabs-address__card">
+              <div class="tabs-address__card-title">Тверьэнерго</div>
+              <div class="tabs-address__card-item">
+                <p class="tabs-address__card-item-text">Почта:</p>
+                <div class="tabs-address__card-item-link">
+                  <svg>
+                    <use xlink:href="../assets/sprite.svg#icon-mail"></use>
+                  </svg>
+                  <a href="mailto:bryanskenergo@mrsk-1.ru">bryanskenergo@mrsk-1.ru</a>
                 </div>
               </div>
-              <div class="slider" data-slider data-slider-fade data-slider-slides="1" data-slider-slides-tab="1"
-                   data-swiper-autoplay="2000">
-                <div class="swiper">
-                  <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                      <div class="tabs-about__item-slide">
-                        <img src="./assets/images/about-pic.png" alt="">
-                      </div>
-                    </div>
-                    <div class="swiper-slide">
-                      <div class="tabs-about__item-slide">
-                        <img src="./assets/images/bg-trees.png" alt="">
-                      </div>
-                    </div>
-                    <div class="swiper-slide">
-                      <div class="tabs-about__item-slide">
-                        <img src="./assets/images/about-pic.png" alt="">
-                      </div>
-                    </div>
-                    <div class="swiper-slide">
-                      <div class="tabs-about__item-slide">
-                        <img src="./assets/images/bg-houses.png" alt="">
-                      </div>
-                    </div>
-                  </div>
-                  <div class="slider__pagination" data-slider-pagination></div>
+              <div class="tabs-address__card-item">
+                <p class="tabs-address__card-item-text">Телефон:</p>
+                <div class="tabs-address__card-item-link">
+                  <svg>
+                    <use xlink:href="../assets/sprite.svg#icon-tel"></use>
+                  </svg>
+                  <a href="tel:+78002200220">+7 (800) 220-02-20</a>
                 </div>
               </div>
-            </div>
-          </div>
-          <div class="tabs__item" data-tabs-list="services" id="about-2">
-            <div class="tabs-about__item">
-              <div class="tabs-about__card">
-                <div class="tabs-about__card-inner">
-                  <div class="tabs-about__card-title">Заголовок. Аренда техники</div>
-                  <div class="tabs-about__card-text">
-                    <p>Услуга по выполнению мероприятий, включенных в технические условия договора технологического
-                      присоединения со стороны потребителя.</p>
-                    <p>Условия договора технологического присоединения со стороны потребителя</p>
-                  </div>
-                  <a href="#" class="button tabs-about__card-link">Подробнее</a>
-
+              <div class="tabs-address__card-item">
+                <p class="tabs-address__card-item-text">Адрес:</p>
+                <div class="tabs-address__card-item-link">
+                  <svg>
+                    <use xlink:href="../assets/sprite.svg#icon-location"></use>
+                  </svg>
+                  <a href="https://yandex.ru/maps/-/CDqtnG0P" target="_blank">241050, г. Брянск, ул. Советская,
+                    д.35</a>
                 </div>
               </div>
-              <div class="slider" data-slider data-slider-fade data-slider-slides="1" data-slider-slides-tab="1"
-                   data-swiper-autoplay="2000">
-                <div class="swiper">
-                  <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                      <div class="tabs-about__item-slide">
-                        <img src="./assets/images/about-pic.png" alt="">
-                      </div>
-                    </div>
-                    <div class="swiper-slide">
-                      <div class="tabs-about__item-slide">
-                        <img src="./assets/images/bg-trees.png" alt="">
-                      </div>
-                    </div>
-                    <div class="swiper-slide">
-                      <div class="tabs-about__item-slide">
-                        <img src="./assets/images/about-pic.png" alt="">
-                      </div>
-                    </div>
-                    <div class="swiper-slide">
-                      <div class="tabs-about__item-slide">
-                        <img src="./assets/images/bg-houses.png" alt="">
-                      </div>
-                    </div>
-                  </div>
-                  <div class="slider__pagination" data-slider-pagination></div>
+              <div class="tabs-address__card-item">
+                <p class="tabs-address__card-item-text">Реквизиты компании:</p>
+                <div class="tabs-address__card-item-link">
+                  <svg>
+                    <use xlink:href="../assets/sprite.svg#icon-doc"></use>
+                  </svg>
+                  <a href="#" target="_blank">PDF - 0.2 МБ</a>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="tabs__item" data-tabs-list="services" id="about-3">
-            <div class="tabs-about__item">
-              <div class="tabs-about__card">
-                <div class="tabs-about__card-inner">
-                  <div class="tabs-about__card-title">Заголовок. Обслуживание электрооборудования</div>
-                  <div class="tabs-about__card-text">
-                    <p>Услуга по выполнению мероприятий, включенных в технические условия договора технологического
-                      присоединения со стороны потребителя.</p>
-                    <p>Условия договора технологического присоединения со стороны потребителя</p>
-                  </div>
-                  <a href="#" class="button tabs-about__card-link">Подробнее</a>
-
-                </div>
-              </div>
-              <div class="slider" data-slider data-slider-fade data-slider-slides="1" data-slider-slides-tab="1"
-                   data-swiper-autoplay="2000">
-                <div class="swiper">
-                  <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                      <div class="tabs-about__item-slide">
-                        <img src="./assets/images/about-pic.png" alt="">
-                      </div>
-                    </div>
-                    <div class="swiper-slide">
-                      <div class="tabs-about__item-slide">
-                        <img src="./assets/images/bg-trees.png" alt="">
-                      </div>
-                    </div>
-                    <div class="swiper-slide">
-                      <div class="tabs-about__item-slide">
-                        <img src="./assets/images/about-pic.png" alt="">
-                      </div>
-                    </div>
-                    <div class="swiper-slide">
-                      <div class="tabs-about__item-slide">
-                        <img src="./assets/images/bg-houses.png" alt="">
-                      </div>
-                    </div>
-                  </div>
-                  <div class="slider__pagination" data-slider-pagination></div>
-                </div>
+            <div class="tabs-address__map">
+              <div style="position:relative;overflow:hidden;"><a
+                href="https://yandex.ru/maps/191/bryansk/?utm_medium=mapframe&utm_source=maps"
+                style="color:#eee;font-size:12px;position:absolute;top:0px;">Брянск</a><a
+                href="https://yandex.ru/maps/191/bryansk/house/sovetskaya_ulitsa_35/Z00YdQJhTEwDQFtpfX51eHtjYA==/?ll=34.351595%2C53.249704&utm_medium=mapframe&utm_source=maps&z=17.23"
+                style="color:#eee;font-size:12px;position:absolute;top:14px;">Советская улица, 35 — Яндекс Карты</a>
+                <iframe
+                  src="https://yandex.ru/map-widget/v1/?ll=34.351595%2C53.249704&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NjAwMzc2NxI90KDQvtGB0YHQuNGPLCDQkdGA0Y_QvdGB0LosINCh0L7QstC10YLRgdC60LDRjyDRg9C70LjRhtCwLCAzNSIKDQloCUIVs_9UQg%2C%2C&z=17.23"
+                  frameborder="0" allowfullscreen="true" style="position:relative;"></iframe>
               </div>
             </div>
           </div>
-          <div class="tabs__item" data-tabs-list="services" id="about-4">
-            <div class="tabs-about__item">
-              <div class="tabs-about__card">
-                <div class="tabs-about__card-inner">
-                  <div class="tabs-about__card-title">Заголовок. Наружное освещение</div>
-                  <div class="tabs-about__card-text">
-                    <p>Услуга по выполнению мероприятий, включенных в технические условия договора технологического
-                      присоединения со стороны потребителя.</p>
-                    <p>Условия договора технологического присоединения со стороны потребителя</p>
-                  </div>
-                  <a href="#" class="button tabs-about__card-link">Подробнее</a>
-
+          <div class="tabs__item tabs-address__item" data-tabs-list="address" id="address-2">
+            <div class="tabs-address__card">
+              <div class="tabs-address__card-title">Брянскэнерго</div>
+              <div class="tabs-address__card-item">
+                <p class="tabs-address__card-item-text">Почта:</p>
+                <div class="tabs-address__card-item-link">
+                  <svg>
+                    <use xlink:href="../assets/sprite.svg#icon-mail"></use>
+                  </svg>
+                  <a href="mailto:bryanskenergo@mrsk-1.ru">bryanskenergo@mrsk-1.ru</a>
                 </div>
               </div>
-              <div class="slider" data-slider data-slider-fade data-slider-slides="1" data-slider-slides-tab="1"
-                   data-swiper-autoplay="2000">
-                <div class="swiper">
-                  <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                      <div class="tabs-about__item-slide">
-                        <img src="./assets/images/about-pic.png" alt="">
-                      </div>
-                    </div>
-                    <div class="swiper-slide">
-                      <div class="tabs-about__item-slide">
-                        <img src="./assets/images/bg-trees.png" alt="">
-                      </div>
-                    </div>
-                    <div class="swiper-slide">
-                      <div class="tabs-about__item-slide">
-                        <img src="./assets/images/about-pic.png" alt="">
-                      </div>
-                    </div>
-                    <div class="swiper-slide">
-                      <div class="tabs-about__item-slide">
-                        <img src="./assets/images/bg-houses.png" alt="">
-                      </div>
-                    </div>
-                  </div>
-                  <div class="slider__pagination" data-slider-pagination></div>
+              <div class="tabs-address__card-item">
+                <p class="tabs-address__card-item-text">Телефон:</p>
+                <div class="tabs-address__card-item-link">
+                  <svg>
+                    <use xlink:href="../assets/sprite.svg#icon-tel"></use>
+                  </svg>
+                  <a href="tel:+78002200220">+7 (800) 220-02-20</a>
                 </div>
               </div>
-            </div>
-          </div>
-          <div class="tabs__item" data-tabs-list="services" id="about-5">
-            <div class="tabs-about__item">
-              <div class="tabs-about__card">
-                <div class="tabs-about__card-inner">
-                  <div class="tabs-about__card-title">Заголовок. Выдача документации</div>
-                  <div class="tabs-about__card-text">
-                    <p>Услуга по выполнению мероприятий, включенных в технические условия договора технологического
-                      присоединения со стороны потребителя.</p>
-                    <p>Условия договора технологического присоединения со стороны потребителя</p>
-                  </div>
-                  <a href="#" class="button tabs-about__card-link">Подробнее</a>
-
+              <div class="tabs-address__card-item">
+                <p class="tabs-address__card-item-text">Адрес:</p>
+                <div class="tabs-address__card-item-link">
+                  <svg>
+                    <use xlink:href="../assets/sprite.svg#icon-location"></use>
+                  </svg>
+                  <a href="https://yandex.ru/maps/-/CDqtnG0P" target="_blank">241050, г. Брянск, ул. Советская,
+                    д.35</a>
                 </div>
               </div>
-              <div class="slider" data-slider data-slider-fade data-slider-slides="1" data-slider-slides-tab="1"
-                   data-swiper-autoplay="2000">
-                <div class="swiper">
-                  <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                      <div class="tabs-about__item-slide">
-                        <img src="./assets/images/about-pic.png" alt="">
-                      </div>
-                    </div>
-                    <div class="swiper-slide">
-                      <div class="tabs-about__item-slide">
-                        <img src="./assets/images/bg-trees.png" alt="">
-                      </div>
-                    </div>
-                    <div class="swiper-slide">
-                      <div class="tabs-about__item-slide">
-                        <img src="./assets/images/about-pic.png" alt="">
-                      </div>
-                    </div>
-                    <div class="swiper-slide">
-                      <div class="tabs-about__item-slide">
-                        <img src="./assets/images/bg-houses.png" alt="">
-                      </div>
-                    </div>
-                  </div>
-                  <div class="slider__pagination" data-slider-pagination></div>
+              <div class="tabs-address__card-item">
+                <p class="tabs-address__card-item-text">Реквизиты компании:</p>
+                <div class="tabs-address__card-item-link">
+                  <svg>
+                    <use xlink:href="../assets/sprite.svg#icon-doc"></use>
+                  </svg>
+                  <a href="#" target="_blank">PDF - 0.2 МБ</a>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="tabs__item" data-tabs-list="services" id="about-6">
-            <div class="tabs-about__item">
-              <div class="tabs-about__card">
-                <div class="tabs-about__card-inner">
-                  <div class="tabs-about__card-title">Заголовок. Строительство линий</div>
-                  <div class="tabs-about__card-text">
-                    <p>Услуга по выполнению мероприятий, включенных в технические условия договора технологического
-                      присоединения со стороны потребителя.</p>
-                    <p>Условия договора технологического присоединения со стороны потребителя</p>
-                  </div>
-                  <a href="#" class="button tabs-about__card-link">Подробнее</a>
-
-                </div>
-              </div>
-              <div class="slider" data-slider data-slider-fade data-slider-slides="1" data-slider-slides-tab="1"
-                   data-swiper-autoplay="2000">
-                <div class="swiper">
-                  <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                      <div class="tabs-about__item-slide">
-                        <img src="./assets/images/about-pic.png" alt="">
-                      </div>
-                    </div>
-                    <div class="swiper-slide">
-                      <div class="tabs-about__item-slide">
-                        <img src="./assets/images/bg-trees.png" alt="">
-                      </div>
-                    </div>
-                    <div class="swiper-slide">
-                      <div class="tabs-about__item-slide">
-                        <img src="./assets/images/about-pic.png" alt="">
-                      </div>
-                    </div>
-                    <div class="swiper-slide">
-                      <div class="tabs-about__item-slide">
-                        <img src="./assets/images/bg-houses.png" alt="">
-                      </div>
-                    </div>
-                  </div>
-                  <div class="slider__pagination" data-slider-pagination></div>
-                </div>
+            <div class="tabs-address__map">
+              <div style="position:relative;overflow:hidden;"><a
+                href="https://yandex.ru/maps/191/bryansk/?utm_medium=mapframe&utm_source=maps"
+                style="color:#eee;font-size:12px;position:absolute;top:0px;">Брянск</a><a
+                href="https://yandex.ru/maps/191/bryansk/house/sovetskaya_ulitsa_35/Z00YdQJhTEwDQFtpfX51eHtjYA==/?ll=34.351595%2C53.249704&utm_medium=mapframe&utm_source=maps&z=17.23"
+                style="color:#eee;font-size:12px;position:absolute;top:14px;">Советская улица, 35 — Яндекс Карты</a>
+                <iframe
+                  src="https://yandex.ru/map-widget/v1/?ll=34.351595%2C53.249704&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NjAwMzc2NxI90KDQvtGB0YHQuNGPLCDQkdGA0Y_QvdGB0LosINCh0L7QstC10YLRgdC60LDRjyDRg9C70LjRhtCwLCAzNSIKDQloCUIVs_9UQg%2C%2C&z=17.23"
+                  frameborder="0" allowfullscreen="true" style="position:relative;"></iframe>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="section mb-100">
-    <div class="container">
-      <div class="about-intro">
-        <div class="about-intro__top">
-          <div class="about-intro__callback">
-            <picture class="about-intro__callback-pic">
-              <img src="./assets/images/tel.png" alt="">
-            </picture>
-            <div class="about-intro__tag">
-              <p class="about-intro__tag-text">Чем могу вам помочь?</p>
-              <a href="#faq" class="button about-intro__tag-button">Посмотреть ответы</a>
+          <div class="tabs__item tabs-address__item" data-tabs-list="address" id="address-3">
+            <div class="tabs-address__card">
+              <div class="tabs-address__card-title">Белгородэнерго</div>
+              <div class="tabs-address__card-item">
+                <p class="tabs-address__card-item-text">Почта:</p>
+                <div class="tabs-address__card-item-link">
+                  <svg>
+                    <use xlink:href="../assets/sprite.svg#icon-mail"></use>
+                  </svg>
+                  <a href="mailto:bryanskenergo@mrsk-1.ru">bryanskenergo@mrsk-1.ru</a>
+                </div>
+              </div>
+              <div class="tabs-address__card-item">
+                <p class="tabs-address__card-item-text">Телефон:</p>
+                <div class="tabs-address__card-item-link">
+                  <svg>
+                    <use xlink:href="../assets/sprite.svg#icon-tel"></use>
+                  </svg>
+                  <a href="tel:+78002200220">+7 (800) 220-02-20</a>
+                </div>
+              </div>
+              <div class="tabs-address__card-item">
+                <p class="tabs-address__card-item-text">Адрес:</p>
+                <div class="tabs-address__card-item-link">
+                  <svg>
+                    <use xlink:href="../assets/sprite.svg#icon-location"></use>
+                  </svg>
+                  <a href="https://yandex.ru/maps/-/CDqtnG0P" target="_blank">241050, г. Брянск, ул. Советская,
+                    д.35</a>
+                </div>
+              </div>
+              <div class="tabs-address__card-item">
+                <p class="tabs-address__card-item-text">Реквизиты компании:</p>
+                <div class="tabs-address__card-item-link">
+                  <svg>
+                    <use xlink:href="../assets/sprite.svg#icon-doc"></use>
+                  </svg>
+                  <a href="#" target="_blank">PDF - 0.2 МБ</a>
+                </div>
+              </div>
+            </div>
+            <div class="tabs-address__map">
+              <div style="position:relative;overflow:hidden;"><a
+                href="https://yandex.ru/maps/191/bryansk/?utm_medium=mapframe&utm_source=maps"
+                style="color:#eee;font-size:12px;position:absolute;top:0px;">Брянск</a><a
+                href="https://yandex.ru/maps/191/bryansk/house/sovetskaya_ulitsa_35/Z00YdQJhTEwDQFtpfX51eHtjYA==/?ll=34.351595%2C53.249704&utm_medium=mapframe&utm_source=maps&z=17.23"
+                style="color:#eee;font-size:12px;position:absolute;top:14px;">Советская улица, 35 — Яндекс Карты</a>
+                <iframe
+                  src="https://yandex.ru/map-widget/v1/?ll=34.351595%2C53.249704&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NjAwMzc2NxI90KDQvtGB0YHQuNGPLCDQkdGA0Y_QvdGB0LosINCh0L7QstC10YLRgdC60LDRjyDRg9C70LjRhtCwLCAzNSIKDQloCUIVs_9UQg%2C%2C&z=17.23"
+                  frameborder="0" allowfullscreen="true" style="position:relative;"></iframe>
+              </div>
             </div>
           </div>
-          <div class="about-intro__description">
-            <p>Услуга по выполнению работ, относящихся к компетенции Заказчика при осуществлении процедуры
-              технологического присоединения.</p>
-            <p>Выполним все мероприятия, включенные в технологические условия Заказчика при осуществлении процедуры
-              технологического присоединения.</p>
-            <p>Заказчика при осуществлении процедуры технологического присоединения.</p>
+          <div class="tabs__item tabs-address__item" data-tabs-list="address" id="address-4">
+            <div class="tabs-address__card">
+              <div class="tabs-address__card-title">Воронежэнерго</div>
+              <div class="tabs-address__card-item">
+                <p class="tabs-address__card-item-text">Почта:</p>
+                <div class="tabs-address__card-item-link">
+                  <svg>
+                    <use xlink:href="../assets/sprite.svg#icon-mail"></use>
+                  </svg>
+                  <a href="mailto:bryanskenergo@mrsk-1.ru">bryanskenergo@mrsk-1.ru</a>
+                </div>
+              </div>
+              <div class="tabs-address__card-item">
+                <p class="tabs-address__card-item-text">Телефон:</p>
+                <div class="tabs-address__card-item-link">
+                  <svg>
+                    <use xlink:href="../assets/sprite.svg#icon-tel"></use>
+                  </svg>
+                  <a href="tel:+78002200220">+7 (800) 220-02-20</a>
+                </div>
+              </div>
+              <div class="tabs-address__card-item">
+                <p class="tabs-address__card-item-text">Адрес:</p>
+                <div class="tabs-address__card-item-link">
+                  <svg>
+                    <use xlink:href="../assets/sprite.svg#icon-location"></use>
+                  </svg>
+                  <a href="https://yandex.ru/maps/-/CDqtnG0P" target="_blank">241050, г. Брянск, ул. Советская,
+                    д.35</a>
+                </div>
+              </div>
+              <div class="tabs-address__card-item">
+                <p class="tabs-address__card-item-text">Реквизиты компании:</p>
+                <div class="tabs-address__card-item-link">
+                  <svg>
+                    <use xlink:href="../assets/sprite.svg#icon-doc"></use>
+                  </svg>
+                  <a href="#" target="_blank">PDF - 0.2 МБ</a>
+                </div>
+              </div>
+            </div>
+            <div class="tabs-address__map">
+              <div style="position:relative;overflow:hidden;"><a
+                href="https://yandex.ru/maps/191/bryansk/?utm_medium=mapframe&utm_source=maps"
+                style="color:#eee;font-size:12px;position:absolute;top:0px;">Брянск</a><a
+                href="https://yandex.ru/maps/191/bryansk/house/sovetskaya_ulitsa_35/Z00YdQJhTEwDQFtpfX51eHtjYA==/?ll=34.351595%2C53.249704&utm_medium=mapframe&utm_source=maps&z=17.23"
+                style="color:#eee;font-size:12px;position:absolute;top:14px;">Советская улица, 35 — Яндекс Карты</a>
+                <iframe
+                  src="https://yandex.ru/map-widget/v1/?ll=34.351595%2C53.249704&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NjAwMzc2NxI90KDQvtGB0YHQuNGPLCDQkdGA0Y_QvdGB0LosINCh0L7QstC10YLRgdC60LDRjyDRg9C70LjRhtCwLCAzNSIKDQloCUIVs_9UQg%2C%2C&z=17.23"
+                  frameborder="0" allowfullscreen="true" style="position:relative;"></iframe>
+              </div>
+            </div>
           </div>
-          <ul class="about-intro__list">
-            <li>работаем 24/7</li>
-            <li>100% точность и корректность ответов</li>
-            <li>при необходимости, подключает специалиста</li>
-            <li>процедуры технологического присоединения</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="section section--gradient">
-    <div class="container">
-      <div class="columns">
-        <div class="columns__col--4 columns__col-tab--12 order-tab--1">
-          <h3 class="title title--light">Заголовок для компании “Россети”</h3>
-        </div>
-        <div class="columns__col--8 columns__col-tab--12 order-tab--3">
-          <div class="map-decor">
-            <picture class="map-decor__pic">
-              <img src="./assets/images/map.png" alt="">
-            </picture>
+          <div class="tabs__item tabs-address__item" data-tabs-list="address" id="address-5">
+            <div class="tabs-address__card">
+              <div class="tabs-address__card-title">Костромаэнерго</div>
+              <div class="tabs-address__card-item">
+                <p class="tabs-address__card-item-text">Почта:</p>
+                <div class="tabs-address__card-item-link">
+                  <svg>
+                    <use xlink:href="../assets/sprite.svg#icon-mail"></use>
+                  </svg>
+                  <a href="mailto:bryanskenergo@mrsk-1.ru">bryanskenergo@mrsk-1.ru</a>
+                </div>
+              </div>
+              <div class="tabs-address__card-item">
+                <p class="tabs-address__card-item-text">Телефон:</p>
+                <div class="tabs-address__card-item-link">
+                  <svg>
+                    <use xlink:href="../assets/sprite.svg#icon-tel"></use>
+                  </svg>
+                  <a href="tel:+78002200220">+7 (800) 220-02-20</a>
+                </div>
+              </div>
+              <div class="tabs-address__card-item">
+                <p class="tabs-address__card-item-text">Адрес:</p>
+                <div class="tabs-address__card-item-link">
+                  <svg>
+                    <use xlink:href="../assets/sprite.svg#icon-location"></use>
+                  </svg>
+                  <a href="https://yandex.ru/maps/-/CDqtnG0P" target="_blank">241050, г. Брянск, ул. Советская,
+                    д.35</a>
+                </div>
+              </div>
+              <div class="tabs-address__card-item">
+                <p class="tabs-address__card-item-text">Реквизиты компании:</p>
+                <div class="tabs-address__card-item-link">
+                  <svg>
+                    <use xlink:href="../assets/sprite.svg#icon-doc"></use>
+                  </svg>
+                  <a href="#" target="_blank">PDF - 0.2 МБ</a>
+                </div>
+              </div>
+            </div>
+            <div class="tabs-address__map">
+              <div style="position:relative;overflow:hidden;"><a
+                href="https://yandex.ru/maps/191/bryansk/?utm_medium=mapframe&utm_source=maps"
+                style="color:#eee;font-size:12px;position:absolute;top:0px;">Брянск</a><a
+                href="https://yandex.ru/maps/191/bryansk/house/sovetskaya_ulitsa_35/Z00YdQJhTEwDQFtpfX51eHtjYA==/?ll=34.351595%2C53.249704&utm_medium=mapframe&utm_source=maps&z=17.23"
+                style="color:#eee;font-size:12px;position:absolute;top:14px;">Советская улица, 35 — Яндекс Карты</a>
+                <iframe
+                  src="https://yandex.ru/map-widget/v1/?ll=34.351595%2C53.249704&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NjAwMzc2NxI90KDQvtGB0YHQuNGPLCDQkdGA0Y_QvdGB0LosINCh0L7QstC10YLRgdC60LDRjyDRg9C70LjRhtCwLCAzNSIKDQloCUIVs_9UQg%2C%2C&z=17.23"
+                  frameborder="0" allowfullscreen="true" style="position:relative;"></iframe>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="columns__col--10 columns__col-tab--12 order-tab--2">
-          <div class="cards-num-container">
-            <article class="card-num">
-              <div class="card-num__num" data-text-writing="20 035"></div>
-              <div class="card-num__description">Километров построенных линий наружного освещения</div>
-            </article>
-            <article class="card-num">
-              <div class="card-num__num" data-text-writing="19 270 234"></div>
-              <div class="card-num__description">Километров построенных линий наружного освещения</div>
-            </article>
-            <article class="card-num">
-              <div class="card-num__num" data-text-writing="1 102 345"></div>
-              <div class="card-num__description">Километров построенных линий наружного освещения</div>
-            </article>
-            <article class="card-num">
-              <div class="card-num__num" data-text-writing="2350"></div>
-              <div class="card-num__description">Километров построенных линий наружного освещения</div>
-            </article>
+          <div class="tabs__item tabs-address__item" data-tabs-list="address" id="address-6">
+            <div class="tabs-address__card">
+              <div class="tabs-address__card-title">Курскэнерго</div>
+              <div class="tabs-address__card-item">
+                <p class="tabs-address__card-item-text">Почта:</p>
+                <div class="tabs-address__card-item-link">
+                  <svg>
+                    <use xlink:href="../assets/sprite.svg#icon-mail"></use>
+                  </svg>
+                  <a href="mailto:bryanskenergo@mrsk-1.ru">bryanskenergo@mrsk-1.ru</a>
+                </div>
+              </div>
+              <div class="tabs-address__card-item">
+                <p class="tabs-address__card-item-text">Телефон:</p>
+                <div class="tabs-address__card-item-link">
+                  <svg>
+                    <use xlink:href="../assets/sprite.svg#icon-tel"></use>
+                  </svg>
+                  <a href="tel:+78002200220">+7 (800) 220-02-20</a>
+                </div>
+              </div>
+              <div class="tabs-address__card-item">
+                <p class="tabs-address__card-item-text">Адрес:</p>
+                <div class="tabs-address__card-item-link">
+                  <svg>
+                    <use xlink:href="../assets/sprite.svg#icon-location"></use>
+                  </svg>
+                  <a href="https://yandex.ru/maps/-/CDqtnG0P" target="_blank">241050, г. Брянск, ул. Советская,
+                    д.35</a>
+                </div>
+              </div>
+              <div class="tabs-address__card-item">
+                <p class="tabs-address__card-item-text">Реквизиты компании:</p>
+                <div class="tabs-address__card-item-link">
+                  <svg>
+                    <use xlink:href="../assets/sprite.svg#icon-doc"></use>
+                  </svg>
+                  <a href="#" target="_blank">PDF - 0.2 МБ</a>
+                </div>
+              </div>
+            </div>
+            <div class="tabs-address__map">
+              <div style="position:relative;overflow:hidden;"><a
+                href="https://yandex.ru/maps/191/bryansk/?utm_medium=mapframe&utm_source=maps"
+                style="color:#eee;font-size:12px;position:absolute;top:0px;">Брянск</a><a
+                href="https://yandex.ru/maps/191/bryansk/house/sovetskaya_ulitsa_35/Z00YdQJhTEwDQFtpfX51eHtjYA==/?ll=34.351595%2C53.249704&utm_medium=mapframe&utm_source=maps&z=17.23"
+                style="color:#eee;font-size:12px;position:absolute;top:14px;">Советская улица, 35 — Яндекс Карты</a>
+                <iframe
+                  src="https://yandex.ru/map-widget/v1/?ll=34.351595%2C53.249704&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NjAwMzc2NxI90KDQvtGB0YHQuNGPLCDQkdGA0Y_QvdGB0LosINCh0L7QstC10YLRgdC60LDRjyDRg9C70LjRhtCwLCAzNSIKDQloCUIVs_9UQg%2C%2C&z=17.23"
+                  frameborder="0" allowfullscreen="true" style="position:relative;"></iframe>
+              </div>
+            </div>
+          </div>
+          <div class="tabs__item tabs-address__item" data-tabs-list="address" id="address-7">
+            <div class="tabs-address__card">
+              <div class="tabs-address__card-title">Липецкэнерго</div>
+              <div class="tabs-address__card-item">
+                <p class="tabs-address__card-item-text">Почта:</p>
+                <div class="tabs-address__card-item-link">
+                  <svg>
+                    <use xlink:href="../assets/sprite.svg#icon-mail"></use>
+                  </svg>
+                  <a href="mailto:bryanskenergo@mrsk-1.ru">bryanskenergo@mrsk-1.ru</a>
+                </div>
+              </div>
+              <div class="tabs-address__card-item">
+                <p class="tabs-address__card-item-text">Телефон:</p>
+                <div class="tabs-address__card-item-link">
+                  <svg>
+                    <use xlink:href="../assets/sprite.svg#icon-tel"></use>
+                  </svg>
+                  <a href="tel:+78002200220">+7 (800) 220-02-20</a>
+                </div>
+              </div>
+              <div class="tabs-address__card-item">
+                <p class="tabs-address__card-item-text">Адрес:</p>
+                <div class="tabs-address__card-item-link">
+                  <svg>
+                    <use xlink:href="../assets/sprite.svg#icon-location"></use>
+                  </svg>
+                  <a href="https://yandex.ru/maps/-/CDqtnG0P" target="_blank">241050, г. Брянск, ул. Советская,
+                    д.35</a>
+                </div>
+              </div>
+              <div class="tabs-address__card-item">
+                <p class="tabs-address__card-item-text">Реквизиты компании:</p>
+                <div class="tabs-address__card-item-link">
+                  <svg>
+                    <use xlink:href="../assets/sprite.svg#icon-doc"></use>
+                  </svg>
+                  <a href="#" target="_blank">PDF - 0.2 МБ</a>
+                </div>
+              </div>
+            </div>
+            <div class="tabs-address__map">
+              <div style="position:relative;overflow:hidden;">
+                <a
+                  href="https://yandex.ru/maps/191/bryansk/?utm_medium=mapframe&utm_source=maps"
+                  style="color:#eee;font-size:12px;position:absolute;top:0px;">Брянск</a>
+                <a
+                  href="https://yandex.ru/maps/191/bryansk/house/sovetskaya_ulitsa_35/Z00YdQJhTEwDQFtpfX51eHtjYA==/?ll=34.351595%2C53.249704&utm_medium=mapframe&utm_source=maps&z=17.23"
+                  style="color:#eee;font-size:12px;position:absolute;top:14px;">Советская улица, 35 — Яндекс Карты</a>
+                <iframe
+                  src="https://yandex.ru/map-widget/v1/?ll=34.351595%2C53.249704&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NjAwMzc2NxI90KDQvtGB0YHQuNGPLCDQkdGA0Y_QvdGB0LosINCh0L7QstC10YLRgdC60LDRjyDRg9C70LjRhtCwLCAzNSIKDQloCUIVs_9UQg%2C%2C&z=17.23"
+                  frameborder="0" allowfullscreen="true" style="position:relative;"></iframe>
+              </div>
+            </div>
+          </div>
+          <div class="tabs__item tabs-address__item" data-tabs-list="address" id="address-8">
+            <div class="tabs-address__card">
+              <div class="tabs-address__card-title">Орелэнерго</div>
+              <div class="tabs-address__card-item">
+                <p class="tabs-address__card-item-text">Почта:</p>
+                <div class="tabs-address__card-item-link">
+                  <svg>
+                    <use xlink:href="../assets/sprite.svg#icon-mail"></use>
+                  </svg>
+                  <a href="mailto:bryanskenergo@mrsk-1.ru">bryanskenergo@mrsk-1.ru</a>
+                </div>
+              </div>
+              <div class="tabs-address__card-item">
+                <p class="tabs-address__card-item-text">Телефон:</p>
+                <div class="tabs-address__card-item-link">
+                  <svg>
+                    <use xlink:href="../assets/sprite.svg#icon-tel"></use>
+                  </svg>
+                  <a href="tel:+78002200220">+7 (800) 220-02-20</a>
+                </div>
+              </div>
+              <div class="tabs-address__card-item">
+                <p class="tabs-address__card-item-text">Адрес:</p>
+                <div class="tabs-address__card-item-link">
+                  <svg>
+                    <use xlink:href="../assets/sprite.svg#icon-location"></use>
+                  </svg>
+                  <a href="https://yandex.ru/maps/-/CDqtnG0P" target="_blank">241050, г. Брянск, ул. Советская,
+                    д.35</a>
+                </div>
+              </div>
+              <div class="tabs-address__card-item">
+                <p class="tabs-address__card-item-text">Реквизиты компании:</p>
+                <div class="tabs-address__card-item-link">
+                  <svg>
+                    <use xlink:href="../assets/sprite.svg#icon-doc"></use>
+                  </svg>
+                  <a href="#" target="_blank">PDF - 0.2 МБ</a>
+                </div>
+              </div>
+            </div>
+            <div class="tabs-address__map">
+              <div style="position:relative;overflow:hidden;"><a
+                href="https://yandex.ru/maps/191/bryansk/?utm_medium=mapframe&utm_source=maps"
+                style="color:#eee;font-size:12px;position:absolute;top:0px;">Брянск</a><a
+                href="https://yandex.ru/maps/191/bryansk/house/sovetskaya_ulitsa_35/Z00YdQJhTEwDQFtpfX51eHtjYA==/?ll=34.351595%2C53.249704&utm_medium=mapframe&utm_source=maps&z=17.23"
+                style="color:#eee;font-size:12px;position:absolute;top:14px;">Советская улица, 35 — Яндекс Карты</a>
+                <iframe
+                  src="https://yandex.ru/map-widget/v1/?ll=34.351595%2C53.249704&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NjAwMzc2NxI90KDQvtGB0YHQuNGPLCDQkdGA0Y_QvdGB0LosINCh0L7QstC10YLRgdC60LDRjyDRg9C70LjRhtCwLCAzNSIKDQloCUIVs_9UQg%2C%2C&z=17.23"
+                  frameborder="0" allowfullscreen="true" style="position:relative;"></iframe>
+              </div>
+            </div>
+          </div>
+          <div class="tabs__item tabs-address__item" data-tabs-list="address" id="address-9">
+            <div class="tabs-address__card">
+              <div class="tabs-address__card-title">Смоленсэнерго</div>
+              <div class="tabs-address__card-item">
+                <p class="tabs-address__card-item-text">Почта:</p>
+                <div class="tabs-address__card-item-link">
+                  <svg>
+                    <use xlink:href="../assets/sprite.svg#icon-mail"></use>
+                  </svg>
+                  <a href="mailto:bryanskenergo@mrsk-1.ru">bryanskenergo@mrsk-1.ru</a>
+                </div>
+              </div>
+              <div class="tabs-address__card-item">
+                <p class="tabs-address__card-item-text">Телефон:</p>
+                <div class="tabs-address__card-item-link">
+                  <svg>
+                    <use xlink:href="../assets/sprite.svg#icon-tel"></use>
+                  </svg>
+                  <a href="tel:+78002200220">+7 (800) 220-02-20</a>
+                </div>
+              </div>
+              <div class="tabs-address__card-item">
+                <p class="tabs-address__card-item-text">Адрес:</p>
+                <div class="tabs-address__card-item-link">
+                  <svg>
+                    <use xlink:href="../assets/sprite.svg#icon-location"></use>
+                  </svg>
+                  <a href="https://yandex.ru/maps/-/CDqtnG0P" target="_blank">241050, г. Брянск, ул. Советская,
+                    д.35</a>
+                </div>
+              </div>
+              <div class="tabs-address__card-item">
+                <p class="tabs-address__card-item-text">Реквизиты компании:</p>
+                <div class="tabs-address__card-item-link">
+                  <svg>
+                    <use xlink:href="../assets/sprite.svg#icon-doc"></use>
+                  </svg>
+                  <a href="#" target="_blank">PDF - 0.2 МБ</a>
+                </div>
+              </div>
+            </div>
+            <div class="tabs-address__map">
+              <div style="position:relative;overflow:hidden;"><a
+                href="https://yandex.ru/maps/191/bryansk/?utm_medium=mapframe&utm_source=maps"
+                style="color:#eee;font-size:12px;position:absolute;top:0px;">Брянск</a><a
+                href="https://yandex.ru/maps/191/bryansk/house/sovetskaya_ulitsa_35/Z00YdQJhTEwDQFtpfX51eHtjYA==/?ll=34.351595%2C53.249704&utm_medium=mapframe&utm_source=maps&z=17.23"
+                style="color:#eee;font-size:12px;position:absolute;top:14px;">Советская улица, 35 — Яндекс Карты</a>
+                <iframe
+                  src="https://yandex.ru/map-widget/v1/?ll=34.351595%2C53.249704&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NjAwMzc2NxI90KDQvtGB0YHQuNGPLCDQkdGA0Y_QvdGB0LosINCh0L7QstC10YLRgdC60LDRjyDRg9C70LjRhtCwLCAzNSIKDQloCUIVs_9UQg%2C%2C&z=17.23"
+                  frameborder="0" allowfullscreen="true" style="position:relative;"></iframe>
+              </div>
+            </div>
+          </div>
+          <div class="tabs__item tabs-address__item" data-tabs-list="address" id="address-10">
+            <div class="tabs-address__card">
+              <div class="tabs-address__card-title">Тамбовэнерго</div>
+              <div class="tabs-address__card-item">
+                <p class="tabs-address__card-item-text">Почта:</p>
+                <div class="tabs-address__card-item-link">
+                  <svg>
+                    <use xlink:href="../assets/sprite.svg#icon-mail"></use>
+                  </svg>
+                  <a href="mailto:bryanskenergo@mrsk-1.ru">bryanskenergo@mrsk-1.ru</a>
+                </div>
+              </div>
+              <div class="tabs-address__card-item">
+                <p class="tabs-address__card-item-text">Телефон:</p>
+                <div class="tabs-address__card-item-link">
+                  <svg>
+                    <use xlink:href="../assets/sprite.svg#icon-tel"></use>
+                  </svg>
+                  <a href="tel:+78002200220">+7 (800) 220-02-20</a>
+                </div>
+              </div>
+              <div class="tabs-address__card-item">
+                <p class="tabs-address__card-item-text">Адрес:</p>
+                <div class="tabs-address__card-item-link">
+                  <svg>
+                    <use xlink:href="../assets/sprite.svg#icon-location"></use>
+                  </svg>
+                  <a href="https://yandex.ru/maps/-/CDqtnG0P" target="_blank">241050, г. Брянск, ул. Советская,
+                    д.35</a>
+                </div>
+              </div>
+              <div class="tabs-address__card-item">
+                <p class="tabs-address__card-item-text">Реквизиты компании:</p>
+                <div class="tabs-address__card-item-link">
+                  <svg>
+                    <use xlink:href="../assets/sprite.svg#icon-doc"></use>
+                  </svg>
+                  <a href="#" target="_blank">PDF - 0.2 МБ</a>
+                </div>
+              </div>
+            </div>
+            <div class="tabs-address__map">
+              <div style="position:relative;overflow:hidden;"><a
+                href="https://yandex.ru/maps/191/bryansk/?utm_medium=mapframe&utm_source=maps"
+                style="color:#eee;font-size:12px;position:absolute;top:0px;">Брянск</a><a
+                href="https://yandex.ru/maps/191/bryansk/house/sovetskaya_ulitsa_35/Z00YdQJhTEwDQFtpfX51eHtjYA==/?ll=34.351595%2C53.249704&utm_medium=mapframe&utm_source=maps&z=17.23"
+                style="color:#eee;font-size:12px;position:absolute;top:14px;">Советская улица, 35 — Яндекс Карты</a>
+                <iframe
+                  src="https://yandex.ru/map-widget/v1/?ll=34.351595%2C53.249704&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NjAwMzc2NxI90KDQvtGB0YHQuNGPLCDQkdGA0Y_QvdGB0LosINCh0L7QstC10YLRgdC60LDRjyDRg9C70LjRhtCwLCAzNSIKDQloCUIVs_9UQg%2C%2C&z=17.23"
+                  frameborder="0" allowfullscreen="true" style="position:relative;"></iframe>
+              </div>
+            </div>
+          </div>
+          <div class="tabs__item tabs-address__item" data-tabs-list="address" id="address-11">
+            <div class="tabs-address__card">
+              <div class="tabs-address__card-title">Ярэнерго</div>
+              <div class="tabs-address__card-item">
+                <p class="tabs-address__card-item-text">Почта:</p>
+                <div class="tabs-address__card-item-link">
+                  <svg>
+                    <use xlink:href="../assets/sprite.svg#icon-mail"></use>
+                  </svg>
+                  <a href="mailto:bryanskenergo@mrsk-1.ru">bryanskenergo@mrsk-1.ru</a>
+                </div>
+              </div>
+              <div class="tabs-address__card-item">
+                <p class="tabs-address__card-item-text">Телефон:</p>
+                <div class="tabs-address__card-item-link">
+                  <svg>
+                    <use xlink:href="../assets/sprite.svg#icon-tel"></use>
+                  </svg>
+                  <a href="tel:+78002200220">+7 (800) 220-02-20</a>
+                </div>
+              </div>
+              <div class="tabs-address__card-item">
+                <p class="tabs-address__card-item-text">Адрес:</p>
+                <div class="tabs-address__card-item-link">
+                  <svg>
+                    <use xlink:href="../assets/sprite.svg#icon-location"></use>
+                  </svg>
+                  <a href="https://yandex.ru/maps/-/CDqtnG0P" target="_blank">241050, г. Брянск, ул. Советская,
+                    д.35</a>
+                </div>
+              </div>
+              <div class="tabs-address__card-item">
+                <p class="tabs-address__card-item-text">Реквизиты компании:</p>
+                <div class="tabs-address__card-item-link">
+                  <svg>
+                    <use xlink:href="../assets/sprite.svg#icon-doc"></use>
+                  </svg>
+                  <a href="#" target="_blank">PDF - 0.2 МБ</a>
+                </div>
+              </div>
+            </div>
+            <div class="tabs-address__map">
+              <div style="position:relative;overflow:hidden;">
+                <a
+                  href="https://yandex.ru/maps/191/bryansk/?utm_medium=mapframe&utm_source=maps"
+                  style="color:#eee;font-size:12px;position:absolute;top:0px;">Брянск</a><a
+                href="https://yandex.ru/maps/191/bryansk/house/sovetskaya_ulitsa_35/Z00YdQJhTEwDQFtpfX51eHtjYA==/?ll=34.351595%2C53.249704&utm_medium=mapframe&utm_source=maps&z=17.23"
+                style="color:#eee;font-size:12px;position:absolute;top:14px;">Советская улица, 35 — Яндекс Карты</a>
+                <iframe
+                  src="https://yandex.ru/map-widget/v1/?ll=34.351595%2C53.249704&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NjAwMzc2NxI90KDQvtGB0YHQuNGPLCDQkdGA0Y_QvdGB0LosINCh0L7QstC10YLRgdC60LDRjyDRg9C70LjRhtCwLCAzNSIKDQloCUIVs_9UQg%2C%2C&z=17.23"
+                  frameborder="0" allowfullscreen="true" style="position:relative;"></iframe>
+              </div>
+            </div>
           </div>
         </div>
       </div>

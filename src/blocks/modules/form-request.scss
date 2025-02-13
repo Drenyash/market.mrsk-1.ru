@@ -1,0 +1,262 @@
+.form-request {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  height: 100%;
+  overflow-y: auto;
+  margin-right: -34px;
+  padding-right: 29px;
+
+  @include r($laptop-min) {
+    margin-right: -11px;
+    padding-right: 9px;
+  }
+
+  &::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: #DFE6EB;
+    border-radius: 10px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #1A599A;
+    border-radius: 10px;
+  }
+
+
+  &__title {
+    font-family: $font-accent;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 41px;
+    color: $color-black;
+
+    @include r($laptop-min) {
+      font-size: 20px;
+      line-height: 24px;
+    }
+  }
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-flow: dense;
+    gap: 14px 10px;
+
+    @include r($laptop-min) {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    &--col {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    grid-column: span 1;
+    cursor: pointer;
+
+    &--full {
+      grid-column: span 2;
+    }
+
+    &--row {
+      flex-direction: row;
+      gap: 8px;
+    }
+
+    &--files {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 5px 20px;
+      padding-top: 21px;
+    }
+  }
+
+  &__text {
+    font-family: $font-accent;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 16px;
+    color: #242424;
+
+    &--medium {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      font-family: $font-accent;
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 19px;
+
+      span {
+        font-weight: 500;
+      }
+    }
+
+    &--bold {
+      font-family: $font-accent;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 19px;
+      color: #242424;
+    }
+
+    &--big {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      font-family: $font-accent;
+      font-size: 26px;
+      font-weight: 400;
+      line-height: 31px;
+
+      @include r($laptop-min) {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 21px;
+      }
+
+      span {
+        font-family: $font-accent;
+        font-size: 32px;
+        font-weight: 500;
+        line-height: 38px;
+
+        @include r($laptop-min) {
+          font-size: 28px;
+          font-weight: 500;
+          line-height: 33px;
+        }
+      }
+    }
+
+    &--file {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+
+      svg {
+        display: flex;
+        width: 15px;
+        height: 15px;
+      }
+
+      .form-request__remove {
+        display: flex;
+        width: 8px;
+        height: 8px;
+        fill: #D02527;
+      }
+
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 16px;
+      color: #1A599A;
+      text-decoration: underline;
+    }
+  }
+
+  &__head {
+    font-family: $font-accent;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 16px;
+    color: #242424;
+
+    sup {
+      color: #D02527;
+    }
+  }
+
+  &__element {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+
+  &__footer {
+    display: flex;
+    flex-direction: column;
+    padding-top: 40px;
+    gap: 20px;
+    border-top: 1px solid #DFE6EB;
+  }
+
+  &__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 288px;
+    padding: 14px;
+    font-family: $font-accent;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21px;
+    color: $color-light;
+    background-color: #3C72A9;
+    border-radius: 8px;
+    cursor: pointer;
+
+    @include r($laptop-min) {
+      max-width: 100%;
+    }
+  }
+
+  &__control {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+
+    @include r($laptop-min) {
+      flex-direction: column;
+      gap: 12px;
+      width: 100%;
+    }
+  }
+
+  &__accept {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    span {
+      font-family: 'Roboto', sans-serif;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 14px;
+      color: #858FA4;
+
+      a {
+        color: #42AB44;
+      }
+    }
+  }
+
+  &__file {
+    &--loaded {
+      .form-request__text {
+        display: flex;
+        align-items: center;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 16px;
+        color: #242424;
+        text-decoration: none;
+      }
+    }
+  }
+}

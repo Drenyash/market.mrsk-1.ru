@@ -23,12 +23,28 @@ import vk from "../assets/sprite/icon-vk.svg";
 import chevrone from "../assets/sprite/icon-chevrone.svg";
 import refresh from "../assets/sprite/icon-refresh.svg";
 import pdf from "../assets/sprite/icon-pdf.svg";
-import arrowBold from "../assets/sprite/icon-arrow-bold.svg";
-import external from "../assets/sprite/icon-external.svg";
-import arrowSmall from "../assets/sprite/icon-arrow-small.svg";
-import filter from "../assets/sprite/icon-filter.svg";
+import bulb2 from "../assets/sprite/icon-bulb-2.svg";
+import cabel from "../assets/sprite/icon-cabel.svg";
+import check from "../assets/sprite/icon-check.svg";
+import lorry2 from "../assets/sprite/icon-lorry-2.svg";
+import plug from "../assets/sprite/icon-plug.svg";
+import tower from "../assets/sprite/icon-tower.svg";
+import zap from "../assets/sprite/icon-zap.svg";
+import back from "../assets/sprite/icon-back.svg";
+import doc2 from "../assets/sprite/icon-doc-2.svg";
+import docAdd from "../assets/sprite/icon-doc-add.svg";
 
 export default {
+  bulb2,
+  doc2,
+  docAdd,
+  cabel,
+  check,
+  lorry2,
+  back,
+  plug,
+  tower,
+  zap,
   arrow,
   arrowEmpty,
   arrowMin,
@@ -54,8 +70,4 @@ export default {
   chevrone,
   refresh,
   pdf,
-  arrowBold,
-  external,
-  arrowSmall,
-  filter,
 };

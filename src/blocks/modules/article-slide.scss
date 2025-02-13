@@ -1,0 +1,120 @@
+.article-slide {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 120px;
+  border-radius: 20px;
+  overflow: hidden;
+
+  @include r($mobile) {
+    padding-bottom: 44px;
+  }
+
+  &__picture {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(180deg, rgba(0, 39, 67, 0.6) 13.93%, rgba(0, 39, 67, 0) 86.14%);
+    }
+
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+
+  &__info {
+    display: flex;
+    padding: 70px 59px 20px;
+    z-index: 1;
+
+    @include r($laptop-min) {
+      padding: 40px 14px 0;
+    }
+  }
+
+  &__title {
+    font-family: $font-accent;
+    font-size: 64px;
+    font-weight: 500;
+    line-height: 76px;
+    text-transform: uppercase;
+    color: $color-light;
+
+    @include r($laptop-min) {
+      font-size: 32px;
+      font-weight: 500;
+      line-height: 38px;
+    }
+  }
+
+  &__detail {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    max-width: 690px;
+    padding: 30px 53px 46px 60px;
+    background-color: rgba($color-blue, .7);
+    backdrop-filter: blur(10px);
+    border: 1px solid $color-blue;
+    border-radius: 0 20px 20px 0;
+    z-index: 1;
+
+    @include r($laptop-min) {
+      gap: 10px;
+      padding: 20px 14px;
+      max-width: 80%;
+    }
+  }
+
+  &__head {
+    font-family: $font-accent;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 41px;
+    color: $color-light;
+
+    @include r($laptop-min) {
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 24px;
+    }
+  }
+
+  &__text {
+    font-family: $font-accent;
+    font-size: 32px;
+    font-weight: 300;
+    line-height: 41px;
+    color: $color-light;
+
+    @include r($laptop-min) {
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 18px;
+    }
+  }
+}

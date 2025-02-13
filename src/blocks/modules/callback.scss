@@ -4,23 +4,19 @@
   justify-content: center;
   padding: rem(8) rem(14);
   gap: rem(17);
-  color: $color-accent;
+  color: $color-light;
   font-size: rem(18);
-  background-color: $color-dark;
+  background-color: transparent;
   border-radius: 8px;
   transition: .2s linear;
   cursor: pointer;
-
-  &:hover {
-    background-color: #242432;
-  }
 
   &__icon {
     svg {
       display: flex;
       width: rem(20);
       height: rem(20);
-      fill: $color-accent;
+      fill: $color-light;
     }
   }
 

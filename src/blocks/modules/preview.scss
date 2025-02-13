@@ -1,0 +1,362 @@
+.preview {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  min-height: 918px;
+  height: 918px;
+  overflow: hidden;
+  transition: .2s linear;
+
+  &__item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    min-height: 100%;
+    height: fit-content;
+    pointer-events: none;
+    background-color: $color-light;
+    transition: .2s linear;
+
+    @include r($laptop-min) {
+      display: flex;
+      flex-direction: column;
+      opacity: 0;
+      z-index: 1;
+    }
+
+    .preview__info {
+      transform: translateX(-100%);
+    }
+
+    .preview__detail {
+      transform: translateX(100%);
+    }
+
+    &--main {
+      position: static;
+      display: grid;
+      pointer-events: auto;
+      opacity: 1;
+
+      @include r($laptop-min) {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .preview__info {
+        transform: translateX(0);
+
+        @include r($laptop-min) {
+          padding: 40px 14px 20px 14px;
+        }
+      }
+
+      .preview__detail {
+        transform: translateX(0);
+      }
+    }
+
+    &.active {
+      pointer-events: auto;
+
+      @include r($laptop-min) {
+        opacity: 1;
+      }
+
+      .preview__info {
+        transform: translateX(0);
+      }
+
+      .preview__detail {
+        transform: translateX(0);
+      }
+    }
+  }
+
+  &__info {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 70px 72px 60px 75px;
+    background-image: url('../assets/images/preview-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: .2s linear;
+    z-index: 1;
+
+    @include r($laptop-min) {
+      gap: 20px;
+      flex-shrink: 0;
+      padding: 70px 14px 20px 14px;
+    }
+  }
+
+  &__detail {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: .2s linear;
+    background-color: $color-light;
+    z-index: 1;
+
+    @include r($laptop-min) {
+      flex-grow: 1;
+    }
+  }
+
+  &__picture {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+
+  &__items {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 20px;
+    padding-bottom: 80px;
+    padding-right: 145px;
+    z-index: 1;
+
+    @include r($laptop-min) {
+      gap: 10px;
+      padding: 40px 75px 40px 0;
+    }
+  }
+
+  &__element {
+    padding: 30px 40px;
+    width: 100%;
+    font-family: $font-accent;
+    font-size: 32px;
+    font-weight: 300;
+    line-height: 41px;
+    color: $color-light;
+    background-color: rgba(26, 89, 154, 0.7);
+    backdrop-filter: blur(10px);
+    border: 1px solid #1A599A;
+    border-radius: 0 20px 20px 0;
+    transform: translateX(-100%);
+    transition: .2s linear;
+
+    &.active {
+      transform: translateX(0);
+    }
+
+    @include r($laptop-min) {
+      padding: 10px 14px;
+      font-size: 20px;
+      font-weight: 300;
+      line-height: 20px;
+      border-radius: 10px;
+    }
+  }
+
+  &__top {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  &__back {
+    position: absolute;
+    top: 31px;
+    left: 75px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    cursor: pointer;
+
+    @include r($laptop-min) {
+      top: 30px;
+      left: 14px;
+    }
+
+    &:hover {
+      span {
+        color: $color-light;
+      }
+
+      svg {
+        fill: $color-light;
+      }
+    }
+
+    span {
+      font-family: $font-accent;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 19px;
+      color: #CECECE;
+      transition: .2s linear;
+    }
+
+    svg {
+      display: flex;
+      width: 8px;
+      height: 8px;
+      fill: #CECECE;
+      transition: .2s linear;
+    }
+  }
+
+  &__title {
+    font-family: $font-accent;
+    font-size: 64px;
+    font-weight: 500;
+    line-height: 76px;
+    text-transform: uppercase;
+    color: $color-light;
+
+    @include r($laptop-min) {
+      font-size: 32px;
+      font-weight: 500;
+      line-height: 38px;
+    }
+  }
+
+  &__text {
+    font-family: $font-accent;
+    font-size: 32px;
+    font-weight: 300;
+    line-height: 41px;
+    color: $color-light;
+
+    @include r($laptop-min) {
+      font-size: 20px;
+      font-weight: 300;
+      line-height: 26px;
+    }
+
+    span {
+      font-weight: 500;
+    }
+  }
+
+  &__head {
+    margin-bottom: 10px;
+    font-family: $font-accent;
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 33px;
+    color: $color-light;
+
+    @include r($laptop-min) {
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 26px;
+    }
+  }
+
+  &__stats-block {
+    margin-bottom: 30px;
+  }
+
+  &__list {
+    display: grid;
+    grid-auto-flow: dense;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+
+    @include r($laptop-min) {
+      gap: 5px 7px;
+    }
+  }
+
+  &__slider {
+    display: none;
+    width: 100%;
+    height: 100%;
+
+    &.active {
+      display: flex;
+    }
+
+    .swiper {
+      display: flex;
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__control {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-top: auto;
+
+    @include r($laptop-min) {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+
+  &__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 16px;
+    font-family: $font-accent;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21px;
+    color: #60606E;
+    border-radius: 8px;
+    background-color: #E1E9F0;
+    cursor: pointer;
+
+    svg {
+      display: flex;
+      width: 8px;
+      height: 8px;
+      transform: rotate(180deg);
+      fill: #60606E;
+    }
+
+    &--blue {
+      color: $color-light;
+      background-color: $color-blue;
+    }
+
+    &--full {
+      grid-column: span 2;
+    }
+  }
+}

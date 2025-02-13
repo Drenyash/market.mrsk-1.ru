@@ -1,10 +1,10 @@
 .footer {
-  background-color: $color-dark;
+  background-color: $color-blue;
   color: $color-text-gray;
 
   &__top {
     padding: rem(35) 0 rem(47);
-    border-bottom: 2px solid #121521;
+    border-bottom: 1px solid #2974C1;
   }
 
   &__block {
@@ -63,10 +63,11 @@
     flex-direction: column;
     gap: rem(5);
     text-decoration: none;
+    color: #A3BDD7;
   }
 
   &__menu-link--accent {
-    color: $color-accent;
+    color: $color-light;
   }
 
   &__contacts {
@@ -89,6 +90,7 @@
     font-size: rem(18);
     font-family: $font-accent;
     font-weight: 500;
+    color: $color-light;
   }
 
   &__subscribe-icon {
@@ -111,15 +113,16 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: rem(11) rem(7);
+    padding: rem(10) rem(10);
     border-radius: 10px;
     background-color: rgba(133, 143, 164, 0.15);
   }
 
   &__socials-icon {
     svg {
-      max-width: rem(21);
-      max-height: rem(13);
+      display: flex;
+      width: rem(21);
+      height: rem(21);
     }
   }
 

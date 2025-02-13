@@ -194,4 +194,40 @@
       color: #60606E;
     }
   }
+
+  &--preview {
+    h3 {
+      font-family: $font-accent;
+      font-size: 28px;
+      font-weight: 500;
+      line-height: 33px;
+      color: $color-light;
+
+      @include r($laptop-min) {
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 26px;
+      }
+    }
+
+    ul {
+      all: unset;
+      list-style: none;
+    }
+
+    p, li {
+      margin: 0;
+      font-family: $font-accent;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 30px;
+      color: #E5E5E5;
+
+      @include r($laptop-min) {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 21px;
+      }
+    }
+  }
 }

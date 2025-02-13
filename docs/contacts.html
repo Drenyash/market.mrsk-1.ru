@@ -1003,23 +1003,10 @@
       </div>
       <div class="header__bottom-right mob-hidden">
         <nav class="nav nav--header">
-          <ul class="nav__list">
-            <li class="nav__item">
-              <a href="#" target="_blank" class="nav__item-link">Главная</a>
-            </li>
-            <li class="nav__item">
-              <a href="#" target="_blank" class="nav__item-link">Список услуг</a>
-            </li>
-            <li class="nav__item">
-              <a href="#" target="_blank" class="nav__item-link">Контакты</a>
-            </li>
-            <li class="nav__item">
-              <a href="#" target="_blank" class="nav__item-link">О компании</a>
-            </li>
-            <li class="nav__item">
-              <a href="#" target="_blank" class="nav__item-link">FAQ</a>
-            </li>
-          </ul>
+          <a href="#" class="nav__link active" data-id="services">Список услуг</a>
+          <a href="#" class="nav__link" data-id="about">О компании</a>
+          <a href="#" class="nav__link" data-id="questions">Вопросы</a>
+          <a href="#" class="nav__link" data-id="contacts">Контакты</a>
         </nav>
       </div>
       <div class="mobile-search" data-mobile-search>
@@ -2872,6 +2859,248 @@
           <span class="form__price">100 000 руб.</span>
         </div>
       </div>
+    </form>
+  </div>
+  <div class="modal-request" id="technical-request">
+    <button class="modal-request__close" data-fancybox-close>
+      <svg class="modal-request__icon">
+        <use xlink:href="./assets/sprite.svg#icon-close"></use>
+      </svg>
+    </button>
+    <!-- в action указать путь к API -->
+    <form action="#" class="form-request" data-form-request>
+      <h2 class="form-request__title">Заявка на услугу «Технологическое<br> присоединение под ключ»</h2>
+      <fieldset class="form-request__wrapper">
+        <label class="form-request__item form-request__item--full">
+          <span class="form-request__text">Введите номер заявки на технологическое присоединение</span>
+          <input type="text" class="request-input" name="ORDER_NUMBER" value="" placeholder="Номер заявки">
+        </label>
+        <label class="form-request__item">
+          <span class="form-request__text">ФИО</span>
+          <input type="text" class="request-input" name="FIO" placeholder="Введите данные">
+        </label>
+        <label class="form-request__item">
+          <span class="form-request__text">Дата рождения</span>
+          <input type="text" class="request-input" name="DATE" placeholder="Введите данные">
+        </label>
+        <label class="form-request__item">
+          <span class="form-request__text">Место рождения</span>
+          <input type="text" class="request-input" name="PLACE" placeholder="Введите данные">
+        </label>
+        <label class="form-request__item">
+          <span class="form-request__text">Телефон</span>
+          <input type="tel" class="request-input" name="PHONE" placeholder="Введите данные">
+        </label>
+        <label class="form-request__item">
+          <span class="form-request__text">E-mail</span>
+          <input type="text" class="request-input" name="EMAIL" placeholder="Введите данные">
+        </label>
+        <label class="form-request__item">
+          <span class="form-request__text">Адрес регистрации</span>
+          <input type="text" class="request-input" name="REGISTRATION_ADDRESS" placeholder="Введите данные">
+        </label>
+        <label class="form-request__item">
+          <span class="form-request__text">Адрес места жительства</span>
+          <input type="text" class="request-input" name="PLACE_ADDRESS" placeholder="Введите данные">
+        </label>
+        <label class="form-request__item">
+          <span class="form-request__text">Почтовый адрес</span>
+          <input type="text" class="request-input" name="MAIL_ADDRESS" placeholder="Введите данные">
+        </label>
+        <label class="form-request__item">
+          <span class="form-request__text">Серия и номер паспорта</span>
+          <input type="text" class="request-input" name="PASSPORT" placeholder="Введите данные">
+        </label>
+        <label class="form-request__item form-request__item--files" data-files>
+          <span class="form-request__file" data-file-add="PASS">
+            <span class="form-request__text form-request__text--file">
+              <svg>
+                <use xlink:href="./assets/sprite.svg#icon-doc-add"></use>
+              </svg>
+              Прикрепить сканы двух страниц
+            </span>
+            <input type="file" hidden multiple>
+          </span>
+        </label>
+        <label class="form-request__item">
+          <span class="form-request__text">Номер СНИЛС</span>
+          <input type="text" class="request-input" placeholder="Введите данные">
+        </label>
+        <label class="form-request__item form-request__item--files" data-files>
+          <span class="form-request__file" data-file-add="SNILS">
+            <span class="form-request__text form-request__text--file">
+              <svg>
+                <use xlink:href="./assets/sprite.svg#icon-doc-add"></use>
+              </svg>
+              Прикрепить сканы двух страниц
+            </span>
+            <input type="file" hidden multiple>
+          </span>
+        </label>
+        <label class="form-request__item form-request__item--full">
+          <span class="form-request__text">Описание услуги</span>
+          <textarea class="request-input request-input--area" name=""
+                    placeholder="Например: Заявка на технологическое присоединение под ключ физического лица"></textarea>
+        </label>
+      </fieldset>
+      <fieldset class="form-request__wrapper form-request__wrapper--col mb-10">
+        <p class="form-request__head">
+          Услуги<sup>*</sup>
+        </p>
+        <label class="form-request__item form-request__item--row">
+          <input type="checkbox" class="request-checkbox" name="SERVICE" value="building_1f">
+          <span class="form-request__text form-request__text--medium">
+            Cтроительство 1ф. ВЛ-0,4 кВ до 25 м., м/и
+            <span>Цена: 13 530,00 ₽</span>
+          </span>
+        </label>
+        <label class="form-request__item form-request__item--row">
+          <input type="checkbox" class="request-checkbox" name="SERVICE" value="building_3f">
+          <span class="form-request__text form-request__text--medium">
+            Cтроительство 3ф. ВЛ-0,4 кВ до 25 м., м/и
+            <span>Цена: 16 694,00 ₽</span>
+          </span>
+        </label>
+        <label class="form-request__item form-request__item--row">
+          <input type="checkbox" class="request-checkbox" name="SERVICE" value="building_1f">
+          <span class="form-request__text form-request__text--medium">
+            Cтроительство 1ф. ВЛ-0,4 кВ до 25 м., м/и
+            <span>Цена: 13 530,00 ₽</span>
+          </span>
+        </label>
+        <label class="form-request__item form-request__item--row">
+          <input type="checkbox" class="request-checkbox" name="SERVICE" value="building_3f">
+          <span class="form-request__text form-request__text--medium">
+            Cтроительство 3ф. ВЛ-0,4 кВ до 25 м., м/и
+            <span>Цена: 16 694,00 ₽</span>
+          </span>
+        </label>
+        <p class="form-request__text form-request__text--accent">
+          <sup>*</sup>Ориентировочная стоимость.<br>
+          Окончательная стоимость формируется сотрудником исходя из актуальных данных на момент подачи заявки,.
+        </p>
+      </fieldset>
+      <fieldset class="form-request__wrapper form-request__wrapper--col">
+        <p class="form-request__head">
+          Выберите способ оплаты
+        </p>
+        <div class="form-request__element">
+          <label class="form-request__item form-request__item--row">
+            <input type="radio" name="PAYMENT_TYPE" value="online" class="request-radio">
+            <span class="form-request__text form-request__text--bold">Оплата онлайн</span>
+          </label>
+          <label class="form-request__item form-request__item--row">
+            <input type="radio" name="PAYMENT_TYPE" value="invoice" class="request-radio">
+            <span class="form-request__text form-request__text--bold">Оплата по счету</span>
+          </label>
+        </div>
+      </fieldset>
+      <fieldset class="form-request__footer">
+        <p class="form-request__text form-request__text--big">
+          Стоимость присоединения:
+          <span>100 000 ₽</span>
+        </p>
+        <div class="form-request__control">
+          <button class="form-request__button" type="submit">Продолжить</button>
+          <label class="form-request__accept">
+            <input type="checkbox" class="request-checkbox request-checkbox--green" data-accept>
+            <span class="form-request__text">
+            Согласие на обработку <a href="#">персональных данных</a>
+          </span>
+          </label>
+        </div>
+      </fieldset>
+    </form>
+  </div>
+  <div class="modal-request" id="request">
+    <button class="modal-request__close" data-fancybox-close>
+      <svg class="modal-request__icon">
+        <use xlink:href="./assets/sprite.svg#icon-close"></use>
+      </svg>
+    </button>
+    <!-- в action указать путь к API -->
+    <form action="#" class="form-request" data-form-request>
+      <h2 class="form-request__title">Заявка на другие услуги</h2>
+      <fieldset class="form-request__wrapper">
+        <label class="form-request__item">
+          <span class="form-request__text">ФИО</span>
+          <input type="text" class="request-input" name="FIO" placeholder="Введите данные">
+        </label>
+        <label class="form-request__item">
+          <span class="form-request__text">Дата рождения</span>
+          <input type="text" class="request-input" name="DATE" placeholder="Введите данные">
+        </label>
+        <label class="form-request__item">
+          <span class="form-request__text">Место рождения</span>
+          <input type="text" class="request-input" name="PLACE" placeholder="Введите данные">
+        </label>
+        <label class="form-request__item">
+          <span class="form-request__text">Телефон</span>
+          <input type="tel" class="request-input" name="PHONE" placeholder="Введите данные">
+        </label>
+        <label class="form-request__item">
+          <span class="form-request__text">E-mail</span>
+          <input type="text" class="request-input" name="EMAIL" placeholder="Введите данные">
+        </label>
+        <label class="form-request__item">
+          <span class="form-request__text">Адрес регистрации</span>
+          <input type="text" class="request-input" name="REGISTRATION_ADDRESS" placeholder="Введите данные">
+        </label>
+        <label class="form-request__item">
+          <span class="form-request__text">Адрес места жительства</span>
+          <input type="text" class="request-input" name="PLACE_ADDRESS" placeholder="Введите данные">
+        </label>
+        <label class="form-request__item">
+          <span class="form-request__text">Почтовый адрес</span>
+          <input type="text" class="request-input" name="MAIL_ADDRESS" placeholder="Введите данные">
+        </label>
+        <label class="form-request__item">
+          <span class="form-request__text">Серия и номер паспорта</span>
+          <input type="text" class="request-input" name="PASSPORT" placeholder="Введите данные">
+        </label>
+        <label class="form-request__item form-request__item--files" data-files>
+          <span class="form-request__file" data-file-add="PASS">
+            <span class="form-request__text form-request__text--file">
+              <svg>
+                <use xlink:href="./assets/sprite.svg#icon-doc-add"></use>
+              </svg>
+              Прикрепить сканы двух страниц
+            </span>
+            <input type="file" hidden multiple>
+          </span>
+        </label>
+        <label class="form-request__item">
+          <span class="form-request__text">Номер СНИЛС</span>
+          <input type="text" class="request-input" placeholder="Введите данные">
+        </label>
+        <label class="form-request__item form-request__item--files" data-files>
+          <span class="form-request__file" data-file-add="SNILS">
+            <span class="form-request__text form-request__text--file">
+              <svg>
+                <use xlink:href="./assets/sprite.svg#icon-doc-add"></use>
+              </svg>
+              Прикрепить сканы двух страниц
+            </span>
+            <input type="file" hidden multiple>
+          </span>
+        </label>
+        <label class="form-request__item form-request__item--full">
+          <span class="form-request__text">Описание услуги</span>
+          <textarea class="request-input request-input--area" name=""
+                    placeholder="Например: Заявка на технологическое присоединение под ключ физического лица"></textarea>
+        </label>
+      </fieldset>
+      <fieldset class="form-request__footer">
+        <div class="form-request__control">
+          <button class="form-request__button" type="submit">Отправить заявку</button>
+          <label class="form-request__accept">
+            <input type="checkbox" class="request-checkbox request-checkbox--green" data-accept>
+            <span class="form-request__text">
+            Согласие на обработку <a href="#">персональных данных</a>
+          </span>
+          </label>
+        </div>
+      </fieldset>
     </form>
   </div>
 </div>

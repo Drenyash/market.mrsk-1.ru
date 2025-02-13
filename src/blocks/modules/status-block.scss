@@ -1,0 +1,38 @@
+.stats-block {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__counter {
+    font-family: $font-accent;
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 60px;
+    color: $color-light;
+
+    @include r($laptop-min) {
+      font-size: 30px;
+      font-weight: 400;
+      line-height: 36px;
+    }
+  }
+
+  &__text {
+    font-family: $font-accent;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    color: $color-light;
+
+    @include r($laptop-min) {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 16px;
+    }
+  }
+}

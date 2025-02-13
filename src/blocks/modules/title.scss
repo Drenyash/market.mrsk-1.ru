@@ -1,11 +1,12 @@
 .title {
-  font-size: calc(32px + 32 * ((100vw - 320px) / (1920 - 320)));
+  font-size: 64px;
   font-family: $font-accent;
   color: $color-dark;
   font-weight: 500;
   line-height: normal;
-  @include rmin(1920) {
-    font-size: rem(64);
+
+  @include r($mobile) {
+    font-size: 30px;
   }
 
   &--light {

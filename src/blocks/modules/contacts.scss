@@ -2,15 +2,14 @@
   &__link {
     display: flex;
     align-items: center;
-    width: 100%;
     gap: rem(8);
-    color: $color-text-gray;
+    color: #242830;
     font-weight: 500;
 
     svg {
       max-width: rem(15);
       max-height: rem(19);
-      fill: $color-text-gray;
+      fill: $color-blue;
     }
   }
 
@@ -34,16 +33,22 @@
     display: flex;
     align-items: center;
     gap: rem(8);
+    color: #242830;
 
     svg {
       max-width: rem(16);
       max-height: rem(19);
+      fill: $color-blue;
     }
   }
 
   &__card {
-    border-radius: rem(8);
+    border-radius: rem(20);
     min-height: rem(368);
+
+    @include r($mobile) {
+      min-height: auto;
+    }
   }
 
   &__card-inner {
@@ -78,7 +83,7 @@
   }
 
   &__card--accent {
-    background-color: $color-accent;
+    background-color: $color-blue;
     padding: rem(35) rem(40);
     color: #FFFFFF;
 

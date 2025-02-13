@@ -1,0 +1,42 @@
+.modal-request {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 40px 40px 50px;
+  width: 100%;
+  max-width: 700px;
+  max-height: 800px;
+  border-radius: 15px;
+  background-color: #F1F3F2;
+
+  @include r($laptop-min) {
+    padding: 40px 20px 30px;
+    width: auto;
+    max-height: 90%;
+    margin: 0 24px;
+  }
+
+  &__close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+
+    @include r($laptop-min) {
+      top: 14px;
+      right: 14px;
+    }
+  }
+
+  &__icon {
+    display: flex;
+    width: 18px;
+    height: 18px;
+    fill: #3C72A9;
+
+    @include r($laptop-min) {
+      width: 16px;
+      height: 16px;
+    }
+  }
+}

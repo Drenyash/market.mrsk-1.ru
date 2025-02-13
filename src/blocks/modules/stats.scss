@@ -3,14 +3,9 @@
   grid-template-columns: 1fr 1fr;
   gap: 30px 39px;
 
-  @include r($mobile) {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-  }
-
   &__item {
     min-height: 200px;
+
     @include r($mobile) {
       min-height: auto;
     }
@@ -25,11 +20,21 @@
     font-style: normal;
     font-weight: 500;
     line-height: normal;
+    color: $color-blue;
+
     @include r($mobile) {
-      font-size: 60px;
+      font-weight: 400;
+      font-size: 50px;
+      line-height: 60px;
     }
+
     span {
       font-size: 18px;
+
+      @include r($mobile) {
+        font-size: 14px;
+        line-height: 16px;
+      }
     }
   }
 
