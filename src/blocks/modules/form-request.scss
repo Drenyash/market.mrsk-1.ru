@@ -259,4 +259,43 @@
       }
     }
   }
+
+  &__subtitle {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #8E8E8E;
+  }
+
+  &__hint {
+    svg {
+      display: flex;
+      width: 20px;
+      height: 20px;
+      fill: #3C72A9;
+    }
+
+    &.hint {
+      position: static;
+    }
+
+    .hint__text {
+      position: absolute;
+      left: 0;
+      width: 100%;
+    }
+
+    [data-title]:after {
+      @include r($mobile) {
+        top: calc(100% + 20px);
+        left: 0;
+        width: calc(100% - 20px);
+      }
+    }
+  }
 }

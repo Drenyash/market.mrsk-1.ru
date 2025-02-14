@@ -1,0 +1,30 @@
+.radio-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 4px 6px;
+  box-shadow: 0 1px 4px 0 #00000033 inset;
+  background-color: $color-light;
+  border-radius: 4px;
+
+  &__item {
+    span {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      padding: 6px;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+      text-align: center;
+      color: #BEBEBE;
+      border-radius: 4px;
+      background-color: $color-light;
+      transition: .2s linear;
+    }
+    input:checked ~ span {
+      color: $color-light;
+      background-color: #3C72A9;
+    }
+  }
+}

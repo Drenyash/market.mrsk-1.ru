@@ -3,7 +3,7 @@
   width: 100%;
   max-width: rem(550);
   font-family: $font-accent;
-  border-radius: rem(8);
+  border-radius: rem(15);
   padding: 0;
   background-color: #F1F2F2;
 
@@ -184,7 +184,10 @@
   }
 
   &__title {
-    font-size: rem(24);
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: rem(32);
     font-weight: 500;
     color: $color-dark;
     margin-bottom: rem(10);
@@ -205,11 +208,17 @@
     display: flex;
     justify-content: center;
     padding: rem(16) rem(24);
-    background-color: #004072;
+    background-color: #3C72A9;
     border-radius: rem(12);
     color: #FFFFFF;
     font-size: rem(18);
     text-align: center;
+    cursor: pointer;
+
+    &--light {
+      color: #60606E;
+      background-color: $color-light;
+    }
   }
 
   &__success-icon {

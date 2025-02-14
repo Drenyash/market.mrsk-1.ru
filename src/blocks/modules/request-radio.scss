@@ -1,0 +1,28 @@
+.request-radio {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+  border-radius: 100%;
+  background-color: $color-light;
+
+  &::before {
+    content: '';
+    display: flex;
+    width: 8px;
+    height: 8px;
+    border-radius: 100%;
+    background-color: #3C72A9;
+    opacity: 0;
+    transition: .2s linear;
+  }
+
+  &:checked {
+    &::before {
+      opacity: 1;
+    }
+  }
+}

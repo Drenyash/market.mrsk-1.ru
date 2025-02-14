@@ -2018,34 +2018,34 @@
       </svg>
     </button>
     <div class="modal__head">
-      <button class="button button--black button--icon desktop-hidden" data-fancybox-close>
-        <svg>
-          <use xlink:href="./assets/sprite.svg#icon-arrow-small"></use>
-        </svg>
-        <span>Назад</span>
-      </button>
-      <p class="modal__title">Оформление заявки</p>
-      <div class="hint modal__subtitle">
-        <p class="hint__text"
-           data-title="* Предоставление услуги возможно только при уже поданной заявке на технологическое присоединение">
-          У меня уже есть договор технологического присоединения</p>
+      <p class="modal__title">
+        Оформление заявки
         <span class="hint__icon">
           <svg>
             <use xlink:href="./assets/sprite.svg#icon-hint"></use>
           </svg>
         </span>
+      </p>
+      <div class="hint modal__subtitle">
+        <p class="hint__text"
+           data-title="* Предоставление услуги возможно только при уже поданной заявке на технологическое присоединение">
+          Услуга технологического присоединения «под ключ» предоставляется после подачи заявки портале тп.рф. Если Вы
+          уже подали заявку, заполните форму обратной связи и наш сотрудник свяжется с Вами с целью уточнения
+          деталей</p>
       </div>
     </div>
     <div class="modal__top">
       <div class="modal__button-wrap">
-        <a class="modal__button"
+        <button class="modal__button"
+                data-modal-next="technical-request"
+        >
+          Подключить услугу технологического<br>
+          присоединения «под ключ»
+        </button>
+        <a class="modal__button modal__button--light"
            href="https://xn----7sb7akeedqd.xn--p1ai/platform/portal/tehprisEE_portal"
            target="_blank"
-        >Подать заявку на технологическое присоединение</a>
-        <button class="modal__button"
-                data-modal-next="modalTechConnectionParams"
-        >Я уже подал заявку на технологическое присоединение
-        </button>
+        >Перейти на портал-тр.рф</a>
       </div>
     </div>
   </div>
@@ -3103,6 +3103,181 @@
       </fieldset>
     </form>
   </div>
+  <div class="modal-request" id="technical-connect">
+    <button class="modal-request__close" data-fancybox-close>
+      <svg class="modal-request__icon">
+        <use xlink:href="./assets/sprite.svg#icon-close"></use>
+      </svg>
+    </button>
+    <!-- в action указать путь к API -->
+    <h2 class="form-request__title mb-8">Заявка на технологическое<br>
+      присоединение</h2>
+    <div class="form-request__subtitle mb-20">
+      <p>
+        У меня уже есть договор технологического присоединения
+      </p>
+      <div class="form-request__hint hint">
+        <p class="hint__text"
+           data-title="* Предоставление услуги возможно только при уже поданной заявке на технологическое присоединение"></p>
+        <svg>
+          <use xlink:href="./assets/sprite.svg#icon-hint"></use>
+        </svg>
+      </div>
+    </div>
+    <form action="#" class="form-request" data-form-request>
+      <fieldset class="form-request__wrapper">
+        <label class="form-request__item form-request__item--full">
+          <span class="form-request__text">Введите номер заявки на технологическое присоединение</span>
+          <input type="text" class="request-input" name="ORDER_NUMBER" value="" placeholder="Номер заявки">
+        </label>
+        <label class="form-request__item form-request__item--full">
+          <span class="form-request__text">ФИО</span>
+          <input type="text" class="request-input" name="FIO" placeholder="Введите данные">
+        </label>
+        <label class="form-request__item form-request__item--full">
+          <span class="form-request__text">Телефон</span>
+          <input type="tel" class="request-input" name="PHONE" placeholder="Введите данные">
+        </label>
+        <label class="form-request__item form-request__item--full">
+          <span class="form-request__text">E-mail</span>
+          <input type="text" class="request-input" name="EMAIL" placeholder="Введите данные">
+        </label>
+        <label class="form-request__item form-request__item--full">
+          <span class="form-request__text">Филиал</span>
+          <span class="select">
+            <select class="select">
+            <option value="0">Удмуртэнерго</option>
+            <option value="1">Филиал - 2</option>
+            <option value="2">Филиал - 3</option>
+            <option value="3">Филиал - 4</option>
+            <option value="4">Филиал - 5</option>
+            <option value="5">Филиал - 6</option>
+          </select>
+          </span>
+        </label>
+        <div class="form-request__item form-request__item--full">
+          <p class="form-request__text">Статус</p>
+          <div class="radio-box">
+            <label class="radio-box__item">
+              <input hidden type="radio" name="status">
+              <span>Юридическое лицо</span>
+            </label>
+            <label class="radio-box__item">
+              <input hidden type="radio" name="status" checked>
+              <span>Физическое лицо</span>
+            </label>
+          </div>
+        </div>
+        <div class="form-request__item form-request__item--full">
+          <p class="form-request__text">Материалы</p>
+          <div class="radio-box">
+            <label class="radio-box__item">
+              <input hidden type="radio" name="material" checked>
+              <span>Материалы компании</span>
+            </label>
+            <label class="radio-box__item">
+              <input hidden type="radio" name="material">
+              <span>Материалы заказчика</span>
+            </label>
+          </div>
+        </div>
+        <div class="form-request__item">
+          <p class="form-request__text">Мощность</p>
+          <div class="radio-box">
+            <label class="radio-box__item">
+              <input hidden type="radio" name="power" checked>
+              <span>До 15 кВт</span>
+            </label>
+            <label class="radio-box__item">
+              <input hidden type="radio" name="power">
+              <span>Свыше 15 кВт</span>
+            </label>
+          </div>
+        </div>
+        <div class="form-request__item">
+          <p class="form-request__text">Напряжение</p>
+          <div class="radio-box">
+            <label class="radio-box__item">
+              <input hidden type="radio" name="voltage" checked>
+              <span>220 В</span>
+            </label>
+            <label class="radio-box__item">
+              <input hidden type="radio" name="voltage">
+              <span>380 В</span>
+            </label>
+          </div>
+        </div>
+      </fieldset>
+      <fieldset class="form-request__wrapper form-request__wrapper--col mb-10">
+        <p class="form-request__head">
+          Услуги<sup>*</sup>
+        </p>
+        <label class="form-request__item form-request__item--row">
+          <input type="checkbox" class="request-checkbox" name="SERVICE" value="building_1f">
+          <span class="form-request__text form-request__text--medium">
+            Cтроительство 1ф. ВЛ-0,4 кВ до 25 м., м/и
+            <span>Цена: 13 530,00 ₽</span>
+          </span>
+        </label>
+        <label class="form-request__item form-request__item--row">
+          <input type="checkbox" class="request-checkbox" name="SERVICE" value="building_3f">
+          <span class="form-request__text form-request__text--medium">
+            Cтроительство 3ф. ВЛ-0,4 кВ до 25 м., м/и
+            <span>Цена: 16 694,00 ₽</span>
+          </span>
+        </label>
+        <label class="form-request__item form-request__item--row">
+          <input type="checkbox" class="request-checkbox" name="SERVICE" value="building_1f">
+          <span class="form-request__text form-request__text--medium">
+            Cтроительство 1ф. ВЛ-0,4 кВ до 25 м., м/и
+            <span>Цена: 13 530,00 ₽</span>
+          </span>
+        </label>
+        <label class="form-request__item form-request__item--row">
+          <input type="checkbox" class="request-checkbox" name="SERVICE" value="building_3f">
+          <span class="form-request__text form-request__text--medium">
+            Cтроительство 3ф. ВЛ-0,4 кВ до 25 м., м/и
+            <span>Цена: 16 694,00 ₽</span>
+          </span>
+        </label>
+        <p class="form-request__text form-request__text--accent">
+          <sup>*</sup>Ориентировочная стоимость.<br>
+          Окончательная стоимость формируется сотрудником исходя из актуальных данных на момент подачи заявки,.
+        </p>
+      </fieldset>
+      <fieldset class="form-request__wrapper form-request__wrapper--col">
+        <p class="form-request__head">
+          Выберите способ оплаты
+        </p>
+        <div class="form-request__element">
+          <label class="form-request__item form-request__item--row">
+            <input type="radio" name="PAYMENT_TYPE" value="online" class="request-radio" checked>
+            <span class="form-request__text form-request__text--bold">Оплата онлайн</span>
+          </label>
+          <label class="form-request__item form-request__item--row">
+            <input type="radio" name="PAYMENT_TYPE" value="invoice" class="request-radio">
+            <span class="form-request__text form-request__text--bold">Оплата по счету</span>
+          </label>
+        </div>
+      </fieldset>
+      <fieldset class="form-request__footer">
+        <p class="form-request__text form-request__text--big">
+          Стоимость присоединения:
+          <span>100 000 ₽</span>
+        </p>
+        <div class="form-request__control">
+          <button class="form-request__button" type="submit">Продолжить</button>
+          <label class="form-request__accept">
+            <input type="checkbox" class="request-checkbox request-checkbox--green" data-accept>
+            <span class="form-request__text">
+              Согласие на обработку<br>
+              <a href="#">персональных данных</a>
+          </span>
+          </label>
+        </div>
+      </fieldset>
+    </form>
+  </div>
 </div>
 
 <!-- Это временная секция, здесь ссылки на все страницы. На продакшене ее не будет -->
@@ -3143,7 +3318,8 @@
             <a href="./business-customer.html" class="temp__link">Бизнес-аналитика Заказчики</a>
             <a href="./business-contacts.html" class="temp__link">Бизнес-аналитика Контакты</a>
             <button data-fancybox data-src="#modalTechConnectionStart" class="temp__link">Modal Оформление заявки</button>
-            <button data-fancybox data-src="#modalTechConnectionParams" class="temp__link">Modal Заявка на технологическое присоединение</button>
+            <button data-fancybox data-src="#technical-connect" class="temp__link">Modal Заявка на технологическое присоединение v2</button>
+            <button data-fancybox data-src="#technical-request" class="temp__link">Modal Заявка на технологическое присоединение</button>
             <button data-fancybox data-src="#modalTechConnectionFIZ" class="temp__link">Modal Введите свои данные / FIZ litso</button>
             <button data-fancybox data-src="#modalTechConnectionJUR" class="temp__link">Modal Введите данные юридического лица / JUR litso</button>
             <button data-fancybox data-src="#modalTechConnectionSuccess" class="temp__link">Modal Ваша заявка успешно отправлена!</button>

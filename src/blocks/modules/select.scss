@@ -1,0 +1,43 @@
+.select {
+  position: relative;
+  border-radius: 4px;
+  overflow: hidden;
+
+  &::before {
+    content: '';
+    display: flex;
+    position: absolute;
+    top: 15px;
+    right: 14px;
+    width: 8px;
+    height: 8px;
+    background-color: transparent;
+    z-index: 1;
+    pointer-events: none;
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0nOCcgaGVpZ2h0PSc2JyB2aWV3Qm94PScwIDAgOCA2JyBmaWxsPSdub25lJyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnPjxwYXRoIGQ9J00zLjU2Njk5IDUuMjVDMy43NTk0NCA1LjU4MzMzIDQuMjQwNTYgNS41ODMzMyA0LjQzMzAxIDUuMjVMNy4wMzEwOSAwLjc1QzcuMjIzNTQgMC40MTY2NjcgNi45ODI5OCAwIDYuNTk4MDggMEgxLjQwMTkyQzEuMDE3MDIgMCAwLjc3NjQ2MSAwLjQxNjY2NyAwLjk2ODkxMSAwLjc1TDMuNTY2OTkgNS4yNVonIGZpbGw9J3doaXRlJy8+PC9zdmc+Cg==");
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: .2s linear;
+  }
+
+  &:focus-within {
+    &::before {
+      transform: rotate(180deg);
+    }
+  }
+
+  select {
+    display: flex;
+    width: 100%;
+    padding: 10px 14px;
+    background-color: #3C72A9;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: $color-light;
+  }
+
+  option {
+    transition: .2s linear;
+  }
+}
