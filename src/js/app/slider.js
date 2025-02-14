@@ -1,4 +1,4 @@
-import Swiper, { Navigation, Pagination, EffectFade, Thumbs } from "swiper";
+import Swiper, { Navigation, Pagination, EffectFade, Thumbs, Autoplay } from "swiper";
 
 document.addEventListener("DOMContentLoaded", () => {
   const slider = document.querySelectorAll("[data-slider]");
@@ -59,6 +59,7 @@ function createSlider(el) {
   const articleHistory = document.querySelectorAll(".article-history");
   const infoSlides = el.querySelectorAll("[data-picture-info]") || null;
   const infoTitle = el.querySelector("[data-slider-title]") || null;
+  const isAuto = el.hasAttribute("data-auto");
 
   function initSlider(el) {
     if (mobileOnly && mobile.matches) {
@@ -90,7 +91,7 @@ function createSlider(el) {
 
   function callSlider(el) {
     return new Swiper(el.querySelector(".swiper"), {
-      modules: [Navigation, Pagination, EffectFade, Thumbs],
+      modules: [Navigation, Pagination, EffectFade, Thumbs, Autoplay],
       slidesPerView: slidesQuantity,
       spaceBetween: 30,
       slideVisibleClass: "slider__slide--visible",
@@ -99,6 +100,7 @@ function createSlider(el) {
       effect: effect,
       dragging: true,
       autoHeight: false,
+      autoplay: isAuto ? { delay: 2000 } : false,
       pagination: {
         el: pagination,
         clickable: true,

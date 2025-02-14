@@ -28425,6 +28425,7 @@ function createSlider(el) {
   const articleHistory = document.querySelectorAll(".article-history");
   const infoSlides = el.querySelectorAll("[data-picture-info]") || null;
   const infoTitle = el.querySelector("[data-slider-title]") || null;
+  const isAuto = el.hasAttribute("data-auto");
 
   function initSlider(el) {
     if (mobileOnly && mobile.matches) {
@@ -28456,7 +28457,7 @@ function createSlider(el) {
 
   function callSlider(el) {
     return new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](el.querySelector(".swiper"), {
-      modules: [swiper__WEBPACK_IMPORTED_MODULE_0__.Navigation, swiper__WEBPACK_IMPORTED_MODULE_0__.Pagination, swiper__WEBPACK_IMPORTED_MODULE_0__.EffectFade, swiper__WEBPACK_IMPORTED_MODULE_0__.Thumbs],
+      modules: [swiper__WEBPACK_IMPORTED_MODULE_0__.Navigation, swiper__WEBPACK_IMPORTED_MODULE_0__.Pagination, swiper__WEBPACK_IMPORTED_MODULE_0__.EffectFade, swiper__WEBPACK_IMPORTED_MODULE_0__.Thumbs, swiper__WEBPACK_IMPORTED_MODULE_0__.Autoplay],
       slidesPerView: slidesQuantity,
       spaceBetween: 30,
       slideVisibleClass: "slider__slide--visible",
@@ -28465,6 +28466,7 @@ function createSlider(el) {
       effect: effect,
       dragging: true,
       autoHeight: false,
+      autoplay: isAuto ? { delay: 2000 } : false,
       pagination: {
         el: pagination,
         clickable: true,
