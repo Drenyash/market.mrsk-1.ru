@@ -28199,11 +28199,11 @@ class Preview {
         const currentElement = Array.from(this.items).filter(el => {
           return el.getAttribute("data-content") === elementId ? el.getAttribute("data-content") : null;
         });
-        const elementHeight = currentElement[0].getBoundingClientRect().height;
+        // const elementHeight = currentElement[0].getBoundingClientRect().height;
 
-        if (elementHeight > previewHeight) {
-          this.preview.style.height = `${elementHeight}px`;
-        }
+        // if (elementHeight > previewHeight) {
+        //   this.preview.style.height = `${elementHeight}px`;
+        // }
 
         this.items.forEach((item) => {
 
@@ -28230,7 +28230,7 @@ class Preview {
     if (!backElement) return;
 
     backElement.addEventListener("click", () => {
-      this.preview.style.height = `${this.previewHeight}px`;
+      // this.preview.style.height = `${this.previewHeight}px`;
 
       this.items.forEach((item) => {
         item.classList.remove("active");
@@ -28243,13 +28243,13 @@ class Preview {
     setInterval(() => {
       this.controlElements.forEach((temp) => temp.classList.remove("active"));
 
-      if (counter >= 7) {
+      if (counter >= this.controlElements.length - 1) {
         counter = 0;
       } else {
         counter++;
       }
       this.controlElements[counter].classList.add("active");
-    }, 3000);
+    }, 2000);
   }
 
   animateNums() {
@@ -28405,9 +28405,10 @@ function createSlider(el) {
   let init = false;
   const desktop = window.matchMedia("(min-width: 768px)");
   const mobile = window.matchMedia("(min-width: 0px) and (max-width: 768px)");
-  const looped = el.querySelectorAll(".swiper-slide").length > 3;
+  const looped = el.querySelectorAll(".swiper-slide").length > 2;
   const loop = el.hasAttribute("data-loop");
   const wrapper = el.querySelector(".swiper-wrapper");
+  const animate = el.hasAttribute("data-slider-animate");
   const slidesQuantity = parseInt(el.getAttribute("data-slider-slides"), 10);
   const slidesQuantityTab = parseInt(
     el.getAttribute("data-slider-slides-tab"),
@@ -28466,7 +28467,7 @@ function createSlider(el) {
       effect: effect,
       dragging: true,
       autoHeight: false,
-      autoplay: isAuto ? { delay: 2000 } : false,
+      autoplay: isAuto ? { delay: 3000 } : false,
       pagination: {
         el: pagination,
         clickable: true,
@@ -28509,6 +28510,15 @@ function createSlider(el) {
           timelineToggle(currentIndex, swiper);
           historyToggle(currentIndex);
           changeInfo(currentIndex);
+          if (animate) {
+            const activeSlide = swiper.slides.filter(el => el.classList.contains("swiper-slide-next"));
+            if (!activeSlide) return;
+            const bubble = activeSlide[0].querySelector(".article-slide__detail");
+            if (!bubble) return;
+            const detailSlides = document.querySelectorAll(".article-slide__detail");
+            detailSlides.forEach(temp => temp.classList.remove("animate"));
+            bubble.classList.add("animate");
+          }
         },
         snapGridLengthChange: function() {
           if (timeline.length > 0) {

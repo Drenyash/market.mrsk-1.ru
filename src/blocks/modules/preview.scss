@@ -3,8 +3,6 @@
   display: flex;
   flex-direction: column;
   border-radius: 20px;
-  min-height: 918px;
-  height: 918px;
   overflow: hidden;
   transition: .2s linear;
 
@@ -83,8 +81,8 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    gap: 30px;
-    padding: 70px 72px 60px 75px;
+    gap: 16px;
+    padding: 50px;
     background-image: url('../assets/images/preview-bg.png');
     background-repeat: no-repeat;
     background-size: cover;
@@ -114,6 +112,30 @@
 
     @include r($laptop-min) {
       flex-grow: 1;
+      min-height: 420px;
+    }
+  }
+
+  &__header {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+
+    font-family: $font-accent;
+    font-size: 46px;
+    font-weight: 500;
+    line-height: 52px;
+    text-transform: uppercase;
+    color: $color-light;
+
+    z-index: 2;
+
+    @include r($laptop-min) {
+      top: 40px;
+      left: 14px;
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 24px;
     }
   }
 
@@ -142,25 +164,26 @@
   &__items {
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: flex-start;
     gap: 20px;
+    padding-top: 50px;
     padding-bottom: 80px;
     padding-right: 145px;
     z-index: 1;
 
     @include r($laptop-min) {
       gap: 10px;
-      padding: 40px 75px 40px 0;
+      padding: 40px 40px 40px 0;
     }
   }
 
   &__element {
-    padding: 30px 40px;
+    padding: 20px;
     width: 100%;
     font-family: $font-accent;
-    font-size: 32px;
+    font-size: 24px;
     font-weight: 300;
-    line-height: 41px;
+    line-height: 24px;
     color: $color-light;
     background-color: rgba(26, 89, 154, 0.7);
     backdrop-filter: blur(10px);
@@ -171,6 +194,14 @@
 
     &.active {
       transform: translateX(0);
+    }
+
+    a {
+      text-decoration: underline;
+
+      &:hover {
+        text-decoration: none;
+      }
     }
 
     @include r($laptop-min) {
@@ -185,16 +216,19 @@
   &__top {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 10px;
   }
 
   &__back {
     position: absolute;
-    top: 31px;
-    left: 75px;
+    top: 16px;
+    left: 50px;
     display: flex;
     align-items: center;
     gap: 4px;
+    padding: 4px 8px;
+    background: $color-light;
+    border-radius: 6px;
     cursor: pointer;
 
     @include r($laptop-min) {
@@ -204,11 +238,11 @@
 
     &:hover {
       span {
-        color: $color-light;
+        color: $color-dark-blue;
       }
 
       svg {
-        fill: $color-light;
+        fill: $color-dark-blue;
       }
     }
 
@@ -217,7 +251,7 @@
       font-size: 20px;
       font-weight: 400;
       line-height: 19px;
-      color: #CECECE;
+      color: $color-accent;
       transition: .2s linear;
 
       @include r($mobile) {
@@ -229,7 +263,7 @@
       display: flex;
       width: 12px;
       height: 12px;
-      fill: #CECECE;
+      fill: $color-accent;
       transition: .2s linear;
 
       @include r($mobile) {
@@ -241,30 +275,30 @@
 
   &__title {
     font-family: $font-accent;
-    font-size: 64px;
+    font-size: 46px;
     font-weight: 500;
-    line-height: 76px;
+    line-height: 52px;
     text-transform: uppercase;
     color: $color-light;
 
     @include r($laptop-min) {
-      font-size: 32px;
+      font-size: 20px;
       font-weight: 500;
-      line-height: 38px;
+      line-height: 24px;
     }
   }
 
   &__text {
     font-family: $font-accent;
-    font-size: 32px;
+    font-size: 24px;
     font-weight: 300;
-    line-height: 41px;
+    line-height: 32px;
     color: $color-light;
 
     @include r($laptop-min) {
-      font-size: 20px;
+      font-size: 16px;
       font-weight: 300;
-      line-height: 26px;
+      line-height: 18px;
     }
 
     span {
@@ -320,6 +354,10 @@
     .swiper-slide {
       width: 100%;
       height: 100%;
+    }
+
+    @include r($laptop-min) {
+      height: auto;
     }
   }
 

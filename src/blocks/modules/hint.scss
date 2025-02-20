@@ -14,6 +14,14 @@
     font-size: 20px;
     line-height: 26px;
     color: #3A3D49;
+
+    a {
+      text-decoration: underline;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
   }
 
   &__icon {

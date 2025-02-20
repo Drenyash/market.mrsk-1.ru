@@ -5079,6 +5079,12 @@ svg {
   line-height: 26px;
   color: #3A3D49;
 }
+.hint__text a {
+  text-decoration: underline;
+}
+.hint__text a:hover {
+  text-decoration: none;
+}
 .hint__icon {
   display: -webkit-box;
   display: -webkit-flex;
@@ -5824,6 +5830,9 @@ svg {
   .contacts__card {
     min-height: auto;
   }
+}
+.contacts__card--slim {
+  min-height: auto;
 }
 .contacts__card-inner {
   width: 100%;
@@ -8255,8 +8264,6 @@ svg {
       -ms-flex-direction: column;
           flex-direction: column;
   border-radius: 20px;
-  min-height: 918px;
-  height: 918px;
   overflow: hidden;
   -webkit-transition: 0.2s linear;
   transition: 0.2s linear;
@@ -8361,8 +8368,8 @@ svg {
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 30px;
-  padding: 70px 72px 60px 75px;
+  gap: 16px;
+  padding: 50px;
   background-image: url("../assets/images/preview-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -8403,6 +8410,28 @@ svg {
     -webkit-flex-grow: 1;
         -ms-flex-positive: 1;
             flex-grow: 1;
+    min-height: 420px;
+  }
+}
+.preview__header {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  font-family: "PF Din Text Cond Pro", sans-serif;
+  font-size: 46px;
+  font-weight: 500;
+  line-height: 52px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  z-index: 2;
+}
+@media only screen and (max-width: 1199.9px) {
+  .preview__header {
+    top: 40px;
+    left: 14px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
   }
 }
 .preview__picture {
@@ -8446,11 +8475,12 @@ svg {
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   gap: 20px;
+  padding-top: 50px;
   padding-bottom: 80px;
   padding-right: 145px;
   z-index: 1;
@@ -8458,16 +8488,16 @@ svg {
 @media only screen and (max-width: 1199.9px) {
   .preview__items {
     gap: 10px;
-    padding: 40px 75px 40px 0;
+    padding: 40px 40px 40px 0;
   }
 }
 .preview__element {
-  padding: 30px 40px;
+  padding: 20px;
   width: 100%;
   font-family: "PF Din Text Cond Pro", sans-serif;
-  font-size: 32px;
+  font-size: 24px;
   font-weight: 300;
-  line-height: 41px;
+  line-height: 24px;
   color: #FFFFFF;
   background-color: rgba(26, 89, 154, 0.7);
   -webkit-backdrop-filter: blur(10px);
@@ -8482,6 +8512,12 @@ svg {
 .preview__element.active {
   -webkit-transform: translateX(0);
           transform: translateX(0);
+}
+.preview__element a {
+  text-decoration: underline;
+}
+.preview__element a:hover {
+  text-decoration: none;
 }
 @media only screen and (max-width: 1199.9px) {
   .preview__element {
@@ -8502,12 +8538,12 @@ svg {
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 20px;
+  gap: 10px;
 }
 .preview__back {
   position: absolute;
-  top: 31px;
-  left: 75px;
+  top: 16px;
+  left: 50px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -8517,6 +8553,9 @@ svg {
       -ms-flex-align: center;
           align-items: center;
   gap: 4px;
+  padding: 4px 8px;
+  background: #FFFFFF;
+  border-radius: 6px;
   cursor: pointer;
 }
 @media only screen and (max-width: 1199.9px) {
@@ -8526,17 +8565,17 @@ svg {
   }
 }
 .preview__back:hover span {
-  color: #FFFFFF;
+  color: #004072;
 }
 .preview__back:hover svg {
-  fill: #FFFFFF;
+  fill: #004072;
 }
 .preview__back span {
   font-family: "PF Din Text Cond Pro", sans-serif;
   font-size: 20px;
   font-weight: 400;
   line-height: 19px;
-  color: #CECECE;
+  color: #1A599A;
   -webkit-transition: 0.2s linear;
   transition: 0.2s linear;
 }
@@ -8552,7 +8591,7 @@ svg {
   display: flex;
   width: 12px;
   height: 12px;
-  fill: #CECECE;
+  fill: #1A599A;
   -webkit-transition: 0.2s linear;
   transition: 0.2s linear;
 }
@@ -8564,31 +8603,31 @@ svg {
 }
 .preview__title {
   font-family: "PF Din Text Cond Pro", sans-serif;
-  font-size: 64px;
+  font-size: 46px;
   font-weight: 500;
-  line-height: 76px;
+  line-height: 52px;
   text-transform: uppercase;
   color: #FFFFFF;
 }
 @media only screen and (max-width: 1199.9px) {
   .preview__title {
-    font-size: 32px;
+    font-size: 20px;
     font-weight: 500;
-    line-height: 38px;
+    line-height: 24px;
   }
 }
 .preview__text {
   font-family: "PF Din Text Cond Pro", sans-serif;
-  font-size: 32px;
+  font-size: 24px;
   font-weight: 300;
-  line-height: 41px;
+  line-height: 32px;
   color: #FFFFFF;
 }
 @media only screen and (max-width: 1199.9px) {
   .preview__text {
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 300;
-    line-height: 26px;
+    line-height: 18px;
   }
 }
 .preview__text span {
@@ -8645,6 +8684,11 @@ svg {
 .preview__slider .swiper-slide {
   width: 100%;
   height: 100%;
+}
+@media only screen and (max-width: 1199.9px) {
+  .preview__slider {
+    height: auto;
+  }
 }
 .preview__control {
   display: grid;
@@ -8727,9 +8771,9 @@ svg {
 }
 .stats-block__counter {
   font-family: "PF Din Text Cond Pro", sans-serif;
-  font-size: 50px;
+  font-size: 42px;
   font-weight: 400;
-  line-height: 60px;
+  line-height: 42px;
   color: #FFFFFF;
 }
 @media only screen and (max-width: 1199.9px) {
@@ -8741,9 +8785,9 @@ svg {
 }
 .stats-block__text {
   font-family: "PF Din Text Cond Pro", sans-serif;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 400;
-  line-height: 24px;
+  line-height: 18px;
   color: #FFFFFF;
 }
 @media only screen and (max-width: 1199.9px) {
@@ -8771,7 +8815,7 @@ svg {
           justify-content: space-between;
   width: 100%;
   height: 100%;
-  padding-bottom: 120px;
+  padding-bottom: 50px;
   border-radius: 20px;
   overflow: hidden;
 }
@@ -8834,21 +8878,6 @@ svg {
     padding: 40px 14px 0;
   }
 }
-.article-slide__title {
-  font-family: "PF Din Text Cond Pro", sans-serif;
-  font-size: 64px;
-  font-weight: 500;
-  line-height: 76px;
-  text-transform: uppercase;
-  color: #FFFFFF;
-}
-@media only screen and (max-width: 1199.9px) {
-  .article-slide__title {
-    font-size: 32px;
-    font-weight: 500;
-    line-height: 38px;
-  }
-}
 .article-slide__detail {
   display: -webkit-box;
   display: -webkit-flex;
@@ -8859,21 +8888,38 @@ svg {
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: auto;
   gap: 20px;
   width: 100%;
   max-width: 690px;
-  padding: 30px 53px 46px 60px;
+  min-height: 282px;
+  padding: 30px;
   background-color: rgba(26, 89, 154, 0.7);
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
   border: 1px solid #1A599A;
   border-radius: 0 20px 20px 0;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  -webkit-transition: 0.2s linear;
+  transition: 0.2s linear;
+  -webkit-transition-delay: 0.2s;
+          transition-delay: 0.2s;
   z-index: 1;
+}
+.article-slide__detail.animate {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
 }
 @media only screen and (max-width: 1199.9px) {
   .article-slide__detail {
     gap: 10px;
     padding: 20px 14px;
+    min-height: auto;
     max-width: 80%;
   }
 }
@@ -8893,9 +8939,9 @@ svg {
 }
 .article-slide__text {
   font-family: "PF Din Text Cond Pro", sans-serif;
-  font-size: 32px;
+  font-size: 28px;
   font-weight: 300;
-  line-height: 41px;
+  line-height: 34px;
   color: #FFFFFF;
 }
 @media only screen and (max-width: 1199.9px) {

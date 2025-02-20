@@ -24,11 +24,11 @@ class Preview {
         const currentElement = Array.from(this.items).filter(el => {
           return el.getAttribute("data-content") === elementId ? el.getAttribute("data-content") : null;
         });
-        const elementHeight = currentElement[0].getBoundingClientRect().height;
+        // const elementHeight = currentElement[0].getBoundingClientRect().height;
 
-        if (elementHeight > previewHeight) {
-          this.preview.style.height = `${elementHeight}px`;
-        }
+        // if (elementHeight > previewHeight) {
+        //   this.preview.style.height = `${elementHeight}px`;
+        // }
 
         this.items.forEach((item) => {
 
@@ -55,7 +55,7 @@ class Preview {
     if (!backElement) return;
 
     backElement.addEventListener("click", () => {
-      this.preview.style.height = `${this.previewHeight}px`;
+      // this.preview.style.height = `${this.previewHeight}px`;
 
       this.items.forEach((item) => {
         item.classList.remove("active");
@@ -68,13 +68,13 @@ class Preview {
     setInterval(() => {
       this.controlElements.forEach((temp) => temp.classList.remove("active"));
 
-      if (counter >= 7) {
+      if (counter >= this.controlElements.length - 1) {
         counter = 0;
       } else {
         counter++;
       }
       this.controlElements[counter].classList.add("active");
-    }, 3000);
+    }, 2000);
   }
 
   animateNums() {
