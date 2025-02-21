@@ -2534,9 +2534,9 @@ svg {
 }
 .editor--preview h3 {
   font-family: "PF Din Text Cond Pro", sans-serif;
-  font-size: 28px;
-  font-weight: 500;
-  line-height: 33px;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 32px;
   color: #FFFFFF;
 }
 @media only screen and (max-width: 1199.9px) {
@@ -2553,9 +2553,9 @@ svg {
 .editor--preview p, .editor--preview li {
   margin: 0;
   font-family: "PF Din Text Cond Pro", sans-serif;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 30px;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 32px;
   color: #E5E5E5;
 }
 @media only screen and (max-width: 1199.9px) {
@@ -8636,9 +8636,9 @@ svg {
 .preview__head {
   margin-bottom: 10px;
   font-family: "PF Din Text Cond Pro", sans-serif;
-  font-size: 26px;
-  font-weight: 500;
-  line-height: 33px;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 32px;
   color: #FFFFFF;
 }
 @media only screen and (max-width: 1199.9px) {
